@@ -1,0 +1,34 @@
+{
+  "takim": {
+    "ad": "",
+    "uyeler": [],
+    "iletisim": ""
+  },
+  "proje": {
+    "ad": "asi-ops",
+    "ozet": "",
+    "deploy_url": null
+  },
+  "calistirma": {
+    "komut": "",
+    "on_kosullar": [],
+    "veri_yolu": "./data"
+  },
+  "ai_kullanimi": {
+    "platform": "SAKA",
+    "modeller": [
+      { "ad": "", "surum": "", "kullanim": "kodlama | analiz | aciklama" }
+    ],
+    "mcp_sunuculari": [],
+    "apiler": [],
+    "insan_ai_is_bolumu": ""
+  },
+  "cozum": {
+    "yaklasim": "",
+    "x_factor": "",
+    "olctugumuz_metrikler": {}
+  },
+  "sunum": {
+    "demo_akisi": []
+  }
+}
