@@ -39,7 +39,7 @@ cp .env.example .env
 *[bkz. [demo/](demo/) klasörü]*
 
 ## Deploy URL ve Bilinen Sınırlar
-- **Deploy URL:** *[varsa buraya]*
+- **Deploy URL:** *[opsiyonel — deploy zorunlu değil, yerel çalışan ürün yeterli. Varsa buraya]*
 - **Bilinen sınırlar:** *[neyi yapamadık, neden — bkz. [AI_JURI.md](AI_JURI.md) Bölüm 5]*
 
 ## Proje Yapısı

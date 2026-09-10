@@ -6,8 +6,12 @@ Bu dosya, bu repoda çalışan AI ajanları (Claude Code vb.) için proje bağla
 *[asi-ops'un ne yaptığına dair 2-3 cümlelik özet]*
 
 ## Kullanılan AI Araçları
-- *[örn. Claude Code — kodlama ve refactoring]*
-- *[örn. ChatGPT — araştırma / fikir üretimi]*
+- **SAKA** — şirketin çoklu LLM erişim platformu, bu hackathon'un birincil AI ortamı. IDE entegrasyonu ve konsol seviyesi erişim mevcut. Hangi model(ler) kullanıldıysa adı+sürümü burada ve `submission.json > ai_kullanimi.modeller`'da belirtilmeli.
+- *[SAKA dışında kullanılan diğer araçlar — kısıt yok, ama kullanılan her araç burada beyan edilmeli]*
+
+## Açıklanabilirlik (XAI) Kuralı
+Çözüm bir karar üretiyorsa (sınıflandırma, öncelik sıralaması, anomali işaretleme vb.), o kararın **gerekçesini de üretmesi zorunlu** — AI Jüri'nin en çok önemsediği başlıklardan biri budur. "Sonuç: X" yetmez, "Sonuç: X, çünkü Y" gerekir.
+- *[hangi modül/fonksiyon açıklanabilirlik çıktısı üretiyor — dosya yolu]*
 
 ## İnsan / AI İş Bölümü
 - **İnsan kararı:** *[mimari kararlar, kapsam, öncelik sıralaması vb.]*
