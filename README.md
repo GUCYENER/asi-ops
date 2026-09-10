@@ -50,8 +50,20 @@ asi-ops/
 ├── submission.json           # makine okunabilir künye
 ├── .env.example               # örnek ortam değişkenleri
 ├── CLAUDE.md                  # AI yapılandırma
+├── .claude/skills/             # takım pipeline'ı: scout, straton, forge, augur, oracle, scribe, herald
 ├── docs/                      # plan.md, fazlar.md, mimari.md
 ├── prompts/                   # kullanılan kritik prompt'lar
 ├── demo/                      # ekran görüntüleri, video linki
 └── src/                       # kaynak kod
+```
+
+### Takım Skill Pipeline'ı
+
+Repoyu clone/pull eden herkeste bu skill'ler otomatik yüklenir (Claude Code proje-scoped skill desteği), manuel kurulum gerekmez:
+
+```
+/scout → /straton ─┬─ ürün/arayüz → /forge (+ gerekirse /oracle) ────┐
+                    └─ veri/analitik → /augur (+ gerekirse /oracle) → /forge (opsiyonel wrapper) ┘
+                                                                      ↓
+                                                          /scribe ‖ /herald
 ```
