@@ -33,9 +33,12 @@
 - **Onsite/remote:** Tüm takım onsite çalışacak — onsite kuralı (min. 2 kişi) rahatlıkla karşılanıyor
 
 ## Görev Dağılımı
+
+*(rol ataması taslak — yarın `/scout` sonrası gerçek uzmanlığa göre takım içinde teyit edilmeli)*
+
 | Kişi | Sorumluluk |
 |------|------------|
 | Hüseyin Eren Güçyener — Kaptan | Orkestrasyon, `/straton` kararı, kapsam/zaman yönetimi |
-| *[isim — Backend & AI]* | AI/LLM entegrasyonu (Claude SAKA / Codex), prompt zinciri, açıklanabilirlik çıktısı |
-| *[isim — Frontend/UI]* | Demo edilebilir arayüz |
-| *[isim — Entegrasyon & Belgeleme]* | Entegrasyon + sürekli `/scribe` (commit/prompt/AI_JURI.md güncel tutma) |
+| Burhan Özdemirci — Backend & AI *(taslak)* | AI/LLM entegrasyonu (Claude SAKA / Codex), prompt zinciri, açıklanabilirlik çıktısı |
+| Ali Alperen Erkoç — Frontend/UI *(taslak)* | Demo edilebilir arayüz |
+| Eren Eyüp Demir — Entegrasyon & Belgeleme *(taslak)* | Entegrasyon + sürekli `/scribe` (commit/prompt/AI_JURI.md güncel tutma) |
