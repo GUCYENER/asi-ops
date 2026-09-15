@@ -6,8 +6,9 @@ Bu dosya, bu repoda çalışan AI ajanları (Claude Code vb.) için proje bağla
 *[asi-ops'un ne yaptığına dair 2-3 cümlelik özet]*
 
 ## Kullanılan AI Araçları
-- **SAKA** — şirketin çoklu LLM erişim platformu, bu hackathon'un birincil AI ortamı. IDE entegrasyonu ve konsol seviyesi erişim mevcut. Hangi model(ler) kullanıldıysa adı+sürümü burada ve `submission.json > ai_kullanimi.modeller`'da belirtilmeli.
-- *[SAKA dışında kullanılan diğer araçlar — kısıt yok, ama kullanılan her araç burada beyan edilmeli]*
+- **Claude (SAKA üzerinden) ve Codex** — bu hackathon için resmi/sağlanan araçlar.
+- Diğer araçlar (Cursor, Copilot, ChatGPT, v0.dev vb.) serbest ama **satın alma, kullanım ve sorumluluk katılımcıya ait** — kullanılırsa mutlaka burada ve `submission.json > ai_kullanimi.modeller`'da beyan edilmeli.
+- Hangi model(ler) kullanıldıysa adı+sürümü burada belirtilmeli.
 
 ## Açıklanabilirlik (XAI) Kuralı
 Çözüm bir karar üretiyorsa (sınıflandırma, öncelik sıralaması, anomali işaretleme vb.), o kararın **gerekçesini de üretmesi zorunlu** — AI Jüri'nin en çok önemsediği başlıklardan biri budur. "Sonuç: X" yetmez, "Sonuç: X, çünkü Y" gerekir.
