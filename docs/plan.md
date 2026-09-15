@@ -24,13 +24,13 @@
 | 19:05-20:30 | Kalan 6 takımın sunumu | Hangi grupta olduğumuz kura ile belirlenecek — geç gruptaysak uzun bekleme olabilir |
 | 20:30 | Sonuçlar ve ödül töreni | 1.:15.000₺ 2.:10.000₺ 3.:5.000₺ Edenred |
 
-**Not:** Önceki duyuruda "AI Jüri otomatik taraması" (17:30-17:45) ayrı bir adım olarak geçiyordu; resmi portalda bu adımdan bahsedilmiyor, yalnızca 13 kişilik insan jürisi ve "AI kullanım becerisi / ürün kalitesi / sunum performansı" kriterleri var. `AI_JURI.md`'yi yine de dolu tutuyoruz — otomatik taransın ya da taranmasın, insan jürisi de aynı kanıtları okuyacak.
+**Not:** AI Jüri süreci **teyit edildi** — resmi duyuruda yer alıyor. `AI_JURI.md` bu yüzden kritik: otomatik taransın ya da insan jürisi okusun, ikisi de aynı dosyaya ve aynı kanıtlara (dosya yolu referansları) bakacak.
 
 ## Takım
 - **Takım adı:** ASI-OPS
 - **Kaptan:** Hüseyin Eren Güçyener
 - **Mentör:** Tunar Yenigün (Teams grubu üzerinden iletişim)
-- **Onsite kuralı:** 4 kişilik takımda en az 2 kişi hackathon alanında olmalı, sunum onsite yapılmalı — **takımda kim onsite/remote teyit edilmeli**
+- **Onsite/remote:** Tüm takım onsite çalışacak — onsite kuralı (min. 2 kişi) rahatlıkla karşılanıyor
 
 ## Görev Dağılımı
 | Kişi | Sorumluluk |
