@@ -72,3 +72,25 @@ details.hist-log[open]>summary::after{transform:rotate(180deg)}
 .hl-note{margin:6px 0 0;font-size:12.5px;line-height:1.55;color:var(--ink)}
 .hl-note.empty{color:var(--muted);font-style:italic}
 .hist-empty{margin-top:14px}
+
+/* --- Bolum ayrimi: yumusak ama etkiyi vurgulayan renklendirme --- */
+details.sec{border-top:none;border-left:3px solid transparent;border-radius:0 10px 10px 0;
+  padding:0 0 0 14px;margin:10px 0;transition:background .15s,border-color .15s}
+details.sec>summary{padding:12px 10px 12px 0}
+details.sec[data-sec="evidence"]{border-left-color:#16857d;background:linear-gradient(90deg,#f2faf9,transparent 62%)}
+details.sec[data-sec="impact"]{border-left-color:#13283b;background:linear-gradient(90deg,#f3f6f9,transparent 62%)}
+details.sec[data-sec="alt"]{border-left-color:#d8a345;background:linear-gradient(90deg,#fdf8ef,transparent 62%)}
+details.sec[data-sec="history"]{border-left-color:#7b6ca8;background:linear-gradient(90deg,#f7f5fb,transparent 62%)}
+details.sec[data-sec="action"]{border-left-color:#e46338;background:linear-gradient(90deg,#fdf4f1,transparent 62%)}
+details.sec[data-sec="evidence"]>summary .number{background:#dcefec;color:#0f6b64}
+details.sec[data-sec="impact"]>summary .number{background:#dfe6ee;color:#13283b}
+details.sec[data-sec="alt"]>summary .number{background:#f8eacf;color:#9a6f1d}
+details.sec[data-sec="history"]>summary .number{background:#e8e4f2;color:#5c4e87}
+details.sec[data-sec="action"]>summary .number{background:#fae0d6;color:#b64a24}
+details.sec[data-sec="evidence"]>summary{color:#0f6b64}
+details.sec[data-sec="impact"]>summary{color:#13283b}
+details.sec[data-sec="alt"]>summary{color:#9a6f1d}
+details.sec[data-sec="history"]>summary{color:#5c4e87}
+details.sec[data-sec="action"]>summary{color:#b64a24}
+details.sec[open]{background-size:100% 100%}
+details.sec>summary:hover{filter:brightness(.93)}
