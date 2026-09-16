@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alert Storm Correlator — ASI-OPS</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">◈</span>
+    <div>
+      <h1>Alert Storm Correlator</h1>
+      <p class="sub">Bağımlılık farkında alarm korelasyonu · ASI-OPS</p>
+    </div>
+  </div>
+  <div class="badges" id="badges"></div>
+</header>
+
+<nav class="tabs">
+  <button class="tab active" data-tab="events">Olay Kartları</button>
+  <button class="tab" data-tab="noise">Gürültü Denetimi</button>
+  <button class="tab" data-tab="unclear">Belirsiz</button>
+  <button class="tab" data-tab="metrics">Metrikler</button>
+</nav>
+
+<main>
+  <section id="panel-events" class="panel active">
+    <div id="cards" class="cards"></div>
+  </section>
+
+  <section id="panel-noise" class="panel">
+    <div class="panel-head">
+      <h2>Gürültü olarak elenen alarmlar</h2>
+      <p>Her eleme kararı gerekçesiyle kayıt altında — hiçbir alarm sessizce silinmedi.</p>
+      <input type="text" id="noise-filter" placeholder="Servis, tip veya gerekçede ara...">
+    </div>
+    <div id="noise-table"></div>
+  </section>
+
+  <section id="panel-unclear" class="panel">
+    <div class="panel-head">
+      <h2>Belirsiz alarmlar</h2>
+      <p>Olay penceresinde görüldü ancak kök servisle kanıt bağı yeterli değil. Gürültüye atılmadı, ayrı tutuldu.</p>
+    </div>
+    <div id="unclear-table"></div>
+  </section>
+
+  <section id="panel-metrics" class="panel">
+    <div class="panel-head">
+      <h2>Ölçümler</h2>
+      <p>Doğrulama verisi jüride kapalı olduğu için kök neden isabeti iddia edilmiyor; yalnızca ölçebildiklerimiz gösteriliyor.</p>
+    </div>
+    <div id="metrics-body"></div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

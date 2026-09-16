@@ -30,3 +30,8 @@ Thumbs.db
 
 # --- Loglar ---
 *.log
+
+# --- Hackathon veri paketi (orijinal dosyalar repoya konmaz) ---
+data/katilimci_paketi/
+data/*.msg
+data/*.eml
