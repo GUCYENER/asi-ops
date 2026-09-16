@@ -2,9 +2,12 @@
   "takim": {
     "ad": "ASI-OPS",
     "uyeler": [
-      "Hüseyin Eren Güçyener (Kaptan)"
+      "Hüseyin Eren Güçyener (Kaptan)",
+      "Burhan Özdemirci",
+      "Ali Alperen Erkoç",
+      "Eren Eyüp Demir"
     ],
-    "iletisim": ""
+    "iletisim": "erengucyener@gmail.com"
   },
   "proje": {
     "ad": "ASI-OPS — Alarmdan karara",
@@ -12,37 +15,43 @@
     "deploy_url": null
   },
   "calistirma": {
-    "komut": "python3 app.py --data-dir ../katilimci_paketi",
+    "komut": "python run.py",
     "on_kosullar": [
       "Python 3.9+",
-      "Katılımcı veri paketi; repo dışında"
+      "Harici paket gerekmez",
+      "Katılımcı veri paketi data/katilimci_paketi/ altına konur"
     ],
-    "veri_yolu": "../katilimci_paketi"
+    "veri_yolu": "./data/katilimci_paketi"
   },
   "ai_kullanimi": {
-    "platform": "Codex (geliştirme); opsiyonel Azure Anthropic Messages (çalışma zamanı)",
+    "platform": "SAKA / Claude Code (geliştirme); Azure Anthropic Messages (çalışma zamanı)",
     "modeller": [
       {
-        "ad": "GPT-6",
-        "surum": "GPT-6; ayrıntılı build kimliği sağlanmadı",
+        "ad": "claude-opus-5",
+        "surum": "claude-opus-5",
+        "kullanim": "analiz, kodlama, entegrasyon, doğrulama"
+      },
+      {
+        "ad": "GPT-6 (Codex)",
+        "surum": "ayrıntılı build kimliği sağlanmadı",
         "kullanim": "analiz, kodlama, test, dokümantasyon"
       },
       {
         "ad": "claude-sonnet-4-5",
-        "surum": "Yapılandırılabilir deployment; canlı erişim doğrulanmadı",
-        "kullanim": "isteğe bağlı kanıt anlatısı; bu oturumda çağrılmadı"
+        "surum": "claude-sonnet-4-5-20250929",
+        "kullanim": "aciklama — kanıt anlatısı, canlı erişim doğrulandı"
       }
     ],
     "mcp_sunuculari": [],
     "apiler": [
       "Yerel HTTP JSON API",
-      "Opsiyonel Azure Anthropic Messages; canlı erişim doğrulanmadı"
+      "Azure Anthropic Messages (claude-sonnet-4-5) — opsiyonel anlatı, canlı doğrulandı, şablon fallback'li"
     ],
     "insan_ai_is_bolumu": "İnsan kapsam ve bütünleşik analiz kararını verdi, P0/P1 ve ekran önerilerini ekledi. Codex motor, arayüz, test ve belgeleri üretti. Son operasyon ve teslim kararı ekipte."
   },
   "cozum": {
     "yaklasim": "Deterministik, alarm seviyesinde, yönlü bağımlılık ve mesaj hedefiyle korelasyon; host bazında yavaş bellek trendi; olay/gürültü adayı/belirsiz ayrımı.",
-    "x_factor": "Aynı mobile-bff servisinde örtüşen 38 timeout kaydının 12 session / 26 provider olarak ayrılması; atanamayan kümelerde belirsizliğin korunması.",
+    "x_factor": "Aynı mobile-bff servisinde örtüşen 38 timeout kaydının 12 session / 26 provider olarak ayrılması; atanamayan kümelerde belirsizliğin korunması. Ayrıca her kart, imza benzerliğiyle eşleşen geçmiş olayı ve o zaman işe yarayan çözümü gösterir; benzerlik uygulamada hesaplanır (0.45 alarm tipi + 0.35 servis + 0.20 kategori), arşivdeki hazır skor alanı kullanılmaz.",
     "olctugumuz_metrikler": {
       "input_count": 3000,
       "processed_count": 3000,
@@ -54,7 +63,8 @@
       "uncertain_count": 321,
       "coverage": 1.0,
       "naive_card_count": 578,
-      "card_limit_pass": true
+      "card_limit_pass": true,
+      "benzer_gecmis_olay_eslesme": "5/5 kart (%62-87 benzerlik); arşiv sentetiktir, etiketlenmiştir"
     }
   },
   "sunum": {
