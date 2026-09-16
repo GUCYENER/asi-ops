@@ -35,3 +35,7 @@ Thumbs.db
 data/katilimci_paketi/
 data/*.msg
 data/*.eml
+
+# Ekip calisma kopyalari (icinde .env olabilir)
+data/sonuccodex/
+data/*.zip

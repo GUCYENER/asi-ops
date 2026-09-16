@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASI-OPS · Alarmdan karara</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="rail">
+    <a class="brand" href="/" aria-label="ASI-OPS ana sayfa"><span class="brand-mark">a<span>ı</span></span><strong>ASI<span>—</span>OPS</strong></a>
+    <div class="rail-label">OPERASYON MERKEZİ</div>
+    <div class="rail-active"><span class="rail-symbol">▥</span> Alarm masası <span class="tiny-dot"></span></div>
+    <div class="rail-note">S-A1<br><strong>Alarm Fırtınası</strong><p>Tek tek alarmlardan,<br>kanıtlı olay hipotezlerine.</p></div>
+    <div class="rail-bottom"><span class="status-dot"></span> Yerel analiz<br><small>Dosya üzerinden • çevrimdışı çekirdek</small></div>
+  </aside>
+  <main>
+    <header class="topbar"><span>ASI-OPS <span class="slash">/</span> Operasyon masası</span><span id="mode" class="mode">Veri yükleniyor</span></header>
+    <div class="page">
+      <section class="page-heading"><div><div class="eyebrow">SİNYALİ GÜRÜLTÜDEN AYIR</div><h1>Alarmdan karara<span>.</span></h1><p id="window">Veri ve bağımlılık grafiği okunuyor…</p></div><div class="heading-actions"><button id="refresh" class="secondary">↻ Yenile</button><a class="button primary" href="/api/export" download>↓ Raporu indir</a></div></section>
+      <div id="error" class="notice error" role="alert" hidden></div>
+      <div id="loading" class="loading">Olaylar ve kanıtlar yükleniyor…</div>
+      <section id="stats" class="stats" aria-label="Analiz özeti"></section>
+      <section class="overview" id="overview" hidden><div class="overview-copy"><div class="eyebrow">GÖZLEM PENCERESİ</div><h2>Alarm yoğunluğu</h2><div class="legend"><span><i class="incident-dot"></i> Olaya bağlı</span><span><i class="noise-dot"></i> Gürültü adayı</span><span><i class="uncertain-dot"></i> Belirsiz</span></div><small>10 dakikalık dilimler · saat dilimi kaynakta yok</small></div><div id="timeline" class="timeline"></div><div class="coverage"><span id="coverage-value">—</span><strong>Kayıt kapsamı</strong><small>Her alarmın bir kararı var.<br>Hiçbir kayıt silinmedi.</small></div></section>
+      <nav class="tabs" aria-label="İnceleme görünümü"><button data-tab="incidents" class="active" aria-current="page">Olaylar <span id="incident-count">—</span></button><button data-tab="noise">Gürültü adayları <span id="noise-count">—</span></button><button data-tab="uncertain">Belirsiz <span id="uncertain-count">—</span></button><button data-tab="all">Tüm alarmlar</button><button data-tab="metrics">Yöntem ve ölçüm</button></nav>
+      <section id="incidents-view" class="incident-layout"><div><div class="list-heading"><h2>Öncelikli olaylar</h2><span>İş etkisine göre</span></div><div id="incident-list" class="incident-list"></div><p class="subtle list-footnote">Kartlar kök neden hipotezidir. Son alarm zamanı, arızanın çözüldüğü anlamına gelmez.</p></div><article id="incident-detail" class="detail" aria-label="Olay ayrıntıları"></article></section>
+      <section id="audit-view" hidden><div class="section-heading"><div><h2 id="audit-title">Alarm kayıtları</h2><p id="audit-description"></p></div><label class="search">⌕ <input id="search" type="search" placeholder="Servis, alarm ID veya mesaj ara" aria-label="Alarm ara"></label></div><div id="audit-table"></div><div class="pagination"><button class="secondary" id="previous">← Önceki</button><span id="page-info"></span><button class="secondary" id="next">Sonraki →</button></div></section>
+      <section id="metrics-view" hidden></section>
+      <footer><span><strong>ASI-OPS</strong> · Kanıt → Hipotez → Aksiyon</span><span>Sentetik senaryo · Doğruluk etiketleri erişilebilir değil</span></footer>
+    </div>
+  </main>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>
