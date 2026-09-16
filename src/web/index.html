@@ -20,6 +20,8 @@
 
 <nav class="tabs">
   <button class="tab active" data-tab="events">Olay Kartları</button>
+  <button class="tab" data-tab="timeline">Zaman Çizelgesi</button>
+  <button class="tab" data-tab="alarms">Alarmlar</button>
   <button class="tab" data-tab="noise">Gürültü Denetimi</button>
   <button class="tab" data-tab="unclear">Belirsiz</button>
   <button class="tab" data-tab="metrics">Metrikler</button>
@@ -28,6 +30,30 @@
 <main>
   <section id="panel-events" class="panel active">
     <div id="cards" class="cards"></div>
+  </section>
+
+  <section id="panel-timeline" class="panel">
+    <div class="panel-head">
+      <h2>Zaman çizelgesi</h2>
+      <p>Olaylar zamanda <b>iç içe geçiyor</b> — bu yüzden "anomali penceresi bul, içindekileri o olaya ata" yaklaşımı yanlış sonuç verir. Atama alarm seviyesinde, kanıt skoruyla yapılıyor.</p>
+    </div>
+    <div id="timeline-body"></div>
+  </section>
+
+  <section id="panel-alarms" class="panel">
+    <div class="panel-head">
+      <h2>Normalize edilmiş alarm akışı</h2>
+      <p>3.000 alarmın tamamı — her biri sınıflandırılmış (olay / gürültü / belirsiz), zenginleştirilmiş (host→servis→dc/kabin) ve mesajdan çıkarılan hedef servis ile birlikte.</p>
+      <div class="filters">
+        <input type="text" id="alarm-search" placeholder="Alarm ID, servis, host, mesaj...">
+        <select id="f-durum"><option value="">Tüm durumlar</option><option value="olay">Olaya bağlı</option><option value="gurultu">Gürültü</option><option value="belirsiz">Belirsiz</option></select>
+        <select id="f-event"><option value="">Tüm olaylar</option></select>
+        <select id="f-type"><option value="">Tüm alarm tipleri</option></select>
+        <select id="f-sev"><option value="">Tüm şiddetler</option><option value="5">5 — kritik</option><option value="4">4 — büyük</option><option value="3">3 — küçük</option><option value="2">2 — uyarı</option><option value="1">1 — bilgi</option></select>
+      </div>
+      <div id="alarm-summary" class="reason"></div>
+    </div>
+    <div id="alarm-table"></div>
   </section>
 
   <section id="panel-noise" class="panel">

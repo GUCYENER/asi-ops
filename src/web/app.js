@@ -14,9 +14,117 @@ async function load() {
   DATA = await response.json();
   renderBadges();
   renderCards();
+  renderTimeline();
+  renderAlarms();
   renderNoise();
   renderUnclear();
   renderMetrics();
+}
+
+function renderTimeline() {
+  const t = DATA.timeline;
+  const bars = t.events.map(e => `
+    <div class="tl-row">
+      <div class="tl-label">
+        <b>${esc(e.id)}</b>
+        <span>${esc(e.title)}</span>
+      </div>
+      <div class="tl-track">
+        <div class="tl-bar ${esc(e.severity_label)}" style="left:${e.left}%;width:${e.width}%">
+          <span class="tl-bar-text">${e.alarm_count} alarm · ${esc(e.time_start.slice(0,5))}–${esc(e.time_end.slice(0,5))}</span>
+        </div>
+        <div class="tl-root" style="left:${e.root_at}%" title="kök alarm anı"></div>
+      </div>
+    </div>`).join("");
+
+  const density = t.density.map(d => `
+    <div class="dn-col" title="${esc(d.label)} · ${d.total} alarm (${d.event} olaya bağlı)">
+      <div class="dn-total" style="height:${d.height}%"></div>
+      <div class="dn-event" style="height:${d.event_height}%"></div>
+    </div>`).join("");
+
+  const ticks = t.density.filter((_, i) => i % 4 === 0)
+    .map(d => `<span>${esc(d.label)}</span>`).join("");
+
+  document.getElementById("timeline-body").innerHTML = `
+    <div class="tl-wrap">
+      ${bars}
+      <div class="tl-row">
+        <div class="tl-label"><b>YOĞUNLUK</b><span>5 dk başına alarm</span></div>
+        <div class="tl-track density">${density}</div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-label"></div>
+        <div class="tl-axis">${ticks}</div>
+      </div>
+    </div>
+    <div class="legend" style="margin-top:14px">
+      <span><span class="swatch" style="background:var(--kritik)"></span>olay süresi</span>
+      <span><span class="swatch" style="background:#fff"></span>kök alarm anı</span>
+      <span><span class="swatch" style="background:var(--border)"></span>toplam alarm</span>
+      <span><span class="swatch" style="background:var(--accent)"></span>olaya bağlanan</span>
+    </div>
+    <div class="callout-box">
+      <b>Neden önemli:</b> billing-db (02:02–02:46), session-service (02:09–03:11) ve payment-gw (02:37–03:03)
+      olayları aynı anda akıyor. Sadece zamana bakan bir korelatör bu üçünü tek olaya karıştırır.
+    </div>`;
+}
+
+function renderAlarms() {
+  const rows = DATA.alarms;
+  const types = [...new Set(rows.map(r => r.type))].sort();
+  document.getElementById("f-type").innerHTML =
+    `<option value="">Tüm alarm tipleri</option>` +
+    types.map(t => `<option>${esc(t)}</option>`).join("");
+  document.getElementById("f-event").innerHTML =
+    `<option value="">Tüm olaylar</option>` +
+    DATA.events.map(e => `<option value="${esc(e.id)}">${esc(e.id)} — ${esc(e.title)}</option>`).join("");
+
+  const apply = () => {
+    const term = document.getElementById("alarm-search").value.toLowerCase();
+    const durum = document.getElementById("f-durum").value;
+    const evId = document.getElementById("f-event").value;
+    const type = document.getElementById("f-type").value;
+    const sev = document.getElementById("f-sev").value;
+
+    const filtered = rows.filter(r =>
+      (!durum || r.durum === durum) &&
+      (!evId || r.event_id === evId) &&
+      (!type || r.type === type) &&
+      (!sev || String(r.severity) === sev) &&
+      (!term || (r.alarm_id + r.service + r.host + r.message + r.target).toLowerCase().includes(term))
+    );
+
+    const counts = { olay: 0, gurultu: 0, belirsiz: 0 };
+    filtered.forEach(r => counts[r.durum]++);
+    document.getElementById("alarm-summary").innerHTML =
+      `<b>${filtered.length}</b> alarm — olaya bağlı ${counts.olay} · gürültü ${counts.gurultu} · belirsiz ${counts.belirsiz}` +
+      (filtered.length > 500 ? " (ilk 500 gösteriliyor)" : "");
+
+    document.getElementById("alarm-table").innerHTML = `<div class="scroll"><table>
+      <thead><tr><th>Saat</th><th>Alarm</th><th>Kaynak</th><th>Servis</th><th>Host</th><th>DC/Kabin</th>
+      <th>Tip</th><th>Sınıf</th><th>Sev</th><th>Hedef</th><th>Durum</th><th>Mesaj</th></tr></thead>
+      <tbody>${filtered.slice(0, 500).map(r => `<tr>
+        <td class="mono">${esc(r.time)}</td>
+        <td class="mono">${esc(r.alarm_id)}</td>
+        <td>${esc(r.source)}</td>
+        <td>${esc(r.service)}</td>
+        <td class="mono">${esc(r.host)}</td>
+        <td class="mono">${esc(r.dc)}/${esc(r.rack)}</td>
+        <td>${esc(r.type)}</td>
+        <td class="${r.class === "sinyal" ? "sig" : "noi"}">${esc(r.class)}</td>
+        <td class="mono">${r.severity}</td>
+        <td class="mono">${esc(r.target)}</td>
+        <td><span class="dpill d-${esc(r.durum)}">${esc(r.durum)}${r.event_id ? " · " + esc(r.event_id) : ""}</span></td>
+        <td>${esc(r.message)}</td>
+      </tr>`).join("")}</tbody></table></div>`;
+  };
+
+  ["alarm-search", "f-durum", "f-event", "f-type", "f-sev"].forEach(id => {
+    const el = document.getElementById(id);
+    el.addEventListener(id === "alarm-search" ? "input" : "change", apply);
+  });
+  apply();
 }
 
 function renderBadges() {

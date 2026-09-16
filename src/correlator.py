@@ -559,6 +559,39 @@ def title_of(event):
     return labels.get(root["alarm_type"], "%s uzerinde %s" % (event["root_service"], root["alarm_type"]))
 
 
+def card_root_ts(card, window_start):
+    """Kartin kok alarm anini datetime olarak dondurur (timeline konumu icin)."""
+    root = next((a for a in card["alarms"] if a["role"] == "kok"), card["alarms"][0])
+    return datetime.strptime(window_start.strftime("%Y-%m-%d") + "T" + root["time"], "%Y-%m-%dT%H:%M:%S")
+
+
+def density_series(alarms, cards, window_start, bucket_minutes=5):
+    """Zaman icinde alarm yogunlugu: toplam ve olaylara atanan kirilimi."""
+    assigned_ids = {aid for c in cards for aid in c["alarm_ids"]}
+    buckets = defaultdict(lambda: {"total": 0, "event": 0})
+    for alarm in alarms:
+        idx = int((alarm["ts"] - window_start).total_seconds() // (bucket_minutes * 60))
+        buckets[idx]["total"] += 1
+        if alarm["alarm_id"] in assigned_ids:
+            buckets[idx]["event"] += 1
+    if not buckets:
+        return []
+    peak = max(b["total"] for b in buckets.values())
+    series = []
+    for idx in sorted(buckets):
+        minute = idx * bucket_minutes
+        label = "%02d:%02d" % ((window_start.hour + (window_start.minute + minute) // 60) % 24,
+                               (window_start.minute + minute) % 60)
+        series.append({
+            "label": label,
+            "total": buckets[idx]["total"],
+            "event": buckets[idx]["event"],
+            "height": round(buckets[idx]["total"] / peak * 100, 1),
+            "event_height": round(buckets[idx]["event"] / peak * 100, 1),
+        })
+    return series
+
+
 def run(data_dir):
     alarms, deps, inventory = load_data(data_dir)
     profile = concentration_profile(alarms)
@@ -631,8 +664,72 @@ def run(data_dir):
     assigned = sum(c["alarm_count"] for c in cards)
     naive_card_count = len({(a["ts"].strftime("%H:%M")[:4], a["service"]) for a in alarms})
 
+    # --- Zaman cizelgesi: olaylar zamanda ic ice geciyor, bunu gorunur kil ---
+    window_start, window_end = alarms[0]["ts"], alarms[-1]["ts"]
+    total_seconds = max((window_end - window_start).total_seconds(), 1)
+
+    def pct(moment):
+        return round((moment - window_start).total_seconds() / total_seconds * 100, 2)
+
+    timeline = {
+        "window_start": window_start.strftime("%H:%M"),
+        "window_end": window_end.strftime("%H:%M"),
+        "events": [
+            {
+                "id": card["id"],
+                "title": card["title"],
+                "severity_label": card["severity_label"],
+                "left": pct(datetime.strptime(
+                    window_start.strftime("%Y-%m-%d") + "T" + card["time_start"], "%Y-%m-%dT%H:%M:%S")),
+                "width": max(pct(datetime.strptime(
+                    window_start.strftime("%Y-%m-%d") + "T" + card["time_end"], "%Y-%m-%dT%H:%M:%S"))
+                    - pct(datetime.strptime(
+                        window_start.strftime("%Y-%m-%d") + "T" + card["time_start"], "%Y-%m-%dT%H:%M:%S")), 0.8),
+                "root_at": pct(card_root_ts(card, window_start)),
+                "time_start": card["time_start"],
+                "time_end": card["time_end"],
+                "alarm_count": card["alarm_count"],
+            }
+            for card in cards
+        ],
+        "density": density_series(alarms, cards, window_start, bucket_minutes=5),
+    }
+
+    # --- Tum alarmlarin siniflandirilmis, normalize edilmis listesi ---
+    classification = {}
+    for card in cards:
+        for aid in card["alarm_ids"]:
+            classification[aid] = ("olay", card["id"])
+    for item, _ in noise:
+        classification[item["alarm_id"]] = ("gurultu", "")
+    for item, _ in unclear:
+        classification[item["alarm_id"]] = ("belirsiz", "")
+
+    alarm_rows = []
+    for alarm in alarms:
+        durum, event_id = classification.get(alarm["alarm_id"], ("belirsiz", ""))
+        alarm_rows.append({
+            "alarm_id": alarm["alarm_id"],
+            "time": alarm["ts"].strftime("%H:%M:%S"),
+            "source": alarm["source_system"],
+            "host": alarm["host"],
+            "service": alarm["service"],
+            "type": alarm["alarm_type"],
+            "severity": alarm["severity"],
+            "dc": alarm["veri_merkezi"],
+            "rack": alarm["kabin"],
+            "target": alarm["msg_target"] or "",
+            "pct": alarm["pct"] if alarm["pct"] is not None else "",
+            "class": profile.get(alarm["alarm_type"], {}).get("label", "-"),
+            "durum": durum,
+            "event_id": event_id,
+            "message": alarm["message"],
+        })
+
     return {
         "events": cards,
+        "timeline": timeline,
+        "alarms": alarm_rows,
         "noise": [
             {
                 "alarm_id": a["alarm_id"],
