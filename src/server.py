@@ -7,7 +7,7 @@ brifing kalici veritabanini acikca kapsam disi birakiyor.
 import json
 import os
 import sys
-from http.server import BaseHTTPRequestHandler, HTTPServer
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -119,7 +119,9 @@ def main():
           % (metrics["total_alarms"], metrics["event_count"],
              metrics["noise_count"], metrics["unclear_count"]))
     print("Arayuz: http://localhost:%d" % port)
-    HTTPServer(("127.0.0.1", port), Handler).serve_forever()
+    # ThreadingHTTPServer: LLM anlati cagrisi (~10-20 sn) arayuzu bloklamasin.
+    # Tek is parcacikli sunucuda demo sirasinda tum ekran donardi.
+    ThreadingHTTPServer(("127.0.0.1", port), Handler).serve_forever()
 
 
 if __name__ == "__main__":
