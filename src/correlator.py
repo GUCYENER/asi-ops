@@ -300,36 +300,48 @@ def build_events(alarms, deps, inventory, profile):
 
     # 2) Turev ve destekleyici alarmlari kanit skoruyla olaylara ata
     seed_ids = {a["alarm_id"] for e in events for a in e["seed_alarms"]}
+    pending = [a for a in alarms if a["alarm_id"] not in seed_ids]
+
+    # Atama ALARM seviyesinde yapilir: servis + bagimlilik + mesaj hedefi + lokalite
+    # birlikte skorlanir. Zaman penceresi yalnizca aday daraltma icin kullanilir.
+    # Iki gecis: ilk gecis cekirdek pencerelere gore, ikinci gecis genisleyen
+    # pencerelere gore -> uzun kuyruklu cascade'lerin sonu sahipsiz kalmaz.
+    last_scores = {}
+    for pass_no in (1, 2):
+        still_pending = []
+        for alarm in pending:
+            best_event, best_score, best_reasons = None, 0.0, []
+            for event in events:
+                if not in_window(alarm, event):
+                    continue
+                score, reasons = attach_score(alarm, event, depends_on)
+                if score > best_score:
+                    best_event, best_score, best_reasons = event, score, reasons
+
+            if best_event and best_score >= ATTACH_SCORE_MIN:
+                alarm["_link_reasons"] = best_reasons
+                alarm["_link_score"] = round(best_score, 1)
+                best_event["alarms"].append(alarm)
+                best_event["services"].add(alarm["service"])
+            else:
+                last_scores[alarm["alarm_id"]] = (best_event, best_score)
+                still_pending.append(alarm)
+
+        # Pencereleri yeni atamalarla genislet, ikinci gecis bunlari kullanir
+        for event in events:
+            event["start"] = min(a["ts"] for a in event["alarms"])
+            event["end"] = max(a["ts"] for a in event["alarms"])
+        pending = still_pending
+
     noise = []
     unclear = []
-
-    for alarm in alarms:
-        if alarm["alarm_id"] in seed_ids:
-            continue
-        best_event, best_score, best_reasons = None, 0.0, []
-        for event in events:
-            if not in_window(alarm, event):
-                continue
-            score, reasons = attach_score(alarm, event, depends_on)
-            if score > best_score:
-                best_event, best_score, best_reasons = event, score, reasons
-
-        if best_event and best_score >= ATTACH_SCORE_MIN:
-            alarm["_link_reasons"] = best_reasons
-            alarm["_link_score"] = round(best_score, 1)
-            best_event["alarms"].append(alarm)
-            best_event["services"].add(alarm["service"])
-        elif alarm["alarm_type"] in noise_types:
-            noise.append((alarm, noise_reason(alarm, profile, best_event, best_score)))
-        elif alarm["alarm_type"] in signal_types:
-            unclear.append((alarm, "olay penceresinde ancak kok servisle kanit bagi zayif (skor %.1f)" % best_score))
+    for alarm in pending:
+        best_event, best_score = last_scores.get(alarm["alarm_id"], (None, 0.0))
+        if alarm["alarm_type"] in signal_types:
+            unclear.append((alarm, "olay penceresinde ancak kok servisle kanit bagi zayif (skor %.1f < %.1f)"
+                            % (best_score, ATTACH_SCORE_MIN)))
         else:
             noise.append((alarm, noise_reason(alarm, profile, best_event, best_score)))
-
-    # Pencereleri atanan alarmlarla guncelle
-    for event in events:
-        event["start"] = min(a["ts"] for a in event["alarms"])
-        event["end"] = max(a["ts"] for a in event["alarms"])
 
     return events, noise, unclear, depends_on, affects, crit
 
@@ -445,6 +457,23 @@ def why_text(event, depends_on, profile):
         sample = sorted(chains)[:3]
         parts.append("Bagimlilik zinciri uzerinden turev belirtiler: %s%s."
                      % ("; ".join(sample), " ..." if len(chains) > 3 else ""))
+
+    # Ek kanit 1: en cok reddedilen baglanti hedefi (cakilan altyapi bileseni)
+    refused = defaultdict(int)
+    for alarm in event["alarms"]:
+        if alarm["alarm_type"] == "conn_refused" and alarm["msg_target"]:
+            refused[alarm["msg_target"]] += 1
+    if refused:
+        target, count = max(refused.items(), key=lambda kv: kv[1])
+        parts.append("Reddedilen baglantilarin en sik hedefi %s (%d kez) - bu bilesen de etkilendigi icin "
+                     "etki carpan etkisiyle buyumus gorunuyor." % (target, count))
+
+    # Ek kanit 2: monoton artan kaynak merdiveni (yavas gelisen olaylarin imzasi)
+    ladder = memory_ladder(event["alarms"])
+    if ladder:
+        parts.append("Kaynak kullanimi %d host'ta monoton tirmandi (or. %s: %%%d -> %%%d) - "
+                     "bu, ani bir sicrama degil zamana yayilan bir bozulma imzasi."
+                     % (ladder["hosts"], ladder["sample_host"], ladder["first"], ladder["last"]))
     parts.append("Toplam %d alarm, %d servis, %s-%s araligi."
                  % (len(event["alarms"]), len(event["services"]),
                     event["start"].strftime("%H:%M"), event["end"].strftime("%H:%M")))
@@ -470,6 +499,43 @@ def network_domain(event):
             "service_count": len({a["service"] for a in net}),
         }
     return None
+
+
+def memory_ladder(alarms, min_steps=3):
+    """Host bazinda monoton artan kaynak kullanimi zinciri arar.
+
+    Yavas gelisen olaylarin (bellek sizintisi vb.) imzasi "kac tane mem_high var"
+    degil, ayni host'ta yuzdenin duzenli tirmanmasidir. Tip sayarak bakmak
+    gurultudeki mem_high alarmlariyla karisir.
+    """
+    by_host = defaultdict(list)
+    for alarm in alarms:
+        if alarm["alarm_type"] in ("mem_high", "gc_pressure", "oom_risk") and alarm["pct"] is not None:
+            by_host[alarm["host"]].append((alarm["ts"], alarm["pct"]))
+
+    best = None
+    hosts_with_ladder = 0
+    for host, points in by_host.items():
+        points.sort()
+        longest, current = [], [points[0]]
+        for prev, nxt in zip(points, points[1:]):
+            if nxt[1] > prev[1]:
+                current.append(nxt)
+            else:
+                if len(current) > len(longest):
+                    longest = current
+                current = [nxt]
+        if len(current) > len(longest):
+            longest = current
+        if len(longest) >= min_steps:
+            hosts_with_ladder += 1
+            if best is None or len(longest) > best[1]:
+                best = (host, len(longest), longest[0][1], longest[-1][1])
+
+    if not best:
+        return None
+    return {"hosts": hosts_with_ladder, "sample_host": best[0], "steps": best[1],
+            "first": best[2], "last": best[3]}
 
 
 def title_of(event):
