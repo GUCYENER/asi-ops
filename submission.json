@@ -1,61 +1,70 @@
 {
   "takim": {
     "ad": "ASI-OPS",
-    "uyeler": ["Hüseyin Eren Güçyener (Kaptan)", "Burhan Özdemirci", "Ali Alperen Erkoç", "Eren Eyüp Demir"],
-    "iletisim": "erengucyener@gmail.com"
+    "uyeler": [
+      "Hüseyin Eren Güçyener (Kaptan)"
+    ],
+    "iletisim": ""
   },
   "proje": {
-    "ad": "Alert Storm Correlator",
-    "ozet": "3.000 alarmı, kök neden hipotezi ve gerekçesiyle birlikte 5 olay kartına indirgeyen bağımlılık farkında korelasyon motoru.",
+    "ad": "ASI-OPS — Alarmdan karara",
+    "ozet": "Bağımlılık, mesaj hedefi ve host trendiyle 3000 alarmdan kanıtlı olay ve inceleme kartları; sorumlu ve aksiyon takibi.",
     "deploy_url": null
   },
   "calistirma": {
-    "komut": "python run.py",
+    "komut": "python3 app.py --data-dir ../katilimci_paketi",
     "on_kosullar": [
-      "Python 3.8+",
-      "Harici kütüphane gerekmez (yalnızca standart kütüphane)",
-      "Veri paketi data/katilimci_paketi/ altına yerleştirilmeli"
+      "Python 3.9+",
+      "Katılımcı veri paketi; repo dışında"
     ],
-    "veri_yolu": "./data/katilimci_paketi"
+    "veri_yolu": "../katilimci_paketi"
   },
   "ai_kullanimi": {
-    "platform": "SAKA",
+    "platform": "Codex (geliştirme); opsiyonel Azure Anthropic Messages (çalışma zamanı)",
     "modeller": [
-      { "ad": "claude-opus-5", "surum": "claude-opus-5", "kullanim": "kodlama | analiz" },
-      { "ad": "claude-sonnet-4-5", "surum": "claude-sonnet-4-5-20250929", "kullanim": "aciklama" },
-      { "ad": "Codex", "surum": "-", "kullanim": "analiz" }
+      {
+        "ad": "GPT-6",
+        "surum": "GPT-6; ayrıntılı build kimliği sağlanmadı",
+        "kullanim": "analiz, kodlama, test, dokümantasyon"
+      },
+      {
+        "ad": "claude-sonnet-4-5",
+        "surum": "Yapılandırılabilir deployment; canlı erişim doğrulanmadı",
+        "kullanim": "isteğe bağlı kanıt anlatısı; bu oturumda çağrılmadı"
+      }
     ],
     "mcp_sunuculari": [],
     "apiler": [
-      "Azure/Anthropic Messages API (claude-sonnet-4-5) — olay kartı doğal dil anlatısı, opsiyonel, şablon fallback mevcut"
+      "Yerel HTTP JSON API",
+      "Opsiyonel Azure Anthropic Messages; canlı erişim doğrulanmadı"
     ],
-    "insan_ai_is_bolumu": "İnsan kararı: çözüm seçimi (deterministik motor vs ML), stdlib-only kısıtı, B3 bonusunun kapsam dışı bırakılması, ekip review'undaki P0 bulgusunun önceliklendirilmesi. AI üretimi: korelasyon motoru implementasyonu, kanıt skorlama fonksiyonları, yoğunlaşma profili hesabı, arayüz, çalışma zamanı doğal dil anlatısı. Karar üretimi tamamen deterministik koddadır; LLM yalnızca hesaplanmış kanıtı anlatıya çevirir."
+    "insan_ai_is_bolumu": "İnsan kapsam ve bütünleşik analiz kararını verdi, P0/P1 ve ekran önerilerini ekledi. Codex motor, arayüz, test ve belgeleri üretti. Son operasyon ve teslim kararı ekipte."
   },
   "cozum": {
-    "yaklasim": "Üç katmanlı kanıt birleştirme: (1) alarm tipi bazında zamansal yoğunlaşma oranı ile objektif sinyal/gürültü ayrımı, (2) kök-tipi alarmlardan zaman + bağımlılık + lokalite ile olay çekirdeği kümeleme, (3) türev alarmların alarm seviyesinde kanıt skoruyla (mesaj hedefi, bağımlılık derinliği, kabin, servis) iki geçişli atanması. Zaman penceresi karar vermez, yalnızca aday daraltır.",
-    "x_factor": "Aynı servisin aynı tipteki alarmlarını farklı olaylara ayırabiliyoruz ve nedenini gösteriyoruz: mobile-bff'in timeout alarmları mesaj hedefi ve bağımlılık zincirine göre üç ayrı olaya dağıldı (EV-01: 15, EV-03: 23, EV-04: 18). Sıradan bir korelatör bu 56 alarmı tek karta koyar ve mühendisi tek bir yanlış müdahaleye yönlendirir. Ayrıca her kartta reddedilen alternatif hipotez ve neden reddedildiği, elenen her alarmda ise objektif eleme gerekçesi bulunur.",
+    "yaklasim": "Deterministik, alarm seviyesinde, yönlü bağımlılık ve mesaj hedefiyle korelasyon; host bazında yavaş bellek trendi; olay/gürültü adayı/belirsiz ayrımı.",
+    "x_factor": "Aynı mobile-bff servisinde örtüşen 38 timeout kaydının 12 session / 26 provider olarak ayrılması; atanamayan kümelerde belirsizliğin korunması.",
     "olctugumuz_metrikler": {
-      "islenen_alarm": "3000/3000",
-      "olay_karti": 5,
-      "indirgeme_orani": 0.9983,
-      "olaylara_baglanan_alarm": 1435,
-      "gurultu_elenen": 1453,
-      "belirsiz": 112,
-      "hesap_verilen_toplam": "3000/3000",
-      "naif_yontem_kart_sayisi": 321,
-      "olcemedigimiz": "Kök neden isabeti — doğrulama verisi jüride kapalı, doğruluk yüzdesi iddia edilmiyor"
+      "input_count": 3000,
+      "processed_count": 3000,
+      "incident_count": 5,
+      "review_candidate_count": 3,
+      "total_card_count": 8,
+      "assigned_count": 1015,
+      "noise_count": 1664,
+      "uncertain_count": 321,
+      "coverage": 1.0,
+      "naive_card_count": 578,
+      "card_limit_pass": true
     }
   },
   "sunum": {
     "demo_akisi": [
-      "Ham veri: 3.000 satırlık alarm akışı gösterilir (nöbetçinin gördüğü ekran)",
-      "Tek komut: python run.py → 5 olay kartı saniyeler içinde ekrana gelir",
-      "EV-01 kartı açılır: dc1/rack-A ağ kesintisi, gerekçesi ve kanıtları okunur",
-      "Karşı olasılık paneli: reddedilen alternatif hipotez ve neden reddedildiği gösterilir",
-      "X-Factor: mobile-bff'in timeout alarmlarının üç ayrı olaya dağıldığı gösterilir",
-      "Aksiyon: sahip atanır, durum Açık → Devam olarak değiştirilir (canlı)",
-      "Gürültü denetim sekmesi: elenen 1.453 alarmın gerekçeleri gösterilir",
-      "Metrik paneli: 3.000/3.000 hesap verildi, naif yöntem 321 kart üretirdi"
+      "7 dk sunum + 3 dk soru-cevap",
+      "3000 kayıtta 5 olay + 3 inceleme kartı",
+      "Ağ: 401 alarm / 9 doğrudan host / 14 servis",
+      "Bellek öncülleri ve 12/26 örtüşme ayrımı",
+      "İnceleme kartı, belirsizlik ve aksiyon kaydı",
+      "Muhasebe, ölçüm sınırları ve JSON dışa aktarımı"
     ]
   }
 }

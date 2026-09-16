@@ -15,3 +15,17 @@
 .hist-fix{margin:9px 0 0;font-size:13.5px;line-height:1.55;color:var(--ink)}
 .hist-mttr{color:var(--teal);font-size:12px;font-family:ui-monospace,Consolas,monospace;margin-left:6px}
 .hist-lesson{margin:7px 0 0;font-size:12.5px;color:var(--muted);font-style:italic;line-height:1.5;border-left:2px solid var(--border);padding-left:11px}
+.gantt-wrap{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:22px 24px;margin:18px 0}
+.gantt-head h2{margin:2px 0 16px;font-size:20px}
+.gt-row{display:flex;align-items:center;gap:16px;margin-bottom:9px}
+.gt-name{flex:none;width:150px;display:flex;flex-direction:column;line-height:1.25}
+.gt-name strong{font-size:13px}
+.gt-name span{font-size:11.5px;color:var(--muted);font-family:ui-monospace,Consolas,monospace}
+.gt-track{flex:1;position:relative;height:30px;background:#f1f4f8;border-radius:7px}
+.gt-bar{position:absolute;top:4px;height:22px;border-radius:6px;display:flex;align-items:center;padding:0 9px;overflow:hidden}
+.gt-bar span{font-size:11px;color:#fff;white-space:nowrap;font-variant-numeric:tabular-nums}
+.k-network{background:#13283b}.k-storage{background:#16857d}.k-memory{background:#d8a345}
+.k-external{background:#e46338}.k-batch{background:#6b7f95}.k-unresolved{background:#9aa8b8}
+.gt-axis{position:relative;height:18px;margin-left:166px;margin-top:4px}
+.gt-axis span{position:absolute;transform:translateX(-50%);font-size:10.5px;color:var(--muted);font-family:ui-monospace,Consolas,monospace}
+.gt-note{margin:14px 0 0;font-size:13px;line-height:1.6;color:var(--muted);border-left:3px solid var(--orange);padding-left:13px}

@@ -47,7 +47,34 @@ function renderOverview() {
   const rows = report.timeline, width=520, step=width/rows.length, max=Math.max(...rows.map(r=>r.total),1);
   const bars=rows.map((r,i)=>{let y=73;const segments=["noise","uncertain","incident"].map(k=>{const h=r[k]/max*66;y-=h;return `<rect class="chart-${k}" x="${i*step+4}" y="${y}" width="${Math.max(3,step-9)}" height="${h}" rx="1"><title>${esc(shortTime(r.time))} · ${decisions[k]}: ${r[k]}</title></rect>`;}).join(""); return segments+(i%3===0 || i===rows.length-1?`<text x="${i*step+4}" y="92" class="chart-label">${esc(shortTime(r.time))}</text>`:"");}).join("");
   $("timeline").innerHTML=`<svg viewBox="0 0 540 100" role="img" aria-label="10 dakikalık dilimlerde alarm karar dağılımı">${bars}</svg>`;
+  renderGantt();
   if (!s.card_limit_pass) {$("error").hidden=false;$("error").textContent="Kabul kontrolü: olay kartı sayısı 1–15 aralığında değil. Olaylar zorla birleştirilmedi.";}
+}
+
+function renderGantt() {
+  const host = $("gantt");
+  if (!host) return;
+  const wrap = $("gantt-wrap"); if (wrap) wrap.hidden = false;
+  const s = report.summary;
+  const t0 = new Date(s.start).getTime(), t1 = new Date(s.end).getTime(), span = Math.max(t1 - t0, 1);
+  const pos = iso => ((new Date(iso).getTime() - t0) / span) * 100;
+  const kinds = {network:"Ağ", storage:"Depolama", memory:"Bellek", external:"Dış servis", batch:"Batch", unresolved:"Belirsiz kök"};
+
+  const rows = report.incidents.map(i => {
+    const left = pos(i.start), width = Math.max(pos(i.end) - left, 0.9);
+    return `<div class="gt-row">
+      <div class="gt-name"><strong>${esc(kinds[i.kind] || i.kind)}</strong><span>${esc(i.root.scope)}</span></div>
+      <div class="gt-track"><div class="gt-bar k-${esc(i.kind)}" style="left:${left}%;width:${width}%" title="${esc(i.title)} · ${shortTime(i.start)}–${shortTime(i.end)}"><span>${num(i.alarm_count)} alarm · ${shortTime(i.start)}–${shortTime(i.end)}</span></div></div>
+    </div>`;
+  }).join("");
+
+  const ticks = Array.from({length:7}, (_,k) => {
+    const at = new Date(t0 + span * k / 6);
+    return `<span style="left:${(k/6)*100}%">${String(at.getHours()).padStart(2,"0")}:${String(at.getMinutes()).padStart(2,"0")}</span>`;
+  }).join("");
+
+  host.innerHTML = `${rows}<div class="gt-axis">${ticks}</div>
+    <p class="gt-note"><strong>Olaylar zamanda iç içe geçiyor.</strong> Bellek olayı ağ, depolama ve dış servis pencereleriyle çakışıyor — bu yüzden "anomali penceresi bul, içindekileri o olaya ata" yaklaşımı yanlış sonuç verir. Atama alarm seviyesinde, kanıt puanıyla yapılır.</p>`;
 }
 function renderList() {
   const card = i => `<button class="incident-card ${i.id===selected?"selected":""}" data-incident="${esc(i.id)}" data-card-type="${i.card_type||"incident"}" aria-pressed="${i.id===selected}"><div class="card-top"><span class="badge ${i.card_type==="review"?"warn":"priority"}">${i.card_type==="review"?"Düşük kanıt":esc(i.priority.level)}</span><span>${esc(i.id)}</span><span class="time">${shortTime(i.start)}–${shortTime(i.end)}</span></div><div class="card-title">${esc(i.root.hypothesis)}</div><div class="card-scope">${esc(i.root.scope)}</div><div class="card-bottom"><span><strong>${i.alarm_count}</strong> ${i.card_type==="review"?"belirsiz kayıt":"alarm"} · <strong>${i.services.length}</strong> servis</span><span class="badge ${i.action.status==="resolved"?"good":"neutral"}">${statuses[i.action.status]}</span></div></button>`;

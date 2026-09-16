@@ -1,26 +1,34 @@
 # asi-ops — AI Yapılandırma
 
-Bu dosya, bu repoda çalışan AI ajanları (Claude Code vb.) için proje bağlamını ve kurallarını tanımlar. AI Jüri, ekibin AI'ı nasıl yönlendirdiğini değerlendirirken bu dosyayı referans alır.
-
 ## Proje Bağlamı
-*[asi-ops'un ne yaptığına dair 2-3 cümlelik özet]*
+
+S-A1 Alarm Fırtınası. 3.000 alarmı kayıpsız işle; en fazla 15 olay/inceleme kartında açıklanabilir hipotez ve ilk aksiyon sun. Kullanıcının `BUTUNLESIK_ANALIZ.md` kararı ve sonraki önerileri güncel kapsamdır.
 
 ## Kullanılan AI Araçları
-- **Claude (SAKA üzerinden) ve Codex** — bu hackathon için resmi/sağlanan araçlar.
-- Diğer araçlar (Cursor, Copilot, ChatGPT, v0.dev vb.) serbest ama **satın alma, kullanım ve sorumluluk katılımcıya ait** — kullanılırsa mutlaka burada ve `submission.json > ai_kullanimi.modeller`'da beyan edilmeli.
-- Hangi model(ler) kullanıldıysa adı+sürümü burada belirtilmeli.
+
+- Bu geliştirme: Codex / GPT-6; daha ayrıntılı sürüm bilgisi sağlanmadı.
+- Çalışma zamanında LLM zorunlu değil. Opsiyonel Azure Anthropic Messages model adı `.env` içinde; varsayılan `claude-sonnet-4-5`.
+- Canlı Azure erişimi bu oturumda doğrulanmadı. Önceki belgelerdeki “erişim doğrulandı” ifadesini bu uygulamanın test sonucu diye kullanma.
 
 ## Açıklanabilirlik (XAI) Kuralı
-Çözüm bir karar üretiyorsa (sınıflandırma, öncelik sıralaması, anomali işaretleme vb.), o kararın **gerekçesini de üretmesi zorunlu** — AI Jüri'nin en çok önemsediği başlıklardan biri budur. "Sonuç: X" yetmez, "Sonuç: X, çünkü Y" gerekir.
-- *[hangi modül/fonksiyon açıklanabilirlik çıktısı üretiyor — dosya yolu]*
+
+`src/engine.py::candidate_score` gerçek sinyal katkılarını, `noise_decision` eleme gerekçesini, `build_incident` kanıt ve alternatifleri üretir. Dekoratif veya uydurma gerekçe ekleme. Kök hipotezini kanıtlanmış arıza; destek skorunu olasılık olarak sunma. `review_candidates` kayıtları belirsiz bırakır.
 
 ## İnsan / AI İş Bölümü
-- **İnsan kararı:** *[mimari kararlar, kapsam, öncelik sıralaması vb.]*
-- **AI kararı / üretimi:** *[boilerplate kod, test yazımı, dokümantasyon taslağı vb.]*
+
+- **İnsan:** problem, kapsam, bütünleşik karar; P0/P1 düzeltmeleri; jüri ekranı; son operasyon ve teslim kararı.
+- **AI:** analiz, deterministik motor, API/arayıüz, test, dokümantasyon ve demo taslağı.
 
 ## Kod Standartları ve Kısıtlar
-- *[dil/framework tercihleri, klasör yapısı kuralları]*
-- *[yapılmaması gerekenler]*
+
+- Python 3.9+ stdlib; vanilla JS. Harici çalışma zamanı paketi ekleme.
+- Bütün yeni çalışma bu klasörde. İlk analiz, katılımcı verisi ve kardeş `asi-ops/` repo korunur.
+- Zaman pencereyi daraltır; atama alarm seviyesinde yapılır. Servis/ID/tarih/olay sayısını tespit kurallarına sabitleme.
+- `.env`, ham veri ve tam JSON dışa aktarımı yayınlama. Örnek ayarlar anahtarsız olsun.
+- İnsan sorumlu rolünü değiştirebilir; kritiklikten kişi uydurma.
+- Yeniden başlatma aksiyonları sıfırlar; kullanıcı aksiyonları varsa önce dışa aktar.
+- Geliştirme yönergeleri kökteki `AGENTS.md` ve `hackathon-skills/` altında; güncel kullanıcı talimatı önceliklidir.
 
 ## Kritik Prompt'lara Referans
-Bu projede kullanılan önemli prompt'lar [prompts/](prompts/) klasöründe saklanır.
+
+[prompts/](prompts/) altında kullanıcı yönlendirmeleri ve opsiyonel model prompt'u kayıtlıdır. [Devam notu](docs/devam_notu.md) çalışan durum ve açık işleri özetler.

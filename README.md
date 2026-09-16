@@ -1,72 +1,36 @@
-# Alert Storm Correlator
+# asi-ops
 
-**3.000 alarmı, her biri kök neden hipotezi + gerekçesi + karşı olasılığı + önerilen aksiyonu taşıyan 5 olay kartına indirgeyen, bağımlılık farkında korelasyon motoru.**
+## Proje Adı ve Özet
 
-> AO AI Hackathon 2026 — "Signal Sprint" · Senaryo S-A1 "Alarm Fırtınası" · Takım **ASI-OPS**
-
----
+**ASI-OPS — Alarmdan karara.** Alarm fırtınasını kanıtları incelenebilen olay hipotezlerine ve sorumlusu belirlenmiş ilk aksiyonlara dönüştüren yerel operasyon masası.
 
 ## Çözdüğümüz Problem
 
-Gece 02:14. Nöbetçi mühendisin ekranında 2 saatlik pencerede 3.000 alarm akıyor. O gece birden fazla şey aynı anda ters gitmiş; bazıları birbiriyle ilişkili, bazıları tamamen bağımsız, önemli bir kısmı ise hiçbir olayla ilgisi olmayan arka plan gürültüsü.
-
-Asıl güçlük alarm sayısı değil: **hangisinin kök neden, hangisinin türev etki, hangisinin gürültü olduğunun görünmemesi.** Bu yüzden müdahale sırası yanlış kurulur ve çözüm süresi uzar.
+S-A1 paketindeki 3.000 alarm aynı anda birden fazla soruna işaret ediyor. Yalnız zaman veya servis bazında gruplama, oturum ve ödeme sorunlarını aynı karta karıştırabilir. Operatörün bağlantıyı, belirsizliği ve ilk aksiyonu birlikte görebilmesi gerekir.
 
 ## Çözümümüzün Nasıl Çalıştığı
 
-```
-alarms.csv (3.000) + service_dependencies.csv (32) + host_inventory.csv (56)
-   ↓  normalize · host→servis→dc/rack · yönlü bağımlılık grafiği · mesajdan hedef servis ayrıştırma
-BASELINE      alarm tipi bazında zamansal yoğunlaşma oranı → sinyal / gürültü / belirsiz
-   ↓
-ÇEKİRDEK      kök-tipi (network_down, disk_full, ext_unreach, batch_overlap...) alarmlardan
-              zaman + servis/bağımlılık/lokalite yakınlığıyla olay çekirdeği kümeleme
-   ↓
-ATAMA         her türev alarm ALARM SEVİYESİNDE skorlanır:
-              mesaj hedefi (+5) · bağımlılık derinliği (+3/d) · aynı kabin (+2) · aynı servis (+3)
-              iki geçişli — uzun kuyruklu cascade'ler sahipsiz kalmaz
-   ↓
-KÖK NEDEN     tip önceliği × erkenlik × şiddet → kök alarm + karşı olasılık + güven skoru
-   ↓
-ANLATIM       deterministik gerekçe (her zaman) + LLM doğal dil anlatısı (opsiyonel)
-   ↓
-ÇIKTI         öncelik sıralı olay kartları · gürültü denetim görünümü · aksiyon (sahip + durum)
-```
+1. Bütün kayıtları, envanteri ve yönlü bağımlılıkları doğrular.
+2. Kök alarm imzalarını ve host bazında artan bellek serilerini bulur.
+3. Her alarmı zaman, servis, mesaj hedefi, grafik yolu ve fiziksel hata alanıyla puanlar.
+4. Olay / gürültü adayı / belirsiz kararını gerekçesiyle saklar.
+5. Belirsizlerdeki tekrarlayan kümeleri düşük kanıtlı inceleme kartlarında gösterir.
+6. Düzenlenebilir sorumlu rolü, durum, not geçmişi ve JSON dışa aktarımı sunar.
 
-Detaylı mimari: [docs/mimari.md](docs/mimari.md) · Karar süreci: [docs/plan.md](docs/plan.md)
-
-## Sonuçlar (gerçek veri, ölçülmüş)
-
-| Ölçüt | Değer |
-|---|---|
-| İşlenen alarm | **3.000 / 3.000** (örnekleme yok) |
-| Üretilen olay kartı | **5** (üst sınır 15) |
-| İndirgeme oranı | **%99,83** |
-| Olaylara bağlanan alarm | 1.435 |
-| Gürültü olarak elenen | 1.453 (her biri gerekçeli) |
-| Belirsiz (gürültüye atılmadı) | 112 |
-| **Hesap verilen toplam** | **3.000 / 3.000** — kayıp ve çift sayım yok |
-| Naif yöntem karşılaştırması | 10dk pencere × servis grubu = **321 kart** |
-
-**Ölçmediğimiz:** Kök neden isabeti. Doğrulama verisi jüride kapalı olduğu için doğruluk yüzdesi iddia etmiyoruz.
+Katılımcı verisinde **5 olay + 3 inceleme kartı**; **1.015 olaya bağlı + 1.664 gürültü adayı + 321 belirsiz = 3.000 alarm**. İnceleme kartlarındaki 84 kayıt belirsiz toplamının içindedir. Bunlar doğruluk/recall ölçümü değildir. Detay: [geliştirme raporu](docs/gelistirme_raporu.md), [mimari](docs/mimari.md).
 
 ## Kurulum Adımları
 
-Harici bağımlılık **yoktur**. Python 3.8+ dışında hiçbir şey kurmanız gerekmez.
+Python **3.9 veya üstü** yeterli. Paket kurulumu, Node, veritabanı veya API anahtarı gerekmez.
 
 ```bash
 git clone https://github.com/GUCYENER/asi-ops.git
 cd asi-ops
 ```
 
-Veri paketi repoda değildir (organizatör orijinal dosyaların repoya konmamasını belirtti). Katılımcı paketini şuraya yerleştirin:
+Katılımcı paketini `data/katilimci_paketi/` altına yerleştirin (orijinal dosyalar repoya konmadı). Farklı bir konum kullanacaksanız `--data-dir` ile gösterin. `alarms.json` **veya** `alarms.csv`, `host_inventory.csv`, `service_dependencies.csv` gerekir. İkisi de varsa JSON seçilir; ikisi birlikte sayılmaz.
 
-```
-data/katilimci_paketi/
-├── alarms.csv
-├── service_dependencies.csv
-└── host_inventory.csv
-```
+`.env` bu çalışma alanında boş anahtarlarla hazır. Başka makinede isteğe bağlı olarak `.env.example` dosyasını `.env` olarak kopyalayın. Çekirdek için zorunlu değildir.
 
 ## Çalıştırma Komutu
 
@@ -74,69 +38,78 @@ data/katilimci_paketi/
 python run.py
 ```
 
-Arayüz: **http://localhost:8000**
+Tarayıcı: **http://127.0.0.1:8000**. (Eşdeğeri: `python app.py --data-dir data/katilimci_paketi`) Port doluysa `--port 8002` ekleyin. Varsayılan veri konumu proje klasörünün kardeşi `katilimci_paketi` dizinidir.
 
-Alternatifler:
+Sunucusuz yedek çıktı:
 
 ```bash
-python run.py --cli                       # terminal modu (yedek demo)
-python run.py --data <baska/klasor>       # farklı veri klasörü
+python app.py --data-dir data/katilimci_paketi --export outputs/report.json
 ```
+
+Testler:
+
+```bash
+python -m pytest tests -q
+```
+
+Sentetik örnekler, gerçek veri regresyonları, JSON/CSV eşdeğerliği, zaman/kimlik/servis değişiklikleri, HTTP uçları, aksiyonlar ve LLM fallback'i kapsanır. Katılımcı paketi yoksa ona bağlı testler açıkça atlanır. Test sonuçları: [doğrulama](docs/dogrulama.md).
 
 ## Kullanılan AI Araçları ve Model Sürümleri
 
 | Araç | Model / Sürüm | Kullanım Amacı |
 |---|---|---|
-| Claude Code (SAKA) | `claude-opus-5` | Analiz, mimari kararlar, korelasyon motoru implementasyonu |
-| Codex | — | Bağımsız veri analizi ve hipotez üretimi (ekip üyesi) |
-| Claude (Azure/SAKA) | `claude-sonnet-4-5-20250929` | **Çalışma zamanı**: olay kartı gerekçesinin doğal dile çevrilmesi |
+| Codex | GPT-6; daha ayrıntılı build kimliği sağlanmadı | Analiz, kod, test ve dokümantasyon üretimi |
+| Claude Code | `claude-opus-5` | Bütünleşik analiz, B3 geçmiş olay eşleştirme, entegrasyon ve doğrulama |
+| Azure Anthropic Messages | `claude-sonnet-4-5-20250929` | Kanıtların kısa anlatısı; **canlı erişim doğrulandı**, kanıt kimlikleri şema kontrolünden geçiyor |
 
-Çalışma zamanı LLM çağrısı **kritik yolda değildir** — erişilemezse deterministik şablon devreye girer, uygulama tam çalışmaya devam eder (`src/explain.py:template_narrative`).
+Kararları LLM vermez. Eğitilmiş ML modeli veya ölçülmüş doğruluk iddiası yok. İnsan kapsamı ve bütünleşik analizi onayladı; kod ve sonuçlar incelemeye açık.
 
 ## MCP Sunucu Listesi
 
-MCP sunucusu kullanılmamıştır.
+Ürün çalışma zamanında MCP sunucusu kullanmaz. Geliştirmede yerel dosya/komut araçları ve resmi API dokümanı araması kullanıldı; harici ekip hesabına erişilmedi.
 
 ## Entegre Edilen API'ler
 
-| API | Kullanım | Zorunlu mu |
-|---|---|---|
-| Azure/Anthropic Messages API (`claude-sonnet-4-5`) | Olay kartı doğal dil anlatısı | Hayır — şablon fallback mevcut |
-
-## Kullanılan Açık Kaynak Kütüphaneler
-
-**Yoktur.** Çekirdek ve arayüz tamamen Python standart kütüphanesi (`json`, `csv`, `datetime`, `collections`, `statistics`, `re`, `http.server`, `urllib`) ve vanilla JS/CSS ile yazılmıştır. Bu bilinçli bir karardır: jürinin makinesinde kurulum riski sıfırdır.
-
-*(Geliştirme sırasındaki keşifsel analizde `pandas` kullanıldı, ancak üründe kullanılmamaktadır.)*
+- Yerel HTTP JSON API: [sözleşme](docs/sozlesme.md).
+- Azure Anthropic Messages: `.env` içine `AZURE_ANTHROPIC_ENDPOINT`, `AZURE_ANTHROPIC_API_KEY` yazıp `LLM_ENABLED=true` yapılır. İstek yalnız "AI ile kısa özet" düğmesiyle gider. Sekiz saniye timeout, kanıt kimliği doğrulaması ve hata halinde şablon geri dönüşü var. **Bu kurulumda canlı çağrı doğrulandı.**
+- Entegrasyon biçimi [Microsoft'un resmi Claude/Foundry belgesine](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-claude) dayanır. Canlı sağlayıcı çağrısı bu kurulumda test edildi ve çalışıyor.
 
 ## Ekran Görüntüleri
 
-[demo/](demo/) klasörüne bakınız.
+Çalışan uygulamadan alınmıştır:
+
+![Operasyon masası](demo/operasyon-masasi.png)
+
+[Alarm izlenebilirliği](demo/alarm-izlenebilirligi.png) · [Yöntem ve ölçüm](demo/yontem-ve-olcum.png) · [Mobil görünüm](demo/mobil.png).
 
 ## Deploy URL ve Bilinen Sınırlar
 
-- **Deploy URL:** Yok — yerel çalışan ürün (organizatör deploy'u zorunlu tutmuyor).
-- **Bilinen sınırlar:**
-  - Kök neden isabetini ölçemiyoruz; doğrulama verisi kapalı. Ürettiğimiz 5 olay bir **hipotezdir**.
-  - Eşikler (yoğunlaşma ≥4.0 sinyal, kanıt skoru ≥3.0) bu 2 saatlik pencereden türetildi; farklı ortamda yeniden kalibrasyon ister.
-  - 112 alarm "belirsiz" olarak işaretlendi — bilerek gürültüye atılmadı, ayrı sekmede gösteriliyor.
-  - "Benzer geçmiş olay örüntüsü" bonusu **sentetik arşivle** çalışıyor: organizatörün paketinde geçmiş olay kaydı yoktu, mekanizmayı kurup kendi ürettiğimiz 5 vakalık örnek arşivle gösteriyoruz (kartta açıkça etiketli). Gerçek ortamda kurumun kendi incident kayıtlarına bağlanır.
-  - Aksiyon durumu bellek içinde tutulur (brifing kalıcı DB'yi kapsam dışı bırakıyor); sunucu yeniden başlarsa sıfırlanır.
+- **Deploy URL:** Yok; yerel `127.0.0.1` uygulaması (organizatör deploy'u zorunlu tutmuyor).
+- Altın etiketler kapalı; kök doğruluğu ve gürültü isabeti bilinmiyor. Eşikler açık heuristiklerdir.
+- İnceleme kartları yeni bağımsız olay kanıtı değildir; kayıtlar belirsiz kalır.
+- Aksiyonlar bellekte tutulur. Yeniden başlatmadan önce raporu indirin; dışa aktarımı geri yükleme özelliği yok.
+- Tam dosya analizi; gerçek zaman, erken tahmin ve otomatik düzeltme yok.
+- Yerel demo sunucusu; kullanıcı doğrulaması veya üretim dağıtımı kapsamda değil.
+- Ham katılımcı verileri projeye kopyalanmadı. `outputs/`, `data/` ve `.env` Git dışında tutulur.
 
 ## Proje Yapısı
 
-```
+```text
 asi-ops/
-├── run.py                  # tek komutluk giriş noktası
-├── src/
-│   ├── correlator.py       # korelasyon motoru (çekirdek karar mantığı)
-│   ├── explain.py          # LLM anlatı katmanı + şablon fallback
-│   ├── server.py           # stdlib HTTP sunucusu + API
-│   └── web/                # arayüz (vanilla JS/CSS)
-├── data/                   # veri paketi buraya (repoya dahil değil)
-├── docs/                   # plan, fazlar, mimari
-├── prompts/                # kullanılan kritik prompt'lar
-├── demo/                   # ekran görüntüleri
-├── AI_JURI.md              # AI Jüri özeti
-└── submission.json         # makine okunabilir künye
+├── run.py                   # tek komutluk giris
+├── app.py                   # CLI, .env, sunucu / JSON çıktı
+├── src/engine.py            # korelasyon, kanıt, inceleme adayları
+├── src/server.py            # API ve aksiyon geçmişi
+├── src/narrative.py         # opsiyonel anlatı / fallback
+├── src/history.py           # benzer geçmiş olay eşleştirme (B3)
+├── static/                  # HTML + CSS + vanilla JS
+├── tests/                   # unittest + tarayıcı kontrolü
+├── README.md / AI_JURI.md / submission.json / CLAUDE.md
+├── docs/                    # sözleşme, mimari, plan, sonuçlar
+├── prompts/                 # kritik yönlendirmeler
+├── demo/                    # ekran görüntüleri ve demo akışı
+├── outputs/                 # yerel JSON; Git dışında
+├── .env.example             # anahtarsız şablon
+├── codex_analiz.md           # ilk analiz; korunmuştur
+└── BUTUNLESIK_ANALIZ.md      # kapsam kararı + uygulama eki
 ```

@@ -1,90 +1,93 @@
-# Mimari — Alert Storm Correlator
+# Mimari
 
 ## Genel Bakış
 
-Tek süreçli, harici bağımlılığı olmayan bir Python uygulaması. Üç veri dosyasını toplu okur, korelasyon motorundan geçirir, sonucu bellek içinde tutar ve stdlib HTTP sunucusuyla hem JSON API hem statik arayüz sunar.
+Python standart kütüphanesiyle tek süreçli yerel uygulama. Başlangıçta analiz bir kez yapılır; tarayıcı raporu ve filtrelenmiş alarm sayfalarını okur. Aksiyonlar kilitle korunan bellekte güncellenir. Harici model kritik yolda değildir.
 
-**Neden monolith ve stdlib-only:** Jürinin makinesinde hangi paketlerin kurulu olduğunu bilmiyoruz ve "temiz clone + tek komut" zorunlu. Her harici bağımlılık, demoyu kaybetme riskidir. `pandas` geliştirme sırasındaki keşifsel analizde kullanıldı; üründe kullanılmıyor.
+**Zaman penceresi alarm ataması değildir.** Bellek olayı ağ, depolama ve dış servis pencereleriyle çakışır. Her alarm kendi tipi, servisi, mesaj hedefi, host konumu ve yönlü grafik yolu üzerinden değerlendirilir. Yakın puanlı iki aday varsa kayıt belirsiz kalır.
 
 ## Bileşenler
 
-| Bileşen | Dosya | Sorumluluk |
+| Bileşen | Sorumluluk | Teknoloji |
 |---|---|---|
-| Korelasyon motoru | `src/correlator.py` | Tüm karar mantığı: yükleme, profil, kümeleme, atama, kök neden, gerekçe |
-| Açıklama katmanı | `src/explain.py` | LLM doğal dil anlatısı + deterministik şablon fallback |
-| HTTP sunucusu | `src/server.py` | JSON API, statik dosya servisi, aksiyon durumu (bellek içi) |
-| Arayüz | `src/web/` | Olay kartları, gürültü denetimi, belirsiz sekmesi, metrikler |
-| Giriş noktası | `run.py` | Tek komut; `--cli` yedek modu |
+| `app.py` | CLI, `.env`, JSON dışa aktarım | argparse, pathlib, json |
+| `src/engine.py` | Doğrulama, trend, grafik, karar ve gerekçe | csv, datetime, collections, statistics |
+| `src/server.py` | Rapor, filtre, versiyonlu aksiyon | ThreadingHTTPServer, threading |
+| `src/narrative.py` | Kanıt özeti, şema/kimlik kontrolü, fallback | urllib, json |
+| `static/` | Olay → kanıt → aksiyon; denetim | HTML, CSS, vanilla JS, SVG |
 
 ## Veri Akışı
 
-```
-data/katilimci_paketi/*.csv
-        │
-        ▼
-load_data()          alarm kayıtları + yönlü bağımlılık grafiği + host envanteri
-        │             mesajdan hedef servis ve yüzde değeri ayrıştırılır
-        ▼
-concentration_profile()   her alarm tipi için tepe/medyan oranı
-        │                 → sinyal (≥4.0) / belirsiz / gürültü (<3.0)
-        ▼
-cluster_seeds()      kök-tipi alarmlar zaman + servis/bağımlılık/lokalite ile kümelenir
-        │
-        ▼
-build_events()       türev alarmlar ALARM SEVİYESİNDE kanıt skoruyla atanır (iki geçiş)
-        │
-        ▼
-pick_root() + counter_hypothesis() + why_text()
-        │
-        ▼
-run() → {events[], noise[], unclear[], type_profile[], metrics{}}
-        │
-        ├──► server.py  ──► /api/data, /api/explain/<id>, POST /api/actions/<id>
-        └──► run.py --cli ──► terminal tablosu
+```mermaid
+flowchart TD
+  A[Alarm dosyası + envanter + bağımlılıklar] --> B[Doğrulama, mesaj hedefi ve sayısal sinyal]
+  B --> C[Kök imzaları + host bazında artan seri]
+  C --> D[Her alarm için aday puanları]
+  D --> E[Olaya bağlı]
+  D --> F[Gürültü adayı]
+  D --> G[Belirsiz]
+  G --> H[Tekrar eden belirsiz kümeler: inceleme kartları]
+  E --> I[Olay kartı ve kanıt özeti]
+  H --> I
+  I --> J[Sorumlu rolü, durum, not geçmişi]
+  I -. isteğe bağlı .-> K[LLM anlatısı veya şablon]
+  F --> L[Alarm denetimi]
+  G --> L
+  J --> M[Tam JSON raporu]
+  L --> M
 ```
 
-## Kritik Tasarım Kararları
+## Kararlar ve Gerekçeler
 
-### 1. Zaman penceresi karar vermez, yalnızca aday daraltır
+### Grafik ve fiziksel alan
 
-İlk tasarımda olaylar zaman penceresiyle tanımlanıp içindeki alarmlar o olaya atanıyordu. Ekip review'unda bunun kırılgan olduğu tespit edildi: olaylar zamanda iç içe geçiyor (session-service olayı 01:35–03:01 arası diğer üç olayın üstünden geçiyor).
+`kaynak_servis → hedef_servis`, kaynağın hedefe bağımlılığıdır. Olası arıza etkisi ters yöndeki bağımlılarda aranır. Bağlantı nedensellik kanıtı değildir. `(veri_merkezi, kabin)` birlikte kullanılır. Senkron/asenkron alanı doğrulanır; MVP yol puanında iki tip aynı ağırlıktadır.
 
-**Karar:** Atama alarm seviyesinde yapılır. Her alarm, her aday olaya karşı ayrı ayrı skorlanır:
+### Aday üretimi ve zaman
 
-| Kanıt | Puan |
-|---|---:|
-| Alarm mesajı doğrudan kök servisi hedef gösteriyor | +5.0 |
-| Alarm kök servisin kendi üzerinde | +3.0 |
-| Bağımlılık zinciri var (derinlik d) | +3.0 / d |
-| Olayın yoğunlaştığı kabinde | +2.0 |
+- Ağ: aynı fiziksel alanda `network_down/pkt_loss`; diğer aileler servis bazında disk, GC/OOM, dış erişim ve batch çakışması imzaları.
+- Güçlü sinyaller arasında en çok 10 dakika; bellek için 30 dakika. Ağda en az 3, diğer ailelerde 2 güçlü sinyal. Tek güçlü kayıt belirsizdir.
+- Kuyruklar son kök sinyaline göre: ağ 15, depolama 22, bellek 10, batch 30 dakika. Dış servis varsayılan 22 dakika, `--external-tail-minutes` / `EXTERNAL_TAIL_MINUTES` ile değişir. Tarih ve `03:01` sabitlenmez.
+- Bellekte GC/OOM öncesi 75 dakika içinde host bazında artan yüzde zinciri: 30 sn–8 dk adım, en az 4 nokta, 10 dk süre ve 6 puan artış. Tipik artışın 2,5 katından büyük sıçrama zinciri böler. Aradaki rastgele düşük ölçümler öncül yapılmaz.
+- Batch'te scheduler'a bağımlı ve aynı dönemde yavaşlayan en az iki işin ortak bağımlılığı kaynak baskısı adayıdır. Ters grafiği gelişigüzel yürümek yerine özel mekanizma açıkça uygulanır.
 
-Eşik: 3.0. Altında kalan sinyal tipleri "belirsiz", gürültü tipleri gerekçesiyle "gürültü" olur.
+### Alarm seviyesinde korelasyon
 
-### 2. İki geçişli atama
+Aday pencere ve uyumlu belirti ailesi zorunlu. Temel puan 3; aynı kök servisi +4 veya yönlü yol yakınlığı +2…4,4; ağda aynı fiziksel alan +5; batch ortak kaynağı/işi +3; grafikte doğrulanan mesaj hedefi +6; ilgisiz hedef −3. Özgül hata belirtisi +2; kök sinyal dönemiyle çakışma +1. Genel uyarıda en az 3 yerel tekrar aranır ve −1 uygulanır. Doğrudan kök imzaları ve kabul edilen bellek öncülleri 100 destek puanı alır.
 
-Cascade'ler uzun kuyrukludur; ödeme zinciri olayının son alarmları çekirdek penceresinin 15 dakika sonrasında geliyordu. Tek geçişte bu 7 kritik alarmın 5'i sahipsiz kalıyordu.
+En iyi puan **8** veya üstü, ikinciyle fark **en az 2** ise atama yapılır. Yakın rakipler belirsizdir. Kısmi destek **6** veya üstüyse gürültüye düşürülmez. Mesajda adı geçmesi eksik grafik kenarını gerçekmiş gibi oluşturmaz. Farklı tipler aynı olaya bağlanabilir; alarm ailesi aday uyumluluğunda da kullanılır, yalnız açıklama değildir.
 
-**Karar:** İlk geçişten sonra olay pencereleri atanan alarmlarla genişletilir, ikinci geçiş bu genişlemiş pencerelerle çalışır. Sonuç: 2/7 → 7/7.
+`root.score` ek **destek özeti**: tip önceliği × erkenlik × şiddet × bağımlı derinliği. Aile güçlü imzadan gelir; bu skor tek başına kök seçmez. Güven etiketi kalibre olasılık değildir. Alternatifler kesin elenmiş nedenler olarak sunulmaz.
 
-### 3. Gürültü ayrımı sabit listeyle değil, ölçümle
+### Gürültü ve belirsiz inceleme
 
-"cert_expiry gürültüdür" gibi elle liste yazmak veriye aşırı uyum (overfit) olurdu ve jüri "genel mi?" diye sorduğunda savunulamazdı.
+Yoğunlaşma `tepe / max(medyan,1)`; eşit 10 dakikalık dilimler kullanılır. Bakım/genel tip, düşük yoğunlaşma, severity ve olay bağlamının yokluğu birlikte değerlendirilir. Düşük oran tek başına eleme değildir.
 
-**Karar:** Her tip için zamansal yoğunlaşma oranı hesaplanır. Gürültü zamana düzgün dağılır, olay sinyalleri yoğunlaşır. Eşik veriden türetilir, host/servis adı koda yazılmaz.
+Belirsizler aynı servis ve belirsizlik gerekçesiyle, en çok 5 dakikalık ardışık boşluklarla kümelenir. En az 8 alarm, 2 host ve 5 dakika gerekir. Rakip olay belirsizliği dışında en az 2 alarm tipi; hiç olay bağlantısı yoksa en az 4 yüksek şiddetli alarm da aranır. Bunlar açık heuristiklerdir. Sabit 2–4 kart zorunluluğu yoktur; bu veride 3 küme çıktı. Kayıtlar belirsiz kalır; çift sayılmaz.
 
-### 4. Ağ olaylarında kök neden servis değil, fiziksel alan
+### Kanıt ve sorumlu
 
-`network_down` alarmı hangi servisin host'unda görüldüyse o servis kök sanılabilir. Ama 34 ağ alarmının tamamı tek kabinde (dc1/rack-A), 9 farklı host ve 9 farklı serviste.
+Kartta gerçek alarm kimlikleri, zamanlar, doğrudan kök host'ları, bütün bellek öncülleri ve hedef/yol kanıtı bulunur. `conn_refused` hedefiyle hedefteki `network_down` birlikte gösterilir; doğrulanamayan yollar ayrılır. Bağlantı reddinden DNS çözümlemesinin kesin kesildiği çıkarılmaz.
 
-**Karar:** Ağ tipi kök alarmlar tek bir kabinde yoğunlaşıyorsa kök neden o **paylaşılan fiziksel ağ alanı** olarak raporlanır (`network_domain()`).
+| Kök ailesi | Başlangıç sorumlusu |
+|---|---|
+| Ağ | Ağ nöbetçisi |
+| Depolama | DBA nöbetçisi |
+| Dış servis | Entegrasyon nöbetçisi |
+| Batch | Batch operasyon nöbetçisi |
+| Bellek | Uygulama / JVM nöbetçisi |
+| Çözülmemiş kök | Operasyon nöbetçisi |
 
-### 5. LLM kritik yolda değil
+Kritiklik yalnız önceliği etkiler; kişi veya ekip çıkarmaz. `db_conn_pool` paylaşılan belirtidir; depolama veya batch köküne göre sorumlu değişebilir. Sahip kullanıcı tarafından düzenlenebilir.
 
-**Karar:** Karar üretimi tamamen deterministik. LLM yalnızca hesaplanmış kanıtları doğal dile çevirir ve yeni bilgi üretmesi promptla yasaklanır. Erişilemezse `template_narrative()` devreye girer; uygulama tam çalışır.
+### Bütünleşik plandan uygulamaya netleşen noktalar
 
-## Kapsam Dışı Bırakılanlar
+- Z-skoru tanısal olarak gösterilir; tek başına olay seçen eşik değildir. Güçlü imza + çok boyutlu atama esas alınır.
+- Hareketli ortalama yerine host bazında artan alt seri kullanılır; araya giren rastgele ölçümlerle ilgili kullanıcı önerisi böyle karşılanır.
+- “Elle eşik yok” denmez: eşikler açıktır, gizli etiketlere göre optimize edilmemiştir.
+- Olay sayısı sabitlenmez. Olay ve inceleme toplamı 15'i aşarsa açık kabul hatası oluşur.
+- Jüri ekranı önce kısa kanıt, servis etkisi ve aksiyon gösterir; ham kayıtlar ayrı denetim sekmesindedir. Örnek %94/%18 güven değerleri veriyle doğrulanmadığından kullanılmaz.
 
-- Gerçek zamanlı akış işleme (brifing toplu okumayı yeterli sayıyor)
-- Kalıcı veritabanı (bellek içi kabul ediliyor)
-- Kullanıcı yönetimi / yetkilendirme
-- Benzer geçmiş olay eşleştirme (veri paketinde geçmiş arşiv yok)
+### Çalışma zamanı
+
+127.0.0.1 sunucusu, statik dosya izin listesi, Host/Origin kontrolü, JSON boyut sınırı ve aksiyon sürümü. LLM yalnız düğmeyle çağrılır: HTTPS, 8 sn timeout, sınırlı yanıt, geçerli kanıt kimlikleri, cache. Model metninin anlamsal doğruluğu garanti edilmez; deterministik kanıt hep görünürdür. Anahtar tarayıcıya/hatalara dönmez.
