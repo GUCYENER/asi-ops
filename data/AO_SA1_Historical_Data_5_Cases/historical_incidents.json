@@ -25,7 +25,7 @@
     "noise_alarm_count": 42,
     "similarity_to_current": 0.93,
     "confidence": 0.96,
-    "resolution_action": "Network ekibi rack-C ToR uplink LACP memberini resetledi ve hatali optic modulu degistirdi.",
+    "resolution_action": "Network ekibi rack-C ToR uplink LACP memberini resetledi ve hatalı optik modülü değiştirdi.",
     "action_owner": "Network Operations",
     "mttr_minutes": 17,
     "status": "resolved",
@@ -37,7 +37,7 @@
       "http_5xx",
       "latency_high"
     ],
-    "lessons_learned": "Ayni rack icinde eszamanli network_down + pkt_loss kombinasyonu host bazli arizadan once ortak altyapi arizasini dusundurmelidir."
+    "lessons_learned": "Aynı rack içinde eşzamanlı network_down + pkt_loss kombinasyonu host bazlı arızadan önce ortak altyapı arızasını düşündürmelidir."
   },
   {
     "incident_id": "HIST-2026-002",
@@ -63,7 +63,7 @@
     "noise_alarm_count": 31,
     "similarity_to_current": 0.96,
     "confidence": 0.98,
-    "resolution_action": "Eski archive loglar temizlendi, filesystem genisletildi ve billing DB write islemleri dogrulandi.",
+    "resolution_action": "Eski arşiv logları temizlendi, filesystem genişletildi ve billing DB write islemleri doğrulandı.",
     "action_owner": "Database Operations",
     "mttr_minutes": 25,
     "status": "resolved",
@@ -99,7 +99,7 @@
     "noise_alarm_count": 36,
     "similarity_to_current": 0.91,
     "confidence": 0.94,
-    "resolution_action": "Session service rolling restart yapildi, problemli release rollback edildi ve heap kullanimi baseline'a dondu.",
+    "resolution_action": "Session service rolling restart yapıldı, problemli release rollback edildi ve heap kullanimi baseline'a dondu.",
     "action_owner": "Application Operations",
     "mttr_minutes": 89,
     "status": "resolved",
@@ -134,7 +134,7 @@
     "noise_alarm_count": 24,
     "similarity_to_current": 0.95,
     "confidence": 0.97,
-    "resolution_action": "Provider ile incident acildi, trafik kontrollu retry/fallback politikasina alindi; provider stabil olduktan sonra normal moda donuldu.",
+    "resolution_action": "Provider ile incident açıldı, trafik kontrollu retry/fallback politikasına alindi; provider stabil olduktan sonra normal moda donuldu.",
     "action_owner": "Payment Operations",
     "mttr_minutes": 20,
     "status": "resolved",
