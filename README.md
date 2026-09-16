@@ -64,7 +64,7 @@ Kök imzası taşıyan alarmlar aileye göre kümelenir:
 
 **Batch olayı** ayrı bir mekanizmadır: scheduler'a bağımlı **en az iki iş** aynı dönemde yavaşlıyorsa, ortak bağımlılıkları kaynak baskısı adayı olur.
 
-### 4. Her alarmın kanıt puanı — asıl karar burada
+### 4. Kanıt Puanlama ve Atama Eşiği
 
 Zaman penceresi **karar vermez, yalnızca aday daraltır.** Her alarm, her aday olaya karşı ayrı ayrı puanlanır:
 
