@@ -23,6 +23,14 @@ Katılımcı verisinde **5 olay + 3 inceleme kartı**; **1.015 olaya bağlı + 1
 
 Hiçbir alarm silinmez. Her kayıt **olaya bağlı / gürültü adayı / belirsiz** üçlüsünden birine, **gerekçesiyle birlikte** yazılır. Toplam her zaman 3.000'e eşittir.
 
+### Önce sade anlatım — teknik olmayan biri için
+
+**Gürültü kararı:** Bir ofiste klima her zaman aynı sesle uğuldar, kimse dönüp bakmaz. Ama bir zil aniden ve art arda çalarsa dikkat çeker. Biz de her alarm tipine "hep aynı hızda mı geliyor, yoksa birden mi patladı" diye bakıyoruz — aniden patlayan gerçek bir olayın işareti, hep aynı hızda gelen ise arka plan sesidir.
+
+**Atama kararı:** Bir olayı bir şüpheliye bağlamak için kanıt yeterince güçlü **ve** ikinci şüpheliden belirgin şekilde daha güçlü olmalı. İki şüpheli birbirine çok yakınsa kimseyi suçlamayız, "belirsiz" deriz — tahmin yürütmeyiz.
+
+Aşağıda bunun tam teknik karşılığı var.
+
 ### 1. Normalizasyon ve doğrulama
 
 Her alarm okunurken şunlar çıkarılır:
