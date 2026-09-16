@@ -17,15 +17,25 @@
 .hist-lesson{margin:7px 0 0;font-size:12.5px;color:var(--muted);font-style:italic;line-height:1.5;border-left:2px solid var(--border);padding-left:11px}
 .gantt-wrap{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:22px 24px;margin:18px 0}
 .gantt-head h2{margin:2px 0 16px;font-size:20px}
-.gt-row{display:flex;align-items:center;gap:16px;margin-bottom:9px}
-.gt-name{flex:none;width:150px;display:flex;flex-direction:column;line-height:1.25}
-.gt-name strong{font-size:13px}
-.gt-name span{font-size:11.5px;color:var(--muted);font-family:ui-monospace,Consolas,monospace}
-.gt-track{flex:1;position:relative;height:30px;background:#f1f4f8;border-radius:7px}
-.gt-bar{position:absolute;top:4px;height:22px;border-radius:6px;display:flex;align-items:center;padding:0 9px;overflow:hidden}
-.gt-bar span{font-size:11px;color:#fff;white-space:nowrap;font-variant-numeric:tabular-nums}
-.k-network{background:#13283b}.k-storage{background:#16857d}.k-memory{background:#d8a345}
-.k-external{background:#e46338}.k-batch{background:#6b7f95}.k-unresolved{background:#9aa8b8}
-.gt-axis{position:relative;height:18px;margin-left:166px;margin-top:4px}
-.gt-axis span{position:absolute;transform:translateX(-50%);font-size:10.5px;color:var(--muted);font-family:ui-monospace,Consolas,monospace}
+
+.ai-strip{background:linear-gradient(180deg,#f7fbfa,#ffffff);border:1px solid #d6e6e3;border-radius:12px;padding:14px 16px;margin-bottom:18px}
+.ai-strip-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.ai-strip-hint{margin:7px 0 0;font-size:12px;color:var(--muted);line-height:1.5}
+button.primary.small{padding:7px 14px;font-size:13px}
+.action-form.compact textarea{min-height:52px}
+.rail-hitl{margin:18px 0 0;padding:13px 14px;border:1px solid rgba(255,255,255,.14);border-radius:10px;background:rgba(255,255,255,.05)}
+.hitl-badge{display:inline-block;font-size:9.5px;letter-spacing:.09em;background:var(--orange);color:#fff;padding:3px 9px;border-radius:99px;font-weight:600}
+.rail-hitl p{margin:8px 0 0;font-size:11.5px;line-height:1.5;color:rgba(255,255,255,.72)}
+.rail-hitl strong{color:#fff}
+
+.gantt svg{width:100%;height:auto;display:block}
+.gt-svg-name{font-size:12.5px;font-weight:600;fill:var(--ink)}
+.gt-svg-scope{font-size:11px;fill:var(--muted);font-family:ui-monospace,Consolas,monospace}
+.gt-svg-track{fill:#f1f4f8}
+.gt-svg-in{font-size:11px;fill:#fff;font-variant-numeric:tabular-nums}
+.gt-svg-out{font-size:11px;fill:var(--muted);font-variant-numeric:tabular-nums}
+.gt-svg-grid{stroke:#e8edf3;stroke-width:1}
+.gt-svg-tick{font-size:10px;fill:var(--muted);text-anchor:middle;font-family:ui-monospace,Consolas,monospace}
+.gt-k-network{fill:#13283b}.gt-k-storage{fill:#16857d}.gt-k-memory{fill:#d8a345}
+.gt-k-external{fill:#e46338}.gt-k-batch{fill:#6b7f95}.gt-k-unresolved{fill:#9aa8b8}
 .gt-note{margin:14px 0 0;font-size:13px;line-height:1.6;color:var(--muted);border-left:3px solid var(--orange);padding-left:13px}

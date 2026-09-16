@@ -56,25 +56,37 @@ function renderGantt() {
   if (!host) return;
   const wrap = $("gantt-wrap"); if (wrap) wrap.hidden = false;
   const s = report.summary;
-  const t0 = new Date(s.start).getTime(), t1 = new Date(s.end).getTime(), span = Math.max(t1 - t0, 1);
-  const pos = iso => ((new Date(iso).getTime() - t0) / span) * 100;
+  const t0 = new Date(s.start).getTime(), span = Math.max(new Date(s.end).getTime() - t0, 1);
+  const pos = iso => ((new Date(iso).getTime() - t0) / span);
   const kinds = {network:"Ağ", storage:"Depolama", memory:"Bellek", external:"Dış servis", batch:"Batch", unresolved:"Belirsiz kök"};
+  const LABEL = 150, TRACK = 830, ROW = 34, PAD = 8;
+  const rows = report.incidents;
+  const height = rows.length * ROW + 34;
 
-  const rows = report.incidents.map(i => {
-    const left = pos(i.start), width = Math.max(pos(i.end) - left, 0.9);
-    return `<div class="gt-row">
-      <div class="gt-name"><strong>${esc(kinds[i.kind] || i.kind)}</strong><span>${esc(i.root.scope)}</span></div>
-      <div class="gt-track"><div class="gt-bar k-${esc(i.kind)}" style="left:${left}%;width:${width}%" title="${esc(i.title)} · ${shortTime(i.start)}–${shortTime(i.end)}"><span>${num(i.alarm_count)} alarm · ${shortTime(i.start)}–${shortTime(i.end)}</span></div></div>
-    </div>`;
+  const bars = rows.map((i, idx) => {
+    const y = idx * ROW + PAD;
+    const x = LABEL + pos(i.start) * TRACK;
+    const w = Math.max(pos(i.end) * TRACK - pos(i.start) * TRACK, 3);
+    const label = `${num(i.alarm_count)} alarm · ${shortTime(i.start)}–${shortTime(i.end)}`;
+    const inside = w > 150;
+    return `<g>
+      <text x="0" y="${y + 11}" class="gt-svg-name">${esc(kinds[i.kind] || i.kind)}</text>
+      <text x="0" y="${y + 22}" class="gt-svg-scope">${esc(i.root.scope)}</text>
+      <rect x="${LABEL}" y="${y - 2}" width="${TRACK}" height="26" rx="6" class="gt-svg-track"></rect>
+      <rect x="${x}" y="${y - 2}" width="${w}" height="26" rx="6" class="gt-k-${esc(i.kind)}"><title>${esc(i.title)}</title></rect>
+      <text x="${inside ? x + 9 : x + w + 8}" y="${y + 15}" class="${inside ? "gt-svg-in" : "gt-svg-out"}">${esc(label)}</text>
+    </g>`;
   }).join("");
 
-  const ticks = Array.from({length:7}, (_,k) => {
-    const at = new Date(t0 + span * k / 6);
-    return `<span style="left:${(k/6)*100}%">${String(at.getHours()).padStart(2,"0")}:${String(at.getMinutes()).padStart(2,"0")}</span>`;
+  const ticks = Array.from({length: 7}, (_, k) => {
+    const at = new Date(t0 + span * k / 6), x = LABEL + (k / 6) * TRACK;
+    const hhmm = String(at.getHours()).padStart(2, "0") + ":" + String(at.getMinutes()).padStart(2, "0");
+    return `<line x1="${x}" y1="${PAD - 4}" x2="${x}" y2="${rows.length * ROW + 2}" class="gt-svg-grid"></line>
+      <text x="${x}" y="${rows.length * ROW + 18}" class="gt-svg-tick">${hhmm}</text>`;
   }).join("");
 
-  host.innerHTML = `${rows}<div class="gt-axis">${ticks}</div>
-    <p class="gt-note"><strong>Olaylar zamanda iç içe geçiyor.</strong> Bellek olayı ağ, depolama ve dış servis pencereleriyle çakışıyor — bu yüzden "anomali penceresi bul, içindekileri o olaya ata" yaklaşımı yanlış sonuç verir. Atama alarm seviyesinde, kanıt puanıyla yapılır.</p>`;
+  host.innerHTML = `<svg viewBox="0 0 1000 ${height}" role="img" aria-label="Olayların zaman içindeki konumu">${ticks}${bars}</svg>
+    <p class="gt-note"><strong>Olaylar zamanda iç içe geçiyor.</strong> Bellek olayı (01:35–03:00) ağ, depolama ve dış servis pencereleriyle çakışıyor — bu yüzden "anomali penceresi bul, içindekileri o olaya ata" yaklaşımı yanlış sonuç verir. Atama alarm seviyesinde, kanıt puanıyla yapılır.</p>`;
 }
 function renderList() {
   const card = i => `<button class="incident-card ${i.id===selected?"selected":""}" data-incident="${esc(i.id)}" data-card-type="${i.card_type||"incident"}" aria-pressed="${i.id===selected}"><div class="card-top"><span class="badge ${i.card_type==="review"?"warn":"priority"}">${i.card_type==="review"?"Düşük kanıt":esc(i.priority.level)}</span><span>${esc(i.id)}</span><span class="time">${shortTime(i.start)}–${shortTime(i.end)}</span></div><div class="card-title">${esc(i.root.hypothesis)}</div><div class="card-scope">${esc(i.root.scope)}</div><div class="card-bottom"><span><strong>${i.alarm_count}</strong> ${i.card_type==="review"?"belirsiz kayıt":"alarm"} · <strong>${i.services.length}</strong> servis</span><span class="badge ${i.action.status==="resolved"?"good":"neutral"}">${statuses[i.action.status]}</span></div></button>`;
@@ -88,20 +100,21 @@ function renderDetail() {
   const review=i.card_type==="review";
   $("incident-detail").innerHTML=`<div class="detail-head"><div class="detail-kicker"><span class="eyebrow">${review?"İNCELEME ADAYI":i.priority.level==="P1"?"KRİTİK OLAY HİPOTEZİ":"OLAY HİPOTEZİ"} <span class="subtle"> / ${esc(i.id)}</span></span><span class="badge ${badge}" title="${esc(i.confidence.meaning)}">Kanıt: ${esc(i.confidence.level)}</span></div><h2>${esc(i.root.scope)}<br><span class="detail-title-secondary">${esc(i.root.hypothesis)}</span></h2><div class="detail-sub">${esc(i.start.slice(0,10))} · ${time(i.start)} → ${time(i.end)} · ilk/son ilişkili alarm</div><div class="detail-meta executive-meta"><div>${review?"Belirsiz kayıt":"İlişkili alarm"}<strong>${num(i.alarm_count)}</strong></div><div>${review?"Gözlenen host":"Doğrudan kök sinyali"}<strong>${review?i.hosts.length:i.direct_hosts?.length||0} host</strong></div><div>Gözlenen etki<strong>${i.services.length} servis</strong></div></div><div class="confidence-note">Kanıt düzeyi ${esc(i.confidence.level)} · Kalibre edilmiş kök neden olasılığı değildir.</div></div>
   <div class="detail-body">
+  <div class="ai-strip"><div class="ai-strip-head"><span class="eyebrow">${report.narrative.mode==="optional_llm"?"AI ANLATISI":"KANIT ÖZETİ"}</span><button class="primary small" id="narrative">${report.narrative.mode==="optional_llm"?"AI ile özetle":"Kanıt özetini göster"}</button></div><p class="ai-strip-hint">Karar deterministik motordan gelir; model yalnızca hesaplanmış kanıtı anlatıya çevirir ve kanıt kimlikleri doğrulanır.</p><div id="narrative-result" hidden></div></div>
   ${review?`<div class="notice">Düşük kanıtlı inceleme adayı. ${esc(i.explanation)}${i.linked_incident_ids.length?`<br>Aidiyeti araştırılan olaylar: ${i.linked_incident_ids.map(esc).join(", ")}`:""}${Object.keys(i.message_targets||{}).length?`<br>Mesaj hedefleri: ${esc(JSON.stringify(i.message_targets))}`:""}</div>`:`<div class="section-label"><span class="number">01</span> KANIT ÖZETİ</div><ul class="evidence-checks">${(i.evidence_checks||[]).map(c=>`<li><span aria-hidden="true">✓</span><div>${esc(c.text)}</div></li>`).join("")}</ul>`}
   ${i.dependency_evidence?.length?`<div class="dns-note"><strong>Hedef bağlantı kanıtı · ${esc(i.dependency_evidence[0].target)}</strong><p>${esc(i.dependency_evidence[0].interpretation)}</p></div>`:""}
   <div class="first-action"><div><div class="eyebrow">ÖNERİLEN İLK AKSİYON</div><p>${esc(i.action.recommendation)}</p></div><button class="secondary" id="jump-action">Aksiyona geç ↓</button></div>
   <div class="section-label"><span class="number">02</span> SERVİS ETKİSİ</div><div class="chips impact-chips">${i.services.map(service=>`<span class="chip">${esc(service)}</span>`).join("")}</div><p class="subtle footprint-note">İlişkili alarm bulunan toplam host: ${i.hosts.length}. ${review?"Kök host henüz belirlenmedi.":"Doğrudan kök sinyali veren host'lar yukarıda ayrıca sayıldı."}</p>
   <div class="counter">${i.alternatives.map(a=>`<strong>Alternatif açıklama · ${esc(a.hypothesis)}</strong><p>${esc(a.comparison)}</p><small>Doğrulama: ${esc(a.next_check)}</small>`).join("")}</div>
   ${i.similar_incidents&&i.similar_incidents.length?`<div class="section-label"><span class="number">02b</span> BENZER GEÇMİŞ OLAYLAR <span class="synth-tag">örnek arşiv · sentetik</span></div>${i.similar_incidents.map(s=>`<div class="hist-card"><div class="hist-top"><strong>${esc(s.incident_id)}</strong> · ${esc(s.title)} <span class="hist-sim">%${Math.round(s.similarity*100)} benzer</span> <span class="hist-when">${esc(s.date)}</span></div><div class="hist-calc">alarm tipi örtüşmesi ${s.breakdown.alarm_tipi_ortusmesi} · servis örtüşmesi ${s.breakdown.servis_ortusmesi} · kategori eşleşmesi ${s.breakdown.kategori_eslesmesi}${s.shared_alarm_types.length?` · ortak tipler: ${esc(s.shared_alarm_types.join(", "))}`:""}</div><p class="hist-fix"><strong>O zaman ne işe yaradı:</strong> ${esc(s.resolution_action)} <span class="hist-mttr">${s.mttr_minutes} dk · ${esc(s.action_owner)}</span></p>${s.lessons_learned?`<p class="hist-lesson">${esc(s.lessons_learned)}</p>`:""}</div>`).join("")}<p class="subtle">Benzerlik bu uygulamada hesaplanır (0.45×alarm tipi + 0.35×servis + 0.20×kategori); arşivdeki hazır skor alanı kullanılmaz.</p>`:""}
-  <div class="action-panel" id="action-panel"><div class="section-label"><span class="number">03</span> SORUMLU VE DURUM</div><div class="action-shortcuts"><button class="secondary" id="assign-owner">Sorumlu ata</button><button class="secondary" data-action-status="investigating">İncelemeye al</button><button class="secondary" data-action-status="resolved">Çözüldü kaydı</button></div><form id="action-form" class="action-form"><label>Sorumlu kişi / rol<input id="owner" required maxlength="120" value="${esc(i.action.owner)}"></label><label>Operasyon durumu<select id="status">${Object.entries(statuses).map(([key,label])=>`<option value="${key}" ${key===i.action.status?"selected":""}>${label}</option>`).join("")}</select></label><label class="full">İnceleme / doğrulama notu<textarea id="action-note" maxlength="1000" placeholder="Yapılan kontrolü veya devir notunu yazın"></textarea></label><div class="form-footer full"><small>Başlangıç sorumlusu bir nöbetçi rolüdür.<br>Durum kaydı, fiziksel iyileşme ölçümü değildir.</small><button class="primary" type="submit" id="save-action">Aksiyonu kaydet →</button></div></form><div id="action-error" class="notice error" role="alert" hidden></div>
+  <div class="action-panel" id="action-panel"><div class="section-label"><span class="number">03</span> SORUMLU VE DURUM</div><div class="action-shortcuts"><button class="secondary" id="assign-owner">Sorumlu ata</button><button class="secondary" data-action-status="investigating">İncelemeye al</button><button class="secondary" data-action-status="resolved">Çözüldü kaydı</button></div><form id="action-form" class="action-form compact"><label>Sorumlu rol<input id="owner" required maxlength="120" value="${esc(i.action.owner)}"></label><label>Durum<select id="status">${Object.entries(statuses).map(([key,label])=>`<option value="${key}" ${key===i.action.status?"selected":""}>${label}</option>`).join("")}</select></label><label class="full">Doğrulama notu <span class="subtle">(çözüldü kaydı için zorunlu — insan onayı)</span><textarea id="action-note" maxlength="1000" rows="2" placeholder="Hangi kontrolü yaptınız?"></textarea></label><div class="form-footer full"><small>Sistem yalnızca <strong>öneri</strong> üretir; kaydı insan onaylar.</small><button class="primary" type="submit" id="save-action">Kaydet →</button></div></form><div id="action-error" class="notice error" role="alert" hidden></div>
   ${i.action.history.length?`<div class="history"><strong>Aksiyon geçmişi · ${i.action.history.length} kayıt</strong>${i.action.history.slice().reverse().map(h=>`<p>${esc(h.at)} · ${esc(h.owner)} · ${statuses[h.from_status]} → ${statuses[h.to_status]}<br>${esc(h.note)}</p>`).join("")}</div>`:""}</div>
   <details class="trace-details"><summary>Ayrıntılı kanıt izi ve hesaplama</summary><div class="hypothesis"><p>${esc(i.explanation)}</p></div><div class="evidence">${i.evidence.map(e=>`<div class="evidence-item"><time>${time(e.timestamp)}</time><strong>${esc(e.alarm_type)}</strong><p>${esc(e.message)}</p><small>${esc(e.alarm_id)} · ${esc(e.host)}</small></div>`).join("")}</div>
   ${i.dependency_evidence?.length?`<details><summary>Bağlantı hedefleri ve doğrulanan yollar</summary><pre>${esc(JSON.stringify(i.dependency_evidence,null,2))}</pre></details>`:""}
   ${i.memory_trend?.length?`<details><summary>Bellek öncülleri · ${i.memory_trend.length} ölçümün tamamı</summary><div class="table-wrap"><table><thead><tr><th>HOST</th><th>ZAMAN</th><th>BELLEK</th><th>KANIT</th></tr></thead><tbody>${i.memory_trend.map(t=>`<tr><td>${esc(t.host)}</td><td>${time(t.timestamp)}</td><td>%${t.percent}</td><td>${esc(t.alarm_id)}</td></tr>`).join("")}</tbody></table></div></details>`:""}
   ${i.potential_services.length?`<details><summary>Grafikte olası ek etki: ${i.potential_services.length} servis</summary><p>Bu servislerde bu olaya bağlanan alarm yok. Topoloji gerçekleşmiş etkiyi tek başına kanıtlamaz.</p><div class="chips">${i.potential_services.map(service=>`<span class="chip">${esc(service)}</span>`).join("")}</div></details>`:""}
   <p>${esc(i.root.score_meaning)} ${i.root.score===null?"":"Skor: "+i.root.score}</p><pre>${esc(JSON.stringify(i.root.factors,null,2))}</pre><p>Öncelik: ${esc(i.priority.reason)}</p><p>${esc(i.confidence.meaning)}</p></details>
-  <div class="detail-tools"><button class="secondary" id="inspect-alarms">${num(i.alarm_count)} ${review?"belirsiz kaydı":"alarmı"} incele ↗</button><button class="secondary" id="narrative">${report.narrative.mode==="optional_llm"?"AI ile kısa özet":"Kanıt özetini göster"}</button></div><div id="narrative-result" hidden></div></div>`;
+  <div class="detail-tools"><button class="secondary" id="inspect-alarms">${num(i.alarm_count)} ${review?"belirsiz kaydı":"alarmı"} incele ↗</button></div></div>`;
   $("jump-action").addEventListener("click",()=>{$("action-panel").scrollIntoView({behavior:"smooth",block:"center"});$("owner").focus({preventScroll:true});});
   $("assign-owner").addEventListener("click",()=>$("owner").focus());
   document.querySelectorAll("[data-action-status]").forEach(b=>b.addEventListener("click",()=>{$("status").value=b.dataset.actionStatus;$("action-note").focus();notify("Durum seçildi. Notu ekleyip Aksiyonu kaydet düğmesine basın.");}));
