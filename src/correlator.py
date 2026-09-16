@@ -477,7 +477,7 @@ def why_text(event, depends_on, profile):
     parts.append("Toplam %d alarm, %d servis, %s-%s araligi."
                  % (len(event["alarms"]), len(event["services"]),
                     event["start"].strftime("%H:%M"), event["end"].strftime("%H:%M")))
-    return " ".join(parts)
+    return parts
 
 
 def network_domain(event):
@@ -595,7 +595,8 @@ def run(data_dir):
             "root_cause_hypothesis": hypothesis,
             "root_service": root_label,
             "root_alarm_id": root["alarm_id"],
-            "why": why_text(event, depends_on, profile),
+            "evidence": why_text(event, depends_on, profile),
+            "why": " ".join(why_text(event, depends_on, profile)),
             "confidence": confidence_of(event),
             "counter_hypotheses": [counter] if counter else [],
             "signals": ["%s x%d" % (t, sum(1 for a in event["seed_alarms"] if a["alarm_type"] == t))

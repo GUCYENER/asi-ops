@@ -44,6 +44,33 @@ function renderCards() {
   document.querySelectorAll("button.act[data-explain]").forEach(button => {
     button.addEventListener("click", onExplain);
   });
+  document.querySelectorAll("button.statebtn").forEach(button => {
+    button.addEventListener("click", onStatusClick);
+  });
+}
+
+async function onStatusClick(event) {
+  event.stopPropagation();
+  const button = event.target;
+  const id = button.dataset.id;
+  const status = button.dataset.status;
+  const response = await fetch("/api/actions/" + id, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ status }),
+  });
+  const updated = await response.json();
+  const card = DATA.events.find(c => c.id === id);
+  card.status = updated.status;
+  document.querySelectorAll(`button.statebtn[data-id="${id}"]`).forEach(b => {
+    b.classList.toggle("on", b.dataset.status === updated.status);
+  });
+  const pill = document.querySelector(`#card-${id} .card-title .pill[data-role="status"]`);
+  if (pill) {
+    pill.textContent = updated.status;
+    pill.className = "pill status-" + updated.status;
+    pill.dataset.role = "status";
+  }
 }
 
 function cardHtml(card) {
@@ -58,7 +85,7 @@ function cardHtml(card) {
         <h3>#${card.rank} ${esc(card.title)}</h3>
         <span class="pill ${esc(card.severity_label)}">${esc(card.severity_label)}</span>
         <span class="pill">güven ${card.confidence.toFixed(2)}</span>
-        <span class="pill status-${esc(card.status)}">${esc(card.status)}</span>
+        <span class="pill status-${esc(card.status)}" data-role="status">${esc(card.status)}</span>
       </div>
       <div class="card-meta">
         <span><b>${card.alarm_count}</b> alarm</span>
@@ -71,34 +98,47 @@ function cardHtml(card) {
     <div class="chev">⌄</div>
   </div>
   <div class="card-body">
-    <div class="block">
-      <h4>Neden bu hipotez</h4>
-      <div class="why">${esc(card.why)}</div>
+    <div class="split">
+      <div class="split-main">
+        <div class="block">
+          <h4>Kanıtlar</h4>
+          <ul class="evidence">
+            ${(card.evidence || [card.why]).map(e => `<li>${esc(e)}</li>`).join("")}
+          </ul>
+        </div>
+      </div>
+      <div class="split-side">
+        <div class="conf-box">
+          <span class="conf-label">Kök neden güveni</span>
+          <b class="conf-value">%${Math.round(card.confidence * 100)}</b>
+          <span class="conf-note">kanıt gücüne dayalı, kalibre edilmemiş</span>
+        </div>
+        ${counter ? `<div class="alt-box">
+          <span class="conf-label">Alternatif hipotez</span>
+          <b class="alt-value">%${Math.round(counter.confidence * 100)}</b>
+          <span class="conf-note">${esc(counter.text)}</span>
+        </div>` : ""}
+      </div>
     </div>
-    ${counter ? `<div class="block"><h4>Karşı olasılık (reddedilen alternatif)</h4>
-      <div class="counter">${esc(counter.text)}</div></div>` : ""}
     <div class="block">
       <h4>Çekirdek sinyaller</h4>
       <div class="tags">${card.signals.map(s => `<span class="tag">${esc(s)}</span>`).join("")}</div>
     </div>
     <div class="block">
-      <h4>Etkilenen servisler</h4>
+      <h4>Etkilenen servisler (${card.services.length})</h4>
       <div class="tags">${card.services.map(s => `<span class="tag">${esc(s)}</span>`).join("")}</div>
     </div>
     <div class="block">
       <h4>Önerilen ilk aksiyon</h4>
-      <div>${esc(card.suggested_action)}</div>
+      <div class="action-text">${esc(card.suggested_action)}</div>
       <div class="actions">
         <label>Sahip:
           <select data-field="owner" data-id="${esc(card.id)}">
             ${OWNERS.map(o => `<option ${o === card.owner ? "selected" : ""}>${esc(o)}</option>`).join("")}
           </select>
         </label>
-        <label>Durum:
-          <select data-field="status" data-id="${esc(card.id)}">
-            ${STATUSES.map(s => `<option ${s === card.status ? "selected" : ""}>${esc(s)}</option>`).join("")}
-          </select>
-        </label>
+        ${STATUSES.map(s => `<button class="statebtn ${s === card.status ? "on" : ""}"
+          data-status="${esc(s)}" data-id="${esc(card.id)}">${esc(s.toUpperCase())}</button>`).join("")}
         <button class="act" data-explain="${esc(card.id)}">AI ile anlat</button>
       </div>
     </div>

@@ -112,3 +112,33 @@ td.mono{font-family:Consolas,monospace;font-variant-numeric:tabular-nums;white-s
 .noi{color:var(--dim)}
 .alarm-row-kok{color:var(--kritik);font-weight:600}
 .alarm-row-cekirdek{color:var(--yuksek)}
+
+/* --- Juri odakli kart duzeni --- */
+.split{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap}
+.split-main{flex:1;min-width:320px}
+.split-side{flex:none;width:260px;display:flex;flex-direction:column;gap:12px}
+ul.evidence{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+ul.evidence li{
+  position:relative;padding-left:24px;line-height:1.55;font-size:13.5px;
+}
+ul.evidence li::before{
+  content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-weight:700;
+}
+.conf-box,.alt-box{
+  background:var(--surface-2);border:1px solid var(--border);border-radius:10px;
+  padding:14px 16px;display:flex;flex-direction:column;gap:3px;
+}
+.conf-box{border-color:var(--accent)}
+.alt-box{border-color:var(--yuksek)}
+.conf-label{font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--dim)}
+.conf-value{font-size:34px;line-height:1.05;color:var(--accent);font-variant-numeric:tabular-nums}
+.alt-value{font-size:26px;line-height:1.05;color:var(--yuksek);font-variant-numeric:tabular-nums}
+.conf-note{font-size:11.5px;color:var(--dim);line-height:1.45;margin-top:3px}
+.action-text{font-size:14.5px;margin-bottom:10px}
+.statebtn{
+  background:var(--surface-2);border:1px solid var(--border);color:var(--dim);
+  border-radius:6px;padding:7px 14px;font-family:inherit;font-size:11.5px;
+  letter-spacing:.06em;cursor:pointer;
+}
+.statebtn:hover{color:var(--text);border-color:var(--dim)}
+.statebtn.on{background:var(--accent);border-color:var(--accent);color:#0d1117;font-weight:600}
