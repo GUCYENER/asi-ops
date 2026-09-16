@@ -84,6 +84,14 @@ Sıradan bir korelatör "aynı servis + yakın zaman + aynı alarm tipi" der ve 
 
 **Üçüncü katman — gürültü denetimi.** Elenen 1.453 alarmın her biri için objektif gerekçe: *"tip zamanda düzgün dağılmış (yoğunlaşma 1.3x), hiçbir olay penceresiyle örtüşmüyor."*
 
+**Dördüncü katman — benzer geçmiş olaylar.** Her kart, geçmiş olay arşiviyle imza karşılaştırmasından geçer ve eşleşme bulunursa *"o zaman ne işe yaramıştı"* bilgisi karta iliştirilir. Benzerlik **kendi hesabımızdır** — arşiv dosyasında hazır bir `similarity_to_current` alanı var, bilinçli olarak kullanmadık; kullansaydık skor bu veri setine gömülü bir sabit olur, başka bir arşivde anlamsız kalırdı.
+
+Formül: `0.45 × Jaccard(alarm tipleri) + 0.35 × Jaccard(servisler) + 0.20 × kategori eşleşmesi`
+
+5 olayın 5'i de doğru geçmiş vakayla eşleşti ve kırılım kartta şeffaf gösteriliyor (ör. EV-02 ↔ HIST-2026-002, %70: tip örtüşmesi 0.33, servis örtüşmesi 1.00, kategori 1).
+
+*Not: Geçmiş arşiv sentetiktir, bizim ürettiğimiz örnek veridir ve kartta bu şekilde etiketlenmiştir. Mekanizma gerçek, veri açıkça örnek.*
+
 Kanıt:
 - `src/correlator.py:attach_score` — mesaj hedefi + bağımlılık skorlaması
 - `src/correlator.py:counter_hypothesis`
@@ -110,6 +118,6 @@ Veri paketi `data/katilimci_paketi/` altına yerleştirilmelidir (orijinal dosya
 - **Kök neden isabetini ölçemiyoruz.** Doğrulama verisi jüride kapalı. Ürettiğimiz 5 olay bir hipotezdir; "%X doğruluk" iddia etmiyoruz.
 - **Eşikler bu pencereden türetildi.** Yoğunlaşma ≥4.0 ve kanıt skoru ≥3.0 eşikleri bu 2 saatlik veriden çıktı; farklı bir ortamda yeniden kalibrasyon ister.
 - **112 alarm belirsiz kaldı.** Olay penceresinde görüldüler ama kök servisle kanıt bağları zayıftı. Bunları gürültüye atmak indirgeme oranını güzelleştirirdi; dürüst olmayı tercih edip ayrı bir sekmede gösteriyoruz.
-- **Geçmiş örüntü bonusu (B3) yapılmadı.** Veri paketinde geçmiş olay arşivi yok. Sahte bir "benzer geçmiş olay" üretmek yerine kapsam dışı bıraktık.
+- **Geçmiş örüntü bonusu (B3) sentetik arşivle çalışıyor.** Organizatörün veri paketinde geçmiş olay arşivi yoktu; eşleştirme mekanizmasını kurup kendi ürettiğimiz 5 vakalık örnek arşivle gösteriyoruz. Arşiv kartta "örnek arşiv — sentetik" olarak etiketli. Gerçek bir ortamda bu, kurumun kendi incident kayıtlarına bağlanır.
 - **Olay sayısı 5.** Jüri daha fazla olay tanımlamış olabilir; belirsiz kovasındaki alarmlar bu yüzden ayrı tutuldu ve denetlenebilir durumda.
 - **Aksiyon durumu bellek içinde.** Brifing kalıcı veritabanını kapsam dışı bıraktığı için sunucu yeniden başlarsa durumlar sıfırlanır.

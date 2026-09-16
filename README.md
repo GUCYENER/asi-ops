@@ -120,7 +120,7 @@ MCP sunucusu kullanılmamıştır.
   - Kök neden isabetini ölçemiyoruz; doğrulama verisi kapalı. Ürettiğimiz 5 olay bir **hipotezdir**.
   - Eşikler (yoğunlaşma ≥4.0 sinyal, kanıt skoru ≥3.0) bu 2 saatlik pencereden türetildi; farklı ortamda yeniden kalibrasyon ister.
   - 112 alarm "belirsiz" olarak işaretlendi — bilerek gürültüye atılmadı, ayrı sekmede gösteriliyor.
-  - "Benzer geçmiş olay örüntüsü" bonusu kapsam dışı bırakıldı: veri paketinde geçmiş olay arşivi yok, uydurmak yerine yapmadık.
+  - "Benzer geçmiş olay örüntüsü" bonusu **sentetik arşivle** çalışıyor: organizatörün paketinde geçmiş olay kaydı yoktu, mekanizmayı kurup kendi ürettiğimiz 5 vakalık örnek arşivle gösteriyoruz (kartta açıkça etiketli). Gerçek ortamda kurumun kendi incident kayıtlarına bağlanır.
   - Aksiyon durumu bellek içinde tutulur (brifing kalıcı DB'yi kapsam dışı bırakıyor); sunucu yeniden başlarsa sıfırlanır.
 
 ## Proje Yapısı
