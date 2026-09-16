@@ -1,0 +1,1907 @@
+[
+  {
+    "alarm_id": "ALM-11075",
+    "timestamp": "2026-08-27T03:00:09",
+    "source_system": "Prometheus",
+    "host": "ao-042-load",
+    "service": "load-balancer",
+    "severity": 2,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 42 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11078",
+    "timestamp": "2026-08-27T03:01:11",
+    "source_system": "SyslogNG",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 1,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 29 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10958",
+    "timestamp": "2026-08-27T03:02:28",
+    "source_system": "Zabbix",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 4,
+    "alarm_type": "batch_overlap",
+    "message": "Toplu is penceresi cakismasi tespit edildi",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11016",
+    "timestamp": "2026-08-27T03:02:45",
+    "source_system": "Prometheus",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 94",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11012",
+    "timestamp": "2026-08-27T03:02:50",
+    "source_system": "Prometheus",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 84",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10959",
+    "timestamp": "2026-08-27T03:03:08",
+    "source_system": "Prometheus",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 4,
+    "alarm_type": "batch_overlap",
+    "message": "Toplu is penceresi cakismasi tespit edildi",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11040",
+    "timestamp": "2026-08-27T03:03:24",
+    "source_system": "OBM",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 86",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11041",
+    "timestamp": "2026-08-27T03:03:25",
+    "source_system": "AppDynamics",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 81",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10960",
+    "timestamp": "2026-08-27T03:03:51",
+    "source_system": "OBM",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 4,
+    "alarm_type": "batch_overlap",
+    "message": "Toplu is penceresi cakismasi tespit edildi",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11042",
+    "timestamp": "2026-08-27T03:04:00",
+    "source_system": "Prometheus",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 88 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11082",
+    "timestamp": "2026-08-27T03:04:09",
+    "source_system": "OBM",
+    "host": "ao-043-load",
+    "service": "load-balancer",
+    "severity": 3,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 44 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11068",
+    "timestamp": "2026-08-27T03:04:23",
+    "source_system": "Zabbix",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 1,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 65 saniye",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11066",
+    "timestamp": "2026-08-27T03:04:33",
+    "source_system": "AppDynamics",
+    "host": "ao-049-invoice",
+    "service": "invoice-batch",
+    "severity": 1,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 82 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10961",
+    "timestamp": "2026-08-27T03:04:37",
+    "source_system": "SyslogNG",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 4,
+    "alarm_type": "batch_overlap",
+    "message": "Toplu is penceresi cakismasi tespit edildi",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11062",
+    "timestamp": "2026-08-27T03:05:00",
+    "source_system": "Zabbix",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 94",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10962",
+    "timestamp": "2026-08-27T03:05:15",
+    "source_system": "Zabbix",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 4,
+    "alarm_type": "batch_overlap",
+    "message": "Toplu is penceresi cakismasi tespit edildi",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11025",
+    "timestamp": "2026-08-27T03:05:23",
+    "source_system": "Prometheus",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 98",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10970",
+    "timestamp": "2026-08-27T03:05:35",
+    "source_system": "AppDynamics",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 101 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10963",
+    "timestamp": "2026-08-27T03:06:04",
+    "source_system": "Prometheus",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 74 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11071",
+    "timestamp": "2026-08-27T03:06:05",
+    "source_system": "AppDynamics",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 2,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 85 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11084",
+    "timestamp": "2026-08-27T03:06:11",
+    "source_system": "OBM",
+    "host": "ao-004-mobile",
+    "service": "mobile-bff",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 656 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11063",
+    "timestamp": "2026-08-27T03:06:26",
+    "source_system": "SyslogNG",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 101",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10988",
+    "timestamp": "2026-08-27T03:06:33",
+    "source_system": "OBM",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 103",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10999",
+    "timestamp": "2026-08-27T03:06:36",
+    "source_system": "OBM",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 97",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11011",
+    "timestamp": "2026-08-27T03:06:36",
+    "source_system": "OBM",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 90",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10977",
+    "timestamp": "2026-08-27T03:06:43",
+    "source_system": "Zabbix",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 94",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10971",
+    "timestamp": "2026-08-27T03:07:29",
+    "source_system": "OBM",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 89 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11058",
+    "timestamp": "2026-08-27T03:07:39",
+    "source_system": "Zabbix",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 93",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10994",
+    "timestamp": "2026-08-27T03:07:40",
+    "source_system": "SyslogNG",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 98",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11005",
+    "timestamp": "2026-08-27T03:07:44",
+    "source_system": "OBM",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 92",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10983",
+    "timestamp": "2026-08-27T03:07:45",
+    "source_system": "Prometheus",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 86",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11032",
+    "timestamp": "2026-08-27T03:07:48",
+    "source_system": "SyslogNG",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 99",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10964",
+    "timestamp": "2026-08-27T03:07:57",
+    "source_system": "Zabbix",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 84 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10989",
+    "timestamp": "2026-08-27T03:08:24",
+    "source_system": "OBM",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 81",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11048",
+    "timestamp": "2026-08-27T03:08:26",
+    "source_system": "OBM",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 115",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10978",
+    "timestamp": "2026-08-27T03:08:46",
+    "source_system": "SyslogNG",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 100",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11047",
+    "timestamp": "2026-08-27T03:08:48",
+    "source_system": "SyslogNG",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 99",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11000",
+    "timestamp": "2026-08-27T03:08:53",
+    "source_system": "Zabbix",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 100",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10965",
+    "timestamp": "2026-08-27T03:09:31",
+    "source_system": "Zabbix",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 81 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10984",
+    "timestamp": "2026-08-27T03:09:34",
+    "source_system": "Zabbix",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 94",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10972",
+    "timestamp": "2026-08-27T03:09:46",
+    "source_system": "SyslogNG",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 78 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10995",
+    "timestamp": "2026-08-27T03:09:55",
+    "source_system": "SyslogNG",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 88",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11006",
+    "timestamp": "2026-08-27T03:10:00",
+    "source_system": "Zabbix",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 92",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11059",
+    "timestamp": "2026-08-27T03:10:17",
+    "source_system": "Zabbix",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 89",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11073",
+    "timestamp": "2026-08-27T03:10:22",
+    "source_system": "OBM",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 1,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 107 saniye",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11080",
+    "timestamp": "2026-08-27T03:10:39",
+    "source_system": "SyslogNG",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 1,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 31 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10990",
+    "timestamp": "2026-08-27T03:10:53",
+    "source_system": "Zabbix",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 84",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11001",
+    "timestamp": "2026-08-27T03:10:54",
+    "source_system": "AppDynamics",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 109",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10979",
+    "timestamp": "2026-08-27T03:10:56",
+    "source_system": "Zabbix",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 96",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11020",
+    "timestamp": "2026-08-27T03:10:58",
+    "source_system": "Zabbix",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 82",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11079",
+    "timestamp": "2026-08-27T03:11:03",
+    "source_system": "Zabbix",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 1,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 46 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11074",
+    "timestamp": "2026-08-27T03:11:13",
+    "source_system": "Zabbix",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 1,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 532 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11033",
+    "timestamp": "2026-08-27T03:11:19",
+    "source_system": "AppDynamics",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 93",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11007",
+    "timestamp": "2026-08-27T03:11:37",
+    "source_system": "OBM",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 90",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10973",
+    "timestamp": "2026-08-27T03:11:40",
+    "source_system": "Zabbix",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 83 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10996",
+    "timestamp": "2026-08-27T03:11:57",
+    "source_system": "SyslogNG",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 97",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10985",
+    "timestamp": "2026-08-27T03:11:58",
+    "source_system": "AppDynamics",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 92",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10966",
+    "timestamp": "2026-08-27T03:11:59",
+    "source_system": "Prometheus",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 85 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11055",
+    "timestamp": "2026-08-27T03:12:02",
+    "source_system": "SyslogNG",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 83",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11002",
+    "timestamp": "2026-08-27T03:12:20",
+    "source_system": "SyslogNG",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 96",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11064",
+    "timestamp": "2026-08-27T03:12:23",
+    "source_system": "Zabbix",
+    "host": "ao-044-load",
+    "service": "load-balancer",
+    "severity": 1,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 53 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10991",
+    "timestamp": "2026-08-27T03:12:29",
+    "source_system": "Zabbix",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 102",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11056",
+    "timestamp": "2026-08-27T03:12:35",
+    "source_system": "Prometheus",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 72 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11070",
+    "timestamp": "2026-08-27T03:12:56",
+    "source_system": "Prometheus",
+    "host": "ao-017-subscriber",
+    "service": "subscriber-service",
+    "severity": 2,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 26 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10980",
+    "timestamp": "2026-08-27T03:13:03",
+    "source_system": "OBM",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 106",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11019",
+    "timestamp": "2026-08-27T03:13:21",
+    "source_system": "OBM",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 91",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11022",
+    "timestamp": "2026-08-27T03:13:24",
+    "source_system": "Prometheus",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 102",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11008",
+    "timestamp": "2026-08-27T03:13:28",
+    "source_system": "AppDynamics",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 87",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10997",
+    "timestamp": "2026-08-27T03:13:39",
+    "source_system": "SyslogNG",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 99",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10967",
+    "timestamp": "2026-08-27T03:13:47",
+    "source_system": "Zabbix",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 87 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10974",
+    "timestamp": "2026-08-27T03:13:56",
+    "source_system": "OBM",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 86 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10986",
+    "timestamp": "2026-08-27T03:13:57",
+    "source_system": "Prometheus",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 97",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11003",
+    "timestamp": "2026-08-27T03:14:20",
+    "source_system": "AppDynamics",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 90",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11029",
+    "timestamp": "2026-08-27T03:14:33",
+    "source_system": "Zabbix",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 96 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10992",
+    "timestamp": "2026-08-27T03:14:35",
+    "source_system": "Prometheus",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 106",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11054",
+    "timestamp": "2026-08-27T03:14:37",
+    "source_system": "AppDynamics",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 88 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11044",
+    "timestamp": "2026-08-27T03:14:39",
+    "source_system": "Zabbix",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 75 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10981",
+    "timestamp": "2026-08-27T03:14:59",
+    "source_system": "Prometheus",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 107",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11052",
+    "timestamp": "2026-08-27T03:15:01",
+    "source_system": "AppDynamics",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 92",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10987",
+    "timestamp": "2026-08-27T03:15:21",
+    "source_system": "Zabbix",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 91",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10975",
+    "timestamp": "2026-08-27T03:15:23",
+    "source_system": "Zabbix",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 100 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10998",
+    "timestamp": "2026-08-27T03:15:25",
+    "source_system": "Zabbix",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 93",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11009",
+    "timestamp": "2026-08-27T03:15:37",
+    "source_system": "Zabbix",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 90",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10968",
+    "timestamp": "2026-08-27T03:15:45",
+    "source_system": "Prometheus",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 88 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11023",
+    "timestamp": "2026-08-27T03:15:50",
+    "source_system": "OBM",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 82",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11004",
+    "timestamp": "2026-08-27T03:16:47",
+    "source_system": "Prometheus",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 93",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10993",
+    "timestamp": "2026-08-27T03:16:53",
+    "source_system": "OBM",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 79",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10982",
+    "timestamp": "2026-08-27T03:17:00",
+    "source_system": "SyslogNG",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 104",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11081",
+    "timestamp": "2026-08-27T03:17:11",
+    "source_system": "SyslogNG",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 2,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 82 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11083",
+    "timestamp": "2026-08-27T03:17:18",
+    "source_system": "Zabbix",
+    "host": "ao-041-object",
+    "service": "object-store",
+    "severity": 1,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 30 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11065",
+    "timestamp": "2026-08-27T03:17:45",
+    "source_system": "Zabbix",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 1,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 694 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10969",
+    "timestamp": "2026-08-27T03:17:56",
+    "source_system": "OBM",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 100 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10976",
+    "timestamp": "2026-08-27T03:18:00",
+    "source_system": "Zabbix",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 88 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11072",
+    "timestamp": "2026-08-27T03:18:29",
+    "source_system": "Prometheus",
+    "host": "ao-040-message",
+    "service": "message-queue",
+    "severity": 1,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 34 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11067",
+    "timestamp": "2026-08-27T03:18:58",
+    "source_system": "Prometheus",
+    "host": "ao-055-sms",
+    "service": "sms-gateway",
+    "severity": 1,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 81 dolu",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11061",
+    "timestamp": "2026-08-27T03:18:59",
+    "source_system": "SyslogNG",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 83 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11013",
+    "timestamp": "2026-08-27T03:19:20",
+    "source_system": "AppDynamics",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 94",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11034",
+    "timestamp": "2026-08-27T03:19:36",
+    "source_system": "Prometheus",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 4,
+    "alarm_type": "batch_overlap",
+    "message": "Toplu is penceresi cakismasi tespit edildi",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11046",
+    "timestamp": "2026-08-27T03:20:03",
+    "source_system": "OBM",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 85 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11018",
+    "timestamp": "2026-08-27T03:20:07",
+    "source_system": "AppDynamics",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 85",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11045",
+    "timestamp": "2026-08-27T03:20:23",
+    "source_system": "OBM",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 92",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11051",
+    "timestamp": "2026-08-27T03:20:33",
+    "source_system": "Zabbix",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 82 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11010",
+    "timestamp": "2026-08-27T03:20:35",
+    "source_system": "Prometheus",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 83",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11076",
+    "timestamp": "2026-08-27T03:20:36",
+    "source_system": "AppDynamics",
+    "host": "ao-043-load",
+    "service": "load-balancer",
+    "severity": 1,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 60 saniye",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11036",
+    "timestamp": "2026-08-27T03:20:43",
+    "source_system": "Prometheus",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 4,
+    "alarm_type": "batch_overlap",
+    "message": "Toplu is penceresi cakismasi tespit edildi",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11015",
+    "timestamp": "2026-08-27T03:20:52",
+    "source_system": "Prometheus",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 79",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11031",
+    "timestamp": "2026-08-27T03:20:53",
+    "source_system": "Zabbix",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 87",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11050",
+    "timestamp": "2026-08-27T03:21:06",
+    "source_system": "SyslogNG",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 83 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11037",
+    "timestamp": "2026-08-27T03:21:09",
+    "source_system": "SyslogNG",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 106",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11057",
+    "timestamp": "2026-08-27T03:21:13",
+    "source_system": "OBM",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 90",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11028",
+    "timestamp": "2026-08-27T03:21:23",
+    "source_system": "AppDynamics",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 92 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11030",
+    "timestamp": "2026-08-27T03:21:24",
+    "source_system": "SyslogNG",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 96",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11053",
+    "timestamp": "2026-08-27T03:21:33",
+    "source_system": "AppDynamics",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 90",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11060",
+    "timestamp": "2026-08-27T03:21:45",
+    "source_system": "OBM",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 100",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11077",
+    "timestamp": "2026-08-27T03:22:43",
+    "source_system": "Prometheus",
+    "host": "ao-015-subscriber",
+    "service": "subscriber-service",
+    "severity": 2,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 35 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11035",
+    "timestamp": "2026-08-27T03:23:30",
+    "source_system": "Zabbix",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 95 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11026",
+    "timestamp": "2026-08-27T03:23:40",
+    "source_system": "OBM",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 93 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11038",
+    "timestamp": "2026-08-27T03:24:12",
+    "source_system": "OBM",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "batch_slow",
+    "message": "Toplu is calisma suresi 98 dakikaya ulasti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11043",
+    "timestamp": "2026-08-27T03:24:42",
+    "source_system": "OBM",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 88",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11069",
+    "timestamp": "2026-08-27T03:24:46",
+    "source_system": "SyslogNG",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 1,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 81 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11039",
+    "timestamp": "2026-08-27T03:24:49",
+    "source_system": "OBM",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "batch_overlap",
+    "message": "Toplu is penceresi cakismasi tespit edildi",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11021",
+    "timestamp": "2026-08-27T03:25:05",
+    "source_system": "OBM",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 78",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11049",
+    "timestamp": "2026-08-27T03:25:21",
+    "source_system": "AppDynamics",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 97",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11024",
+    "timestamp": "2026-08-27T03:25:54",
+    "source_system": "SyslogNG",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "batch_overlap",
+    "message": "Toplu is penceresi cakismasi tespit edildi",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11027",
+    "timestamp": "2026-08-27T03:26:16",
+    "source_system": "Prometheus",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 84",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11017",
+    "timestamp": "2026-08-27T03:27:30",
+    "source_system": "Prometheus",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 90",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-11014",
+    "timestamp": "2026-08-27T03:27:57",
+    "source_system": "OBM",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "cpu_high",
+    "message": "CPU kullanimi yuzde 84",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  }
+]

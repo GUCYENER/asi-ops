@@ -1,0 +1,4292 @@
+[
+  {
+    "alarm_id": "ALM-10268",
+    "timestamp": "2026-05-14T01:14:43",
+    "source_system": "OBM",
+    "host": "ao-006-mobile",
+    "service": "mobile-bff",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 95 saniye",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10259",
+    "timestamp": "2026-05-14T01:15:46",
+    "source_system": "Zabbix",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 1,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 82 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10250",
+    "timestamp": "2026-05-14T01:15:50",
+    "source_system": "SyslogNG",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 2,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 39 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10281",
+    "timestamp": "2026-05-14T01:16:42",
+    "source_system": "SyslogNG",
+    "host": "ao-046-dns",
+    "service": "dns-resolver",
+    "severity": 1,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 788 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10272",
+    "timestamp": "2026-05-14T01:16:46",
+    "source_system": "Zabbix",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 2,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 86 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10247",
+    "timestamp": "2026-05-14T01:17:11",
+    "source_system": "OBM",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 1,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 45 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10275",
+    "timestamp": "2026-05-14T01:17:35",
+    "source_system": "Zabbix",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 1,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 50 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10261",
+    "timestamp": "2026-05-14T01:17:58",
+    "source_system": "AppDynamics",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 2,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 76 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10001",
+    "timestamp": "2026-05-14T01:18:08",
+    "source_system": "Prometheus",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "network_down",
+    "message": "Arayuz bond0 baglantisi koptu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10265",
+    "timestamp": "2026-05-14T01:18:10",
+    "source_system": "AppDynamics",
+    "host": "ao-036-billing",
+    "service": "billing-db",
+    "severity": 1,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 944 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10249",
+    "timestamp": "2026-05-14T01:18:15",
+    "source_system": "Zabbix",
+    "host": "ao-041-object",
+    "service": "object-store",
+    "severity": 2,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 62 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10002",
+    "timestamp": "2026-05-14T01:18:22",
+    "source_system": "SyslogNG",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 4,
+    "alarm_type": "network_down",
+    "message": "Arayuz bond0 baglantisi koptu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10266",
+    "timestamp": "2026-05-14T01:18:29",
+    "source_system": "SyslogNG",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 2,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 54 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10005",
+    "timestamp": "2026-05-14T01:18:30",
+    "source_system": "Prometheus",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "network_down",
+    "message": "Arayuz bond0 baglantisi koptu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10004",
+    "timestamp": "2026-05-14T01:18:32",
+    "source_system": "SyslogNG",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "network_down",
+    "message": "Arayuz bond0 baglantisi koptu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10008",
+    "timestamp": "2026-05-14T01:18:32",
+    "source_system": "OBM",
+    "host": "ao-038-cache",
+    "service": "cache-cluster",
+    "severity": 5,
+    "alarm_type": "network_down",
+    "message": "Arayuz bond0 baglantisi koptu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10019",
+    "timestamp": "2026-05-14T01:18:39",
+    "source_system": "Zabbix",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 37",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10006",
+    "timestamp": "2026-05-14T01:18:40",
+    "source_system": "Prometheus",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "network_down",
+    "message": "Arayuz bond0 baglantisi koptu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10020",
+    "timestamp": "2026-05-14T01:18:41",
+    "source_system": "Zabbix",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 71",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10013",
+    "timestamp": "2026-05-14T01:18:42",
+    "source_system": "Prometheus",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 3,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 77",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10009",
+    "timestamp": "2026-05-14T01:18:53",
+    "source_system": "Zabbix",
+    "host": "ao-044-load",
+    "service": "load-balancer",
+    "severity": 4,
+    "alarm_type": "network_down",
+    "message": "Arayuz bond0 baglantisi koptu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10011",
+    "timestamp": "2026-05-14T01:18:56",
+    "source_system": "SyslogNG",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 40",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10255",
+    "timestamp": "2026-05-14T01:18:58",
+    "source_system": "OBM",
+    "host": "ao-004-mobile",
+    "service": "mobile-bff",
+    "severity": 2,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 43 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10003",
+    "timestamp": "2026-05-14T01:18:59",
+    "source_system": "OBM",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "network_down",
+    "message": "Arayuz bond0 baglantisi koptu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10007",
+    "timestamp": "2026-05-14T01:18:59",
+    "source_system": "Zabbix",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 5,
+    "alarm_type": "network_down",
+    "message": "Arayuz bond0 baglantisi koptu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10022",
+    "timestamp": "2026-05-14T01:19:00",
+    "source_system": "SyslogNG",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 70",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10024",
+    "timestamp": "2026-05-14T01:19:00",
+    "source_system": "OBM",
+    "host": "ao-038-cache",
+    "service": "cache-cluster",
+    "severity": 4,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 40",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10232",
+    "timestamp": "2026-05-14T01:19:07",
+    "source_system": "Prometheus",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 4,
+    "alarm_type": "conn_refused",
+    "message": "load-balancer baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10017",
+    "timestamp": "2026-05-14T01:19:08",
+    "source_system": "AppDynamics",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 45",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10040",
+    "timestamp": "2026-05-14T01:19:12",
+    "source_system": "OBM",
+    "host": "ao-038-cache",
+    "service": "cache-cluster",
+    "severity": 3,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10016",
+    "timestamp": "2026-05-14T01:19:18",
+    "source_system": "OBM",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 78",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10276",
+    "timestamp": "2026-05-14T01:19:18",
+    "source_system": "Prometheus",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 1,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 87 dolu",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10119",
+    "timestamp": "2026-05-14T01:19:24",
+    "source_system": "SyslogNG",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (210 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10039",
+    "timestamp": "2026-05-14T01:19:26",
+    "source_system": "SyslogNG",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (176 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10167",
+    "timestamp": "2026-05-14T01:19:26",
+    "source_system": "Zabbix",
+    "host": "ao-038-cache",
+    "service": "cache-cluster",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 62 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10257",
+    "timestamp": "2026-05-14T01:19:27",
+    "source_system": "Zabbix",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 918 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10096",
+    "timestamp": "2026-05-14T01:19:30",
+    "source_system": "Prometheus",
+    "host": "ao-013-session",
+    "service": "session-service",
+    "severity": 3,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 87",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10166",
+    "timestamp": "2026-05-14T01:19:31",
+    "source_system": "Prometheus",
+    "host": "ao-042-load",
+    "service": "load-balancer",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 436 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10018",
+    "timestamp": "2026-05-14T01:19:34",
+    "source_system": "Zabbix",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 78",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10014",
+    "timestamp": "2026-05-14T01:19:39",
+    "source_system": "OBM",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 3,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 49",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10221",
+    "timestamp": "2026-05-14T01:19:51",
+    "source_system": "Zabbix",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 3,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10100",
+    "timestamp": "2026-05-14T01:19:56",
+    "source_system": "Prometheus",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (208 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10150",
+    "timestamp": "2026-05-14T01:19:57",
+    "source_system": "AppDynamics",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10235",
+    "timestamp": "2026-05-14T01:19:58",
+    "source_system": "AppDynamics",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (157 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10026",
+    "timestamp": "2026-05-14T01:20:03",
+    "source_system": "AppDynamics",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 73",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10055",
+    "timestamp": "2026-05-14T01:20:03",
+    "source_system": "OBM",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (130 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10162",
+    "timestamp": "2026-05-14T01:20:06",
+    "source_system": "Zabbix",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 29 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10228",
+    "timestamp": "2026-05-14T01:20:07",
+    "source_system": "Zabbix",
+    "host": "ao-043-load",
+    "service": "load-balancer",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 90",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10236",
+    "timestamp": "2026-05-14T01:20:10",
+    "source_system": "AppDynamics",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 943 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10151",
+    "timestamp": "2026-05-14T01:20:11",
+    "source_system": "AppDynamics",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 77 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10056",
+    "timestamp": "2026-05-14T01:20:14",
+    "source_system": "Prometheus",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 63 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10128",
+    "timestamp": "2026-05-14T01:20:15",
+    "source_system": "Zabbix",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (184 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10203",
+    "timestamp": "2026-05-14T01:20:20",
+    "source_system": "Zabbix",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 341 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10015",
+    "timestamp": "2026-05-14T01:20:21",
+    "source_system": "Zabbix",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 45",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10215",
+    "timestamp": "2026-05-14T01:20:22",
+    "source_system": "Prometheus",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 3,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 92",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10094",
+    "timestamp": "2026-05-14T01:20:31",
+    "source_system": "SyslogNG",
+    "host": "ao-012-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 854 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10021",
+    "timestamp": "2026-05-14T01:20:32",
+    "source_system": "AppDynamics",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 76",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10034",
+    "timestamp": "2026-05-14T01:20:32",
+    "source_system": "AppDynamics",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (110 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10216",
+    "timestamp": "2026-05-14T01:20:37",
+    "source_system": "OBM",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 554 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10229",
+    "timestamp": "2026-05-14T01:20:38",
+    "source_system": "SyslogNG",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 645 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10095",
+    "timestamp": "2026-05-14T01:20:40",
+    "source_system": "Zabbix",
+    "host": "ao-043-load",
+    "service": "load-balancer",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (175 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10028",
+    "timestamp": "2026-05-14T01:20:42",
+    "source_system": "Zabbix",
+    "host": "ao-056-kyc",
+    "service": "kyc-provider-gw",
+    "severity": 4,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 76",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10222",
+    "timestamp": "2026-05-14T01:20:44",
+    "source_system": "SyslogNG",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 298 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10027",
+    "timestamp": "2026-05-14T01:20:46",
+    "source_system": "OBM",
+    "host": "ao-056-kyc",
+    "service": "kyc-provider-gw",
+    "severity": 3,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 78",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10156",
+    "timestamp": "2026-05-14T01:20:46",
+    "source_system": "Prometheus",
+    "host": "ao-042-load",
+    "service": "load-balancer",
+    "severity": 3,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 96",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10074",
+    "timestamp": "2026-05-14T01:20:50",
+    "source_system": "SyslogNG",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 862 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10023",
+    "timestamp": "2026-05-14T01:20:54",
+    "source_system": "AppDynamics",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 72",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10084",
+    "timestamp": "2026-05-14T01:20:56",
+    "source_system": "AppDynamics",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10010",
+    "timestamp": "2026-05-14T01:20:59",
+    "source_system": "AppDynamics",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 37",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10012",
+    "timestamp": "2026-05-14T01:21:03",
+    "source_system": "Prometheus",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 4,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 71",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10083",
+    "timestamp": "2026-05-14T01:21:03",
+    "source_system": "Prometheus",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 208 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10025",
+    "timestamp": "2026-05-14T01:21:05",
+    "source_system": "AppDynamics",
+    "host": "ao-044-load",
+    "service": "load-balancer",
+    "severity": 3,
+    "alarm_type": "pkt_loss",
+    "message": "Paket kaybi yuzde 78",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10177",
+    "timestamp": "2026-05-14T01:21:09",
+    "source_system": "SyslogNG",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (214 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10230",
+    "timestamp": "2026-05-14T01:21:13",
+    "source_system": "Prometheus",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (152 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10241",
+    "timestamp": "2026-05-14T01:21:14",
+    "source_system": "SyslogNG",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 247 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10114",
+    "timestamp": "2026-05-14T01:21:15",
+    "source_system": "SyslogNG",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 83 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10035",
+    "timestamp": "2026-05-14T01:21:16",
+    "source_system": "AppDynamics",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (122 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10059",
+    "timestamp": "2026-05-14T01:21:19",
+    "source_system": "AppDynamics",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 585 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10182",
+    "timestamp": "2026-05-14T01:21:33",
+    "source_system": "Prometheus",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 60 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10263",
+    "timestamp": "2026-05-14T01:21:36",
+    "source_system": "SyslogNG",
+    "host": "ao-039-message",
+    "service": "message-queue",
+    "severity": 2,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 21 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10152",
+    "timestamp": "2026-05-14T01:21:40",
+    "source_system": "SyslogNG",
+    "host": "ao-038-cache",
+    "service": "cache-cluster",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (103 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10075",
+    "timestamp": "2026-05-14T01:21:43",
+    "source_system": "Prometheus",
+    "host": "ao-042-load",
+    "service": "load-balancer",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 72 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10029",
+    "timestamp": "2026-05-14T01:21:46",
+    "source_system": "OBM",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 52 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10171",
+    "timestamp": "2026-05-14T01:21:49",
+    "source_system": "AppDynamics",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 79 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10130",
+    "timestamp": "2026-05-14T01:22:05",
+    "source_system": "SyslogNG",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 625 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10076",
+    "timestamp": "2026-05-14T01:22:08",
+    "source_system": "Zabbix",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 26 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10146",
+    "timestamp": "2026-05-14T01:22:08",
+    "source_system": "OBM",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (182 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10090",
+    "timestamp": "2026-05-14T01:22:21",
+    "source_system": "AppDynamics",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (122 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10143",
+    "timestamp": "2026-05-14T01:22:22",
+    "source_system": "OBM",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 918 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10121",
+    "timestamp": "2026-05-14T01:22:29",
+    "source_system": "SyslogNG",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 3,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 88",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10285",
+    "timestamp": "2026-05-14T01:22:32",
+    "source_system": "AppDynamics",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 2,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 51 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10112",
+    "timestamp": "2026-05-14T01:22:49",
+    "source_system": "AppDynamics",
+    "host": "ao-042-load",
+    "service": "load-balancer",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (214 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10179",
+    "timestamp": "2026-05-14T01:22:55",
+    "source_system": "AppDynamics",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10159",
+    "timestamp": "2026-05-14T01:23:02",
+    "source_system": "Zabbix",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 27 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10201",
+    "timestamp": "2026-05-14T01:23:02",
+    "source_system": "Zabbix",
+    "host": "ao-038-cache",
+    "service": "cache-cluster",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 34 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10195",
+    "timestamp": "2026-05-14T01:23:05",
+    "source_system": "Zabbix",
+    "host": "ao-042-load",
+    "service": "load-balancer",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 29 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10157",
+    "timestamp": "2026-05-14T01:23:10",
+    "source_system": "SyslogNG",
+    "host": "ao-044-load",
+    "service": "load-balancer",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (130 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10137",
+    "timestamp": "2026-05-14T01:23:12",
+    "source_system": "AppDynamics",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (111 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10043",
+    "timestamp": "2026-05-14T01:23:13",
+    "source_system": "AppDynamics",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (211 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10132",
+    "timestamp": "2026-05-14T01:23:16",
+    "source_system": "Zabbix",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 79 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10057",
+    "timestamp": "2026-05-14T01:23:17",
+    "source_system": "SyslogNG",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 763 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10104",
+    "timestamp": "2026-05-14T01:23:18",
+    "source_system": "SyslogNG",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 949 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10048",
+    "timestamp": "2026-05-14T01:23:20",
+    "source_system": "AppDynamics",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 54 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10233",
+    "timestamp": "2026-05-14T01:23:21",
+    "source_system": "OBM",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 733 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10254",
+    "timestamp": "2026-05-14T01:23:24",
+    "source_system": "Zabbix",
+    "host": "ao-005-mobile",
+    "service": "mobile-bff",
+    "severity": 2,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 69 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10086",
+    "timestamp": "2026-05-14T01:23:25",
+    "source_system": "AppDynamics",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (138 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10123",
+    "timestamp": "2026-05-14T01:23:27",
+    "source_system": "Prometheus",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 96",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10058",
+    "timestamp": "2026-05-14T01:23:32",
+    "source_system": "Zabbix",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (170 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10160",
+    "timestamp": "2026-05-14T01:23:35",
+    "source_system": "SyslogNG",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (149 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10061",
+    "timestamp": "2026-05-14T01:23:36",
+    "source_system": "Zabbix",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (219 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10176",
+    "timestamp": "2026-05-14T01:23:38",
+    "source_system": "Prometheus",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 38 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10142",
+    "timestamp": "2026-05-14T01:23:42",
+    "source_system": "Zabbix",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 92",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10164",
+    "timestamp": "2026-05-14T01:23:43",
+    "source_system": "SyslogNG",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 50 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10147",
+    "timestamp": "2026-05-14T01:23:45",
+    "source_system": "OBM",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 3,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10105",
+    "timestamp": "2026-05-14T01:23:46",
+    "source_system": "OBM",
+    "host": "ao-043-load",
+    "service": "load-balancer",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 88",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10183",
+    "timestamp": "2026-05-14T01:23:47",
+    "source_system": "Zabbix",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 4,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10184",
+    "timestamp": "2026-05-14T01:23:54",
+    "source_system": "Zabbix",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (90 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10062",
+    "timestamp": "2026-05-14T01:23:56",
+    "source_system": "AppDynamics",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 3,
+    "alarm_type": "conn_refused",
+    "message": "cache-cluster baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10149",
+    "timestamp": "2026-05-14T01:23:56",
+    "source_system": "AppDynamics",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 94",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10092",
+    "timestamp": "2026-05-14T01:23:58",
+    "source_system": "AppDynamics",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 44 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10139",
+    "timestamp": "2026-05-14T01:24:06",
+    "source_system": "AppDynamics",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 30 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10212",
+    "timestamp": "2026-05-14T01:24:07",
+    "source_system": "AppDynamics",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 99",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10053",
+    "timestamp": "2026-05-14T01:24:08",
+    "source_system": "OBM",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 37 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10063",
+    "timestamp": "2026-05-14T01:24:14",
+    "source_system": "SyslogNG",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 5,
+    "alarm_type": "conn_refused",
+    "message": "load-balancer baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10220",
+    "timestamp": "2026-05-14T01:24:14",
+    "source_system": "AppDynamics",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 5,
+    "alarm_type": "conn_refused",
+    "message": "load-balancer baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10264",
+    "timestamp": "2026-05-14T01:24:22",
+    "source_system": "Prometheus",
+    "host": "ao-004-mobile",
+    "service": "mobile-bff",
+    "severity": 1,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 57 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10124",
+    "timestamp": "2026-05-14T01:24:23",
+    "source_system": "SyslogNG",
+    "host": "ao-012-session",
+    "service": "session-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 86 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10178",
+    "timestamp": "2026-05-14T01:24:23",
+    "source_system": "OBM",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (130 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10054",
+    "timestamp": "2026-05-14T01:24:26",
+    "source_system": "OBM",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 3,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 96",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10088",
+    "timestamp": "2026-05-14T01:24:26",
+    "source_system": "OBM",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 64 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10194",
+    "timestamp": "2026-05-14T01:24:29",
+    "source_system": "SyslogNG",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 91",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10188",
+    "timestamp": "2026-05-14T01:24:30",
+    "source_system": "AppDynamics",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 224 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10106",
+    "timestamp": "2026-05-14T01:24:32",
+    "source_system": "OBM",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (175 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10173",
+    "timestamp": "2026-05-14T01:24:36",
+    "source_system": "AppDynamics",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (154 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10117",
+    "timestamp": "2026-05-14T01:24:40",
+    "source_system": "AppDynamics",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "conn_refused",
+    "message": "cache-cluster baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10108",
+    "timestamp": "2026-05-14T01:24:43",
+    "source_system": "AppDynamics",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (194 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10186",
+    "timestamp": "2026-05-14T01:24:45",
+    "source_system": "AppDynamics",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 90",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10113",
+    "timestamp": "2026-05-14T01:24:49",
+    "source_system": "AppDynamics",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 49 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10046",
+    "timestamp": "2026-05-14T01:24:52",
+    "source_system": "Prometheus",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 71 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10079",
+    "timestamp": "2026-05-14T01:25:03",
+    "source_system": "Prometheus",
+    "host": "ao-013-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "conn_refused",
+    "message": "cache-cluster baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10044",
+    "timestamp": "2026-05-14T01:25:07",
+    "source_system": "AppDynamics",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (200 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10270",
+    "timestamp": "2026-05-14T01:25:10",
+    "source_system": "SyslogNG",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 1,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 47 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10234",
+    "timestamp": "2026-05-14T01:25:11",
+    "source_system": "SyslogNG",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (93 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10198",
+    "timestamp": "2026-05-14T01:25:12",
+    "source_system": "AppDynamics",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 480 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10206",
+    "timestamp": "2026-05-14T01:25:12",
+    "source_system": "Zabbix",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 61 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10033",
+    "timestamp": "2026-05-14T01:25:16",
+    "source_system": "Prometheus",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (118 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10087",
+    "timestamp": "2026-05-14T01:25:17",
+    "source_system": "OBM",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (140 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10223",
+    "timestamp": "2026-05-14T01:25:24",
+    "source_system": "SyslogNG",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 54 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10273",
+    "timestamp": "2026-05-14T01:25:27",
+    "source_system": "OBM",
+    "host": "ao-041-object",
+    "service": "object-store",
+    "severity": 1,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 90 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10051",
+    "timestamp": "2026-05-14T01:25:33",
+    "source_system": "AppDynamics",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 35 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10242",
+    "timestamp": "2026-05-14T01:25:35",
+    "source_system": "SyslogNG",
+    "host": "ao-038-cache",
+    "service": "cache-cluster",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (173 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10107",
+    "timestamp": "2026-05-14T01:25:37",
+    "source_system": "Prometheus",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 39 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10098",
+    "timestamp": "2026-05-14T01:25:38",
+    "source_system": "AppDynamics",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "conn_refused",
+    "message": "load-balancer baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10207",
+    "timestamp": "2026-05-14T01:25:50",
+    "source_system": "OBM",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "conn_refused",
+    "message": "load-balancer baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10082",
+    "timestamp": "2026-05-14T01:25:54",
+    "source_system": "SyslogNG",
+    "host": "ao-043-load",
+    "service": "load-balancer",
+    "severity": 5,
+    "alarm_type": "conn_refused",
+    "message": "load-balancer baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10172",
+    "timestamp": "2026-05-14T01:25:55",
+    "source_system": "OBM",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 67 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10225",
+    "timestamp": "2026-05-14T01:26:02",
+    "source_system": "OBM",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 810 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10252",
+    "timestamp": "2026-05-14T01:26:02",
+    "source_system": "OBM",
+    "host": "ao-029-catalog",
+    "service": "catalog-service",
+    "severity": 2,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 35 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10158",
+    "timestamp": "2026-05-14T01:26:03",
+    "source_system": "SyslogNG",
+    "host": "ao-012-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 25 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10170",
+    "timestamp": "2026-05-14T01:26:03",
+    "source_system": "Zabbix",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (179 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10199",
+    "timestamp": "2026-05-14T01:26:06",
+    "source_system": "Prometheus",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 723 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10174",
+    "timestamp": "2026-05-14T01:26:08",
+    "source_system": "Prometheus",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (208 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10097",
+    "timestamp": "2026-05-14T01:26:09",
+    "source_system": "SyslogNG",
+    "host": "ao-042-load",
+    "service": "load-balancer",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (206 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10052",
+    "timestamp": "2026-05-14T01:26:18",
+    "source_system": "SyslogNG",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 43 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10239",
+    "timestamp": "2026-05-14T01:26:21",
+    "source_system": "AppDynamics",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 591 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10072",
+    "timestamp": "2026-05-14T01:26:25",
+    "source_system": "OBM",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 3,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10244",
+    "timestamp": "2026-05-14T01:26:25",
+    "source_system": "Prometheus",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (145 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10129",
+    "timestamp": "2026-05-14T01:26:28",
+    "source_system": "AppDynamics",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (117 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10085",
+    "timestamp": "2026-05-14T01:26:31",
+    "source_system": "SyslogNG",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (170 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10038",
+    "timestamp": "2026-05-14T01:26:33",
+    "source_system": "OBM",
+    "host": "ao-043-load",
+    "service": "load-balancer",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 562 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10226",
+    "timestamp": "2026-05-14T01:26:39",
+    "source_system": "Prometheus",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10103",
+    "timestamp": "2026-05-14T01:26:41",
+    "source_system": "AppDynamics",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 741 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10047",
+    "timestamp": "2026-05-14T01:26:44",
+    "source_system": "AppDynamics",
+    "host": "ao-013-session",
+    "service": "session-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 59 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10237",
+    "timestamp": "2026-05-14T01:26:47",
+    "source_system": "Prometheus",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (117 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10248",
+    "timestamp": "2026-05-14T01:26:48",
+    "source_system": "SyslogNG",
+    "host": "ao-015-subscriber",
+    "service": "subscriber-service",
+    "severity": 1,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 23 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10286",
+    "timestamp": "2026-05-14T01:26:48",
+    "source_system": "AppDynamics",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 598 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10217",
+    "timestamp": "2026-05-14T01:26:50",
+    "source_system": "Zabbix",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 32 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10238",
+    "timestamp": "2026-05-14T01:26:54",
+    "source_system": "OBM",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (167 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10163",
+    "timestamp": "2026-05-14T01:27:04",
+    "source_system": "Zabbix",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 5,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10122",
+    "timestamp": "2026-05-14T01:27:09",
+    "source_system": "SyslogNG",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 309 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10140",
+    "timestamp": "2026-05-14T01:27:09",
+    "source_system": "SyslogNG",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (184 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10110",
+    "timestamp": "2026-05-14T01:27:13",
+    "source_system": "Zabbix",
+    "host": "ao-038-cache",
+    "service": "cache-cluster",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 569 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10131",
+    "timestamp": "2026-05-14T01:27:20",
+    "source_system": "AppDynamics",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 74 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10050",
+    "timestamp": "2026-05-14T01:27:22",
+    "source_system": "Prometheus",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (194 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10185",
+    "timestamp": "2026-05-14T01:27:26",
+    "source_system": "AppDynamics",
+    "host": "ao-038-cache",
+    "service": "cache-cluster",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 855 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10180",
+    "timestamp": "2026-05-14T01:27:35",
+    "source_system": "Zabbix",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (129 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10190",
+    "timestamp": "2026-05-14T01:27:39",
+    "source_system": "OBM",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 309 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10245",
+    "timestamp": "2026-05-14T01:27:41",
+    "source_system": "OBM",
+    "host": "ao-041-object",
+    "service": "object-store",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 95 saniye",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10067",
+    "timestamp": "2026-05-14T01:27:42",
+    "source_system": "Zabbix",
+    "host": "ao-043-load",
+    "service": "load-balancer",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 450 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10030",
+    "timestamp": "2026-05-14T01:27:44",
+    "source_system": "Zabbix",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10269",
+    "timestamp": "2026-05-14T01:27:53",
+    "source_system": "Zabbix",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 2,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 76 dolu",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10168",
+    "timestamp": "2026-05-14T01:27:56",
+    "source_system": "AppDynamics",
+    "host": "ao-012-session",
+    "service": "session-service",
+    "severity": 5,
+    "alarm_type": "conn_refused",
+    "message": "cache-cluster baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10191",
+    "timestamp": "2026-05-14T01:28:03",
+    "source_system": "OBM",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 282 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10036",
+    "timestamp": "2026-05-14T01:28:05",
+    "source_system": "Prometheus",
+    "host": "ao-012-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 89",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10213",
+    "timestamp": "2026-05-14T01:28:08",
+    "source_system": "Zabbix",
+    "host": "ao-013-session",
+    "service": "session-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (183 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10161",
+    "timestamp": "2026-05-14T01:28:22",
+    "source_system": "Prometheus",
+    "host": "ao-013-session",
+    "service": "session-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (119 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10071",
+    "timestamp": "2026-05-14T01:28:23",
+    "source_system": "Zabbix",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (128 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10141",
+    "timestamp": "2026-05-14T01:28:28",
+    "source_system": "Zabbix",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "conn_refused",
+    "message": "load-balancer baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10153",
+    "timestamp": "2026-05-14T01:28:36",
+    "source_system": "SyslogNG",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (120 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10115",
+    "timestamp": "2026-05-14T01:28:42",
+    "source_system": "OBM",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 786 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10091",
+    "timestamp": "2026-05-14T01:28:47",
+    "source_system": "AppDynamics",
+    "host": "ao-012-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 94",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10133",
+    "timestamp": "2026-05-14T01:28:48",
+    "source_system": "AppDynamics",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 5,
+    "alarm_type": "conn_refused",
+    "message": "cache-cluster baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10187",
+    "timestamp": "2026-05-14T01:28:50",
+    "source_system": "Prometheus",
+    "host": "ao-013-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (151 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10211",
+    "timestamp": "2026-05-14T01:28:58",
+    "source_system": "Prometheus",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10271",
+    "timestamp": "2026-05-14T01:28:59",
+    "source_system": "Prometheus",
+    "host": "ao-046-dns",
+    "service": "dns-resolver",
+    "severity": 1,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 45 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10169",
+    "timestamp": "2026-05-14T01:29:04",
+    "source_system": "AppDynamics",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10278",
+    "timestamp": "2026-05-14T01:29:05",
+    "source_system": "AppDynamics",
+    "host": "ao-040-message",
+    "service": "message-queue",
+    "severity": 1,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 81 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10165",
+    "timestamp": "2026-05-14T01:29:17",
+    "source_system": "AppDynamics",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 30 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10243",
+    "timestamp": "2026-05-14T01:29:24",
+    "source_system": "OBM",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 697 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10031",
+    "timestamp": "2026-05-14T01:29:28",
+    "source_system": "Prometheus",
+    "host": "ao-043-load",
+    "service": "load-balancer",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 699 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10219",
+    "timestamp": "2026-05-14T01:29:29",
+    "source_system": "OBM",
+    "host": "ao-042-load",
+    "service": "load-balancer",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (173 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10200",
+    "timestamp": "2026-05-14T01:29:39",
+    "source_system": "Prometheus",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (187 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10060",
+    "timestamp": "2026-05-14T01:29:41",
+    "source_system": "OBM",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (207 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10210",
+    "timestamp": "2026-05-14T01:29:48",
+    "source_system": "OBM",
+    "host": "ao-042-load",
+    "service": "load-balancer",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (125 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10280",
+    "timestamp": "2026-05-14T01:29:50",
+    "source_system": "OBM",
+    "host": "ao-010-auth",
+    "service": "auth-service",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 238 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10282",
+    "timestamp": "2026-05-14T01:29:52",
+    "source_system": "AppDynamics",
+    "host": "ao-056-kyc",
+    "service": "kyc-provider-gw",
+    "severity": 1,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 79 saniye",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10068",
+    "timestamp": "2026-05-14T01:29:54",
+    "source_system": "Zabbix",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 30 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10069",
+    "timestamp": "2026-05-14T01:29:57",
+    "source_system": "Prometheus",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (123 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10138",
+    "timestamp": "2026-05-14T01:30:06",
+    "source_system": "AppDynamics",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (211 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10120",
+    "timestamp": "2026-05-14T01:30:10",
+    "source_system": "OBM",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 409 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10193",
+    "timestamp": "2026-05-14T01:30:10",
+    "source_system": "Zabbix",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (191 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10049",
+    "timestamp": "2026-05-14T01:30:12",
+    "source_system": "OBM",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 231 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10045",
+    "timestamp": "2026-05-14T01:30:14",
+    "source_system": "OBM",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 68 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10099",
+    "timestamp": "2026-05-14T01:30:16",
+    "source_system": "OBM",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 3,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 87",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10283",
+    "timestamp": "2026-05-14T01:30:19",
+    "source_system": "OBM",
+    "host": "ao-040-message",
+    "service": "message-queue",
+    "severity": 1,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 82 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10080",
+    "timestamp": "2026-05-14T01:30:20",
+    "source_system": "AppDynamics",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 3,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 85",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10089",
+    "timestamp": "2026-05-14T01:30:27",
+    "source_system": "Zabbix",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 44 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10101",
+    "timestamp": "2026-05-14T01:30:28",
+    "source_system": "SyslogNG",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (208 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10042",
+    "timestamp": "2026-05-14T01:30:30",
+    "source_system": "Prometheus",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (161 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10093",
+    "timestamp": "2026-05-14T01:30:36",
+    "source_system": "SyslogNG",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (203 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10218",
+    "timestamp": "2026-05-14T01:30:36",
+    "source_system": "AppDynamics",
+    "host": "ao-043-load",
+    "service": "load-balancer",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (117 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10125",
+    "timestamp": "2026-05-14T01:30:38",
+    "source_system": "AppDynamics",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 61 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10227",
+    "timestamp": "2026-05-14T01:30:47",
+    "source_system": "SyslogNG",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10144",
+    "timestamp": "2026-05-14T01:30:51",
+    "source_system": "Prometheus",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 3,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 97",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10204",
+    "timestamp": "2026-05-14T01:30:51",
+    "source_system": "AppDynamics",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (198 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10126",
+    "timestamp": "2026-05-14T01:30:52",
+    "source_system": "Prometheus",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 62 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10148",
+    "timestamp": "2026-05-14T01:30:59",
+    "source_system": "AppDynamics",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 479 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10070",
+    "timestamp": "2026-05-14T01:31:07",
+    "source_system": "SyslogNG",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 60 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10037",
+    "timestamp": "2026-05-14T01:31:15",
+    "source_system": "AppDynamics",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 385 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10066",
+    "timestamp": "2026-05-14T01:31:19",
+    "source_system": "Prometheus",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (143 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10145",
+    "timestamp": "2026-05-14T01:31:26",
+    "source_system": "OBM",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 89",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10224",
+    "timestamp": "2026-05-14T01:31:29",
+    "source_system": "AppDynamics",
+    "host": "ao-038-cache",
+    "service": "cache-cluster",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 72 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10274",
+    "timestamp": "2026-05-14T01:31:29",
+    "source_system": "Zabbix",
+    "host": "ao-016-subscriber",
+    "service": "subscriber-service",
+    "severity": 1,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 80 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10175",
+    "timestamp": "2026-05-14T01:31:59",
+    "source_system": "AppDynamics",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 817 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10196",
+    "timestamp": "2026-05-14T01:32:03",
+    "source_system": "OBM",
+    "host": "ao-003-api",
+    "service": "api-gateway",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (115 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10118",
+    "timestamp": "2026-05-14T01:32:04",
+    "source_system": "Zabbix",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 46 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10256",
+    "timestamp": "2026-05-14T01:32:11",
+    "source_system": "AppDynamics",
+    "host": "ao-005-mobile",
+    "service": "mobile-bff",
+    "severity": 1,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 44 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10081",
+    "timestamp": "2026-05-14T01:32:16",
+    "source_system": "Zabbix",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "conn_refused",
+    "message": "subscriber-db baglantisi reddedildi, connection refused",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10154",
+    "timestamp": "2026-05-14T01:32:19",
+    "source_system": "AppDynamics",
+    "host": "ao-042-load",
+    "service": "load-balancer",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 39 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10032",
+    "timestamp": "2026-05-14T01:32:22",
+    "source_system": "SyslogNG",
+    "host": "ao-012-session",
+    "service": "session-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 732 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10127",
+    "timestamp": "2026-05-14T01:32:40",
+    "source_system": "OBM",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (120 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10135",
+    "timestamp": "2026-05-14T01:32:41",
+    "source_system": "Zabbix",
+    "host": "ao-013-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 47 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10209",
+    "timestamp": "2026-05-14T01:32:46",
+    "source_system": "Prometheus",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 63 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10214",
+    "timestamp": "2026-05-14T01:32:50",
+    "source_system": "Zabbix",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 673 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10077",
+    "timestamp": "2026-05-14T01:32:55",
+    "source_system": "Zabbix",
+    "host": "ao-044-load",
+    "service": "load-balancer",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 932 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10231",
+    "timestamp": "2026-05-14T01:32:57",
+    "source_system": "Zabbix",
+    "host": "ao-037-cache",
+    "service": "cache-cluster",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (145 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10064",
+    "timestamp": "2026-05-14T01:33:01",
+    "source_system": "OBM",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 95",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10189",
+    "timestamp": "2026-05-14T01:33:05",
+    "source_system": "Prometheus",
+    "host": "ao-044-load",
+    "service": "load-balancer",
+    "severity": 5,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 75 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10253",
+    "timestamp": "2026-05-14T01:33:13",
+    "source_system": "SyslogNG",
+    "host": "ao-029-catalog",
+    "service": "catalog-service",
+    "severity": 1,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 89 saniye",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10109",
+    "timestamp": "2026-05-14T01:33:17",
+    "source_system": "AppDynamics",
+    "host": "ao-002-api",
+    "service": "api-gateway",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 88",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10181",
+    "timestamp": "2026-05-14T01:33:19",
+    "source_system": "AppDynamics",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (196 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10277",
+    "timestamp": "2026-05-14T01:33:19",
+    "source_system": "SyslogNG",
+    "host": "ao-055-sms",
+    "service": "sms-gateway",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 96 saniye",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10134",
+    "timestamp": "2026-05-14T01:33:36",
+    "source_system": "Prometheus",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (216 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10205",
+    "timestamp": "2026-05-14T01:33:38",
+    "source_system": "OBM",
+    "host": "ao-013-session",
+    "service": "session-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 573 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10155",
+    "timestamp": "2026-05-14T01:33:45",
+    "source_system": "Zabbix",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 89",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10251",
+    "timestamp": "2026-05-14T01:33:48",
+    "source_system": "Prometheus",
+    "host": "ao-045-dns",
+    "service": "dns-resolver",
+    "severity": 1,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 48 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10116",
+    "timestamp": "2026-05-14T01:33:52",
+    "source_system": "Prometheus",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 318 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10192",
+    "timestamp": "2026-05-14T01:33:56",
+    "source_system": "OBM",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 599 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10078",
+    "timestamp": "2026-05-14T01:33:58",
+    "source_system": "AppDynamics",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "load-balancer servisine yapilan cagri zaman asimina ugradi (187 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10136",
+    "timestamp": "2026-05-14T01:34:06",
+    "source_system": "SyslogNG",
+    "host": "ao-042-load",
+    "service": "load-balancer",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 96",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10065",
+    "timestamp": "2026-05-14T01:34:16",
+    "source_system": "SyslogNG",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 32 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10279",
+    "timestamp": "2026-05-14T01:34:16",
+    "source_system": "Zabbix",
+    "host": "ao-039-message",
+    "service": "message-queue",
+    "severity": 1,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 699 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10102",
+    "timestamp": "2026-05-14T01:34:17",
+    "source_system": "SyslogNG",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 97",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10111",
+    "timestamp": "2026-05-14T01:34:18",
+    "source_system": "SyslogNG",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 79 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10073",
+    "timestamp": "2026-05-14T01:34:25",
+    "source_system": "Prometheus",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "dns-resolver servisine yapilan cagri zaman asimina ugradi (100 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10202",
+    "timestamp": "2026-05-14T01:34:25",
+    "source_system": "Zabbix",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (92 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10240",
+    "timestamp": "2026-05-14T01:34:25",
+    "source_system": "Zabbix",
+    "host": "ao-031-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 255 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10258",
+    "timestamp": "2026-05-14T01:34:26",
+    "source_system": "OBM",
+    "host": "ao-040-message",
+    "service": "message-queue",
+    "severity": 1,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 77 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10197",
+    "timestamp": "2026-05-14T01:34:30",
+    "source_system": "OBM",
+    "host": "ao-012-session",
+    "service": "session-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (166 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10041",
+    "timestamp": "2026-05-14T01:34:32",
+    "source_system": "Zabbix",
+    "host": "ao-014-session",
+    "service": "session-service",
+    "severity": 3,
+    "alarm_type": "thread_pool",
+    "message": "Thread pool doluluk yuzde 86",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10208",
+    "timestamp": "2026-05-14T01:34:37",
+    "source_system": "AppDynamics",
+    "host": "ao-038-cache",
+    "service": "cache-cluster",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "subscriber-db servisine yapilan cagri zaman asimina ugradi (102 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10260",
+    "timestamp": "2026-05-14T01:34:48",
+    "source_system": "AppDynamics",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 89 saniye",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10246",
+    "timestamp": "2026-05-14T01:36:47",
+    "source_system": "Zabbix",
+    "host": "ao-051-report",
+    "service": "report-batch",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 336 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10267",
+    "timestamp": "2026-05-14T01:36:53",
+    "source_system": "OBM",
+    "host": "ao-056-kyc",
+    "service": "kyc-provider-gw",
+    "severity": 2,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 81 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10262",
+    "timestamp": "2026-05-14T01:37:14",
+    "source_system": "AppDynamics",
+    "host": "ao-036-billing",
+    "service": "billing-db",
+    "severity": 3,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 53 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10284",
+    "timestamp": "2026-05-14T01:38:27",
+    "source_system": "SyslogNG",
+    "host": "ao-015-subscriber",
+    "service": "subscriber-service",
+    "severity": 1,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 841 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  }
+]

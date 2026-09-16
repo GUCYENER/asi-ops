@@ -1,0 +1,34 @@
+{
+  "incident_id": "HIST-2026-005",
+  "title": "Reconciliation & Report Batch Window Collision",
+  "detected_at": "2026-08-27T03:02:20",
+  "resolved_at": "2026-08-27T03:28:10",
+  "duration_minutes": 26,
+  "root_cause": "Reconciliation and report batches overlapped after a delayed scheduler start, exhausting subscriber DB connection pools and CPU.",
+  "root_cause_tr": "Geciken scheduler baslangici nedeniyle reconciliation ve report batch pencereleri cakisti; subscriber DB connection pool ve CPU tukendi.",
+  "root_cause_category": "batch/scheduling",
+  "primary_service": "batch-scheduler",
+  "affected_services": [
+    "batch-scheduler",
+    "reconciliation-batch",
+    "report-batch",
+    "subscriber-db"
+  ],
+  "affected_hosts": 6,
+  "alarm_count": 127,
+  "correlated_alarm_count": 106,
+  "noise_alarm_count": 21,
+  "similarity_to_current": 0.9,
+  "confidence": 0.93,
+  "resolution_action": "Report batch durduruldu, reconciliation tamamlanana kadar ertelendi; scheduler overlap guard aktif edildi.",
+  "action_owner": "Batch Operations",
+  "mttr_minutes": 26,
+  "status": "resolved",
+  "signature_alarm_types": [
+    "batch_overlap",
+    "batch_slow",
+    "db_conn_pool",
+    "cpu_high"
+  ],
+  "lessons_learned": "batch_overlap sinyali DB pool/CPU yukunden once geliyorsa ortak DB arizasindan ziyade scheduler penceresi incelenmelidir."
+}

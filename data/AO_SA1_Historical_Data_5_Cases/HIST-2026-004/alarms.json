@@ -1,0 +1,2672 @@
+[
+  {
+    "alarm_id": "ALM-10934",
+    "timestamp": "2026-08-04T14:19:31",
+    "source_system": "SyslogNG",
+    "host": "ao-040-message",
+    "service": "message-queue",
+    "severity": 1,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 91 saniye",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10816",
+    "timestamp": "2026-08-04T14:22:10",
+    "source_system": "SyslogNG",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 89",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10901",
+    "timestamp": "2026-08-04T14:22:23",
+    "source_system": "AppDynamics",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 91",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10809",
+    "timestamp": "2026-08-04T14:22:33",
+    "source_system": "SyslogNG",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 73",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10836",
+    "timestamp": "2026-08-04T14:22:36",
+    "source_system": "OBM",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 97",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10780",
+    "timestamp": "2026-08-04T14:22:38",
+    "source_system": "OBM",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 718 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10789",
+    "timestamp": "2026-08-04T14:22:41",
+    "source_system": "Prometheus",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 1297 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10798",
+    "timestamp": "2026-08-04T14:22:45",
+    "source_system": "AppDynamics",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 853 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10790",
+    "timestamp": "2026-08-04T14:23:10",
+    "source_system": "SyslogNG",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 846 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10781",
+    "timestamp": "2026-08-04T14:23:24",
+    "source_system": "SyslogNG",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 873 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10799",
+    "timestamp": "2026-08-04T14:23:24",
+    "source_system": "AppDynamics",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 1409 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10932",
+    "timestamp": "2026-08-04T14:23:27",
+    "source_system": "AppDynamics",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (172 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10915",
+    "timestamp": "2026-08-04T14:23:29",
+    "source_system": "OBM",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (171 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10895",
+    "timestamp": "2026-08-04T14:23:37",
+    "source_system": "SyslogNG",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 79",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10917",
+    "timestamp": "2026-08-04T14:23:38",
+    "source_system": "Prometheus",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 83",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10858",
+    "timestamp": "2026-08-04T14:23:39",
+    "source_system": "Prometheus",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis order-service erisilemiyor, HTTP 503",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10791",
+    "timestamp": "2026-08-04T14:23:49",
+    "source_system": "OBM",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 1667 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10800",
+    "timestamp": "2026-08-04T14:23:50",
+    "source_system": "OBM",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 891 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10849",
+    "timestamp": "2026-08-04T14:23:54",
+    "source_system": "AppDynamics",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (171 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10782",
+    "timestamp": "2026-08-04T14:24:00",
+    "source_system": "OBM",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 1040 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10837",
+    "timestamp": "2026-08-04T14:24:05",
+    "source_system": "Zabbix",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis billing-service yanit suresi 808 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10931",
+    "timestamp": "2026-08-04T14:24:21",
+    "source_system": "Prometheus",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 680 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10801",
+    "timestamp": "2026-08-04T14:24:23",
+    "source_system": "SyslogNG",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 1608 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10860",
+    "timestamp": "2026-08-04T14:24:24",
+    "source_system": "Prometheus",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (175 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10792",
+    "timestamp": "2026-08-04T14:24:28",
+    "source_system": "Zabbix",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 1555 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10783",
+    "timestamp": "2026-08-04T14:24:33",
+    "source_system": "Zabbix",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 1685 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10867",
+    "timestamp": "2026-08-04T14:24:38",
+    "source_system": "SyslogNG",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 73",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10877",
+    "timestamp": "2026-08-04T14:24:39",
+    "source_system": "OBM",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (165 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10845",
+    "timestamp": "2026-08-04T14:24:42",
+    "source_system": "Prometheus",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (220 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10899",
+    "timestamp": "2026-08-04T14:24:49",
+    "source_system": "AppDynamics",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (178 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10886",
+    "timestamp": "2026-08-04T14:24:57",
+    "source_system": "Prometheus",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 92",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10802",
+    "timestamp": "2026-08-04T14:25:00",
+    "source_system": "SyslogNG",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 1354 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10784",
+    "timestamp": "2026-08-04T14:25:08",
+    "source_system": "SyslogNG",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 1667 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10941",
+    "timestamp": "2026-08-04T14:25:08",
+    "source_system": "SyslogNG",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 289 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10793",
+    "timestamp": "2026-08-04T14:25:09",
+    "source_system": "Prometheus",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 824 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10803",
+    "timestamp": "2026-08-04T14:25:14",
+    "source_system": "AppDynamics",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-provider-gw erisilemiyor, HTTP 504",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10930",
+    "timestamp": "2026-08-04T14:25:16",
+    "source_system": "AppDynamics",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (95 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10785",
+    "timestamp": "2026-08-04T14:25:19",
+    "source_system": "OBM",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-provider-gw erisilemiyor, HTTP 502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10794",
+    "timestamp": "2026-08-04T14:25:19",
+    "source_system": "Zabbix",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-provider-gw erisilemiyor, HTTP 504",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10859",
+    "timestamp": "2026-08-04T14:25:26",
+    "source_system": "SyslogNG",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (105 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10815",
+    "timestamp": "2026-08-04T14:25:40",
+    "source_system": "AppDynamics",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 72",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10897",
+    "timestamp": "2026-08-04T14:25:41",
+    "source_system": "Zabbix",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 82",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10940",
+    "timestamp": "2026-08-04T14:25:48",
+    "source_system": "AppDynamics",
+    "host": "ao-015-subscriber",
+    "service": "subscriber-service",
+    "severity": 2,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 84 dolu",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10913",
+    "timestamp": "2026-08-04T14:25:52",
+    "source_system": "Prometheus",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (111 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10795",
+    "timestamp": "2026-08-04T14:25:58",
+    "source_system": "OBM",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-provider-gw erisilemiyor, HTTP 502",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10786",
+    "timestamp": "2026-08-04T14:26:01",
+    "source_system": "Zabbix",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-provider-gw erisilemiyor, HTTP 502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10856",
+    "timestamp": "2026-08-04T14:26:02",
+    "source_system": "Zabbix",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (143 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10904",
+    "timestamp": "2026-08-04T14:26:02",
+    "source_system": "AppDynamics",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-service erisilemiyor, HTTP 504",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10804",
+    "timestamp": "2026-08-04T14:26:08",
+    "source_system": "OBM",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-provider-gw erisilemiyor, HTTP 504",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10825",
+    "timestamp": "2026-08-04T14:26:22",
+    "source_system": "AppDynamics",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 98",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10872",
+    "timestamp": "2026-08-04T14:26:22",
+    "source_system": "OBM",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (113 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10847",
+    "timestamp": "2026-08-04T14:26:36",
+    "source_system": "SyslogNG",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (128 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10946",
+    "timestamp": "2026-08-04T14:26:41",
+    "source_system": "Prometheus",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 3,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 40 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10796",
+    "timestamp": "2026-08-04T14:26:44",
+    "source_system": "Zabbix",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-provider-gw erisilemiyor, HTTP 502",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10826",
+    "timestamp": "2026-08-04T14:26:45",
+    "source_system": "OBM",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 88",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10787",
+    "timestamp": "2026-08-04T14:26:46",
+    "source_system": "AppDynamics",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-provider-gw erisilemiyor, HTTP 504",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10805",
+    "timestamp": "2026-08-04T14:26:48",
+    "source_system": "OBM",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-provider-gw erisilemiyor, HTTP 504",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10870",
+    "timestamp": "2026-08-04T14:26:49",
+    "source_system": "SyslogNG",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 950 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10822",
+    "timestamp": "2026-08-04T14:26:57",
+    "source_system": "OBM",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (158 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10914",
+    "timestamp": "2026-08-04T14:27:16",
+    "source_system": "Prometheus",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 1559 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10951",
+    "timestamp": "2026-08-04T14:27:25",
+    "source_system": "Prometheus",
+    "host": "ao-016-subscriber",
+    "service": "subscriber-service",
+    "severity": 2,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 34 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10944",
+    "timestamp": "2026-08-04T14:27:28",
+    "source_system": "AppDynamics",
+    "host": "ao-045-dns",
+    "service": "dns-resolver",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 113 saniye",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10788",
+    "timestamp": "2026-08-04T14:27:30",
+    "source_system": "SyslogNG",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-provider-gw erisilemiyor, HTTP 502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10806",
+    "timestamp": "2026-08-04T14:27:32",
+    "source_system": "SyslogNG",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-provider-gw erisilemiyor, HTTP 504",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10797",
+    "timestamp": "2026-08-04T14:27:39",
+    "source_system": "OBM",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-provider-gw erisilemiyor, HTTP 504",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10905",
+    "timestamp": "2026-08-04T14:27:40",
+    "source_system": "OBM",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 90",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10928",
+    "timestamp": "2026-08-04T14:27:41",
+    "source_system": "Prometheus",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 86",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10892",
+    "timestamp": "2026-08-04T14:27:49",
+    "source_system": "AppDynamics",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 79",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10898",
+    "timestamp": "2026-08-04T14:28:06",
+    "source_system": "AppDynamics",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (167 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10908",
+    "timestamp": "2026-08-04T14:28:18",
+    "source_system": "SyslogNG",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (213 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10911",
+    "timestamp": "2026-08-04T14:28:22",
+    "source_system": "Prometheus",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (113 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10955",
+    "timestamp": "2026-08-04T14:28:32",
+    "source_system": "Prometheus",
+    "host": "ao-040-message",
+    "service": "message-queue",
+    "severity": 2,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 87 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10823",
+    "timestamp": "2026-08-04T14:28:34",
+    "source_system": "AppDynamics",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 78",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10880",
+    "timestamp": "2026-08-04T14:28:46",
+    "source_system": "AppDynamics",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (210 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10844",
+    "timestamp": "2026-08-04T14:28:52",
+    "source_system": "Zabbix",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (164 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10861",
+    "timestamp": "2026-08-04T14:29:11",
+    "source_system": "OBM",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis order-service yanit suresi 912 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10832",
+    "timestamp": "2026-08-04T14:29:35",
+    "source_system": "Prometheus",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (175 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10883",
+    "timestamp": "2026-08-04T14:29:43",
+    "source_system": "Zabbix",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (126 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10820",
+    "timestamp": "2026-08-04T14:29:44",
+    "source_system": "Zabbix",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis billing-service erisilemiyor, HTTP 504",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10818",
+    "timestamp": "2026-08-04T14:29:46",
+    "source_system": "Zabbix",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-service erisilemiyor, HTTP 502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10949",
+    "timestamp": "2026-08-04T14:29:52",
+    "source_system": "Prometheus",
+    "host": "ao-012-session",
+    "service": "session-service",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 89 saniye",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10919",
+    "timestamp": "2026-08-04T14:30:06",
+    "source_system": "Zabbix",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (156 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10879",
+    "timestamp": "2026-08-04T14:30:10",
+    "source_system": "Zabbix",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 92",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10855",
+    "timestamp": "2026-08-04T14:30:22",
+    "source_system": "OBM",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 86",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10811",
+    "timestamp": "2026-08-04T14:30:23",
+    "source_system": "Zabbix",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis order-service yanit suresi 1356 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10838",
+    "timestamp": "2026-08-04T14:30:43",
+    "source_system": "OBM",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 93",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10863",
+    "timestamp": "2026-08-04T14:30:45",
+    "source_system": "SyslogNG",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (117 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10875",
+    "timestamp": "2026-08-04T14:30:47",
+    "source_system": "OBM",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 91",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10923",
+    "timestamp": "2026-08-04T14:30:49",
+    "source_system": "SyslogNG",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis billing-service yanit suresi 1572 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10920",
+    "timestamp": "2026-08-04T14:30:57",
+    "source_system": "OBM",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 85",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10864",
+    "timestamp": "2026-08-04T14:30:59",
+    "source_system": "AppDynamics",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (211 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10889",
+    "timestamp": "2026-08-04T14:31:03",
+    "source_system": "Prometheus",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 89",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10887",
+    "timestamp": "2026-08-04T14:31:09",
+    "source_system": "OBM",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (120 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10936",
+    "timestamp": "2026-08-04T14:31:26",
+    "source_system": "OBM",
+    "host": "ao-055-sms",
+    "service": "sms-gateway",
+    "severity": 1,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 28 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10924",
+    "timestamp": "2026-08-04T14:31:34",
+    "source_system": "Prometheus",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (141 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10909",
+    "timestamp": "2026-08-04T14:31:50",
+    "source_system": "Prometheus",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (97 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10933",
+    "timestamp": "2026-08-04T14:31:56",
+    "source_system": "Prometheus",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (161 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10841",
+    "timestamp": "2026-08-04T14:31:59",
+    "source_system": "AppDynamics",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (160 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10890",
+    "timestamp": "2026-08-04T14:32:05",
+    "source_system": "AppDynamics",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 957 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10821",
+    "timestamp": "2026-08-04T14:32:07",
+    "source_system": "OBM",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 97",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10871",
+    "timestamp": "2026-08-04T14:32:20",
+    "source_system": "OBM",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (113 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10868",
+    "timestamp": "2026-08-04T14:32:27",
+    "source_system": "Zabbix",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 97",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10885",
+    "timestamp": "2026-08-04T14:32:35",
+    "source_system": "SyslogNG",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (194 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10881",
+    "timestamp": "2026-08-04T14:32:36",
+    "source_system": "SyslogNG",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (173 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10956",
+    "timestamp": "2026-08-04T14:32:44",
+    "source_system": "SyslogNG",
+    "host": "ao-041-object",
+    "service": "object-store",
+    "severity": 1,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 311 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10948",
+    "timestamp": "2026-08-04T14:32:47",
+    "source_system": "OBM",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 2,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 53 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10937",
+    "timestamp": "2026-08-04T14:32:48",
+    "source_system": "AppDynamics",
+    "host": "ao-006-mobile",
+    "service": "mobile-bff",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 595 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10842",
+    "timestamp": "2026-08-04T14:32:50",
+    "source_system": "OBM",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (217 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10922",
+    "timestamp": "2026-08-04T14:32:56",
+    "source_system": "Zabbix",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis order-service yanit suresi 1120 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10882",
+    "timestamp": "2026-08-04T14:32:57",
+    "source_system": "Prometheus",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 97",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10829",
+    "timestamp": "2026-08-04T14:33:09",
+    "source_system": "AppDynamics",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (179 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10834",
+    "timestamp": "2026-08-04T14:33:10",
+    "source_system": "Zabbix",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 94",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10853",
+    "timestamp": "2026-08-04T14:33:29",
+    "source_system": "Zabbix",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (179 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10862",
+    "timestamp": "2026-08-04T14:33:29",
+    "source_system": "OBM",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 1440 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10884",
+    "timestamp": "2026-08-04T14:33:29",
+    "source_system": "AppDynamics",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (181 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10957",
+    "timestamp": "2026-08-04T14:33:36",
+    "source_system": "SyslogNG",
+    "host": "ao-004-mobile",
+    "service": "mobile-bff",
+    "severity": 2,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 75 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10824",
+    "timestamp": "2026-08-04T14:33:42",
+    "source_system": "AppDynamics",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis order-service erisilemiyor, HTTP 502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10929",
+    "timestamp": "2026-08-04T14:33:43",
+    "source_system": "Prometheus",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 97",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10833",
+    "timestamp": "2026-08-04T14:33:57",
+    "source_system": "Prometheus",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (182 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10918",
+    "timestamp": "2026-08-04T14:34:07",
+    "source_system": "AppDynamics",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis order-service erisilemiyor, HTTP 503",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10900",
+    "timestamp": "2026-08-04T14:34:12",
+    "source_system": "AppDynamics",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 84",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10850",
+    "timestamp": "2026-08-04T14:34:23",
+    "source_system": "Zabbix",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 89",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10903",
+    "timestamp": "2026-08-04T14:34:31",
+    "source_system": "Prometheus",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 77",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10846",
+    "timestamp": "2026-08-04T14:35:02",
+    "source_system": "AppDynamics",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (110 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10808",
+    "timestamp": "2026-08-04T14:35:18",
+    "source_system": "SyslogNG",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 93",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10945",
+    "timestamp": "2026-08-04T14:35:37",
+    "source_system": "Zabbix",
+    "host": "ao-046-dns",
+    "service": "dns-resolver",
+    "severity": 1,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 22 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10954",
+    "timestamp": "2026-08-04T14:35:37",
+    "source_system": "SyslogNG",
+    "host": "ao-043-load",
+    "service": "load-balancer",
+    "severity": 2,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 38 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10869",
+    "timestamp": "2026-08-04T14:35:39",
+    "source_system": "AppDynamics",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 84",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10891",
+    "timestamp": "2026-08-04T14:35:42",
+    "source_system": "SyslogNG",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 685 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10830",
+    "timestamp": "2026-08-04T14:35:44",
+    "source_system": "Zabbix",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (130 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10927",
+    "timestamp": "2026-08-04T14:35:45",
+    "source_system": "OBM",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis payment-service erisilemiyor, HTTP 504",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10852",
+    "timestamp": "2026-08-04T14:35:56",
+    "source_system": "Zabbix",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 1599 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10831",
+    "timestamp": "2026-08-04T14:36:15",
+    "source_system": "SyslogNG",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (112 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10874",
+    "timestamp": "2026-08-04T14:36:15",
+    "source_system": "Prometheus",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-service yanit suresi 1133 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10942",
+    "timestamp": "2026-08-04T14:36:20",
+    "source_system": "Zabbix",
+    "host": "ao-044-load",
+    "service": "load-balancer",
+    "severity": 2,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 25 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10947",
+    "timestamp": "2026-08-04T14:36:47",
+    "source_system": "Zabbix",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 1,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 434 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10938",
+    "timestamp": "2026-08-04T14:36:50",
+    "source_system": "OBM",
+    "host": "ao-046-dns",
+    "service": "dns-resolver",
+    "severity": 1,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 36 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10807",
+    "timestamp": "2026-08-04T14:36:56",
+    "source_system": "AppDynamics",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 75",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10827",
+    "timestamp": "2026-08-04T14:36:56",
+    "source_system": "SyslogNG",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 89",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10865",
+    "timestamp": "2026-08-04T14:36:56",
+    "source_system": "OBM",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 84",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10843",
+    "timestamp": "2026-08-04T14:37:17",
+    "source_system": "Zabbix",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (120 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10814",
+    "timestamp": "2026-08-04T14:37:25",
+    "source_system": "OBM",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 1520 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10943",
+    "timestamp": "2026-08-04T14:37:31",
+    "source_system": "AppDynamics",
+    "host": "ao-041-object",
+    "service": "object-store",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 566 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10912",
+    "timestamp": "2026-08-04T14:37:38",
+    "source_system": "Prometheus",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (138 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10813",
+    "timestamp": "2026-08-04T14:37:50",
+    "source_system": "SyslogNG",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 74",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10848",
+    "timestamp": "2026-08-04T14:38:05",
+    "source_system": "OBM",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 82",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10896",
+    "timestamp": "2026-08-04T14:38:11",
+    "source_system": "OBM",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 1294 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10819",
+    "timestamp": "2026-08-04T14:38:18",
+    "source_system": "AppDynamics",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (171 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10854",
+    "timestamp": "2026-08-04T14:38:22",
+    "source_system": "OBM",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 1586 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10910",
+    "timestamp": "2026-08-04T14:38:36",
+    "source_system": "Prometheus",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (155 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10926",
+    "timestamp": "2026-08-04T14:38:40",
+    "source_system": "Zabbix",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 89",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10878",
+    "timestamp": "2026-08-04T14:38:47",
+    "source_system": "Zabbix",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 78",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10894",
+    "timestamp": "2026-08-04T14:38:48",
+    "source_system": "OBM",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 79",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10810",
+    "timestamp": "2026-08-04T14:39:05",
+    "source_system": "OBM",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 99",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10817",
+    "timestamp": "2026-08-04T14:39:31",
+    "source_system": "AppDynamics",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 1323 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10935",
+    "timestamp": "2026-08-04T14:39:37",
+    "source_system": "SyslogNG",
+    "host": "ao-013-session",
+    "service": "session-service",
+    "severity": 1,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 28 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10902",
+    "timestamp": "2026-08-04T14:39:43",
+    "source_system": "Prometheus",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 74",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10857",
+    "timestamp": "2026-08-04T14:39:48",
+    "source_system": "SyslogNG",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-service yanit suresi 750 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10851",
+    "timestamp": "2026-08-04T14:39:56",
+    "source_system": "SyslogNG",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 77",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10921",
+    "timestamp": "2026-08-04T14:40:00",
+    "source_system": "SyslogNG",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "ext_unreach",
+    "message": "Dis servis billing-service erisilemiyor, HTTP 504",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10952",
+    "timestamp": "2026-08-04T14:40:16",
+    "source_system": "Prometheus",
+    "host": "ao-013-session",
+    "service": "session-service",
+    "severity": 2,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 38 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10866",
+    "timestamp": "2026-08-04T14:40:25",
+    "source_system": "SyslogNG",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 75",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10873",
+    "timestamp": "2026-08-04T14:40:30",
+    "source_system": "Zabbix",
+    "host": "ao-053-payment",
+    "service": "payment-provider-gw",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 1307 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10916",
+    "timestamp": "2026-08-04T14:40:34",
+    "source_system": "AppDynamics",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 76",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10839",
+    "timestamp": "2026-08-04T14:40:38",
+    "source_system": "Zabbix",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 78",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10812",
+    "timestamp": "2026-08-04T14:40:57",
+    "source_system": "AppDynamics",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 79",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10925",
+    "timestamp": "2026-08-04T14:41:11",
+    "source_system": "Prometheus",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (195 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10840",
+    "timestamp": "2026-08-04T14:41:20",
+    "source_system": "SyslogNG",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (108 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10893",
+    "timestamp": "2026-08-04T14:41:28",
+    "source_system": "AppDynamics",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (167 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10876",
+    "timestamp": "2026-08-04T14:41:31",
+    "source_system": "SyslogNG",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 97",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10835",
+    "timestamp": "2026-08-04T14:41:38",
+    "source_system": "SyslogNG",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (169 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10907",
+    "timestamp": "2026-08-04T14:41:42",
+    "source_system": "OBM",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (100 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10906",
+    "timestamp": "2026-08-04T14:41:44",
+    "source_system": "Prometheus",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (111 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10828",
+    "timestamp": "2026-08-04T14:41:54",
+    "source_system": "Prometheus",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "payment-provider-gw servisine yapilan cagri zaman asimina ugradi (183 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10888",
+    "timestamp": "2026-08-04T14:41:55",
+    "source_system": "SyslogNG",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 5,
+    "alarm_type": "ext_slow",
+    "message": "Dis servis payment-provider-gw yanit suresi 763 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10953",
+    "timestamp": "2026-08-04T14:42:14",
+    "source_system": "SyslogNG",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 2,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 18 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10950",
+    "timestamp": "2026-08-04T14:42:29",
+    "source_system": "AppDynamics",
+    "host": "ao-012-session",
+    "service": "session-service",
+    "severity": 1,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 32 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10939",
+    "timestamp": "2026-08-04T14:43:57",
+    "source_system": "Zabbix",
+    "host": "ao-044-load",
+    "service": "load-balancer",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 463 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  }
+]

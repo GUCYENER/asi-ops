@@ -15,6 +15,10 @@ import json
 import os
 import re
 import statistics
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import history  # noqa: E402
 from collections import defaultdict
 from datetime import datetime, timedelta
 
@@ -644,6 +648,7 @@ def run(data_dir):
             "owner": owner,
             "status": "Acik",
             "alarm_ids": sorted(a["alarm_id"] for a in event["alarms"]),
+            "_root_type": event["root_type"],
             "alarms": [
                 {
                     "alarm_id": a["alarm_id"],
@@ -660,6 +665,13 @@ def run(data_dir):
                 for a in sorted(event["alarms"], key=lambda x: x["ts"])
             ],
         })
+
+    # Bonus B3: benzer gecmis olay eslestirme (arsiv yoksa sessizce atlanir)
+    archive = history.load_archive(os.path.join(os.path.dirname(data_dir.rstrip("/\\")),
+                                                "AO_SA1_Historical_Data_5_Cases"))
+    for card in cards:
+        card["similar_incidents"] = history.match(card, archive)
+        card.pop("_root_type", None)
 
     assigned = sum(c["alarm_count"] for c in cards)
     naive_card_count = len({(a["ts"].strftime("%H:%M")[:4], a["service"]) for a in alarms})

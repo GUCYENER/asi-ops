@@ -1,0 +1,36 @@
+{
+  "incident_id": "HIST-2026-003",
+  "title": "Session Service Heap Growth After Release",
+  "detected_at": "2026-07-18T00:47:00",
+  "resolved_at": "2026-07-18T02:15:30",
+  "duration_minutes": 89,
+  "root_cause": "A session cache retention defect introduced by the previous release caused gradual heap growth, GC pressure and OOM risk.",
+  "root_cause_tr": "Onceki release ile gelen session cache retention hatasi heap'in yavas yavas buyumesine, GC pressure ve OOM riskine yol acti.",
+  "root_cause_category": "application/memory",
+  "primary_service": "session-service",
+  "affected_services": [
+    "session-service",
+    "auth-service",
+    "mobile-bff",
+    "web-bff",
+    "cache-cluster"
+  ],
+  "affected_hosts": 13,
+  "alarm_count": 241,
+  "correlated_alarm_count": 205,
+  "noise_alarm_count": 36,
+  "similarity_to_current": 0.91,
+  "confidence": 0.94,
+  "resolution_action": "Session service rolling restart yapildi, problemli release rollback edildi ve heap kullanimi baseline'a dondu.",
+  "action_owner": "Application Operations",
+  "mttr_minutes": 89,
+  "status": "resolved",
+  "signature_alarm_types": [
+    "mem_high",
+    "gc_pressure",
+    "oom_risk",
+    "latency_high",
+    "timeout"
+  ],
+  "lessons_learned": "Ani patlama yerine 60-90 dakikalik monoton bellek artisi trend korelasyonuyla yakalanmalidir."
+}

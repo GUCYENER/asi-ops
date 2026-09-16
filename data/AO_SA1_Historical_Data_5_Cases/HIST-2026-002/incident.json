@@ -1,0 +1,37 @@
+{
+  "incident_id": "HIST-2026-002",
+  "title": "Billing DB Filesystem Exhaustion",
+  "detected_at": "2026-06-03T02:11:12",
+  "resolved_at": "2026-06-03T02:36:05",
+  "duration_minutes": 25,
+  "root_cause": "Archived redo/log files filled the billing database filesystem, causing DB write failures and downstream transaction timeouts.",
+  "root_cause_tr": "Billing DB filesystemi arsiv loglari nedeniyle doldu; DB write fail sonrasinda billing, charging, payment ve order servislerinde timeout/txn_fail olustu.",
+  "root_cause_category": "database/storage",
+  "primary_service": "billing-db",
+  "affected_services": [
+    "billing-db",
+    "billing-service",
+    "charging-service",
+    "payment-service",
+    "order-service",
+    "invoice-batch"
+  ],
+  "affected_hosts": 15,
+  "alarm_count": 252,
+  "correlated_alarm_count": 221,
+  "noise_alarm_count": 31,
+  "similarity_to_current": 0.96,
+  "confidence": 0.98,
+  "resolution_action": "Eski archive loglar temizlendi, filesystem genisletildi ve billing DB write islemleri dogrulandi.",
+  "action_owner": "Database Operations",
+  "mttr_minutes": 25,
+  "status": "resolved",
+  "signature_alarm_types": [
+    "disk_full",
+    "db_write_fail",
+    "db_conn_pool",
+    "timeout",
+    "txn_fail"
+  ],
+  "lessons_learned": "disk_full sinyali downstream transaction alarmlarindan once geliyorsa root cause skoru DB/storage tarafina yukseltilmelidir."
+}

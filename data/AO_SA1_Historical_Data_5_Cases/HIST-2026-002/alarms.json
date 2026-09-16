@@ -1,0 +1,3782 @@
+[
+  {
+    "alarm_id": "ALM-10509",
+    "timestamp": "2026-06-03T02:08:37",
+    "source_system": "AppDynamics",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 104 saniye",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10536",
+    "timestamp": "2026-06-03T02:10:29",
+    "source_system": "OBM",
+    "host": "ao-043-load",
+    "service": "load-balancer",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 907 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10410",
+    "timestamp": "2026-06-03T02:11:22",
+    "source_system": "AppDynamics",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 76",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10423",
+    "timestamp": "2026-06-03T02:11:25",
+    "source_system": "AppDynamics",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (163 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10530",
+    "timestamp": "2026-06-03T02:11:33",
+    "source_system": "Prometheus",
+    "host": "ao-007-web",
+    "service": "web-bff",
+    "severity": 2,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 50 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10294",
+    "timestamp": "2026-06-03T02:11:35",
+    "source_system": "SyslogNG",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "disk_full",
+    "message": "Disk kullanimi kritik seviyede, yuzde 100 dolu",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10340",
+    "timestamp": "2026-06-03T02:12:18",
+    "source_system": "AppDynamics",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 56 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10289",
+    "timestamp": "2026-06-03T02:12:24",
+    "source_system": "SyslogNG",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "disk_full",
+    "message": "Disk kullanimi kritik seviyede, yuzde 99 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10414",
+    "timestamp": "2026-06-03T02:12:26",
+    "source_system": "AppDynamics",
+    "host": "ao-049-invoice",
+    "service": "invoice-batch",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 83",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10295",
+    "timestamp": "2026-06-03T02:12:35",
+    "source_system": "Prometheus",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10288",
+    "timestamp": "2026-06-03T02:12:36",
+    "source_system": "SyslogNG",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "disk_full",
+    "message": "Disk kullanimi kritik seviyede, yuzde 98 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10290",
+    "timestamp": "2026-06-03T02:12:37",
+    "source_system": "SyslogNG",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "disk_full",
+    "message": "Disk kullanimi kritik seviyede, yuzde 100 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10287",
+    "timestamp": "2026-06-03T02:12:38",
+    "source_system": "Zabbix",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "disk_full",
+    "message": "Disk kullanimi kritik seviyede, yuzde 96 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10310",
+    "timestamp": "2026-06-03T02:12:38",
+    "source_system": "AppDynamics",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10336",
+    "timestamp": "2026-06-03T02:12:38",
+    "source_system": "SyslogNG",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 48 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10291",
+    "timestamp": "2026-06-03T02:12:41",
+    "source_system": "AppDynamics",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "disk_full",
+    "message": "Disk kullanimi kritik seviyede, yuzde 96 dolu",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10384",
+    "timestamp": "2026-06-03T02:12:44",
+    "source_system": "Prometheus",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 73",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10363",
+    "timestamp": "2026-06-03T02:12:45",
+    "source_system": "SyslogNG",
+    "host": "ao-036-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (120 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10293",
+    "timestamp": "2026-06-03T02:12:48",
+    "source_system": "Prometheus",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "disk_full",
+    "message": "Disk kullanimi kritik seviyede, yuzde 99 dolu",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10450",
+    "timestamp": "2026-06-03T02:12:51",
+    "source_system": "OBM",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 94",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10298",
+    "timestamp": "2026-06-03T02:12:54",
+    "source_system": "SyslogNG",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10379",
+    "timestamp": "2026-06-03T02:12:56",
+    "source_system": "Zabbix",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 84",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10356",
+    "timestamp": "2026-06-03T02:13:05",
+    "source_system": "SyslogNG",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 75 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10490",
+    "timestamp": "2026-06-03T02:13:06",
+    "source_system": "Prometheus",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 50 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10337",
+    "timestamp": "2026-06-03T02:13:09",
+    "source_system": "AppDynamics",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 60 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10367",
+    "timestamp": "2026-06-03T02:13:14",
+    "source_system": "AppDynamics",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 925 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10339",
+    "timestamp": "2026-06-03T02:13:29",
+    "source_system": "Zabbix",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10321",
+    "timestamp": "2026-06-03T02:13:30",
+    "source_system": "AppDynamics",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 43 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10380",
+    "timestamp": "2026-06-03T02:13:42",
+    "source_system": "SyslogNG",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10354",
+    "timestamp": "2026-06-03T02:13:43",
+    "source_system": "AppDynamics",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10292",
+    "timestamp": "2026-06-03T02:13:44",
+    "source_system": "Zabbix",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "disk_full",
+    "message": "Disk kullanimi kritik seviyede, yuzde 98 dolu",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10479",
+    "timestamp": "2026-06-03T02:13:44",
+    "source_system": "OBM",
+    "host": "ao-036-billing",
+    "service": "billing-db",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 1087 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10493",
+    "timestamp": "2026-06-03T02:13:44",
+    "source_system": "SyslogNG",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 267 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10314",
+    "timestamp": "2026-06-03T02:13:54",
+    "source_system": "Zabbix",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 225 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10307",
+    "timestamp": "2026-06-03T02:13:57",
+    "source_system": "Zabbix",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10311",
+    "timestamp": "2026-06-03T02:13:59",
+    "source_system": "Prometheus",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (198 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10432",
+    "timestamp": "2026-06-03T02:13:59",
+    "source_system": "SyslogNG",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 91",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10538",
+    "timestamp": "2026-06-03T02:14:09",
+    "source_system": "Zabbix",
+    "host": "ao-016-subscriber",
+    "service": "subscriber-service",
+    "severity": 1,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 83 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10375",
+    "timestamp": "2026-06-03T02:14:16",
+    "source_system": "SyslogNG",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 21 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10505",
+    "timestamp": "2026-06-03T02:14:19",
+    "source_system": "Zabbix",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 78",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10297",
+    "timestamp": "2026-06-03T02:14:21",
+    "source_system": "Zabbix",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10489",
+    "timestamp": "2026-06-03T02:14:23",
+    "source_system": "AppDynamics",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (108 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10308",
+    "timestamp": "2026-06-03T02:14:29",
+    "source_system": "SyslogNG",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10498",
+    "timestamp": "2026-06-03T02:14:32",
+    "source_system": "Prometheus",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 274 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10449",
+    "timestamp": "2026-06-03T02:14:38",
+    "source_system": "AppDynamics",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10334",
+    "timestamp": "2026-06-03T02:14:42",
+    "source_system": "Zabbix",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10416",
+    "timestamp": "2026-06-03T02:14:51",
+    "source_system": "Zabbix",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 91",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10394",
+    "timestamp": "2026-06-03T02:14:57",
+    "source_system": "OBM",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10300",
+    "timestamp": "2026-06-03T02:14:58",
+    "source_system": "OBM",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10433",
+    "timestamp": "2026-06-03T02:15:01",
+    "source_system": "SyslogNG",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (244 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10518",
+    "timestamp": "2026-06-03T02:15:03",
+    "source_system": "Zabbix",
+    "host": "ao-054-payment",
+    "service": "payment-provider-gw",
+    "severity": 2,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 31 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10344",
+    "timestamp": "2026-06-03T02:15:13",
+    "source_system": "Zabbix",
+    "host": "ao-049-invoice",
+    "service": "invoice-batch",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 795 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10443",
+    "timestamp": "2026-06-03T02:15:14",
+    "source_system": "SyslogNG",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (189 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10522",
+    "timestamp": "2026-06-03T02:15:21",
+    "source_system": "Zabbix",
+    "host": "ao-044-load",
+    "service": "load-balancer",
+    "severity": 2,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 64 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10303",
+    "timestamp": "2026-06-03T02:15:31",
+    "source_system": "Prometheus",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10355",
+    "timestamp": "2026-06-03T02:15:34",
+    "source_system": "Prometheus",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 83",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10429",
+    "timestamp": "2026-06-03T02:15:45",
+    "source_system": "Prometheus",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10441",
+    "timestamp": "2026-06-03T02:15:49",
+    "source_system": "Zabbix",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 96",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10497",
+    "timestamp": "2026-06-03T02:15:58",
+    "source_system": "SyslogNG",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 96",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10338",
+    "timestamp": "2026-06-03T02:16:04",
+    "source_system": "AppDynamics",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (107 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10459",
+    "timestamp": "2026-06-03T02:16:07",
+    "source_system": "OBM",
+    "host": "ao-036-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 65 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10495",
+    "timestamp": "2026-06-03T02:16:07",
+    "source_system": "OBM",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10306",
+    "timestamp": "2026-06-03T02:16:15",
+    "source_system": "Zabbix",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10486",
+    "timestamp": "2026-06-03T02:16:16",
+    "source_system": "Prometheus",
+    "host": "ao-049-invoice",
+    "service": "invoice-batch",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (234 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10457",
+    "timestamp": "2026-06-03T02:16:17",
+    "source_system": "AppDynamics",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (204 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10514",
+    "timestamp": "2026-06-03T02:16:47",
+    "source_system": "AppDynamics",
+    "host": "ao-005-mobile",
+    "service": "mobile-bff",
+    "severity": 1,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 788 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10357",
+    "timestamp": "2026-06-03T02:16:49",
+    "source_system": "Zabbix",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10477",
+    "timestamp": "2026-06-03T02:16:58",
+    "source_system": "SyslogNG",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 83",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10302",
+    "timestamp": "2026-06-03T02:17:00",
+    "source_system": "Prometheus",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10398",
+    "timestamp": "2026-06-03T02:17:06",
+    "source_system": "SyslogNG",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 82",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10494",
+    "timestamp": "2026-06-03T02:17:19",
+    "source_system": "OBM",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 253 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10512",
+    "timestamp": "2026-06-03T02:17:21",
+    "source_system": "Prometheus",
+    "host": "ao-029-catalog",
+    "service": "catalog-service",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 244 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10343",
+    "timestamp": "2026-06-03T02:17:33",
+    "source_system": "SyslogNG",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 67 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10513",
+    "timestamp": "2026-06-03T02:17:37",
+    "source_system": "Zabbix",
+    "host": "ao-011-auth",
+    "service": "auth-service",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 116 saniye",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10466",
+    "timestamp": "2026-06-03T02:17:41",
+    "source_system": "AppDynamics",
+    "host": "ao-049-invoice",
+    "service": "invoice-batch",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10462",
+    "timestamp": "2026-06-03T02:17:42",
+    "source_system": "Zabbix",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 73 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10520",
+    "timestamp": "2026-06-03T02:17:46",
+    "source_system": "Zabbix",
+    "host": "ao-032-subscriber",
+    "service": "subscriber-db",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 69 saniye",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10301",
+    "timestamp": "2026-06-03T02:17:55",
+    "source_system": "AppDynamics",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10383",
+    "timestamp": "2026-06-03T02:17:59",
+    "source_system": "SyslogNG",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 81",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10327",
+    "timestamp": "2026-06-03T02:18:00",
+    "source_system": "Zabbix",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 73",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10296",
+    "timestamp": "2026-06-03T02:18:01",
+    "source_system": "Prometheus",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10519",
+    "timestamp": "2026-06-03T02:18:08",
+    "source_system": "SyslogNG",
+    "host": "ao-040-message",
+    "service": "message-queue",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 428 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10368",
+    "timestamp": "2026-06-03T02:18:09",
+    "source_system": "SyslogNG",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 49 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10397",
+    "timestamp": "2026-06-03T02:18:16",
+    "source_system": "AppDynamics",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 88",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10309",
+    "timestamp": "2026-06-03T02:18:17",
+    "source_system": "AppDynamics",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10533",
+    "timestamp": "2026-06-03T02:18:17",
+    "source_system": "OBM",
+    "host": "ao-045-dns",
+    "service": "dns-resolver",
+    "severity": 2,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 25 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10299",
+    "timestamp": "2026-06-03T02:18:21",
+    "source_system": "Prometheus",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10305",
+    "timestamp": "2026-06-03T02:18:22",
+    "source_system": "SyslogNG",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10492",
+    "timestamp": "2026-06-03T02:18:24",
+    "source_system": "SyslogNG",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (158 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10481",
+    "timestamp": "2026-06-03T02:18:39",
+    "source_system": "AppDynamics",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 72",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10454",
+    "timestamp": "2026-06-03T02:18:44",
+    "source_system": "Zabbix",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 88",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10472",
+    "timestamp": "2026-06-03T02:18:45",
+    "source_system": "OBM",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10534",
+    "timestamp": "2026-06-03T02:18:50",
+    "source_system": "AppDynamics",
+    "host": "ao-010-auth",
+    "service": "auth-service",
+    "severity": 2,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 391 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10349",
+    "timestamp": "2026-06-03T02:18:51",
+    "source_system": "Prometheus",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10408",
+    "timestamp": "2026-06-03T02:18:54",
+    "source_system": "OBM",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 53 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10474",
+    "timestamp": "2026-06-03T02:19:03",
+    "source_system": "SyslogNG",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 93",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10413",
+    "timestamp": "2026-06-03T02:19:07",
+    "source_system": "Prometheus",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10451",
+    "timestamp": "2026-06-03T02:19:11",
+    "source_system": "OBM",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10452",
+    "timestamp": "2026-06-03T02:19:11",
+    "source_system": "SyslogNG",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 81",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10496",
+    "timestamp": "2026-06-03T02:19:24",
+    "source_system": "SyslogNG",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 56 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10460",
+    "timestamp": "2026-06-03T02:19:29",
+    "source_system": "Prometheus",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (199 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10516",
+    "timestamp": "2026-06-03T02:19:32",
+    "source_system": "Zabbix",
+    "host": "ao-001-api",
+    "service": "api-gateway",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 111 saniye",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10503",
+    "timestamp": "2026-06-03T02:19:36",
+    "source_system": "OBM",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 71 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10446",
+    "timestamp": "2026-06-03T02:19:38",
+    "source_system": "Zabbix",
+    "host": "ao-036-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 455 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10304",
+    "timestamp": "2026-06-03T02:19:41",
+    "source_system": "AppDynamics",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10322",
+    "timestamp": "2026-06-03T02:19:51",
+    "source_system": "OBM",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (195 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10535",
+    "timestamp": "2026-06-03T02:20:05",
+    "source_system": "OBM",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 111 saniye",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10378",
+    "timestamp": "2026-06-03T02:20:13",
+    "source_system": "AppDynamics",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10371",
+    "timestamp": "2026-06-03T02:20:19",
+    "source_system": "Prometheus",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 345 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10487",
+    "timestamp": "2026-06-03T02:20:19",
+    "source_system": "OBM",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (190 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10506",
+    "timestamp": "2026-06-03T02:20:24",
+    "source_system": "Prometheus",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 68 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10406",
+    "timestamp": "2026-06-03T02:20:27",
+    "source_system": "Prometheus",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10418",
+    "timestamp": "2026-06-03T02:20:30",
+    "source_system": "OBM",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 101",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10484",
+    "timestamp": "2026-06-03T02:20:34",
+    "source_system": "OBM",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 959 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10400",
+    "timestamp": "2026-06-03T02:20:43",
+    "source_system": "Prometheus",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 35 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10468",
+    "timestamp": "2026-06-03T02:20:51",
+    "source_system": "AppDynamics",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 82",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10329",
+    "timestamp": "2026-06-03T02:20:57",
+    "source_system": "OBM",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 84",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10415",
+    "timestamp": "2026-06-03T02:21:04",
+    "source_system": "OBM",
+    "host": "ao-049-invoice",
+    "service": "invoice-batch",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 95",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10372",
+    "timestamp": "2026-06-03T02:21:06",
+    "source_system": "SyslogNG",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 73",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10404",
+    "timestamp": "2026-06-03T02:21:06",
+    "source_system": "Zabbix",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 81",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10319",
+    "timestamp": "2026-06-03T02:21:08",
+    "source_system": "OBM",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 81",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10420",
+    "timestamp": "2026-06-03T02:21:16",
+    "source_system": "Prometheus",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 565 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10428",
+    "timestamp": "2026-06-03T02:21:16",
+    "source_system": "SyslogNG",
+    "host": "ao-049-invoice",
+    "service": "invoice-batch",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10388",
+    "timestamp": "2026-06-03T02:21:25",
+    "source_system": "OBM",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (244 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10348",
+    "timestamp": "2026-06-03T02:21:26",
+    "source_system": "Prometheus",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 90",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10316",
+    "timestamp": "2026-06-03T02:21:28",
+    "source_system": "OBM",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 79",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10426",
+    "timestamp": "2026-06-03T02:21:40",
+    "source_system": "AppDynamics",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 696 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10369",
+    "timestamp": "2026-06-03T02:22:05",
+    "source_system": "AppDynamics",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 94",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10347",
+    "timestamp": "2026-06-03T02:22:06",
+    "source_system": "OBM",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 918 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10453",
+    "timestamp": "2026-06-03T02:22:08",
+    "source_system": "Zabbix",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 63 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10373",
+    "timestamp": "2026-06-03T02:22:22",
+    "source_system": "Prometheus",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 77",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10424",
+    "timestamp": "2026-06-03T02:22:27",
+    "source_system": "SyslogNG",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 89",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10465",
+    "timestamp": "2026-06-03T02:22:33",
+    "source_system": "OBM",
+    "host": "ao-036-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10331",
+    "timestamp": "2026-06-03T02:22:46",
+    "source_system": "AppDynamics",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 96",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10323",
+    "timestamp": "2026-06-03T02:22:58",
+    "source_system": "OBM",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 24 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10324",
+    "timestamp": "2026-06-03T02:23:13",
+    "source_system": "Prometheus",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 73",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10376",
+    "timestamp": "2026-06-03T02:23:14",
+    "source_system": "OBM",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (249 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10469",
+    "timestamp": "2026-06-03T02:23:27",
+    "source_system": "Zabbix",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10330",
+    "timestamp": "2026-06-03T02:23:45",
+    "source_system": "AppDynamics",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 347 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10515",
+    "timestamp": "2026-06-03T02:23:49",
+    "source_system": "Prometheus",
+    "host": "ao-055-sms",
+    "service": "sms-gateway",
+    "severity": 1,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 63 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10471",
+    "timestamp": "2026-06-03T02:23:51",
+    "source_system": "AppDynamics",
+    "host": "ao-049-invoice",
+    "service": "invoice-batch",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 428 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10382",
+    "timestamp": "2026-06-03T02:23:56",
+    "source_system": "SyslogNG",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 84",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10501",
+    "timestamp": "2026-06-03T02:24:00",
+    "source_system": "Prometheus",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (241 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10504",
+    "timestamp": "2026-06-03T02:24:10",
+    "source_system": "AppDynamics",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10387",
+    "timestamp": "2026-06-03T02:24:36",
+    "source_system": "SyslogNG",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 386 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10438",
+    "timestamp": "2026-06-03T02:24:42",
+    "source_system": "OBM",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (105 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10352",
+    "timestamp": "2026-06-03T02:24:47",
+    "source_system": "SyslogNG",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 81",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10421",
+    "timestamp": "2026-06-03T02:25:02",
+    "source_system": "SyslogNG",
+    "host": "ao-036-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 92",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10395",
+    "timestamp": "2026-06-03T02:25:29",
+    "source_system": "AppDynamics",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10448",
+    "timestamp": "2026-06-03T02:25:30",
+    "source_system": "Prometheus",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10439",
+    "timestamp": "2026-06-03T02:25:39",
+    "source_system": "OBM",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (111 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10333",
+    "timestamp": "2026-06-03T02:25:53",
+    "source_system": "SyslogNG",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 74",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10491",
+    "timestamp": "2026-06-03T02:26:00",
+    "source_system": "SyslogNG",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 1085 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10335",
+    "timestamp": "2026-06-03T02:26:25",
+    "source_system": "Prometheus",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 39 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10442",
+    "timestamp": "2026-06-03T02:26:30",
+    "source_system": "AppDynamics",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10507",
+    "timestamp": "2026-06-03T02:26:31",
+    "source_system": "OBM",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 47 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10461",
+    "timestamp": "2026-06-03T02:26:33",
+    "source_system": "OBM",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 25 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10346",
+    "timestamp": "2026-06-03T02:26:37",
+    "source_system": "AppDynamics",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (118 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10436",
+    "timestamp": "2026-06-03T02:26:40",
+    "source_system": "SyslogNG",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (114 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10419",
+    "timestamp": "2026-06-03T02:26:51",
+    "source_system": "Prometheus",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 66 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10445",
+    "timestamp": "2026-06-03T02:27:00",
+    "source_system": "SyslogNG",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 81",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10325",
+    "timestamp": "2026-06-03T02:27:03",
+    "source_system": "Prometheus",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 921 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10470",
+    "timestamp": "2026-06-03T02:27:06",
+    "source_system": "AppDynamics",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 103",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10508",
+    "timestamp": "2026-06-03T02:27:07",
+    "source_system": "SyslogNG",
+    "host": "ao-006-mobile",
+    "service": "mobile-bff",
+    "severity": 1,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 792 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10351",
+    "timestamp": "2026-06-03T02:27:09",
+    "source_system": "SyslogNG",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 3,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 43 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10440",
+    "timestamp": "2026-06-03T02:27:18",
+    "source_system": "Zabbix",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 74",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10313",
+    "timestamp": "2026-06-03T02:27:19",
+    "source_system": "AppDynamics",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 81",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10328",
+    "timestamp": "2026-06-03T02:27:21",
+    "source_system": "OBM",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (239 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10458",
+    "timestamp": "2026-06-03T02:27:21",
+    "source_system": "Prometheus",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 89",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10385",
+    "timestamp": "2026-06-03T02:27:22",
+    "source_system": "Prometheus",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10529",
+    "timestamp": "2026-06-03T02:27:25",
+    "source_system": "Zabbix",
+    "host": "ao-055-sms",
+    "service": "sms-gateway",
+    "severity": 2,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 45 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10405",
+    "timestamp": "2026-06-03T02:27:33",
+    "source_system": "Prometheus",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (165 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10476",
+    "timestamp": "2026-06-03T02:27:56",
+    "source_system": "Prometheus",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 92",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10531",
+    "timestamp": "2026-06-03T02:28:00",
+    "source_system": "AppDynamics",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 1,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 80 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10350",
+    "timestamp": "2026-06-03T02:28:03",
+    "source_system": "Zabbix",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 97",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10396",
+    "timestamp": "2026-06-03T02:28:19",
+    "source_system": "OBM",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 85",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10521",
+    "timestamp": "2026-06-03T02:28:24",
+    "source_system": "SyslogNG",
+    "host": "ao-052-payment",
+    "service": "payment-provider-gw",
+    "severity": 1,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 28 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10525",
+    "timestamp": "2026-06-03T02:28:36",
+    "source_system": "SyslogNG",
+    "host": "ao-005-mobile",
+    "service": "mobile-bff",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 106 saniye",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10370",
+    "timestamp": "2026-06-03T02:28:46",
+    "source_system": "Zabbix",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 83",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10374",
+    "timestamp": "2026-06-03T02:28:46",
+    "source_system": "AppDynamics",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 730 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10386",
+    "timestamp": "2026-06-03T02:28:47",
+    "source_system": "Zabbix",
+    "host": "ao-049-invoice",
+    "service": "invoice-batch",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10358",
+    "timestamp": "2026-06-03T02:28:54",
+    "source_system": "OBM",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 83",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10332",
+    "timestamp": "2026-06-03T02:28:55",
+    "source_system": "OBM",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10392",
+    "timestamp": "2026-06-03T02:29:05",
+    "source_system": "SyslogNG",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 82",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10417",
+    "timestamp": "2026-06-03T02:29:05",
+    "source_system": "Prometheus",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 89",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10360",
+    "timestamp": "2026-06-03T02:29:24",
+    "source_system": "SyslogNG",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 849 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10318",
+    "timestamp": "2026-06-03T02:29:29",
+    "source_system": "SyslogNG",
+    "host": "ao-036-billing",
+    "service": "billing-db",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (252 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10377",
+    "timestamp": "2026-06-03T02:29:31",
+    "source_system": "OBM",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (173 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10431",
+    "timestamp": "2026-06-03T02:29:32",
+    "source_system": "Prometheus",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 702 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10478",
+    "timestamp": "2026-06-03T02:29:42",
+    "source_system": "SyslogNG",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 1130 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10403",
+    "timestamp": "2026-06-03T02:29:44",
+    "source_system": "AppDynamics",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 912 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10315",
+    "timestamp": "2026-06-03T02:29:55",
+    "source_system": "OBM",
+    "host": "ao-036-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 76",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10475",
+    "timestamp": "2026-06-03T02:29:59",
+    "source_system": "Zabbix",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10359",
+    "timestamp": "2026-06-03T02:30:00",
+    "source_system": "Prometheus",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 870 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10483",
+    "timestamp": "2026-06-03T02:30:01",
+    "source_system": "OBM",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 764 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10437",
+    "timestamp": "2026-06-03T02:30:26",
+    "source_system": "SyslogNG",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10488",
+    "timestamp": "2026-06-03T02:30:29",
+    "source_system": "Prometheus",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 690 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10320",
+    "timestamp": "2026-06-03T02:30:40",
+    "source_system": "Prometheus",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 87",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10524",
+    "timestamp": "2026-06-03T02:30:40",
+    "source_system": "AppDynamics",
+    "host": "ao-016-subscriber",
+    "service": "subscriber-service",
+    "severity": 1,
+    "alarm_type": "ntp_drift",
+    "message": "Saat sapmasi 566 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10364",
+    "timestamp": "2026-06-03T02:30:43",
+    "source_system": "SyslogNG",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 85",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10434",
+    "timestamp": "2026-06-03T02:30:44",
+    "source_system": "Prometheus",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10341",
+    "timestamp": "2026-06-03T02:30:47",
+    "source_system": "SyslogNG",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (119 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10353",
+    "timestamp": "2026-06-03T02:30:49",
+    "source_system": "Prometheus",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 85",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10391",
+    "timestamp": "2026-06-03T02:30:56",
+    "source_system": "OBM",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 891 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10473",
+    "timestamp": "2026-06-03T02:30:58",
+    "source_system": "Zabbix",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 818 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10361",
+    "timestamp": "2026-06-03T02:31:01",
+    "source_system": "Prometheus",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 90",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10523",
+    "timestamp": "2026-06-03T02:31:10",
+    "source_system": "Prometheus",
+    "host": "ao-005-mobile",
+    "service": "mobile-bff",
+    "severity": 2,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 93 saniye",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10407",
+    "timestamp": "2026-06-03T02:31:13",
+    "source_system": "Prometheus",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10464",
+    "timestamp": "2026-06-03T02:31:15",
+    "source_system": "AppDynamics",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10511",
+    "timestamp": "2026-06-03T02:31:35",
+    "source_system": "Prometheus",
+    "host": "ao-048-batch",
+    "service": "batch-scheduler",
+    "severity": 2,
+    "alarm_type": "backup_warn",
+    "message": "Yedekleme 42 dakika gecikmeli",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10463",
+    "timestamp": "2026-06-03T02:31:46",
+    "source_system": "OBM",
+    "host": "ao-028-order",
+    "service": "order-service",
+    "severity": 3,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 110",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10467",
+    "timestamp": "2026-06-03T02:31:49",
+    "source_system": "AppDynamics",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10362",
+    "timestamp": "2026-06-03T02:31:51",
+    "source_system": "SyslogNG",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 95",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10430",
+    "timestamp": "2026-06-03T02:31:52",
+    "source_system": "AppDynamics",
+    "host": "ao-034-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10345",
+    "timestamp": "2026-06-03T02:32:05",
+    "source_system": "AppDynamics",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "db_conn_pool",
+    "message": "Baglanti havuzu tukendi, bekleyen istek sayisi 85",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10499",
+    "timestamp": "2026-06-03T02:32:09",
+    "source_system": "AppDynamics",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (254 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10482",
+    "timestamp": "2026-06-03T02:32:17",
+    "source_system": "AppDynamics",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10365",
+    "timestamp": "2026-06-03T02:32:36",
+    "source_system": "Zabbix",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 729 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10480",
+    "timestamp": "2026-06-03T02:32:43",
+    "source_system": "OBM",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 1082 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10500",
+    "timestamp": "2026-06-03T02:32:50",
+    "source_system": "AppDynamics",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 21 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10317",
+    "timestamp": "2026-06-03T02:33:00",
+    "source_system": "OBM",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu ORA-19502",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10456",
+    "timestamp": "2026-06-03T02:33:09",
+    "source_system": "SyslogNG",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 83",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10412",
+    "timestamp": "2026-06-03T02:33:14",
+    "source_system": "OBM",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10342",
+    "timestamp": "2026-06-03T02:33:22",
+    "source_system": "Prometheus",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 40 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10411",
+    "timestamp": "2026-06-03T02:33:24",
+    "source_system": "Zabbix",
+    "host": "ao-049-invoice",
+    "service": "invoice-batch",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (222 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10502",
+    "timestamp": "2026-06-03T02:33:45",
+    "source_system": "OBM",
+    "host": "ao-027-order",
+    "service": "order-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10422",
+    "timestamp": "2026-06-03T02:34:02",
+    "source_system": "Prometheus",
+    "host": "ao-019-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 84",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10389",
+    "timestamp": "2026-06-03T02:34:11",
+    "source_system": "AppDynamics",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10485",
+    "timestamp": "2026-06-03T02:34:12",
+    "source_system": "Prometheus",
+    "host": "ao-036-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "http_5xx",
+    "message": "HTTP 5xx hata orani yuzde 64 seviyesine cikti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10399",
+    "timestamp": "2026-06-03T02:34:16",
+    "source_system": "SyslogNG",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 582 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10455",
+    "timestamp": "2026-06-03T02:34:22",
+    "source_system": "SyslogNG",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-db servisine yapilan cagri zaman asimina ugradi (260 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10381",
+    "timestamp": "2026-06-03T02:34:25",
+    "source_system": "OBM",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 5,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (259 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10435",
+    "timestamp": "2026-06-03T02:34:25",
+    "source_system": "SyslogNG",
+    "host": "ao-036-billing",
+    "service": "billing-db",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (129 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10393",
+    "timestamp": "2026-06-03T02:34:26",
+    "source_system": "OBM",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 98",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10528",
+    "timestamp": "2026-06-03T02:34:26",
+    "source_system": "Zabbix",
+    "host": "ao-006-mobile",
+    "service": "mobile-bff",
+    "severity": 1,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 28 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10532",
+    "timestamp": "2026-06-03T02:34:33",
+    "source_system": "Zabbix",
+    "host": "ao-040-message",
+    "service": "message-queue",
+    "severity": 1,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 58 saniye",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10366",
+    "timestamp": "2026-06-03T02:34:34",
+    "source_system": "Zabbix",
+    "host": "ao-021-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 1044 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10425",
+    "timestamp": "2026-06-03T02:34:50",
+    "source_system": "OBM",
+    "host": "ao-018-billing",
+    "service": "billing-service",
+    "severity": 3,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (192 ms)",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10427",
+    "timestamp": "2026-06-03T02:35:12",
+    "source_system": "OBM",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 5,
+    "alarm_type": "db_write_fail",
+    "message": "Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10401",
+    "timestamp": "2026-06-03T02:35:15",
+    "source_system": "AppDynamics",
+    "host": "ao-035-billing",
+    "service": "billing-db",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 81",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10312",
+    "timestamp": "2026-06-03T02:35:35",
+    "source_system": "Prometheus",
+    "host": "ao-023-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 321 ms",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10326",
+    "timestamp": "2026-06-03T02:35:38",
+    "source_system": "OBM",
+    "host": "ao-020-billing",
+    "service": "billing-service",
+    "severity": 5,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 74",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10409",
+    "timestamp": "2026-06-03T02:35:41",
+    "source_system": "OBM",
+    "host": "ao-024-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "latency_high",
+    "message": "Yanit suresi p99 esigi asti, 558 ms",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10402",
+    "timestamp": "2026-06-03T02:35:49",
+    "source_system": "Zabbix",
+    "host": "ao-025-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "timeout",
+    "message": "billing-service servisine yapilan cagri zaman asimina ugradi (243 ms)",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10447",
+    "timestamp": "2026-06-03T02:35:56",
+    "source_system": "OBM",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 78",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10390",
+    "timestamp": "2026-06-03T02:35:57",
+    "source_system": "SyslogNG",
+    "host": "ao-022-charging",
+    "service": "charging-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 97",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-B",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10444",
+    "timestamp": "2026-06-03T02:36:02",
+    "source_system": "OBM",
+    "host": "ao-026-payment",
+    "service": "payment-service",
+    "severity": 4,
+    "alarm_type": "txn_fail",
+    "message": "Islem basarisiz, hata orani yuzde 76",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10517",
+    "timestamp": "2026-06-03T02:36:02",
+    "source_system": "Zabbix",
+    "host": "ao-033-subscriber",
+    "service": "subscriber-db",
+    "severity": 1,
+    "alarm_type": "log_rotate",
+    "message": "Log rotasyonu beklenenden uzun surdu, 96 saniye",
+    "tags": {
+      "veri_merkezi": "dc1",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10537",
+    "timestamp": "2026-06-03T02:37:11",
+    "source_system": "OBM",
+    "host": "ao-008-web",
+    "service": "web-bff",
+    "severity": 2,
+    "alarm_type": "cert_expiry",
+    "message": "Sertifika 28 gun icinde suresi dolacak",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10526",
+    "timestamp": "2026-06-03T02:37:53",
+    "source_system": "SyslogNG",
+    "host": "ao-050-reconciliation",
+    "service": "reconciliation-batch",
+    "severity": 2,
+    "alarm_type": "disk_warn",
+    "message": "Disk kullanimi uyari seviyesinde, yuzde 75 dolu",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10527",
+    "timestamp": "2026-06-03T02:38:45",
+    "source_system": "SyslogNG",
+    "host": "ao-038-cache",
+    "service": "cache-cluster",
+    "severity": 3,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 60 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-C",
+      "ortam": "prod"
+    }
+  },
+  {
+    "alarm_id": "ALM-10510",
+    "timestamp": "2026-06-03T02:38:57",
+    "source_system": "Prometheus",
+    "host": "ao-006-mobile",
+    "service": "mobile-bff",
+    "severity": 3,
+    "alarm_type": "network_flap",
+    "message": "Arayuz eth0 link durumu 56 kez degisti",
+    "tags": {
+      "veri_merkezi": "dc2",
+      "kabin": "rack-A",
+      "ortam": "prod"
+    }
+  }
+]

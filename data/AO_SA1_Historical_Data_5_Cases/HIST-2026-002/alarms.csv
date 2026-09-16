@@ -1,0 +1,253 @@
+alarm_id,timestamp,source_system,host,service,severity,alarm_type,message,veri_merkezi,kabin,ortam
+ALM-10509,2026-06-03T02:08:37,AppDynamics,ao-032-subscriber,subscriber-db,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 104 saniye",dc2,rack-C,prod
+ALM-10536,2026-06-03T02:10:29,OBM,ao-043-load,load-balancer,2,ntp_drift,Saat sapmasi 907 ms,dc1,rack-B,prod
+ALM-10410,2026-06-03T02:11:22,AppDynamics,ao-035-billing,billing-db,4,txn_fail,"Islem basarisiz, hata orani yuzde 76",dc1,rack-C,prod
+ALM-10423,2026-06-03T02:11:25,AppDynamics,ao-025-payment,payment-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (163 ms),dc1,rack-B,prod
+ALM-10530,2026-06-03T02:11:33,Prometheus,ao-007-web,web-bff,2,cert_expiry,Sertifika 50 gun icinde suresi dolacak,dc1,rack-B,prod
+ALM-10294,2026-06-03T02:11:35,SyslogNG,ao-035-billing,billing-db,5,disk_full,"Disk kullanimi kritik seviyede, yuzde 100 dolu",dc1,rack-C,prod
+ALM-10340,2026-06-03T02:12:18,AppDynamics,ao-024-payment,payment-service,3,http_5xx,HTTP 5xx hata orani yuzde 56 seviyesine cikti,dc2,rack-A,prod
+ALM-10289,2026-06-03T02:12:24,SyslogNG,ao-034-billing,billing-db,5,disk_full,"Disk kullanimi kritik seviyede, yuzde 99 dolu",dc2,rack-B,prod
+ALM-10414,2026-06-03T02:12:26,AppDynamics,ao-049-invoice,invoice-batch,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 83",dc1,rack-B,prod
+ALM-10295,2026-06-03T02:12:35,Prometheus,ao-034-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-B,prod
+ALM-10288,2026-06-03T02:12:36,SyslogNG,ao-034-billing,billing-db,4,disk_full,"Disk kullanimi kritik seviyede, yuzde 98 dolu",dc2,rack-B,prod
+ALM-10290,2026-06-03T02:12:37,SyslogNG,ao-034-billing,billing-db,4,disk_full,"Disk kullanimi kritik seviyede, yuzde 100 dolu",dc2,rack-B,prod
+ALM-10287,2026-06-03T02:12:38,Zabbix,ao-034-billing,billing-db,4,disk_full,"Disk kullanimi kritik seviyede, yuzde 96 dolu",dc2,rack-B,prod
+ALM-10310,2026-06-03T02:12:38,AppDynamics,ao-035-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod
+ALM-10336,2026-06-03T02:12:38,SyslogNG,ao-023-charging,charging-service,4,http_5xx,HTTP 5xx hata orani yuzde 48 seviyesine cikti,dc1,rack-C,prod
+ALM-10291,2026-06-03T02:12:41,AppDynamics,ao-035-billing,billing-db,5,disk_full,"Disk kullanimi kritik seviyede, yuzde 96 dolu",dc1,rack-C,prod
+ALM-10384,2026-06-03T02:12:44,Prometheus,ao-026-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 73",dc2,rack-C,prod
+ALM-10363,2026-06-03T02:12:45,SyslogNG,ao-036-billing,billing-db,5,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (120 ms),dc2,rack-A,prod
+ALM-10293,2026-06-03T02:12:48,Prometheus,ao-035-billing,billing-db,5,disk_full,"Disk kullanimi kritik seviyede, yuzde 99 dolu",dc1,rack-C,prod
+ALM-10450,2026-06-03T02:12:51,OBM,ao-028-order,order-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 94",dc2,rack-B,prod
+ALM-10298,2026-06-03T02:12:54,SyslogNG,ao-034-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-B,prod
+ALM-10379,2026-06-03T02:12:56,Zabbix,ao-018-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 84",dc2,rack-A,prod
+ALM-10356,2026-06-03T02:13:05,SyslogNG,ao-026-payment,payment-service,3,http_5xx,HTTP 5xx hata orani yuzde 75 seviyesine cikti,dc2,rack-C,prod
+ALM-10490,2026-06-03T02:13:06,Prometheus,ao-026-payment,payment-service,3,http_5xx,HTTP 5xx hata orani yuzde 50 seviyesine cikti,dc2,rack-C,prod
+ALM-10337,2026-06-03T02:13:09,AppDynamics,ao-022-charging,charging-service,3,http_5xx,HTTP 5xx hata orani yuzde 60 seviyesine cikti,dc2,rack-B,prod
+ALM-10367,2026-06-03T02:13:14,AppDynamics,ao-019-billing,billing-service,3,latency_high,"Yanit suresi p99 esigi asti, 925 ms",dc1,rack-B,prod
+ALM-10339,2026-06-03T02:13:29,Zabbix,ao-020-billing,billing-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-C,prod
+ALM-10321,2026-06-03T02:13:30,AppDynamics,ao-026-payment,payment-service,3,http_5xx,HTTP 5xx hata orani yuzde 43 seviyesine cikti,dc2,rack-C,prod
+ALM-10380,2026-06-03T02:13:42,SyslogNG,ao-022-charging,charging-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-B,prod
+ALM-10354,2026-06-03T02:13:43,AppDynamics,ao-028-order,order-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod
+ALM-10493,2026-06-03T02:13:44,SyslogNG,ao-022-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 267 ms",dc2,rack-B,prod
+ALM-10292,2026-06-03T02:13:44,Zabbix,ao-035-billing,billing-db,4,disk_full,"Disk kullanimi kritik seviyede, yuzde 98 dolu",dc1,rack-C,prod
+ALM-10479,2026-06-03T02:13:44,OBM,ao-036-billing,billing-db,3,latency_high,"Yanit suresi p99 esigi asti, 1087 ms",dc2,rack-A,prod
+ALM-10314,2026-06-03T02:13:54,Zabbix,ao-027-order,order-service,3,latency_high,"Yanit suresi p99 esigi asti, 225 ms",dc1,rack-A,prod
+ALM-10307,2026-06-03T02:13:57,Zabbix,ao-035-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-C,prod
+ALM-10311,2026-06-03T02:13:59,Prometheus,ao-023-charging,charging-service,4,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (198 ms),dc1,rack-C,prod
+ALM-10432,2026-06-03T02:13:59,SyslogNG,ao-035-billing,billing-db,5,txn_fail,"Islem basarisiz, hata orani yuzde 91",dc1,rack-C,prod
+ALM-10538,2026-06-03T02:14:09,Zabbix,ao-016-subscriber,subscriber-service,1,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 83 dolu",dc2,rack-B,prod
+ALM-10375,2026-06-03T02:14:16,SyslogNG,ao-025-payment,payment-service,4,http_5xx,HTTP 5xx hata orani yuzde 21 seviyesine cikti,dc1,rack-B,prod
+ALM-10505,2026-06-03T02:14:19,Zabbix,ao-023-charging,charging-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 78",dc1,rack-C,prod
+ALM-10297,2026-06-03T02:14:21,Zabbix,ao-034-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-B,prod
+ALM-10489,2026-06-03T02:14:23,AppDynamics,ao-028-order,order-service,4,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (108 ms),dc2,rack-B,prod
+ALM-10308,2026-06-03T02:14:29,SyslogNG,ao-035-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-C,prod
+ALM-10498,2026-06-03T02:14:32,Prometheus,ao-023-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 274 ms",dc1,rack-C,prod
+ALM-10449,2026-06-03T02:14:38,AppDynamics,ao-019-billing,billing-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-B,prod
+ALM-10334,2026-06-03T02:14:42,Zabbix,ao-023-charging,charging-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod
+ALM-10416,2026-06-03T02:14:51,Zabbix,ao-027-order,order-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 91",dc1,rack-A,prod
+ALM-10394,2026-06-03T02:14:57,OBM,ao-034-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-B,prod
+ALM-10300,2026-06-03T02:14:58,OBM,ao-034-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-B,prod
+ALM-10433,2026-06-03T02:15:01,SyslogNG,ao-023-charging,charging-service,3,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (244 ms),dc1,rack-C,prod
+ALM-10518,2026-06-03T02:15:03,Zabbix,ao-054-payment,payment-provider-gw,2,network_flap,Arayuz eth0 link durumu 31 kez degisti,dc2,rack-A,prod
+ALM-10344,2026-06-03T02:15:13,Zabbix,ao-049-invoice,invoice-batch,4,latency_high,"Yanit suresi p99 esigi asti, 795 ms",dc1,rack-B,prod
+ALM-10443,2026-06-03T02:15:14,SyslogNG,ao-028-order,order-service,3,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (189 ms),dc2,rack-B,prod
+ALM-10522,2026-06-03T02:15:21,Zabbix,ao-044-load,load-balancer,2,network_flap,Arayuz eth0 link durumu 64 kez degisti,dc2,rack-C,prod
+ALM-10303,2026-06-03T02:15:31,Prometheus,ao-035-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-C,prod
+ALM-10355,2026-06-03T02:15:34,Prometheus,ao-026-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 83",dc2,rack-C,prod
+ALM-10429,2026-06-03T02:15:45,Prometheus,ao-021-charging,charging-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-A,prod
+ALM-10441,2026-06-03T02:15:49,Zabbix,ao-020-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 96",dc2,rack-C,prod
+ALM-10497,2026-06-03T02:15:58,SyslogNG,ao-024-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 96",dc2,rack-A,prod
+ALM-10338,2026-06-03T02:16:04,AppDynamics,ao-026-payment,payment-service,5,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (107 ms),dc2,rack-C,prod
+ALM-10459,2026-06-03T02:16:07,OBM,ao-036-billing,billing-db,4,http_5xx,HTTP 5xx hata orani yuzde 65 seviyesine cikti,dc2,rack-A,prod
+ALM-10495,2026-06-03T02:16:07,OBM,ao-027-order,order-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-A,prod
+ALM-10306,2026-06-03T02:16:15,Zabbix,ao-035-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod
+ALM-10486,2026-06-03T02:16:16,Prometheus,ao-049-invoice,invoice-batch,3,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (234 ms),dc1,rack-B,prod
+ALM-10457,2026-06-03T02:16:17,AppDynamics,ao-034-billing,billing-db,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (204 ms),dc2,rack-B,prod
+ALM-10514,2026-06-03T02:16:47,AppDynamics,ao-005-mobile,mobile-bff,1,ntp_drift,Saat sapmasi 788 ms,dc1,rack-C,prod
+ALM-10357,2026-06-03T02:16:49,Zabbix,ao-022-charging,charging-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod
+ALM-10477,2026-06-03T02:16:58,SyslogNG,ao-035-billing,billing-db,4,txn_fail,"Islem basarisiz, hata orani yuzde 83",dc1,rack-C,prod
+ALM-10302,2026-06-03T02:17:00,Prometheus,ao-034-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod
+ALM-10398,2026-06-03T02:17:06,SyslogNG,ao-024-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 82",dc2,rack-A,prod
+ALM-10494,2026-06-03T02:17:19,OBM,ao-028-order,order-service,4,latency_high,"Yanit suresi p99 esigi asti, 253 ms",dc2,rack-B,prod
+ALM-10512,2026-06-03T02:17:21,Prometheus,ao-029-catalog,catalog-service,2,ntp_drift,Saat sapmasi 244 ms,dc1,rack-C,prod
+ALM-10343,2026-06-03T02:17:33,SyslogNG,ao-018-billing,billing-service,4,http_5xx,HTTP 5xx hata orani yuzde 67 seviyesine cikti,dc2,rack-A,prod
+ALM-10513,2026-06-03T02:17:37,Zabbix,ao-011-auth,auth-service,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 116 saniye",dc1,rack-C,prod
+ALM-10466,2026-06-03T02:17:41,AppDynamics,ao-049-invoice,invoice-batch,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-B,prod
+ALM-10462,2026-06-03T02:17:42,Zabbix,ao-034-billing,billing-db,3,http_5xx,HTTP 5xx hata orani yuzde 73 seviyesine cikti,dc2,rack-B,prod
+ALM-10520,2026-06-03T02:17:46,Zabbix,ao-032-subscriber,subscriber-db,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 69 saniye",dc2,rack-C,prod
+ALM-10301,2026-06-03T02:17:55,AppDynamics,ao-034-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod
+ALM-10383,2026-06-03T02:17:59,SyslogNG,ao-035-billing,billing-db,5,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 81",dc1,rack-C,prod
+ALM-10327,2026-06-03T02:18:00,Zabbix,ao-021-charging,charging-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 73",dc1,rack-A,prod
+ALM-10296,2026-06-03T02:18:01,Prometheus,ao-034-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-B,prod
+ALM-10519,2026-06-03T02:18:08,SyslogNG,ao-040-message,message-queue,2,ntp_drift,Saat sapmasi 428 ms,dc2,rack-B,prod
+ALM-10368,2026-06-03T02:18:09,SyslogNG,ao-025-payment,payment-service,4,http_5xx,HTTP 5xx hata orani yuzde 49 seviyesine cikti,dc1,rack-B,prod
+ALM-10397,2026-06-03T02:18:16,AppDynamics,ao-020-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 88",dc2,rack-C,prod
+ALM-10309,2026-06-03T02:18:17,AppDynamics,ao-035-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-C,prod
+ALM-10533,2026-06-03T02:18:17,OBM,ao-045-dns,dns-resolver,2,cert_expiry,Sertifika 25 gun icinde suresi dolacak,dc1,rack-A,prod
+ALM-10299,2026-06-03T02:18:21,Prometheus,ao-034-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod
+ALM-10305,2026-06-03T02:18:22,SyslogNG,ao-035-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-C,prod
+ALM-10492,2026-06-03T02:18:24,SyslogNG,ao-019-billing,billing-service,5,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (158 ms),dc1,rack-B,prod
+ALM-10481,2026-06-03T02:18:39,AppDynamics,ao-020-billing,billing-service,5,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 72",dc2,rack-C,prod
+ALM-10454,2026-06-03T02:18:44,Zabbix,ao-028-order,order-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 88",dc2,rack-B,prod
+ALM-10472,2026-06-03T02:18:45,OBM,ao-027-order,order-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-A,prod
+ALM-10534,2026-06-03T02:18:50,AppDynamics,ao-010-auth,auth-service,2,ntp_drift,Saat sapmasi 391 ms,dc2,rack-B,prod
+ALM-10349,2026-06-03T02:18:51,Prometheus,ao-026-payment,payment-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-C,prod
+ALM-10408,2026-06-03T02:18:54,OBM,ao-028-order,order-service,3,http_5xx,HTTP 5xx hata orani yuzde 53 seviyesine cikti,dc2,rack-B,prod
+ALM-10474,2026-06-03T02:19:03,SyslogNG,ao-021-charging,charging-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 93",dc1,rack-A,prod
+ALM-10413,2026-06-03T02:19:07,Prometheus,ao-027-order,order-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-A,prod
+ALM-10451,2026-06-03T02:19:11,OBM,ao-025-payment,payment-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-B,prod
+ALM-10452,2026-06-03T02:19:11,SyslogNG,ao-026-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 81",dc2,rack-C,prod
+ALM-10496,2026-06-03T02:19:24,SyslogNG,ao-020-billing,billing-service,4,http_5xx,HTTP 5xx hata orani yuzde 56 seviyesine cikti,dc2,rack-C,prod
+ALM-10460,2026-06-03T02:19:29,Prometheus,ao-024-payment,payment-service,4,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (199 ms),dc2,rack-A,prod
+ALM-10516,2026-06-03T02:19:32,Zabbix,ao-001-api,api-gateway,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 111 saniye",dc1,rack-B,prod
+ALM-10503,2026-06-03T02:19:36,OBM,ao-022-charging,charging-service,3,http_5xx,HTTP 5xx hata orani yuzde 71 seviyesine cikti,dc2,rack-B,prod
+ALM-10446,2026-06-03T02:19:38,Zabbix,ao-036-billing,billing-db,4,latency_high,"Yanit suresi p99 esigi asti, 455 ms",dc2,rack-A,prod
+ALM-10304,2026-06-03T02:19:41,AppDynamics,ao-035-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod
+ALM-10322,2026-06-03T02:19:51,OBM,ao-018-billing,billing-service,5,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (195 ms),dc2,rack-A,prod
+ALM-10535,2026-06-03T02:20:05,OBM,ao-048-batch,batch-scheduler,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 111 saniye",dc2,rack-A,prod
+ALM-10378,2026-06-03T02:20:13,AppDynamics,ao-020-billing,billing-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-C,prod
+ALM-10487,2026-06-03T02:20:19,OBM,ao-026-payment,payment-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (190 ms),dc2,rack-C,prod
+ALM-10371,2026-06-03T02:20:19,Prometheus,ao-025-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 345 ms",dc1,rack-B,prod
+ALM-10506,2026-06-03T02:20:24,Prometheus,ao-023-charging,charging-service,3,http_5xx,HTTP 5xx hata orani yuzde 68 seviyesine cikti,dc1,rack-C,prod
+ALM-10406,2026-06-03T02:20:27,Prometheus,ao-026-payment,payment-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-C,prod
+ALM-10418,2026-06-03T02:20:30,OBM,ao-026-payment,payment-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 101",dc2,rack-C,prod
+ALM-10484,2026-06-03T02:20:34,OBM,ao-026-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 959 ms",dc2,rack-C,prod
+ALM-10400,2026-06-03T02:20:43,Prometheus,ao-021-charging,charging-service,4,http_5xx,HTTP 5xx hata orani yuzde 35 seviyesine cikti,dc1,rack-A,prod
+ALM-10468,2026-06-03T02:20:51,AppDynamics,ao-026-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 82",dc2,rack-C,prod
+ALM-10329,2026-06-03T02:20:57,OBM,ao-028-order,order-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 84",dc2,rack-B,prod
+ALM-10415,2026-06-03T02:21:04,OBM,ao-049-invoice,invoice-batch,4,txn_fail,"Islem basarisiz, hata orani yuzde 95",dc1,rack-B,prod
+ALM-10372,2026-06-03T02:21:06,SyslogNG,ao-019-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 73",dc1,rack-B,prod
+ALM-10404,2026-06-03T02:21:06,Zabbix,ao-023-charging,charging-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 81",dc1,rack-C,prod
+ALM-10319,2026-06-03T02:21:08,OBM,ao-021-charging,charging-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 81",dc1,rack-A,prod
+ALM-10420,2026-06-03T02:21:16,Prometheus,ao-034-billing,billing-db,3,latency_high,"Yanit suresi p99 esigi asti, 565 ms",dc2,rack-B,prod
+ALM-10428,2026-06-03T02:21:16,SyslogNG,ao-049-invoice,invoice-batch,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-B,prod
+ALM-10388,2026-06-03T02:21:25,OBM,ao-026-payment,payment-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (244 ms),dc2,rack-C,prod
+ALM-10348,2026-06-03T02:21:26,Prometheus,ao-026-payment,payment-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 90",dc2,rack-C,prod
+ALM-10316,2026-06-03T02:21:28,OBM,ao-022-charging,charging-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 79",dc2,rack-B,prod
+ALM-10426,2026-06-03T02:21:40,AppDynamics,ao-019-billing,billing-service,3,latency_high,"Yanit suresi p99 esigi asti, 696 ms",dc1,rack-B,prod
+ALM-10369,2026-06-03T02:22:05,AppDynamics,ao-023-charging,charging-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 94",dc1,rack-C,prod
+ALM-10347,2026-06-03T02:22:06,OBM,ao-035-billing,billing-db,4,latency_high,"Yanit suresi p99 esigi asti, 918 ms",dc1,rack-C,prod
+ALM-10453,2026-06-03T02:22:08,Zabbix,ao-035-billing,billing-db,3,http_5xx,HTTP 5xx hata orani yuzde 63 seviyesine cikti,dc1,rack-C,prod
+ALM-10373,2026-06-03T02:22:22,Prometheus,ao-021-charging,charging-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 77",dc1,rack-A,prod
+ALM-10424,2026-06-03T02:22:27,SyslogNG,ao-025-payment,payment-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 89",dc1,rack-B,prod
+ALM-10465,2026-06-03T02:22:33,OBM,ao-036-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-A,prod
+ALM-10331,2026-06-03T02:22:46,AppDynamics,ao-025-payment,payment-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 96",dc1,rack-B,prod
+ALM-10323,2026-06-03T02:22:58,OBM,ao-035-billing,billing-db,3,http_5xx,HTTP 5xx hata orani yuzde 24 seviyesine cikti,dc1,rack-C,prod
+ALM-10324,2026-06-03T02:23:13,Prometheus,ao-020-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 73",dc2,rack-C,prod
+ALM-10376,2026-06-03T02:23:14,OBM,ao-021-charging,charging-service,3,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (249 ms),dc1,rack-A,prod
+ALM-10469,2026-06-03T02:23:27,Zabbix,ao-028-order,order-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-B,prod
+ALM-10330,2026-06-03T02:23:45,AppDynamics,ao-022-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 347 ms",dc2,rack-B,prod
+ALM-10515,2026-06-03T02:23:49,Prometheus,ao-055-sms,sms-gateway,1,backup_warn,Yedekleme 63 dakika gecikmeli,dc1,rack-B,prod
+ALM-10471,2026-06-03T02:23:51,AppDynamics,ao-049-invoice,invoice-batch,4,latency_high,"Yanit suresi p99 esigi asti, 428 ms",dc1,rack-B,prod
+ALM-10382,2026-06-03T02:23:56,SyslogNG,ao-019-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 84",dc1,rack-B,prod
+ALM-10501,2026-06-03T02:24:00,Prometheus,ao-021-charging,charging-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (241 ms),dc1,rack-A,prod
+ALM-10504,2026-06-03T02:24:10,AppDynamics,ao-020-billing,billing-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-C,prod
+ALM-10387,2026-06-03T02:24:36,SyslogNG,ao-023-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 386 ms",dc1,rack-C,prod
+ALM-10438,2026-06-03T02:24:42,OBM,ao-028-order,order-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (105 ms),dc2,rack-B,prod
+ALM-10352,2026-06-03T02:24:47,SyslogNG,ao-019-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 81",dc1,rack-B,prod
+ALM-10421,2026-06-03T02:25:02,SyslogNG,ao-036-billing,billing-db,5,txn_fail,"Islem basarisiz, hata orani yuzde 92",dc2,rack-A,prod
+ALM-10395,2026-06-03T02:25:29,AppDynamics,ao-023-charging,charging-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod
+ALM-10448,2026-06-03T02:25:30,Prometheus,ao-028-order,order-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-B,prod
+ALM-10439,2026-06-03T02:25:39,OBM,ao-021-charging,charging-service,4,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (111 ms),dc1,rack-A,prod
+ALM-10333,2026-06-03T02:25:53,SyslogNG,ao-024-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 74",dc2,rack-A,prod
+ALM-10491,2026-06-03T02:26:00,SyslogNG,ao-025-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 1085 ms",dc1,rack-B,prod
+ALM-10335,2026-06-03T02:26:25,Prometheus,ao-022-charging,charging-service,4,http_5xx,HTTP 5xx hata orani yuzde 39 seviyesine cikti,dc2,rack-B,prod
+ALM-10442,2026-06-03T02:26:30,AppDynamics,ao-024-payment,payment-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-A,prod
+ALM-10507,2026-06-03T02:26:31,OBM,ao-020-billing,billing-service,4,http_5xx,HTTP 5xx hata orani yuzde 47 seviyesine cikti,dc2,rack-C,prod
+ALM-10461,2026-06-03T02:26:33,OBM,ao-028-order,order-service,4,http_5xx,HTTP 5xx hata orani yuzde 25 seviyesine cikti,dc2,rack-B,prod
+ALM-10346,2026-06-03T02:26:37,AppDynamics,ao-019-billing,billing-service,3,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (118 ms),dc1,rack-B,prod
+ALM-10436,2026-06-03T02:26:40,SyslogNG,ao-019-billing,billing-service,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (114 ms),dc1,rack-B,prod
+ALM-10419,2026-06-03T02:26:51,Prometheus,ao-020-billing,billing-service,4,http_5xx,HTTP 5xx hata orani yuzde 66 seviyesine cikti,dc2,rack-C,prod
+ALM-10445,2026-06-03T02:27:00,SyslogNG,ao-018-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 81",dc2,rack-A,prod
+ALM-10325,2026-06-03T02:27:03,Prometheus,ao-035-billing,billing-db,4,latency_high,"Yanit suresi p99 esigi asti, 921 ms",dc1,rack-C,prod
+ALM-10470,2026-06-03T02:27:06,AppDynamics,ao-026-payment,payment-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 103",dc2,rack-C,prod
+ALM-10508,2026-06-03T02:27:07,SyslogNG,ao-006-mobile,mobile-bff,1,ntp_drift,Saat sapmasi 792 ms,dc2,rack-A,prod
+ALM-10351,2026-06-03T02:27:09,SyslogNG,ao-027-order,order-service,3,http_5xx,HTTP 5xx hata orani yuzde 43 seviyesine cikti,dc1,rack-A,prod
+ALM-10440,2026-06-03T02:27:18,Zabbix,ao-018-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 74",dc2,rack-A,prod
+ALM-10313,2026-06-03T02:27:19,AppDynamics,ao-018-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 81",dc2,rack-A,prod
+ALM-10328,2026-06-03T02:27:21,OBM,ao-026-payment,payment-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (239 ms),dc2,rack-C,prod
+ALM-10458,2026-06-03T02:27:21,Prometheus,ao-035-billing,billing-db,4,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc1,rack-C,prod
+ALM-10385,2026-06-03T02:27:22,Prometheus,ao-023-charging,charging-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod
+ALM-10529,2026-06-03T02:27:25,Zabbix,ao-055-sms,sms-gateway,2,cert_expiry,Sertifika 45 gun icinde suresi dolacak,dc1,rack-B,prod
+ALM-10405,2026-06-03T02:27:33,Prometheus,ao-023-charging,charging-service,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (165 ms),dc1,rack-C,prod
+ALM-10476,2026-06-03T02:27:56,Prometheus,ao-034-billing,billing-db,5,txn_fail,"Islem basarisiz, hata orani yuzde 92",dc2,rack-B,prod
+ALM-10531,2026-06-03T02:28:00,AppDynamics,ao-048-batch,batch-scheduler,1,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 80 dolu",dc2,rack-A,prod
+ALM-10350,2026-06-03T02:28:03,Zabbix,ao-021-charging,charging-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc1,rack-A,prod
+ALM-10396,2026-06-03T02:28:19,OBM,ao-021-charging,charging-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 85",dc1,rack-A,prod
+ALM-10521,2026-06-03T02:28:24,SyslogNG,ao-052-payment,payment-provider-gw,1,backup_warn,Yedekleme 28 dakika gecikmeli,dc2,rack-B,prod
+ALM-10525,2026-06-03T02:28:36,SyslogNG,ao-005-mobile,mobile-bff,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 106 saniye",dc1,rack-C,prod
+ALM-10370,2026-06-03T02:28:46,Zabbix,ao-035-billing,billing-db,4,txn_fail,"Islem basarisiz, hata orani yuzde 83",dc1,rack-C,prod
+ALM-10374,2026-06-03T02:28:46,AppDynamics,ao-020-billing,billing-service,4,latency_high,"Yanit suresi p99 esigi asti, 730 ms",dc2,rack-C,prod
+ALM-10386,2026-06-03T02:28:47,Zabbix,ao-049-invoice,invoice-batch,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-B,prod
+ALM-10358,2026-06-03T02:28:54,OBM,ao-021-charging,charging-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 83",dc1,rack-A,prod
+ALM-10332,2026-06-03T02:28:55,OBM,ao-023-charging,charging-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod
+ALM-10392,2026-06-03T02:29:05,SyslogNG,ao-025-payment,payment-service,5,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 82",dc1,rack-B,prod
+ALM-10417,2026-06-03T02:29:05,Prometheus,ao-028-order,order-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc2,rack-B,prod
+ALM-10360,2026-06-03T02:29:24,SyslogNG,ao-022-charging,charging-service,3,latency_high,"Yanit suresi p99 esigi asti, 849 ms",dc2,rack-B,prod
+ALM-10318,2026-06-03T02:29:29,SyslogNG,ao-036-billing,billing-db,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (252 ms),dc2,rack-A,prod
+ALM-10377,2026-06-03T02:29:31,OBM,ao-025-payment,payment-service,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (173 ms),dc1,rack-B,prod
+ALM-10431,2026-06-03T02:29:32,Prometheus,ao-026-payment,payment-service,3,latency_high,"Yanit suresi p99 esigi asti, 702 ms",dc2,rack-C,prod
+ALM-10478,2026-06-03T02:29:42,SyslogNG,ao-020-billing,billing-service,3,latency_high,"Yanit suresi p99 esigi asti, 1130 ms",dc2,rack-C,prod
+ALM-10403,2026-06-03T02:29:44,AppDynamics,ao-027-order,order-service,4,latency_high,"Yanit suresi p99 esigi asti, 912 ms",dc1,rack-A,prod
+ALM-10315,2026-06-03T02:29:55,OBM,ao-036-billing,billing-db,5,txn_fail,"Islem basarisiz, hata orani yuzde 76",dc2,rack-A,prod
+ALM-10475,2026-06-03T02:29:59,Zabbix,ao-025-payment,payment-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-B,prod
+ALM-10359,2026-06-03T02:30:00,Prometheus,ao-021-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 870 ms",dc1,rack-A,prod
+ALM-10483,2026-06-03T02:30:01,OBM,ao-018-billing,billing-service,4,latency_high,"Yanit suresi p99 esigi asti, 764 ms",dc2,rack-A,prod
+ALM-10437,2026-06-03T02:30:26,SyslogNG,ao-025-payment,payment-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-B,prod
+ALM-10488,2026-06-03T02:30:29,Prometheus,ao-024-payment,payment-service,3,latency_high,"Yanit suresi p99 esigi asti, 690 ms",dc2,rack-A,prod
+ALM-10320,2026-06-03T02:30:40,Prometheus,ao-023-charging,charging-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 87",dc1,rack-C,prod
+ALM-10524,2026-06-03T02:30:40,AppDynamics,ao-016-subscriber,subscriber-service,1,ntp_drift,Saat sapmasi 566 ms,dc2,rack-B,prod
+ALM-10364,2026-06-03T02:30:43,SyslogNG,ao-028-order,order-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 85",dc2,rack-B,prod
+ALM-10434,2026-06-03T02:30:44,Prometheus,ao-021-charging,charging-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-A,prod
+ALM-10341,2026-06-03T02:30:47,SyslogNG,ao-023-charging,charging-service,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (119 ms),dc1,rack-C,prod
+ALM-10353,2026-06-03T02:30:49,Prometheus,ao-035-billing,billing-db,4,txn_fail,"Islem basarisiz, hata orani yuzde 85",dc1,rack-C,prod
+ALM-10391,2026-06-03T02:30:56,OBM,ao-022-charging,charging-service,3,latency_high,"Yanit suresi p99 esigi asti, 891 ms",dc2,rack-B,prod
+ALM-10473,2026-06-03T02:30:58,Zabbix,ao-026-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 818 ms",dc2,rack-C,prod
+ALM-10361,2026-06-03T02:31:01,Prometheus,ao-020-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 90",dc2,rack-C,prod
+ALM-10523,2026-06-03T02:31:10,Prometheus,ao-005-mobile,mobile-bff,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 93 saniye",dc1,rack-C,prod
+ALM-10407,2026-06-03T02:31:13,Prometheus,ao-027-order,order-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-A,prod
+ALM-10464,2026-06-03T02:31:15,AppDynamics,ao-035-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-C,prod
+ALM-10511,2026-06-03T02:31:35,Prometheus,ao-048-batch,batch-scheduler,2,backup_warn,Yedekleme 42 dakika gecikmeli,dc2,rack-A,prod
+ALM-10463,2026-06-03T02:31:46,OBM,ao-028-order,order-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 110",dc2,rack-B,prod
+ALM-10467,2026-06-03T02:31:49,AppDynamics,ao-034-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-B,prod
+ALM-10362,2026-06-03T02:31:51,SyslogNG,ao-027-order,order-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 95",dc1,rack-A,prod
+ALM-10430,2026-06-03T02:31:52,AppDynamics,ao-034-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod
+ALM-10345,2026-06-03T02:32:05,AppDynamics,ao-025-payment,payment-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 85",dc1,rack-B,prod
+ALM-10499,2026-06-03T02:32:09,AppDynamics,ao-019-billing,billing-service,5,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (254 ms),dc1,rack-B,prod
+ALM-10482,2026-06-03T02:32:17,AppDynamics,ao-018-billing,billing-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-A,prod
+ALM-10365,2026-06-03T02:32:36,Zabbix,ao-018-billing,billing-service,4,latency_high,"Yanit suresi p99 esigi asti, 729 ms",dc2,rack-A,prod
+ALM-10480,2026-06-03T02:32:43,OBM,ao-020-billing,billing-service,3,latency_high,"Yanit suresi p99 esigi asti, 1082 ms",dc2,rack-C,prod
+ALM-10500,2026-06-03T02:32:50,AppDynamics,ao-023-charging,charging-service,4,http_5xx,HTTP 5xx hata orani yuzde 21 seviyesine cikti,dc1,rack-C,prod
+ALM-10317,2026-06-03T02:33:00,OBM,ao-024-payment,payment-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-A,prod
+ALM-10456,2026-06-03T02:33:09,SyslogNG,ao-018-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 83",dc2,rack-A,prod
+ALM-10412,2026-06-03T02:33:14,OBM,ao-022-charging,charging-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod
+ALM-10342,2026-06-03T02:33:22,Prometheus,ao-024-payment,payment-service,4,http_5xx,HTTP 5xx hata orani yuzde 40 seviyesine cikti,dc2,rack-A,prod
+ALM-10411,2026-06-03T02:33:24,Zabbix,ao-049-invoice,invoice-batch,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (222 ms),dc1,rack-B,prod
+ALM-10502,2026-06-03T02:33:45,OBM,ao-027-order,order-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-A,prod
+ALM-10422,2026-06-03T02:34:02,Prometheus,ao-019-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 84",dc1,rack-B,prod
+ALM-10389,2026-06-03T02:34:11,AppDynamics,ao-023-charging,charging-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod
+ALM-10485,2026-06-03T02:34:12,Prometheus,ao-036-billing,billing-db,4,http_5xx,HTTP 5xx hata orani yuzde 64 seviyesine cikti,dc2,rack-A,prod
+ALM-10399,2026-06-03T02:34:16,SyslogNG,ao-026-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 582 ms",dc2,rack-C,prod
+ALM-10455,2026-06-03T02:34:22,SyslogNG,ao-018-billing,billing-service,4,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (260 ms),dc2,rack-A,prod
+ALM-10381,2026-06-03T02:34:25,OBM,ao-035-billing,billing-db,5,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (259 ms),dc1,rack-C,prod
+ALM-10435,2026-06-03T02:34:25,SyslogNG,ao-036-billing,billing-db,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (129 ms),dc2,rack-A,prod
+ALM-10393,2026-06-03T02:34:26,OBM,ao-020-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 98",dc2,rack-C,prod
+ALM-10528,2026-06-03T02:34:26,Zabbix,ao-006-mobile,mobile-bff,1,cert_expiry,Sertifika 28 gun icinde suresi dolacak,dc2,rack-A,prod
+ALM-10532,2026-06-03T02:34:33,Zabbix,ao-040-message,message-queue,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 58 saniye",dc2,rack-B,prod
+ALM-10366,2026-06-03T02:34:34,Zabbix,ao-021-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 1044 ms",dc1,rack-A,prod
+ALM-10425,2026-06-03T02:34:50,OBM,ao-018-billing,billing-service,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (192 ms),dc2,rack-A,prod
+ALM-10427,2026-06-03T02:35:12,OBM,ao-026-payment,payment-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-C,prod
+ALM-10401,2026-06-03T02:35:15,AppDynamics,ao-035-billing,billing-db,4,txn_fail,"Islem basarisiz, hata orani yuzde 81",dc1,rack-C,prod
+ALM-10312,2026-06-03T02:35:35,Prometheus,ao-023-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 321 ms",dc1,rack-C,prod
+ALM-10326,2026-06-03T02:35:38,OBM,ao-020-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 74",dc2,rack-C,prod
+ALM-10409,2026-06-03T02:35:41,OBM,ao-024-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 558 ms",dc2,rack-A,prod
+ALM-10402,2026-06-03T02:35:49,Zabbix,ao-025-payment,payment-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (243 ms),dc1,rack-B,prod
+ALM-10447,2026-06-03T02:35:56,OBM,ao-022-charging,charging-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 78",dc2,rack-B,prod
+ALM-10390,2026-06-03T02:35:57,SyslogNG,ao-022-charging,charging-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc2,rack-B,prod
+ALM-10444,2026-06-03T02:36:02,OBM,ao-026-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 76",dc2,rack-C,prod
+ALM-10517,2026-06-03T02:36:02,Zabbix,ao-033-subscriber,subscriber-db,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 96 saniye",dc1,rack-A,prod
+ALM-10537,2026-06-03T02:37:11,OBM,ao-008-web,web-bff,2,cert_expiry,Sertifika 28 gun icinde suresi dolacak,dc2,rack-C,prod
+ALM-10526,2026-06-03T02:37:53,SyslogNG,ao-050-reconciliation,reconciliation-batch,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 75 dolu",dc2,rack-C,prod
+ALM-10527,2026-06-03T02:38:45,SyslogNG,ao-038-cache,cache-cluster,3,network_flap,Arayuz eth0 link durumu 60 kez degisti,dc2,rack-C,prod
+ALM-10510,2026-06-03T02:38:57,Prometheus,ao-006-mobile,mobile-bff,3,network_flap,Arayuz eth0 link durumu 56 kez degisti,dc2,rack-A,prod

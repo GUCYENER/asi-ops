@@ -1,0 +1,35 @@
+{
+  "incident_id": "HIST-2026-004",
+  "title": "External Payment Provider Degradation",
+  "detected_at": "2026-08-04T14:22:10",
+  "resolved_at": "2026-08-04T14:41:55",
+  "duration_minutes": 20,
+  "root_cause": "The external payment provider returned elevated latency and intermittent HTTP 502/504 responses, propagating failures to payment and order flows.",
+  "root_cause_tr": "Dis payment provider yuksek latency ve aralikli 502/504 dondu; payment-service ve order-service uzerinde timeout ve transaction fail uretti.",
+  "root_cause_category": "external_dependency",
+  "primary_service": "payment-provider-gw",
+  "affected_services": [
+    "payment-provider-gw",
+    "payment-service",
+    "order-service",
+    "billing-service"
+  ],
+  "affected_hosts": 11,
+  "alarm_count": 178,
+  "correlated_alarm_count": 154,
+  "noise_alarm_count": 24,
+  "similarity_to_current": 0.95,
+  "confidence": 0.97,
+  "resolution_action": "Provider ile incident acildi, trafik kontrollu retry/fallback politikasina alindi; provider stabil olduktan sonra normal moda donuldu.",
+  "action_owner": "Payment Operations",
+  "mttr_minutes": 20,
+  "status": "resolved",
+  "signature_alarm_types": [
+    "ext_slow",
+    "ext_unreach",
+    "timeout",
+    "txn_fail",
+    "latency_high"
+  ],
+  "lessons_learned": "Gateway'deki ext_slow/ext_unreach sinyalleri payment/order txn_fail alarmlarindan once geliyorsa dis bagimlilik root cause adayi olmalidir."
+}

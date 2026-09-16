@@ -1,0 +1,179 @@
+alarm_id,timestamp,source_system,host,service,severity,alarm_type,message,veri_merkezi,kabin,ortam
+ALM-10934,2026-08-04T14:19:31,SyslogNG,ao-040-message,message-queue,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 91 saniye",dc2,rack-B,prod
+ALM-10816,2026-08-04T14:22:10,SyslogNG,ao-052-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc2,rack-B,prod
+ALM-10901,2026-08-04T14:22:23,AppDynamics,ao-028-order,order-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 91",dc2,rack-B,prod
+ALM-10809,2026-08-04T14:22:33,SyslogNG,ao-053-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 73",dc1,rack-C,prod
+ALM-10836,2026-08-04T14:22:36,OBM,ao-027-order,order-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc1,rack-A,prod
+ALM-10780,2026-08-04T14:22:38,OBM,ao-052-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 718 ms,dc2,rack-B,prod
+ALM-10789,2026-08-04T14:22:41,Prometheus,ao-053-payment,payment-provider-gw,5,ext_slow,Dis servis payment-provider-gw yanit suresi 1297 ms,dc1,rack-C,prod
+ALM-10798,2026-08-04T14:22:45,AppDynamics,ao-054-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 853 ms,dc2,rack-A,prod
+ALM-10790,2026-08-04T14:23:10,SyslogNG,ao-053-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 846 ms,dc1,rack-C,prod
+ALM-10799,2026-08-04T14:23:24,AppDynamics,ao-054-payment,payment-provider-gw,5,ext_slow,Dis servis payment-provider-gw yanit suresi 1409 ms,dc2,rack-A,prod
+ALM-10781,2026-08-04T14:23:24,SyslogNG,ao-052-payment,payment-provider-gw,5,ext_slow,Dis servis payment-provider-gw yanit suresi 873 ms,dc2,rack-B,prod
+ALM-10932,2026-08-04T14:23:27,AppDynamics,ao-019-billing,billing-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (172 ms),dc1,rack-B,prod
+ALM-10915,2026-08-04T14:23:29,OBM,ao-053-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (171 ms),dc1,rack-C,prod
+ALM-10895,2026-08-04T14:23:37,SyslogNG,ao-026-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 79",dc2,rack-C,prod
+ALM-10917,2026-08-04T14:23:38,Prometheus,ao-027-order,order-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 83",dc1,rack-A,prod
+ALM-10858,2026-08-04T14:23:39,Prometheus,ao-028-order,order-service,5,ext_unreach,"Dis servis order-service erisilemiyor, HTTP 503",dc2,rack-B,prod
+ALM-10791,2026-08-04T14:23:49,OBM,ao-053-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1667 ms,dc1,rack-C,prod
+ALM-10800,2026-08-04T14:23:50,OBM,ao-054-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 891 ms,dc2,rack-A,prod
+ALM-10849,2026-08-04T14:23:54,AppDynamics,ao-026-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (171 ms),dc2,rack-C,prod
+ALM-10782,2026-08-04T14:24:00,OBM,ao-052-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1040 ms,dc2,rack-B,prod
+ALM-10837,2026-08-04T14:24:05,Zabbix,ao-020-billing,billing-service,4,ext_slow,Dis servis billing-service yanit suresi 808 ms,dc2,rack-C,prod
+ALM-10931,2026-08-04T14:24:21,Prometheus,ao-027-order,order-service,4,latency_high,"Yanit suresi p99 esigi asti, 680 ms",dc1,rack-A,prod
+ALM-10801,2026-08-04T14:24:23,SyslogNG,ao-054-payment,payment-provider-gw,5,ext_slow,Dis servis payment-provider-gw yanit suresi 1608 ms,dc2,rack-A,prod
+ALM-10860,2026-08-04T14:24:24,Prometheus,ao-018-billing,billing-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (175 ms),dc2,rack-A,prod
+ALM-10792,2026-08-04T14:24:28,Zabbix,ao-053-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1555 ms,dc1,rack-C,prod
+ALM-10783,2026-08-04T14:24:33,Zabbix,ao-052-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1685 ms,dc2,rack-B,prod
+ALM-10867,2026-08-04T14:24:38,SyslogNG,ao-053-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 73",dc1,rack-C,prod
+ALM-10877,2026-08-04T14:24:39,OBM,ao-054-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (165 ms),dc2,rack-A,prod
+ALM-10845,2026-08-04T14:24:42,Prometheus,ao-020-billing,billing-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (220 ms),dc2,rack-C,prod
+ALM-10899,2026-08-04T14:24:49,AppDynamics,ao-053-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (178 ms),dc1,rack-C,prod
+ALM-10886,2026-08-04T14:24:57,Prometheus,ao-020-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 92",dc2,rack-C,prod
+ALM-10802,2026-08-04T14:25:00,SyslogNG,ao-054-payment,payment-provider-gw,5,ext_slow,Dis servis payment-provider-gw yanit suresi 1354 ms,dc2,rack-A,prod
+ALM-10941,2026-08-04T14:25:08,SyslogNG,ao-001-api,api-gateway,2,ntp_drift,Saat sapmasi 289 ms,dc1,rack-B,prod
+ALM-10784,2026-08-04T14:25:08,SyslogNG,ao-052-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1667 ms,dc2,rack-B,prod
+ALM-10793,2026-08-04T14:25:09,Prometheus,ao-053-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 824 ms,dc1,rack-C,prod
+ALM-10803,2026-08-04T14:25:14,AppDynamics,ao-054-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc2,rack-A,prod
+ALM-10930,2026-08-04T14:25:16,AppDynamics,ao-054-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (95 ms),dc2,rack-A,prod
+ALM-10785,2026-08-04T14:25:19,OBM,ao-052-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 502",dc2,rack-B,prod
+ALM-10794,2026-08-04T14:25:19,Zabbix,ao-053-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc1,rack-C,prod
+ALM-10859,2026-08-04T14:25:26,SyslogNG,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (105 ms),dc2,rack-B,prod
+ALM-10815,2026-08-04T14:25:40,AppDynamics,ao-054-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 72",dc2,rack-A,prod
+ALM-10897,2026-08-04T14:25:41,Zabbix,ao-054-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 82",dc2,rack-A,prod
+ALM-10940,2026-08-04T14:25:48,AppDynamics,ao-015-subscriber,subscriber-service,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 84 dolu",dc1,rack-A,prod
+ALM-10913,2026-08-04T14:25:52,Prometheus,ao-027-order,order-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (111 ms),dc1,rack-A,prod
+ALM-10795,2026-08-04T14:25:58,OBM,ao-053-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 502",dc1,rack-C,prod
+ALM-10786,2026-08-04T14:26:01,Zabbix,ao-052-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 502",dc2,rack-B,prod
+ALM-10856,2026-08-04T14:26:02,Zabbix,ao-026-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (143 ms),dc2,rack-C,prod
+ALM-10904,2026-08-04T14:26:02,AppDynamics,ao-026-payment,payment-service,5,ext_unreach,"Dis servis payment-service erisilemiyor, HTTP 504",dc2,rack-C,prod
+ALM-10804,2026-08-04T14:26:08,OBM,ao-054-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc2,rack-A,prod
+ALM-10825,2026-08-04T14:26:22,AppDynamics,ao-054-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 98",dc2,rack-A,prod
+ALM-10872,2026-08-04T14:26:22,OBM,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (113 ms),dc2,rack-B,prod
+ALM-10847,2026-08-04T14:26:36,SyslogNG,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (128 ms),dc2,rack-B,prod
+ALM-10946,2026-08-04T14:26:41,Prometheus,ao-033-subscriber,subscriber-db,3,network_flap,Arayuz eth0 link durumu 40 kez degisti,dc1,rack-A,prod
+ALM-10796,2026-08-04T14:26:44,Zabbix,ao-053-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 502",dc1,rack-C,prod
+ALM-10826,2026-08-04T14:26:45,OBM,ao-053-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 88",dc1,rack-C,prod
+ALM-10787,2026-08-04T14:26:46,AppDynamics,ao-052-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc2,rack-B,prod
+ALM-10805,2026-08-04T14:26:48,OBM,ao-054-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc2,rack-A,prod
+ALM-10870,2026-08-04T14:26:49,SyslogNG,ao-052-payment,payment-provider-gw,4,latency_high,"Yanit suresi p99 esigi asti, 950 ms",dc2,rack-B,prod
+ALM-10822,2026-08-04T14:26:57,OBM,ao-020-billing,billing-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (158 ms),dc2,rack-C,prod
+ALM-10914,2026-08-04T14:27:16,Prometheus,ao-052-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1559 ms,dc2,rack-B,prod
+ALM-10951,2026-08-04T14:27:25,Prometheus,ao-016-subscriber,subscriber-service,2,network_flap,Arayuz eth0 link durumu 34 kez degisti,dc2,rack-B,prod
+ALM-10944,2026-08-04T14:27:28,AppDynamics,ao-045-dns,dns-resolver,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 113 saniye",dc1,rack-A,prod
+ALM-10788,2026-08-04T14:27:30,SyslogNG,ao-052-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 502",dc2,rack-B,prod
+ALM-10806,2026-08-04T14:27:32,SyslogNG,ao-054-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc2,rack-A,prod
+ALM-10797,2026-08-04T14:27:39,OBM,ao-053-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc1,rack-C,prod
+ALM-10905,2026-08-04T14:27:40,OBM,ao-024-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 90",dc2,rack-A,prod
+ALM-10928,2026-08-04T14:27:41,Prometheus,ao-024-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 86",dc2,rack-A,prod
+ALM-10892,2026-08-04T14:27:49,AppDynamics,ao-054-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 79",dc2,rack-A,prod
+ALM-10898,2026-08-04T14:28:06,AppDynamics,ao-052-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (167 ms),dc2,rack-B,prod
+ALM-10908,2026-08-04T14:28:18,SyslogNG,ao-025-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (213 ms),dc1,rack-B,prod
+ALM-10911,2026-08-04T14:28:22,Prometheus,ao-053-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (113 ms),dc1,rack-C,prod
+ALM-10955,2026-08-04T14:28:32,Prometheus,ao-040-message,message-queue,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 87 dolu",dc2,rack-B,prod
+ALM-10823,2026-08-04T14:28:34,AppDynamics,ao-053-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 78",dc1,rack-C,prod
+ALM-10880,2026-08-04T14:28:46,AppDynamics,ao-019-billing,billing-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (210 ms),dc1,rack-B,prod
+ALM-10844,2026-08-04T14:28:52,Zabbix,ao-053-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (164 ms),dc1,rack-C,prod
+ALM-10861,2026-08-04T14:29:11,OBM,ao-027-order,order-service,5,ext_slow,Dis servis order-service yanit suresi 912 ms,dc1,rack-A,prod
+ALM-10832,2026-08-04T14:29:35,Prometheus,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (175 ms),dc2,rack-B,prod
+ALM-10883,2026-08-04T14:29:43,Zabbix,ao-026-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (126 ms),dc2,rack-C,prod
+ALM-10820,2026-08-04T14:29:44,Zabbix,ao-019-billing,billing-service,5,ext_unreach,"Dis servis billing-service erisilemiyor, HTTP 504",dc1,rack-B,prod
+ALM-10818,2026-08-04T14:29:46,Zabbix,ao-026-payment,payment-service,5,ext_unreach,"Dis servis payment-service erisilemiyor, HTTP 502",dc2,rack-C,prod
+ALM-10949,2026-08-04T14:29:52,Prometheus,ao-012-session,session-service,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 89 saniye",dc2,rack-A,prod
+ALM-10919,2026-08-04T14:30:06,Zabbix,ao-025-payment,payment-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (156 ms),dc1,rack-B,prod
+ALM-10879,2026-08-04T14:30:10,Zabbix,ao-054-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 92",dc2,rack-A,prod
+ALM-10855,2026-08-04T14:30:22,OBM,ao-026-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 86",dc2,rack-C,prod
+ALM-10811,2026-08-04T14:30:23,Zabbix,ao-028-order,order-service,5,ext_slow,Dis servis order-service yanit suresi 1356 ms,dc2,rack-B,prod
+ALM-10838,2026-08-04T14:30:43,OBM,ao-025-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 93",dc1,rack-B,prod
+ALM-10863,2026-08-04T14:30:45,SyslogNG,ao-018-billing,billing-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (117 ms),dc2,rack-A,prod
+ALM-10875,2026-08-04T14:30:47,OBM,ao-024-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 91",dc2,rack-A,prod
+ALM-10923,2026-08-04T14:30:49,SyslogNG,ao-020-billing,billing-service,5,ext_slow,Dis servis billing-service yanit suresi 1572 ms,dc2,rack-C,prod
+ALM-10920,2026-08-04T14:30:57,OBM,ao-052-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 85",dc2,rack-B,prod
+ALM-10864,2026-08-04T14:30:59,AppDynamics,ao-024-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (211 ms),dc2,rack-A,prod
+ALM-10889,2026-08-04T14:31:03,Prometheus,ao-018-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc2,rack-A,prod
+ALM-10887,2026-08-04T14:31:09,OBM,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (120 ms),dc2,rack-B,prod
+ALM-10936,2026-08-04T14:31:26,OBM,ao-055-sms,sms-gateway,1,cert_expiry,Sertifika 28 gun icinde suresi dolacak,dc1,rack-B,prod
+ALM-10924,2026-08-04T14:31:34,Prometheus,ao-053-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (141 ms),dc1,rack-C,prod
+ALM-10909,2026-08-04T14:31:50,Prometheus,ao-054-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (97 ms),dc2,rack-A,prod
+ALM-10933,2026-08-04T14:31:56,Prometheus,ao-054-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (161 ms),dc2,rack-A,prod
+ALM-10841,2026-08-04T14:31:59,AppDynamics,ao-024-payment,payment-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (160 ms),dc2,rack-A,prod
+ALM-10890,2026-08-04T14:32:05,AppDynamics,ao-027-order,order-service,3,latency_high,"Yanit suresi p99 esigi asti, 957 ms",dc1,rack-A,prod
+ALM-10821,2026-08-04T14:32:07,OBM,ao-054-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc2,rack-A,prod
+ALM-10871,2026-08-04T14:32:20,OBM,ao-054-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (113 ms),dc2,rack-A,prod
+ALM-10868,2026-08-04T14:32:27,Zabbix,ao-025-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc1,rack-B,prod
+ALM-10885,2026-08-04T14:32:35,SyslogNG,ao-026-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (194 ms),dc2,rack-C,prod
+ALM-10881,2026-08-04T14:32:36,SyslogNG,ao-026-payment,payment-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (173 ms),dc2,rack-C,prod
+ALM-10956,2026-08-04T14:32:44,SyslogNG,ao-041-object,object-store,1,ntp_drift,Saat sapmasi 311 ms,dc1,rack-C,prod
+ALM-10948,2026-08-04T14:32:47,OBM,ao-022-charging,charging-service,2,cert_expiry,Sertifika 53 gun icinde suresi dolacak,dc2,rack-B,prod
+ALM-10937,2026-08-04T14:32:48,AppDynamics,ao-006-mobile,mobile-bff,2,ntp_drift,Saat sapmasi 595 ms,dc2,rack-A,prod
+ALM-10842,2026-08-04T14:32:50,OBM,ao-027-order,order-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (217 ms),dc1,rack-A,prod
+ALM-10922,2026-08-04T14:32:56,Zabbix,ao-027-order,order-service,5,ext_slow,Dis servis order-service yanit suresi 1120 ms,dc1,rack-A,prod
+ALM-10882,2026-08-04T14:32:57,Prometheus,ao-026-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc2,rack-C,prod
+ALM-10829,2026-08-04T14:33:09,AppDynamics,ao-027-order,order-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (179 ms),dc1,rack-A,prod
+ALM-10834,2026-08-04T14:33:10,Zabbix,ao-052-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 94",dc2,rack-B,prod
+ALM-10853,2026-08-04T14:33:29,Zabbix,ao-024-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (179 ms),dc2,rack-A,prod
+ALM-10862,2026-08-04T14:33:29,OBM,ao-018-billing,billing-service,3,latency_high,"Yanit suresi p99 esigi asti, 1440 ms",dc2,rack-A,prod
+ALM-10884,2026-08-04T14:33:29,AppDynamics,ao-020-billing,billing-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (181 ms),dc2,rack-C,prod
+ALM-10957,2026-08-04T14:33:36,SyslogNG,ao-004-mobile,mobile-bff,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 75 dolu",dc2,rack-B,prod
+ALM-10824,2026-08-04T14:33:42,AppDynamics,ao-028-order,order-service,5,ext_unreach,"Dis servis order-service erisilemiyor, HTTP 502",dc2,rack-B,prod
+ALM-10929,2026-08-04T14:33:43,Prometheus,ao-027-order,order-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc1,rack-A,prod
+ALM-10833,2026-08-04T14:33:57,Prometheus,ao-025-payment,payment-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (182 ms),dc1,rack-B,prod
+ALM-10918,2026-08-04T14:34:07,AppDynamics,ao-028-order,order-service,5,ext_unreach,"Dis servis order-service erisilemiyor, HTTP 503",dc2,rack-B,prod
+ALM-10900,2026-08-04T14:34:12,AppDynamics,ao-052-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 84",dc2,rack-B,prod
+ALM-10850,2026-08-04T14:34:23,Zabbix,ao-053-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc1,rack-C,prod
+ALM-10903,2026-08-04T14:34:31,Prometheus,ao-020-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 77",dc2,rack-C,prod
+ALM-10846,2026-08-04T14:35:02,AppDynamics,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (110 ms),dc2,rack-B,prod
+ALM-10808,2026-08-04T14:35:18,SyslogNG,ao-054-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 93",dc2,rack-A,prod
+ALM-10945,2026-08-04T14:35:37,Zabbix,ao-046-dns,dns-resolver,1,cert_expiry,Sertifika 22 gun icinde suresi dolacak,dc2,rack-B,prod
+ALM-10954,2026-08-04T14:35:37,SyslogNG,ao-043-load,load-balancer,2,cert_expiry,Sertifika 38 gun icinde suresi dolacak,dc1,rack-B,prod
+ALM-10869,2026-08-04T14:35:39,AppDynamics,ao-028-order,order-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 84",dc2,rack-B,prod
+ALM-10891,2026-08-04T14:35:42,SyslogNG,ao-052-payment,payment-provider-gw,4,latency_high,"Yanit suresi p99 esigi asti, 685 ms",dc2,rack-B,prod
+ALM-10830,2026-08-04T14:35:44,Zabbix,ao-024-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (130 ms),dc2,rack-A,prod
+ALM-10927,2026-08-04T14:35:45,OBM,ao-026-payment,payment-service,5,ext_unreach,"Dis servis payment-service erisilemiyor, HTTP 504",dc2,rack-C,prod
+ALM-10852,2026-08-04T14:35:56,Zabbix,ao-027-order,order-service,3,latency_high,"Yanit suresi p99 esigi asti, 1599 ms",dc1,rack-A,prod
+ALM-10874,2026-08-04T14:36:15,Prometheus,ao-026-payment,payment-service,4,ext_slow,Dis servis payment-service yanit suresi 1133 ms,dc2,rack-C,prod
+ALM-10831,2026-08-04T14:36:15,SyslogNG,ao-020-billing,billing-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (112 ms),dc2,rack-C,prod
+ALM-10942,2026-08-04T14:36:20,Zabbix,ao-044-load,load-balancer,2,cert_expiry,Sertifika 25 gun icinde suresi dolacak,dc2,rack-C,prod
+ALM-10947,2026-08-04T14:36:47,Zabbix,ao-035-billing,billing-db,1,ntp_drift,Saat sapmasi 434 ms,dc1,rack-C,prod
+ALM-10938,2026-08-04T14:36:50,OBM,ao-046-dns,dns-resolver,1,backup_warn,Yedekleme 36 dakika gecikmeli,dc2,rack-B,prod
+ALM-10807,2026-08-04T14:36:56,AppDynamics,ao-053-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 75",dc1,rack-C,prod
+ALM-10827,2026-08-04T14:36:56,SyslogNG,ao-018-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc2,rack-A,prod
+ALM-10865,2026-08-04T14:36:56,OBM,ao-054-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 84",dc2,rack-A,prod
+ALM-10843,2026-08-04T14:37:17,Zabbix,ao-025-payment,payment-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (120 ms),dc1,rack-B,prod
+ALM-10814,2026-08-04T14:37:25,OBM,ao-019-billing,billing-service,4,latency_high,"Yanit suresi p99 esigi asti, 1520 ms",dc1,rack-B,prod
+ALM-10943,2026-08-04T14:37:31,AppDynamics,ao-041-object,object-store,2,ntp_drift,Saat sapmasi 566 ms,dc1,rack-C,prod
+ALM-10912,2026-08-04T14:37:38,Prometheus,ao-054-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (138 ms),dc2,rack-A,prod
+ALM-10813,2026-08-04T14:37:50,SyslogNG,ao-024-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 74",dc2,rack-A,prod
+ALM-10848,2026-08-04T14:38:05,OBM,ao-018-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 82",dc2,rack-A,prod
+ALM-10896,2026-08-04T14:38:11,OBM,ao-026-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 1294 ms",dc2,rack-C,prod
+ALM-10819,2026-08-04T14:38:18,AppDynamics,ao-053-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (171 ms),dc1,rack-C,prod
+ALM-10854,2026-08-04T14:38:22,OBM,ao-024-payment,payment-service,3,latency_high,"Yanit suresi p99 esigi asti, 1586 ms",dc2,rack-A,prod
+ALM-10910,2026-08-04T14:38:36,Prometheus,ao-053-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (155 ms),dc1,rack-C,prod
+ALM-10926,2026-08-04T14:38:40,Zabbix,ao-052-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc2,rack-B,prod
+ALM-10878,2026-08-04T14:38:47,Zabbix,ao-019-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 78",dc1,rack-B,prod
+ALM-10894,2026-08-04T14:38:48,OBM,ao-018-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 79",dc2,rack-A,prod
+ALM-10810,2026-08-04T14:39:05,OBM,ao-028-order,order-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 99",dc2,rack-B,prod
+ALM-10817,2026-08-04T14:39:31,AppDynamics,ao-054-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1323 ms,dc2,rack-A,prod
+ALM-10935,2026-08-04T14:39:37,SyslogNG,ao-013-session,session-service,1,cert_expiry,Sertifika 28 gun icinde suresi dolacak,dc1,rack-B,prod
+ALM-10902,2026-08-04T14:39:43,Prometheus,ao-024-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 74",dc2,rack-A,prod
+ALM-10857,2026-08-04T14:39:48,SyslogNG,ao-025-payment,payment-service,5,ext_slow,Dis servis payment-service yanit suresi 750 ms,dc1,rack-B,prod
+ALM-10851,2026-08-04T14:39:56,SyslogNG,ao-024-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 77",dc2,rack-A,prod
+ALM-10921,2026-08-04T14:40:00,SyslogNG,ao-018-billing,billing-service,5,ext_unreach,"Dis servis billing-service erisilemiyor, HTTP 504",dc2,rack-A,prod
+ALM-10952,2026-08-04T14:40:16,Prometheus,ao-013-session,session-service,2,backup_warn,Yedekleme 38 dakika gecikmeli,dc1,rack-B,prod
+ALM-10866,2026-08-04T14:40:25,SyslogNG,ao-054-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 75",dc2,rack-A,prod
+ALM-10873,2026-08-04T14:40:30,Zabbix,ao-053-payment,payment-provider-gw,3,latency_high,"Yanit suresi p99 esigi asti, 1307 ms",dc1,rack-C,prod
+ALM-10916,2026-08-04T14:40:34,AppDynamics,ao-054-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 76",dc2,rack-A,prod
+ALM-10839,2026-08-04T14:40:38,Zabbix,ao-025-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 78",dc1,rack-B,prod
+ALM-10812,2026-08-04T14:40:57,AppDynamics,ao-052-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 79",dc2,rack-B,prod
+ALM-10925,2026-08-04T14:41:11,Prometheus,ao-052-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (195 ms),dc2,rack-B,prod
+ALM-10840,2026-08-04T14:41:20,SyslogNG,ao-028-order,order-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (108 ms),dc2,rack-B,prod
+ALM-10893,2026-08-04T14:41:28,AppDynamics,ao-020-billing,billing-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (167 ms),dc2,rack-C,prod
+ALM-10876,2026-08-04T14:41:31,SyslogNG,ao-054-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc2,rack-A,prod
+ALM-10835,2026-08-04T14:41:38,SyslogNG,ao-028-order,order-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (169 ms),dc2,rack-B,prod
+ALM-10907,2026-08-04T14:41:42,OBM,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (100 ms),dc2,rack-B,prod
+ALM-10906,2026-08-04T14:41:44,Prometheus,ao-018-billing,billing-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (111 ms),dc2,rack-A,prod
+ALM-10828,2026-08-04T14:41:54,Prometheus,ao-020-billing,billing-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (183 ms),dc2,rack-C,prod
+ALM-10888,2026-08-04T14:41:55,SyslogNG,ao-052-payment,payment-provider-gw,5,ext_slow,Dis servis payment-provider-gw yanit suresi 763 ms,dc2,rack-B,prod
+ALM-10953,2026-08-04T14:42:14,SyslogNG,ao-008-web,web-bff,2,cert_expiry,Sertifika 18 gun icinde suresi dolacak,dc2,rack-C,prod
+ALM-10950,2026-08-04T14:42:29,AppDynamics,ao-012-session,session-service,1,network_flap,Arayuz eth0 link durumu 32 kez degisti,dc2,rack-A,prod
+ALM-10939,2026-08-04T14:43:57,Zabbix,ao-044-load,load-balancer,2,ntp_drift,Saat sapmasi 463 ms,dc2,rack-C,prod

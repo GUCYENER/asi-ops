@@ -75,10 +75,28 @@
 
   <section id="panel-metrics" class="panel">
     <div class="panel-head">
-      <h2>Ölçümler</h2>
-      <p>Doğrulama verisi jüride kapalı olduğu için kök neden isabeti iddia edilmiyor; yalnızca ölçebildiklerimiz gösteriliyor.</p>
+      <h2>Veri analizi ve yöntem</h2>
+      <p>Gürültü kararını model kanaatiyle değil <b>ölçerek</b> veriyoruz. Aşağıdaki profil, o ölçümün kendisi.</p>
     </div>
-    <div id="metrics-body"></div>
+
+    <div class="method">
+      <h3>Gürültü ayrımının dayanağı: zamansal yoğunlaşma</h3>
+      <p class="method-formula">yoğunlaşma = tepe 10 dk penceresi ÷ medyan 10 dk penceresi</p>
+      <p>Arka plan gürültüsü sürekli çalışan süreçlerden doğar (sertifika kontrolü, yedekleme, log rotasyonu, NTP senkronu) — zamana düzgün yayılır, oran 1'e yaklaşır. Gerçek olaylar patlama yapar, oran yükselir. <b>Eşik elle ayarlanmadı, veriden türetildi:</b> ≥4.0 sinyal, &lt;3.0 gürültü, arası belirsiz.</p>
+      <div id="conc-chart"></div>
+    </div>
+
+    <div class="method">
+      <h3>Bir alarmın karar yolu</h3>
+      <p>Tip tek başına alarmı elemez. Üç yollu, muhafazakâr karar:</p>
+      <div id="decision-flow"></div>
+    </div>
+
+    <div class="method">
+      <h3>Ölçümler</h3>
+      <p class="reason">Doğrulama verisi jüride kapalı olduğu için kök neden isabeti iddia edilmiyor; yalnızca ölçebildiklerimiz gösteriliyor.</p>
+      <div id="metrics-body"></div>
+    </div>
   </section>
 </main>
 

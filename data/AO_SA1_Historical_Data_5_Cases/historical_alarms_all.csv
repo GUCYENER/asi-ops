@@ -1,0 +1,1085 @@
+alarm_id,timestamp,source_system,host,service,severity,alarm_type,message,veri_merkezi,kabin,ortam,incident_id
+ALM-10268,2026-05-14T01:14:43,OBM,ao-006-mobile,mobile-bff,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 95 saniye",dc2,rack-A,prod,HIST-2026-001
+ALM-10259,2026-05-14T01:15:46,Zabbix,ao-022-charging,charging-service,1,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 82 dolu",dc2,rack-B,prod,HIST-2026-001
+ALM-10250,2026-05-14T01:15:50,SyslogNG,ao-051-report,report-batch,2,network_flap,Arayuz eth0 link durumu 39 kez degisti,dc1,rack-A,prod,HIST-2026-001
+ALM-10281,2026-05-14T01:16:42,SyslogNG,ao-046-dns,dns-resolver,1,ntp_drift,Saat sapmasi 788 ms,dc2,rack-B,prod,HIST-2026-001
+ALM-10272,2026-05-14T01:16:46,Zabbix,ao-048-batch,batch-scheduler,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 86 dolu",dc2,rack-A,prod,HIST-2026-001
+ALM-10247,2026-05-14T01:17:11,OBM,ao-054-payment,payment-provider-gw,1,cert_expiry,Sertifika 45 gun icinde suresi dolacak,dc2,rack-A,prod,HIST-2026-001
+ALM-10275,2026-05-14T01:17:35,Zabbix,ao-021-charging,charging-service,1,backup_warn,Yedekleme 50 dakika gecikmeli,dc1,rack-A,prod,HIST-2026-001
+ALM-10261,2026-05-14T01:17:58,AppDynamics,ao-028-order,order-service,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 76 dolu",dc2,rack-B,prod,HIST-2026-001
+ALM-10001,2026-05-14T01:18:08,Prometheus,ao-002-api,api-gateway,5,network_down,Arayuz bond0 baglantisi koptu,dc2,rack-C,prod,HIST-2026-001
+ALM-10265,2026-05-14T01:18:10,AppDynamics,ao-036-billing,billing-db,1,ntp_drift,Saat sapmasi 944 ms,dc2,rack-A,prod,HIST-2026-001
+ALM-10249,2026-05-14T01:18:15,Zabbix,ao-041-object,object-store,2,network_flap,Arayuz eth0 link durumu 62 kez degisti,dc1,rack-C,prod,HIST-2026-001
+ALM-10002,2026-05-14T01:18:22,SyslogNG,ao-008-web,web-bff,4,network_down,Arayuz bond0 baglantisi koptu,dc2,rack-C,prod,HIST-2026-001
+ALM-10266,2026-05-14T01:18:29,SyslogNG,ao-051-report,report-batch,2,backup_warn,Yedekleme 54 dakika gecikmeli,dc1,rack-A,prod,HIST-2026-001
+ALM-10005,2026-05-14T01:18:30,Prometheus,ao-026-payment,payment-service,5,network_down,Arayuz bond0 baglantisi koptu,dc2,rack-C,prod,HIST-2026-001
+ALM-10004,2026-05-14T01:18:32,SyslogNG,ao-020-billing,billing-service,4,network_down,Arayuz bond0 baglantisi koptu,dc2,rack-C,prod,HIST-2026-001
+ALM-10008,2026-05-14T01:18:32,OBM,ao-038-cache,cache-cluster,5,network_down,Arayuz bond0 baglantisi koptu,dc2,rack-C,prod,HIST-2026-001
+ALM-10019,2026-05-14T01:18:39,Zabbix,ao-020-billing,billing-service,3,pkt_loss,Paket kaybi yuzde 37,dc2,rack-C,prod,HIST-2026-001
+ALM-10006,2026-05-14T01:18:40,Prometheus,ao-032-subscriber,subscriber-db,4,network_down,Arayuz bond0 baglantisi koptu,dc2,rack-C,prod,HIST-2026-001
+ALM-10020,2026-05-14T01:18:41,Zabbix,ao-026-payment,payment-service,3,pkt_loss,Paket kaybi yuzde 71,dc2,rack-C,prod,HIST-2026-001
+ALM-10013,2026-05-14T01:18:42,Prometheus,ao-008-web,web-bff,3,pkt_loss,Paket kaybi yuzde 77,dc2,rack-C,prod,HIST-2026-001
+ALM-10009,2026-05-14T01:18:53,Zabbix,ao-044-load,load-balancer,4,network_down,Arayuz bond0 baglantisi koptu,dc2,rack-C,prod,HIST-2026-001
+ALM-10011,2026-05-14T01:18:56,SyslogNG,ao-002-api,api-gateway,4,pkt_loss,Paket kaybi yuzde 40,dc2,rack-C,prod,HIST-2026-001
+ALM-10255,2026-05-14T01:18:58,OBM,ao-004-mobile,mobile-bff,2,backup_warn,Yedekleme 43 dakika gecikmeli,dc2,rack-B,prod,HIST-2026-001
+ALM-10003,2026-05-14T01:18:59,OBM,ao-014-session,session-service,4,network_down,Arayuz bond0 baglantisi koptu,dc2,rack-C,prod,HIST-2026-001
+ALM-10007,2026-05-14T01:18:59,Zabbix,ao-032-subscriber,subscriber-db,5,network_down,Arayuz bond0 baglantisi koptu,dc2,rack-C,prod,HIST-2026-001
+ALM-10022,2026-05-14T01:19:00,SyslogNG,ao-032-subscriber,subscriber-db,3,pkt_loss,Paket kaybi yuzde 70,dc2,rack-C,prod,HIST-2026-001
+ALM-10024,2026-05-14T01:19:00,OBM,ao-038-cache,cache-cluster,4,pkt_loss,Paket kaybi yuzde 40,dc2,rack-C,prod,HIST-2026-001
+ALM-10232,2026-05-14T01:19:07,Prometheus,ao-008-web,web-bff,4,conn_refused,"load-balancer baglantisi reddedildi, connection refused",dc2,rack-C,prod,HIST-2026-001
+ALM-10017,2026-05-14T01:19:08,AppDynamics,ao-020-billing,billing-service,3,pkt_loss,Paket kaybi yuzde 45,dc2,rack-C,prod,HIST-2026-001
+ALM-10040,2026-05-14T01:19:12,OBM,ao-038-cache,cache-cluster,3,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc2,rack-C,prod,HIST-2026-001
+ALM-10016,2026-05-14T01:19:18,OBM,ao-014-session,session-service,4,pkt_loss,Paket kaybi yuzde 78,dc2,rack-C,prod,HIST-2026-001
+ALM-10276,2026-05-14T01:19:18,Prometheus,ao-023-charging,charging-service,1,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 87 dolu",dc1,rack-C,prod,HIST-2026-001
+ALM-10119,2026-05-14T01:19:24,SyslogNG,ao-018-billing,billing-service,5,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (210 ms),dc2,rack-A,prod,HIST-2026-001
+ALM-10039,2026-05-14T01:19:26,SyslogNG,ao-014-session,session-service,5,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (176 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10167,2026-05-14T01:19:26,Zabbix,ao-038-cache,cache-cluster,5,http_5xx,HTTP 5xx hata orani yuzde 62 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10257,2026-05-14T01:19:27,Zabbix,ao-053-payment,payment-provider-gw,2,ntp_drift,Saat sapmasi 918 ms,dc1,rack-C,prod,HIST-2026-001
+ALM-10096,2026-05-14T01:19:30,Prometheus,ao-013-session,session-service,3,thread_pool,Thread pool doluluk yuzde 87,dc1,rack-B,prod,HIST-2026-001
+ALM-10166,2026-05-14T01:19:31,Prometheus,ao-042-load,load-balancer,3,latency_high,"Yanit suresi p99 esigi asti, 436 ms",dc2,rack-A,prod,HIST-2026-001
+ALM-10018,2026-05-14T01:19:34,Zabbix,ao-020-billing,billing-service,3,pkt_loss,Paket kaybi yuzde 78,dc2,rack-C,prod,HIST-2026-001
+ALM-10014,2026-05-14T01:19:39,OBM,ao-008-web,web-bff,3,pkt_loss,Paket kaybi yuzde 49,dc2,rack-C,prod,HIST-2026-001
+ALM-10221,2026-05-14T01:19:51,Zabbix,ao-007-web,web-bff,3,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc1,rack-B,prod,HIST-2026-001
+ALM-10100,2026-05-14T01:19:56,Prometheus,ao-014-session,session-service,5,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (208 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10150,2026-05-14T01:19:57,AppDynamics,ao-020-billing,billing-service,4,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc2,rack-C,prod,HIST-2026-001
+ALM-10235,2026-05-14T01:19:58,AppDynamics,ao-001-api,api-gateway,3,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (157 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10026,2026-05-14T01:20:03,AppDynamics,ao-050-reconciliation,reconciliation-batch,4,pkt_loss,Paket kaybi yuzde 73,dc2,rack-C,prod,HIST-2026-001
+ALM-10055,2026-05-14T01:20:03,OBM,ao-033-subscriber,subscriber-db,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (130 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10162,2026-05-14T01:20:06,Zabbix,ao-008-web,web-bff,3,http_5xx,HTTP 5xx hata orani yuzde 29 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10228,2026-05-14T01:20:07,Zabbix,ao-043-load,load-balancer,4,thread_pool,Thread pool doluluk yuzde 90,dc1,rack-B,prod,HIST-2026-001
+ALM-10236,2026-05-14T01:20:10,AppDynamics,ao-007-web,web-bff,4,latency_high,"Yanit suresi p99 esigi asti, 943 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10151,2026-05-14T01:20:11,AppDynamics,ao-007-web,web-bff,4,http_5xx,HTTP 5xx hata orani yuzde 77 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10056,2026-05-14T01:20:14,Prometheus,ao-003-api,api-gateway,5,http_5xx,HTTP 5xx hata orani yuzde 63 seviyesine cikti,dc1,rack-A,prod,HIST-2026-001
+ALM-10128,2026-05-14T01:20:15,Zabbix,ao-037-cache,cache-cluster,5,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (184 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10203,2026-05-14T01:20:20,Zabbix,ao-037-cache,cache-cluster,4,latency_high,"Yanit suresi p99 esigi asti, 341 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10015,2026-05-14T01:20:21,Zabbix,ao-014-session,session-service,4,pkt_loss,Paket kaybi yuzde 45,dc2,rack-C,prod,HIST-2026-001
+ALM-10215,2026-05-14T01:20:22,Prometheus,ao-007-web,web-bff,3,thread_pool,Thread pool doluluk yuzde 92,dc1,rack-B,prod,HIST-2026-001
+ALM-10094,2026-05-14T01:20:31,SyslogNG,ao-012-session,session-service,4,latency_high,"Yanit suresi p99 esigi asti, 854 ms",dc2,rack-A,prod,HIST-2026-001
+ALM-10021,2026-05-14T01:20:32,AppDynamics,ao-026-payment,payment-service,4,pkt_loss,Paket kaybi yuzde 76,dc2,rack-C,prod,HIST-2026-001
+ALM-10034,2026-05-14T01:20:32,AppDynamics,ao-014-session,session-service,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (110 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10216,2026-05-14T01:20:37,OBM,ao-037-cache,cache-cluster,4,latency_high,"Yanit suresi p99 esigi asti, 554 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10229,2026-05-14T01:20:38,SyslogNG,ao-007-web,web-bff,3,latency_high,"Yanit suresi p99 esigi asti, 645 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10095,2026-05-14T01:20:40,Zabbix,ao-043-load,load-balancer,3,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (175 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10028,2026-05-14T01:20:42,Zabbix,ao-056-kyc,kyc-provider-gw,4,pkt_loss,Paket kaybi yuzde 76,dc2,rack-C,prod,HIST-2026-001
+ALM-10222,2026-05-14T01:20:44,SyslogNG,ao-032-subscriber,subscriber-db,3,latency_high,"Yanit suresi p99 esigi asti, 298 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10027,2026-05-14T01:20:46,OBM,ao-056-kyc,kyc-provider-gw,3,pkt_loss,Paket kaybi yuzde 78,dc2,rack-C,prod,HIST-2026-001
+ALM-10156,2026-05-14T01:20:46,Prometheus,ao-042-load,load-balancer,3,thread_pool,Thread pool doluluk yuzde 96,dc2,rack-A,prod,HIST-2026-001
+ALM-10074,2026-05-14T01:20:50,SyslogNG,ao-014-session,session-service,4,latency_high,"Yanit suresi p99 esigi asti, 862 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10023,2026-05-14T01:20:54,AppDynamics,ao-032-subscriber,subscriber-db,4,pkt_loss,Paket kaybi yuzde 72,dc2,rack-C,prod,HIST-2026-001
+ALM-10084,2026-05-14T01:20:56,AppDynamics,ao-018-billing,billing-service,5,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc2,rack-A,prod,HIST-2026-001
+ALM-10010,2026-05-14T01:20:59,AppDynamics,ao-002-api,api-gateway,4,pkt_loss,Paket kaybi yuzde 37,dc2,rack-C,prod,HIST-2026-001
+ALM-10012,2026-05-14T01:21:03,Prometheus,ao-008-web,web-bff,4,pkt_loss,Paket kaybi yuzde 71,dc2,rack-C,prod,HIST-2026-001
+ALM-10083,2026-05-14T01:21:03,Prometheus,ao-020-billing,billing-service,4,latency_high,"Yanit suresi p99 esigi asti, 208 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10025,2026-05-14T01:21:05,AppDynamics,ao-044-load,load-balancer,3,pkt_loss,Paket kaybi yuzde 78,dc2,rack-C,prod,HIST-2026-001
+ALM-10177,2026-05-14T01:21:09,SyslogNG,ao-031-subscriber,subscriber-db,3,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (214 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10230,2026-05-14T01:21:13,Prometheus,ao-002-api,api-gateway,5,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (152 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10241,2026-05-14T01:21:14,SyslogNG,ao-008-web,web-bff,4,latency_high,"Yanit suresi p99 esigi asti, 247 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10114,2026-05-14T01:21:15,SyslogNG,ao-031-subscriber,subscriber-db,5,http_5xx,HTTP 5xx hata orani yuzde 83 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10035,2026-05-14T01:21:16,AppDynamics,ao-003-api,api-gateway,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (122 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10059,2026-05-14T01:21:19,AppDynamics,ao-018-billing,billing-service,4,latency_high,"Yanit suresi p99 esigi asti, 585 ms",dc2,rack-A,prod,HIST-2026-001
+ALM-10182,2026-05-14T01:21:33,Prometheus,ao-031-subscriber,subscriber-db,4,http_5xx,HTTP 5xx hata orani yuzde 60 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10263,2026-05-14T01:21:36,SyslogNG,ao-039-message,message-queue,2,cert_expiry,Sertifika 21 gun icinde suresi dolacak,dc1,rack-A,prod,HIST-2026-001
+ALM-10152,2026-05-14T01:21:40,SyslogNG,ao-038-cache,cache-cluster,3,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (103 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10075,2026-05-14T01:21:43,Prometheus,ao-042-load,load-balancer,3,http_5xx,HTTP 5xx hata orani yuzde 72 seviyesine cikti,dc2,rack-A,prod,HIST-2026-001
+ALM-10029,2026-05-14T01:21:46,OBM,ao-019-billing,billing-service,4,http_5xx,HTTP 5xx hata orani yuzde 52 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10171,2026-05-14T01:21:49,AppDynamics,ao-007-web,web-bff,4,http_5xx,HTTP 5xx hata orani yuzde 79 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10130,2026-05-14T01:22:05,SyslogNG,ao-008-web,web-bff,4,latency_high,"Yanit suresi p99 esigi asti, 625 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10076,2026-05-14T01:22:08,Zabbix,ao-026-payment,payment-service,5,http_5xx,HTTP 5xx hata orani yuzde 26 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10146,2026-05-14T01:22:08,OBM,ao-019-billing,billing-service,4,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (182 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10090,2026-05-14T01:22:21,AppDynamics,ao-050-reconciliation,reconciliation-batch,4,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (122 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10143,2026-05-14T01:22:22,OBM,ao-007-web,web-bff,4,latency_high,"Yanit suresi p99 esigi asti, 918 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10121,2026-05-14T01:22:29,SyslogNG,ao-001-api,api-gateway,3,thread_pool,Thread pool doluluk yuzde 88,dc1,rack-B,prod,HIST-2026-001
+ALM-10285,2026-05-14T01:22:32,AppDynamics,ao-023-charging,charging-service,2,cert_expiry,Sertifika 51 gun icinde suresi dolacak,dc1,rack-C,prod,HIST-2026-001
+ALM-10112,2026-05-14T01:22:49,AppDynamics,ao-042-load,load-balancer,4,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (214 ms),dc2,rack-A,prod,HIST-2026-001
+ALM-10179,2026-05-14T01:22:55,AppDynamics,ao-026-payment,payment-service,3,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc2,rack-C,prod,HIST-2026-001
+ALM-10159,2026-05-14T01:23:02,Zabbix,ao-019-billing,billing-service,4,http_5xx,HTTP 5xx hata orani yuzde 27 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10201,2026-05-14T01:23:02,Zabbix,ao-038-cache,cache-cluster,4,http_5xx,HTTP 5xx hata orani yuzde 34 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10195,2026-05-14T01:23:05,Zabbix,ao-042-load,load-balancer,5,http_5xx,HTTP 5xx hata orani yuzde 29 seviyesine cikti,dc2,rack-A,prod,HIST-2026-001
+ALM-10157,2026-05-14T01:23:10,SyslogNG,ao-044-load,load-balancer,3,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (130 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10137,2026-05-14T01:23:12,AppDynamics,ao-033-subscriber,subscriber-db,5,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (111 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10043,2026-05-14T01:23:13,AppDynamics,ao-008-web,web-bff,4,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (211 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10132,2026-05-14T01:23:16,Zabbix,ao-020-billing,billing-service,3,http_5xx,HTTP 5xx hata orani yuzde 79 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10057,2026-05-14T01:23:17,SyslogNG,ao-007-web,web-bff,3,latency_high,"Yanit suresi p99 esigi asti, 763 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10104,2026-05-14T01:23:18,SyslogNG,ao-018-billing,billing-service,4,latency_high,"Yanit suresi p99 esigi asti, 949 ms",dc2,rack-A,prod,HIST-2026-001
+ALM-10048,2026-05-14T01:23:20,AppDynamics,ao-018-billing,billing-service,3,http_5xx,HTTP 5xx hata orani yuzde 54 seviyesine cikti,dc2,rack-A,prod,HIST-2026-001
+ALM-10233,2026-05-14T01:23:21,OBM,ao-008-web,web-bff,3,latency_high,"Yanit suresi p99 esigi asti, 733 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10254,2026-05-14T01:23:24,Zabbix,ao-005-mobile,mobile-bff,2,backup_warn,Yedekleme 69 dakika gecikmeli,dc1,rack-C,prod,HIST-2026-001
+ALM-10086,2026-05-14T01:23:25,AppDynamics,ao-025-payment,payment-service,3,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (138 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10123,2026-05-14T01:23:27,Prometheus,ao-031-subscriber,subscriber-db,4,thread_pool,Thread pool doluluk yuzde 96,dc1,rack-B,prod,HIST-2026-001
+ALM-10058,2026-05-14T01:23:32,Zabbix,ao-026-payment,payment-service,3,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (170 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10160,2026-05-14T01:23:35,SyslogNG,ao-003-api,api-gateway,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (149 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10061,2026-05-14T01:23:36,Zabbix,ao-037-cache,cache-cluster,3,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (219 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10176,2026-05-14T01:23:38,Prometheus,ao-002-api,api-gateway,5,http_5xx,HTTP 5xx hata orani yuzde 38 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10142,2026-05-14T01:23:42,Zabbix,ao-050-reconciliation,reconciliation-batch,4,thread_pool,Thread pool doluluk yuzde 92,dc2,rack-C,prod,HIST-2026-001
+ALM-10164,2026-05-14T01:23:43,SyslogNG,ao-050-reconciliation,reconciliation-batch,5,http_5xx,HTTP 5xx hata orani yuzde 50 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10147,2026-05-14T01:23:45,OBM,ao-037-cache,cache-cluster,3,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc1,rack-B,prod,HIST-2026-001
+ALM-10105,2026-05-14T01:23:46,OBM,ao-043-load,load-balancer,4,thread_pool,Thread pool doluluk yuzde 88,dc1,rack-B,prod,HIST-2026-001
+ALM-10183,2026-05-14T01:23:47,Zabbix,ao-008-web,web-bff,4,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc2,rack-C,prod,HIST-2026-001
+ALM-10184,2026-05-14T01:23:54,Zabbix,ao-033-subscriber,subscriber-db,5,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (90 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10062,2026-05-14T01:23:56,AppDynamics,ao-014-session,session-service,3,conn_refused,"cache-cluster baglantisi reddedildi, connection refused",dc2,rack-C,prod,HIST-2026-001
+ALM-10149,2026-05-14T01:23:56,AppDynamics,ao-001-api,api-gateway,4,thread_pool,Thread pool doluluk yuzde 94,dc1,rack-B,prod,HIST-2026-001
+ALM-10092,2026-05-14T01:23:58,AppDynamics,ao-001-api,api-gateway,3,http_5xx,HTTP 5xx hata orani yuzde 44 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10139,2026-05-14T01:24:06,AppDynamics,ao-001-api,api-gateway,3,http_5xx,HTTP 5xx hata orani yuzde 30 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10212,2026-05-14T01:24:07,AppDynamics,ao-003-api,api-gateway,4,thread_pool,Thread pool doluluk yuzde 99,dc1,rack-A,prod,HIST-2026-001
+ALM-10053,2026-05-14T01:24:08,OBM,ao-008-web,web-bff,3,http_5xx,HTTP 5xx hata orani yuzde 37 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10063,2026-05-14T01:24:14,SyslogNG,ao-037-cache,cache-cluster,5,conn_refused,"load-balancer baglantisi reddedildi, connection refused",dc1,rack-B,prod,HIST-2026-001
+ALM-10220,2026-05-14T01:24:14,AppDynamics,ao-031-subscriber,subscriber-db,5,conn_refused,"load-balancer baglantisi reddedildi, connection refused",dc1,rack-B,prod,HIST-2026-001
+ALM-10264,2026-05-14T01:24:22,Prometheus,ao-004-mobile,mobile-bff,1,backup_warn,Yedekleme 57 dakika gecikmeli,dc2,rack-B,prod,HIST-2026-001
+ALM-10124,2026-05-14T01:24:23,SyslogNG,ao-012-session,session-service,3,http_5xx,HTTP 5xx hata orani yuzde 86 seviyesine cikti,dc2,rack-A,prod,HIST-2026-001
+ALM-10178,2026-05-14T01:24:23,OBM,ao-014-session,session-service,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (130 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10054,2026-05-14T01:24:26,OBM,ao-002-api,api-gateway,3,thread_pool,Thread pool doluluk yuzde 96,dc2,rack-C,prod,HIST-2026-001
+ALM-10088,2026-05-14T01:24:26,OBM,ao-020-billing,billing-service,5,http_5xx,HTTP 5xx hata orani yuzde 64 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10194,2026-05-14T01:24:29,SyslogNG,ao-037-cache,cache-cluster,4,thread_pool,Thread pool doluluk yuzde 91,dc1,rack-B,prod,HIST-2026-001
+ALM-10188,2026-05-14T01:24:30,AppDynamics,ao-026-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 224 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10106,2026-05-14T01:24:32,OBM,ao-014-session,session-service,5,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (175 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10173,2026-05-14T01:24:36,AppDynamics,ao-003-api,api-gateway,3,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (154 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10117,2026-05-14T01:24:40,AppDynamics,ao-018-billing,billing-service,3,conn_refused,"cache-cluster baglantisi reddedildi, connection refused",dc2,rack-A,prod,HIST-2026-001
+ALM-10108,2026-05-14T01:24:43,AppDynamics,ao-003-api,api-gateway,5,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (194 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10186,2026-05-14T01:24:45,AppDynamics,ao-032-subscriber,subscriber-db,4,thread_pool,Thread pool doluluk yuzde 90,dc2,rack-C,prod,HIST-2026-001
+ALM-10113,2026-05-14T01:24:49,AppDynamics,ao-001-api,api-gateway,5,http_5xx,HTTP 5xx hata orani yuzde 49 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10046,2026-05-14T01:24:52,Prometheus,ao-025-payment,payment-service,3,http_5xx,HTTP 5xx hata orani yuzde 71 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10079,2026-05-14T01:25:03,Prometheus,ao-013-session,session-service,4,conn_refused,"cache-cluster baglantisi reddedildi, connection refused",dc1,rack-B,prod,HIST-2026-001
+ALM-10044,2026-05-14T01:25:07,AppDynamics,ao-007-web,web-bff,4,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (200 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10270,2026-05-14T01:25:10,SyslogNG,ao-048-batch,batch-scheduler,1,cert_expiry,Sertifika 47 gun icinde suresi dolacak,dc2,rack-A,prod,HIST-2026-001
+ALM-10234,2026-05-14T01:25:11,SyslogNG,ao-001-api,api-gateway,3,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (93 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10198,2026-05-14T01:25:12,AppDynamics,ao-002-api,api-gateway,4,latency_high,"Yanit suresi p99 esigi asti, 480 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10206,2026-05-14T01:25:12,Zabbix,ao-025-payment,payment-service,5,http_5xx,HTTP 5xx hata orani yuzde 61 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10033,2026-05-14T01:25:16,Prometheus,ao-032-subscriber,subscriber-db,4,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (118 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10087,2026-05-14T01:25:17,OBM,ao-033-subscriber,subscriber-db,4,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (140 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10223,2026-05-14T01:25:24,SyslogNG,ao-025-payment,payment-service,5,http_5xx,HTTP 5xx hata orani yuzde 54 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10273,2026-05-14T01:25:27,OBM,ao-041-object,object-store,1,backup_warn,Yedekleme 90 dakika gecikmeli,dc1,rack-C,prod,HIST-2026-001
+ALM-10051,2026-05-14T01:25:33,AppDynamics,ao-002-api,api-gateway,3,http_5xx,HTTP 5xx hata orani yuzde 35 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10242,2026-05-14T01:25:35,SyslogNG,ao-038-cache,cache-cluster,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (173 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10107,2026-05-14T01:25:37,Prometheus,ao-008-web,web-bff,5,http_5xx,HTTP 5xx hata orani yuzde 39 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10098,2026-05-14T01:25:38,AppDynamics,ao-050-reconciliation,reconciliation-batch,4,conn_refused,"load-balancer baglantisi reddedildi, connection refused",dc2,rack-C,prod,HIST-2026-001
+ALM-10207,2026-05-14T01:25:50,OBM,ao-001-api,api-gateway,4,conn_refused,"load-balancer baglantisi reddedildi, connection refused",dc1,rack-B,prod,HIST-2026-001
+ALM-10082,2026-05-14T01:25:54,SyslogNG,ao-043-load,load-balancer,5,conn_refused,"load-balancer baglantisi reddedildi, connection refused",dc1,rack-B,prod,HIST-2026-001
+ALM-10172,2026-05-14T01:25:55,OBM,ao-019-billing,billing-service,5,http_5xx,HTTP 5xx hata orani yuzde 67 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10225,2026-05-14T01:26:02,OBM,ao-032-subscriber,subscriber-db,4,latency_high,"Yanit suresi p99 esigi asti, 810 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10252,2026-05-14T01:26:02,OBM,ao-029-catalog,catalog-service,2,cert_expiry,Sertifika 35 gun icinde suresi dolacak,dc1,rack-C,prod,HIST-2026-001
+ALM-10158,2026-05-14T01:26:03,SyslogNG,ao-012-session,session-service,4,http_5xx,HTTP 5xx hata orani yuzde 25 seviyesine cikti,dc2,rack-A,prod,HIST-2026-001
+ALM-10170,2026-05-14T01:26:03,Zabbix,ao-003-api,api-gateway,4,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (179 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10199,2026-05-14T01:26:06,Prometheus,ao-014-session,session-service,3,latency_high,"Yanit suresi p99 esigi asti, 723 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10174,2026-05-14T01:26:08,Prometheus,ao-001-api,api-gateway,3,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (208 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10097,2026-05-14T01:26:09,SyslogNG,ao-042-load,load-balancer,5,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (206 ms),dc2,rack-A,prod,HIST-2026-001
+ALM-10052,2026-05-14T01:26:18,SyslogNG,ao-031-subscriber,subscriber-db,5,http_5xx,HTTP 5xx hata orani yuzde 43 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10239,2026-05-14T01:26:21,AppDynamics,ao-032-subscriber,subscriber-db,3,latency_high,"Yanit suresi p99 esigi asti, 591 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10072,2026-05-14T01:26:25,OBM,ao-037-cache,cache-cluster,3,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc1,rack-B,prod,HIST-2026-001
+ALM-10244,2026-05-14T01:26:25,Prometheus,ao-050-reconciliation,reconciliation-batch,4,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (145 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10129,2026-05-14T01:26:28,AppDynamics,ao-026-payment,payment-service,4,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (117 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10085,2026-05-14T01:26:31,SyslogNG,ao-024-payment,payment-service,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (170 ms),dc2,rack-A,prod,HIST-2026-001
+ALM-10038,2026-05-14T01:26:33,OBM,ao-043-load,load-balancer,4,latency_high,"Yanit suresi p99 esigi asti, 562 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10226,2026-05-14T01:26:39,Prometheus,ao-024-payment,payment-service,4,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc2,rack-A,prod,HIST-2026-001
+ALM-10103,2026-05-14T01:26:41,AppDynamics,ao-026-payment,payment-service,3,latency_high,"Yanit suresi p99 esigi asti, 741 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10047,2026-05-14T01:26:44,AppDynamics,ao-013-session,session-service,3,http_5xx,HTTP 5xx hata orani yuzde 59 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10237,2026-05-14T01:26:47,Prometheus,ao-024-payment,payment-service,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (117 ms),dc2,rack-A,prod,HIST-2026-001
+ALM-10248,2026-05-14T01:26:48,SyslogNG,ao-015-subscriber,subscriber-service,1,network_flap,Arayuz eth0 link durumu 23 kez degisti,dc1,rack-A,prod,HIST-2026-001
+ALM-10286,2026-05-14T01:26:48,AppDynamics,ao-022-charging,charging-service,2,ntp_drift,Saat sapmasi 598 ms,dc2,rack-B,prod,HIST-2026-001
+ALM-10217,2026-05-14T01:26:50,Zabbix,ao-037-cache,cache-cluster,4,http_5xx,HTTP 5xx hata orani yuzde 32 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10238,2026-05-14T01:26:54,OBM,ao-002-api,api-gateway,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (167 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10163,2026-05-14T01:27:04,Zabbix,ao-031-subscriber,subscriber-db,5,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc1,rack-B,prod,HIST-2026-001
+ALM-10122,2026-05-14T01:27:09,SyslogNG,ao-014-session,session-service,3,latency_high,"Yanit suresi p99 esigi asti, 309 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10140,2026-05-14T01:27:09,SyslogNG,ao-019-billing,billing-service,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (184 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10110,2026-05-14T01:27:13,Zabbix,ao-038-cache,cache-cluster,3,latency_high,"Yanit suresi p99 esigi asti, 569 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10131,2026-05-14T01:27:20,AppDynamics,ao-037-cache,cache-cluster,4,http_5xx,HTTP 5xx hata orani yuzde 74 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10050,2026-05-14T01:27:22,Prometheus,ao-014-session,session-service,4,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (194 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10185,2026-05-14T01:27:26,AppDynamics,ao-038-cache,cache-cluster,3,latency_high,"Yanit suresi p99 esigi asti, 855 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10180,2026-05-14T01:27:35,Zabbix,ao-007-web,web-bff,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (129 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10190,2026-05-14T01:27:39,OBM,ao-002-api,api-gateway,4,latency_high,"Yanit suresi p99 esigi asti, 309 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10245,2026-05-14T01:27:41,OBM,ao-041-object,object-store,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 95 saniye",dc1,rack-C,prod,HIST-2026-001
+ALM-10067,2026-05-14T01:27:42,Zabbix,ao-043-load,load-balancer,4,latency_high,"Yanit suresi p99 esigi asti, 450 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10030,2026-05-14T01:27:44,Zabbix,ao-033-subscriber,subscriber-db,3,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc1,rack-A,prod,HIST-2026-001
+ALM-10269,2026-05-14T01:27:53,Zabbix,ao-051-report,report-batch,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 76 dolu",dc1,rack-A,prod,HIST-2026-001
+ALM-10168,2026-05-14T01:27:56,AppDynamics,ao-012-session,session-service,5,conn_refused,"cache-cluster baglantisi reddedildi, connection refused",dc2,rack-A,prod,HIST-2026-001
+ALM-10191,2026-05-14T01:28:03,OBM,ao-031-subscriber,subscriber-db,4,latency_high,"Yanit suresi p99 esigi asti, 282 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10036,2026-05-14T01:28:05,Prometheus,ao-012-session,session-service,4,thread_pool,Thread pool doluluk yuzde 89,dc2,rack-A,prod,HIST-2026-001
+ALM-10213,2026-05-14T01:28:08,Zabbix,ao-013-session,session-service,5,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (183 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10161,2026-05-14T01:28:22,Prometheus,ao-013-session,session-service,3,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (119 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10071,2026-05-14T01:28:23,Zabbix,ao-007-web,web-bff,3,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (128 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10141,2026-05-14T01:28:28,Zabbix,ao-026-payment,payment-service,4,conn_refused,"load-balancer baglantisi reddedildi, connection refused",dc2,rack-C,prod,HIST-2026-001
+ALM-10153,2026-05-14T01:28:36,SyslogNG,ao-003-api,api-gateway,4,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (120 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10115,2026-05-14T01:28:42,OBM,ao-025-payment,payment-service,3,latency_high,"Yanit suresi p99 esigi asti, 786 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10091,2026-05-14T01:28:47,AppDynamics,ao-012-session,session-service,4,thread_pool,Thread pool doluluk yuzde 94,dc2,rack-A,prod,HIST-2026-001
+ALM-10133,2026-05-14T01:28:48,AppDynamics,ao-014-session,session-service,5,conn_refused,"cache-cluster baglantisi reddedildi, connection refused",dc2,rack-C,prod,HIST-2026-001
+ALM-10187,2026-05-14T01:28:50,Prometheus,ao-013-session,session-service,4,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (151 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10211,2026-05-14T01:28:58,Prometheus,ao-031-subscriber,subscriber-db,4,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc1,rack-B,prod,HIST-2026-001
+ALM-10271,2026-05-14T01:28:59,Prometheus,ao-046-dns,dns-resolver,1,cert_expiry,Sertifika 45 gun icinde suresi dolacak,dc2,rack-B,prod,HIST-2026-001
+ALM-10169,2026-05-14T01:29:04,AppDynamics,ao-018-billing,billing-service,4,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc2,rack-A,prod,HIST-2026-001
+ALM-10278,2026-05-14T01:29:05,AppDynamics,ao-040-message,message-queue,1,backup_warn,Yedekleme 81 dakika gecikmeli,dc2,rack-B,prod,HIST-2026-001
+ALM-10165,2026-05-14T01:29:17,AppDynamics,ao-031-subscriber,subscriber-db,3,http_5xx,HTTP 5xx hata orani yuzde 30 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10243,2026-05-14T01:29:24,OBM,ao-031-subscriber,subscriber-db,4,latency_high,"Yanit suresi p99 esigi asti, 697 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10031,2026-05-14T01:29:28,Prometheus,ao-043-load,load-balancer,3,latency_high,"Yanit suresi p99 esigi asti, 699 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10219,2026-05-14T01:29:29,OBM,ao-042-load,load-balancer,3,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (173 ms),dc2,rack-A,prod,HIST-2026-001
+ALM-10200,2026-05-14T01:29:39,Prometheus,ao-003-api,api-gateway,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (187 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10060,2026-05-14T01:29:41,OBM,ao-003-api,api-gateway,5,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (207 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10210,2026-05-14T01:29:48,OBM,ao-042-load,load-balancer,3,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (125 ms),dc2,rack-A,prod,HIST-2026-001
+ALM-10280,2026-05-14T01:29:50,OBM,ao-010-auth,auth-service,2,ntp_drift,Saat sapmasi 238 ms,dc2,rack-B,prod,HIST-2026-001
+ALM-10282,2026-05-14T01:29:52,AppDynamics,ao-056-kyc,kyc-provider-gw,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 79 saniye",dc2,rack-C,prod,HIST-2026-001
+ALM-10068,2026-05-14T01:29:54,Zabbix,ao-002-api,api-gateway,4,http_5xx,HTTP 5xx hata orani yuzde 30 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10069,2026-05-14T01:29:57,Prometheus,ao-001-api,api-gateway,4,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (123 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10138,2026-05-14T01:30:06,AppDynamics,ao-037-cache,cache-cluster,5,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (211 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10120,2026-05-14T01:30:10,OBM,ao-024-payment,payment-service,3,latency_high,"Yanit suresi p99 esigi asti, 409 ms",dc2,rack-A,prod,HIST-2026-001
+ALM-10193,2026-05-14T01:30:10,Zabbix,ao-018-billing,billing-service,3,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (191 ms),dc2,rack-A,prod,HIST-2026-001
+ALM-10049,2026-05-14T01:30:12,OBM,ao-007-web,web-bff,3,latency_high,"Yanit suresi p99 esigi asti, 231 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10045,2026-05-14T01:30:14,OBM,ao-002-api,api-gateway,5,http_5xx,HTTP 5xx hata orani yuzde 68 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10099,2026-05-14T01:30:16,OBM,ao-014-session,session-service,3,thread_pool,Thread pool doluluk yuzde 87,dc2,rack-C,prod,HIST-2026-001
+ALM-10283,2026-05-14T01:30:19,OBM,ao-040-message,message-queue,1,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 82 dolu",dc2,rack-B,prod,HIST-2026-001
+ALM-10080,2026-05-14T01:30:20,AppDynamics,ao-014-session,session-service,3,thread_pool,Thread pool doluluk yuzde 85,dc2,rack-C,prod,HIST-2026-001
+ALM-10089,2026-05-14T01:30:27,Zabbix,ao-033-subscriber,subscriber-db,4,http_5xx,HTTP 5xx hata orani yuzde 44 seviyesine cikti,dc1,rack-A,prod,HIST-2026-001
+ALM-10101,2026-05-14T01:30:28,SyslogNG,ao-031-subscriber,subscriber-db,5,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (208 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10042,2026-05-14T01:30:30,Prometheus,ao-033-subscriber,subscriber-db,4,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (161 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10093,2026-05-14T01:30:36,SyslogNG,ao-031-subscriber,subscriber-db,3,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (203 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10218,2026-05-14T01:30:36,AppDynamics,ao-043-load,load-balancer,3,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (117 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10125,2026-05-14T01:30:38,AppDynamics,ao-019-billing,billing-service,4,http_5xx,HTTP 5xx hata orani yuzde 61 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10227,2026-05-14T01:30:47,SyslogNG,ao-024-payment,payment-service,4,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc2,rack-A,prod,HIST-2026-001
+ALM-10144,2026-05-14T01:30:51,Prometheus,ao-037-cache,cache-cluster,3,thread_pool,Thread pool doluluk yuzde 97,dc1,rack-B,prod,HIST-2026-001
+ALM-10204,2026-05-14T01:30:51,AppDynamics,ao-019-billing,billing-service,4,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (198 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10126,2026-05-14T01:30:52,Prometheus,ao-003-api,api-gateway,5,http_5xx,HTTP 5xx hata orani yuzde 62 seviyesine cikti,dc1,rack-A,prod,HIST-2026-001
+ALM-10148,2026-05-14T01:30:59,AppDynamics,ao-037-cache,cache-cluster,3,latency_high,"Yanit suresi p99 esigi asti, 479 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10070,2026-05-14T01:31:07,SyslogNG,ao-031-subscriber,subscriber-db,4,http_5xx,HTTP 5xx hata orani yuzde 60 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10037,2026-05-14T01:31:15,AppDynamics,ao-050-reconciliation,reconciliation-batch,4,latency_high,"Yanit suresi p99 esigi asti, 385 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10066,2026-05-14T01:31:19,Prometheus,ao-018-billing,billing-service,4,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (143 ms),dc2,rack-A,prod,HIST-2026-001
+ALM-10145,2026-05-14T01:31:26,OBM,ao-032-subscriber,subscriber-db,4,thread_pool,Thread pool doluluk yuzde 89,dc2,rack-C,prod,HIST-2026-001
+ALM-10224,2026-05-14T01:31:29,AppDynamics,ao-038-cache,cache-cluster,3,http_5xx,HTTP 5xx hata orani yuzde 72 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10274,2026-05-14T01:31:29,Zabbix,ao-016-subscriber,subscriber-service,1,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 80 dolu",dc2,rack-B,prod,HIST-2026-001
+ALM-10175,2026-05-14T01:31:59,AppDynamics,ao-024-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 817 ms",dc2,rack-A,prod,HIST-2026-001
+ALM-10196,2026-05-14T01:32:03,OBM,ao-003-api,api-gateway,5,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (115 ms),dc1,rack-A,prod,HIST-2026-001
+ALM-10118,2026-05-14T01:32:04,Zabbix,ao-020-billing,billing-service,4,http_5xx,HTTP 5xx hata orani yuzde 46 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10256,2026-05-14T01:32:11,AppDynamics,ao-005-mobile,mobile-bff,1,cert_expiry,Sertifika 44 gun icinde suresi dolacak,dc1,rack-C,prod,HIST-2026-001
+ALM-10081,2026-05-14T01:32:16,Zabbix,ao-018-billing,billing-service,4,conn_refused,"subscriber-db baglantisi reddedildi, connection refused",dc2,rack-A,prod,HIST-2026-001
+ALM-10154,2026-05-14T01:32:19,AppDynamics,ao-042-load,load-balancer,5,http_5xx,HTTP 5xx hata orani yuzde 39 seviyesine cikti,dc2,rack-A,prod,HIST-2026-001
+ALM-10032,2026-05-14T01:32:22,SyslogNG,ao-012-session,session-service,3,latency_high,"Yanit suresi p99 esigi asti, 732 ms",dc2,rack-A,prod,HIST-2026-001
+ALM-10127,2026-05-14T01:32:40,OBM,ao-050-reconciliation,reconciliation-batch,5,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (120 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10135,2026-05-14T01:32:41,Zabbix,ao-013-session,session-service,4,http_5xx,HTTP 5xx hata orani yuzde 47 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10209,2026-05-14T01:32:46,Prometheus,ao-014-session,session-service,4,http_5xx,HTTP 5xx hata orani yuzde 63 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10214,2026-05-14T01:32:50,Zabbix,ao-018-billing,billing-service,4,latency_high,"Yanit suresi p99 esigi asti, 673 ms",dc2,rack-A,prod,HIST-2026-001
+ALM-10077,2026-05-14T01:32:55,Zabbix,ao-044-load,load-balancer,3,latency_high,"Yanit suresi p99 esigi asti, 932 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10231,2026-05-14T01:32:57,Zabbix,ao-037-cache,cache-cluster,3,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (145 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10064,2026-05-14T01:33:01,OBM,ao-001-api,api-gateway,4,thread_pool,Thread pool doluluk yuzde 95,dc1,rack-B,prod,HIST-2026-001
+ALM-10189,2026-05-14T01:33:05,Prometheus,ao-044-load,load-balancer,5,http_5xx,HTTP 5xx hata orani yuzde 75 seviyesine cikti,dc2,rack-C,prod,HIST-2026-001
+ALM-10253,2026-05-14T01:33:13,SyslogNG,ao-029-catalog,catalog-service,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 89 saniye",dc1,rack-C,prod,HIST-2026-001
+ALM-10109,2026-05-14T01:33:17,AppDynamics,ao-002-api,api-gateway,4,thread_pool,Thread pool doluluk yuzde 88,dc2,rack-C,prod,HIST-2026-001
+ALM-10181,2026-05-14T01:33:19,AppDynamics,ao-050-reconciliation,reconciliation-batch,4,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (196 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10277,2026-05-14T01:33:19,SyslogNG,ao-055-sms,sms-gateway,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 96 saniye",dc1,rack-B,prod,HIST-2026-001
+ALM-10134,2026-05-14T01:33:36,Prometheus,ao-020-billing,billing-service,4,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (216 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10205,2026-05-14T01:33:38,OBM,ao-013-session,session-service,4,latency_high,"Yanit suresi p99 esigi asti, 573 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10155,2026-05-14T01:33:45,Zabbix,ao-031-subscriber,subscriber-db,4,thread_pool,Thread pool doluluk yuzde 89,dc1,rack-B,prod,HIST-2026-001
+ALM-10251,2026-05-14T01:33:48,Prometheus,ao-045-dns,dns-resolver,1,cert_expiry,Sertifika 48 gun icinde suresi dolacak,dc1,rack-A,prod,HIST-2026-001
+ALM-10116,2026-05-14T01:33:52,Prometheus,ao-026-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 318 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10192,2026-05-14T01:33:56,OBM,ao-008-web,web-bff,3,latency_high,"Yanit suresi p99 esigi asti, 599 ms",dc2,rack-C,prod,HIST-2026-001
+ALM-10078,2026-05-14T01:33:58,AppDynamics,ao-050-reconciliation,reconciliation-batch,3,timeout,load-balancer servisine yapilan cagri zaman asimina ugradi (187 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10136,2026-05-14T01:34:06,SyslogNG,ao-042-load,load-balancer,4,thread_pool,Thread pool doluluk yuzde 96,dc2,rack-A,prod,HIST-2026-001
+ALM-10065,2026-05-14T01:34:16,SyslogNG,ao-018-billing,billing-service,3,http_5xx,HTTP 5xx hata orani yuzde 32 seviyesine cikti,dc2,rack-A,prod,HIST-2026-001
+ALM-10279,2026-05-14T01:34:16,Zabbix,ao-039-message,message-queue,1,ntp_drift,Saat sapmasi 699 ms,dc1,rack-A,prod,HIST-2026-001
+ALM-10102,2026-05-14T01:34:17,SyslogNG,ao-020-billing,billing-service,4,thread_pool,Thread pool doluluk yuzde 97,dc2,rack-C,prod,HIST-2026-001
+ALM-10111,2026-05-14T01:34:18,SyslogNG,ao-025-payment,payment-service,4,http_5xx,HTTP 5xx hata orani yuzde 79 seviyesine cikti,dc1,rack-B,prod,HIST-2026-001
+ALM-10073,2026-05-14T01:34:25,Prometheus,ao-019-billing,billing-service,4,timeout,dns-resolver servisine yapilan cagri zaman asimina ugradi (100 ms),dc1,rack-B,prod,HIST-2026-001
+ALM-10202,2026-05-14T01:34:25,Zabbix,ao-018-billing,billing-service,4,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (92 ms),dc2,rack-A,prod,HIST-2026-001
+ALM-10240,2026-05-14T01:34:25,Zabbix,ao-031-subscriber,subscriber-db,3,latency_high,"Yanit suresi p99 esigi asti, 255 ms",dc1,rack-B,prod,HIST-2026-001
+ALM-10258,2026-05-14T01:34:26,OBM,ao-040-message,message-queue,1,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 77 dolu",dc2,rack-B,prod,HIST-2026-001
+ALM-10197,2026-05-14T01:34:30,OBM,ao-012-session,session-service,3,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (166 ms),dc2,rack-A,prod,HIST-2026-001
+ALM-10041,2026-05-14T01:34:32,Zabbix,ao-014-session,session-service,3,thread_pool,Thread pool doluluk yuzde 86,dc2,rack-C,prod,HIST-2026-001
+ALM-10208,2026-05-14T01:34:37,AppDynamics,ao-038-cache,cache-cluster,5,timeout,subscriber-db servisine yapilan cagri zaman asimina ugradi (102 ms),dc2,rack-C,prod,HIST-2026-001
+ALM-10260,2026-05-14T01:34:48,AppDynamics,ao-051-report,report-batch,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 89 saniye",dc1,rack-A,prod,HIST-2026-001
+ALM-10246,2026-05-14T01:36:47,Zabbix,ao-051-report,report-batch,2,ntp_drift,Saat sapmasi 336 ms,dc1,rack-A,prod,HIST-2026-001
+ALM-10267,2026-05-14T01:36:53,OBM,ao-056-kyc,kyc-provider-gw,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 81 dolu",dc2,rack-C,prod,HIST-2026-001
+ALM-10262,2026-05-14T01:37:14,AppDynamics,ao-036-billing,billing-db,3,network_flap,Arayuz eth0 link durumu 53 kez degisti,dc2,rack-A,prod,HIST-2026-001
+ALM-10284,2026-05-14T01:38:27,SyslogNG,ao-015-subscriber,subscriber-service,1,ntp_drift,Saat sapmasi 841 ms,dc1,rack-A,prod,HIST-2026-001
+ALM-10509,2026-06-03T02:08:37,AppDynamics,ao-032-subscriber,subscriber-db,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 104 saniye",dc2,rack-C,prod,HIST-2026-002
+ALM-10536,2026-06-03T02:10:29,OBM,ao-043-load,load-balancer,2,ntp_drift,Saat sapmasi 907 ms,dc1,rack-B,prod,HIST-2026-002
+ALM-10410,2026-06-03T02:11:22,AppDynamics,ao-035-billing,billing-db,4,txn_fail,"Islem basarisiz, hata orani yuzde 76",dc1,rack-C,prod,HIST-2026-002
+ALM-10423,2026-06-03T02:11:25,AppDynamics,ao-025-payment,payment-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (163 ms),dc1,rack-B,prod,HIST-2026-002
+ALM-10530,2026-06-03T02:11:33,Prometheus,ao-007-web,web-bff,2,cert_expiry,Sertifika 50 gun icinde suresi dolacak,dc1,rack-B,prod,HIST-2026-002
+ALM-10294,2026-06-03T02:11:35,SyslogNG,ao-035-billing,billing-db,5,disk_full,"Disk kullanimi kritik seviyede, yuzde 100 dolu",dc1,rack-C,prod,HIST-2026-002
+ALM-10340,2026-06-03T02:12:18,AppDynamics,ao-024-payment,payment-service,3,http_5xx,HTTP 5xx hata orani yuzde 56 seviyesine cikti,dc2,rack-A,prod,HIST-2026-002
+ALM-10289,2026-06-03T02:12:24,SyslogNG,ao-034-billing,billing-db,5,disk_full,"Disk kullanimi kritik seviyede, yuzde 99 dolu",dc2,rack-B,prod,HIST-2026-002
+ALM-10414,2026-06-03T02:12:26,AppDynamics,ao-049-invoice,invoice-batch,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 83",dc1,rack-B,prod,HIST-2026-002
+ALM-10295,2026-06-03T02:12:35,Prometheus,ao-034-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-B,prod,HIST-2026-002
+ALM-10288,2026-06-03T02:12:36,SyslogNG,ao-034-billing,billing-db,4,disk_full,"Disk kullanimi kritik seviyede, yuzde 98 dolu",dc2,rack-B,prod,HIST-2026-002
+ALM-10290,2026-06-03T02:12:37,SyslogNG,ao-034-billing,billing-db,4,disk_full,"Disk kullanimi kritik seviyede, yuzde 100 dolu",dc2,rack-B,prod,HIST-2026-002
+ALM-10287,2026-06-03T02:12:38,Zabbix,ao-034-billing,billing-db,4,disk_full,"Disk kullanimi kritik seviyede, yuzde 96 dolu",dc2,rack-B,prod,HIST-2026-002
+ALM-10310,2026-06-03T02:12:38,AppDynamics,ao-035-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod,HIST-2026-002
+ALM-10336,2026-06-03T02:12:38,SyslogNG,ao-023-charging,charging-service,4,http_5xx,HTTP 5xx hata orani yuzde 48 seviyesine cikti,dc1,rack-C,prod,HIST-2026-002
+ALM-10291,2026-06-03T02:12:41,AppDynamics,ao-035-billing,billing-db,5,disk_full,"Disk kullanimi kritik seviyede, yuzde 96 dolu",dc1,rack-C,prod,HIST-2026-002
+ALM-10384,2026-06-03T02:12:44,Prometheus,ao-026-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 73",dc2,rack-C,prod,HIST-2026-002
+ALM-10363,2026-06-03T02:12:45,SyslogNG,ao-036-billing,billing-db,5,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (120 ms),dc2,rack-A,prod,HIST-2026-002
+ALM-10293,2026-06-03T02:12:48,Prometheus,ao-035-billing,billing-db,5,disk_full,"Disk kullanimi kritik seviyede, yuzde 99 dolu",dc1,rack-C,prod,HIST-2026-002
+ALM-10450,2026-06-03T02:12:51,OBM,ao-028-order,order-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 94",dc2,rack-B,prod,HIST-2026-002
+ALM-10298,2026-06-03T02:12:54,SyslogNG,ao-034-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-B,prod,HIST-2026-002
+ALM-10379,2026-06-03T02:12:56,Zabbix,ao-018-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 84",dc2,rack-A,prod,HIST-2026-002
+ALM-10356,2026-06-03T02:13:05,SyslogNG,ao-026-payment,payment-service,3,http_5xx,HTTP 5xx hata orani yuzde 75 seviyesine cikti,dc2,rack-C,prod,HIST-2026-002
+ALM-10490,2026-06-03T02:13:06,Prometheus,ao-026-payment,payment-service,3,http_5xx,HTTP 5xx hata orani yuzde 50 seviyesine cikti,dc2,rack-C,prod,HIST-2026-002
+ALM-10337,2026-06-03T02:13:09,AppDynamics,ao-022-charging,charging-service,3,http_5xx,HTTP 5xx hata orani yuzde 60 seviyesine cikti,dc2,rack-B,prod,HIST-2026-002
+ALM-10367,2026-06-03T02:13:14,AppDynamics,ao-019-billing,billing-service,3,latency_high,"Yanit suresi p99 esigi asti, 925 ms",dc1,rack-B,prod,HIST-2026-002
+ALM-10339,2026-06-03T02:13:29,Zabbix,ao-020-billing,billing-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-C,prod,HIST-2026-002
+ALM-10321,2026-06-03T02:13:30,AppDynamics,ao-026-payment,payment-service,3,http_5xx,HTTP 5xx hata orani yuzde 43 seviyesine cikti,dc2,rack-C,prod,HIST-2026-002
+ALM-10380,2026-06-03T02:13:42,SyslogNG,ao-022-charging,charging-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-B,prod,HIST-2026-002
+ALM-10354,2026-06-03T02:13:43,AppDynamics,ao-028-order,order-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod,HIST-2026-002
+ALM-10292,2026-06-03T02:13:44,Zabbix,ao-035-billing,billing-db,4,disk_full,"Disk kullanimi kritik seviyede, yuzde 98 dolu",dc1,rack-C,prod,HIST-2026-002
+ALM-10479,2026-06-03T02:13:44,OBM,ao-036-billing,billing-db,3,latency_high,"Yanit suresi p99 esigi asti, 1087 ms",dc2,rack-A,prod,HIST-2026-002
+ALM-10493,2026-06-03T02:13:44,SyslogNG,ao-022-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 267 ms",dc2,rack-B,prod,HIST-2026-002
+ALM-10314,2026-06-03T02:13:54,Zabbix,ao-027-order,order-service,3,latency_high,"Yanit suresi p99 esigi asti, 225 ms",dc1,rack-A,prod,HIST-2026-002
+ALM-10307,2026-06-03T02:13:57,Zabbix,ao-035-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-C,prod,HIST-2026-002
+ALM-10311,2026-06-03T02:13:59,Prometheus,ao-023-charging,charging-service,4,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (198 ms),dc1,rack-C,prod,HIST-2026-002
+ALM-10432,2026-06-03T02:13:59,SyslogNG,ao-035-billing,billing-db,5,txn_fail,"Islem basarisiz, hata orani yuzde 91",dc1,rack-C,prod,HIST-2026-002
+ALM-10538,2026-06-03T02:14:09,Zabbix,ao-016-subscriber,subscriber-service,1,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 83 dolu",dc2,rack-B,prod,HIST-2026-002
+ALM-10375,2026-06-03T02:14:16,SyslogNG,ao-025-payment,payment-service,4,http_5xx,HTTP 5xx hata orani yuzde 21 seviyesine cikti,dc1,rack-B,prod,HIST-2026-002
+ALM-10505,2026-06-03T02:14:19,Zabbix,ao-023-charging,charging-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 78",dc1,rack-C,prod,HIST-2026-002
+ALM-10297,2026-06-03T02:14:21,Zabbix,ao-034-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-B,prod,HIST-2026-002
+ALM-10489,2026-06-03T02:14:23,AppDynamics,ao-028-order,order-service,4,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (108 ms),dc2,rack-B,prod,HIST-2026-002
+ALM-10308,2026-06-03T02:14:29,SyslogNG,ao-035-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-C,prod,HIST-2026-002
+ALM-10498,2026-06-03T02:14:32,Prometheus,ao-023-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 274 ms",dc1,rack-C,prod,HIST-2026-002
+ALM-10449,2026-06-03T02:14:38,AppDynamics,ao-019-billing,billing-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-B,prod,HIST-2026-002
+ALM-10334,2026-06-03T02:14:42,Zabbix,ao-023-charging,charging-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod,HIST-2026-002
+ALM-10416,2026-06-03T02:14:51,Zabbix,ao-027-order,order-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 91",dc1,rack-A,prod,HIST-2026-002
+ALM-10394,2026-06-03T02:14:57,OBM,ao-034-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-B,prod,HIST-2026-002
+ALM-10300,2026-06-03T02:14:58,OBM,ao-034-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-B,prod,HIST-2026-002
+ALM-10433,2026-06-03T02:15:01,SyslogNG,ao-023-charging,charging-service,3,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (244 ms),dc1,rack-C,prod,HIST-2026-002
+ALM-10518,2026-06-03T02:15:03,Zabbix,ao-054-payment,payment-provider-gw,2,network_flap,Arayuz eth0 link durumu 31 kez degisti,dc2,rack-A,prod,HIST-2026-002
+ALM-10344,2026-06-03T02:15:13,Zabbix,ao-049-invoice,invoice-batch,4,latency_high,"Yanit suresi p99 esigi asti, 795 ms",dc1,rack-B,prod,HIST-2026-002
+ALM-10443,2026-06-03T02:15:14,SyslogNG,ao-028-order,order-service,3,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (189 ms),dc2,rack-B,prod,HIST-2026-002
+ALM-10522,2026-06-03T02:15:21,Zabbix,ao-044-load,load-balancer,2,network_flap,Arayuz eth0 link durumu 64 kez degisti,dc2,rack-C,prod,HIST-2026-002
+ALM-10303,2026-06-03T02:15:31,Prometheus,ao-035-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-C,prod,HIST-2026-002
+ALM-10355,2026-06-03T02:15:34,Prometheus,ao-026-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 83",dc2,rack-C,prod,HIST-2026-002
+ALM-10429,2026-06-03T02:15:45,Prometheus,ao-021-charging,charging-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-A,prod,HIST-2026-002
+ALM-10441,2026-06-03T02:15:49,Zabbix,ao-020-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 96",dc2,rack-C,prod,HIST-2026-002
+ALM-10497,2026-06-03T02:15:58,SyslogNG,ao-024-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 96",dc2,rack-A,prod,HIST-2026-002
+ALM-10338,2026-06-03T02:16:04,AppDynamics,ao-026-payment,payment-service,5,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (107 ms),dc2,rack-C,prod,HIST-2026-002
+ALM-10459,2026-06-03T02:16:07,OBM,ao-036-billing,billing-db,4,http_5xx,HTTP 5xx hata orani yuzde 65 seviyesine cikti,dc2,rack-A,prod,HIST-2026-002
+ALM-10495,2026-06-03T02:16:07,OBM,ao-027-order,order-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-A,prod,HIST-2026-002
+ALM-10306,2026-06-03T02:16:15,Zabbix,ao-035-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod,HIST-2026-002
+ALM-10486,2026-06-03T02:16:16,Prometheus,ao-049-invoice,invoice-batch,3,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (234 ms),dc1,rack-B,prod,HIST-2026-002
+ALM-10457,2026-06-03T02:16:17,AppDynamics,ao-034-billing,billing-db,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (204 ms),dc2,rack-B,prod,HIST-2026-002
+ALM-10514,2026-06-03T02:16:47,AppDynamics,ao-005-mobile,mobile-bff,1,ntp_drift,Saat sapmasi 788 ms,dc1,rack-C,prod,HIST-2026-002
+ALM-10357,2026-06-03T02:16:49,Zabbix,ao-022-charging,charging-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod,HIST-2026-002
+ALM-10477,2026-06-03T02:16:58,SyslogNG,ao-035-billing,billing-db,4,txn_fail,"Islem basarisiz, hata orani yuzde 83",dc1,rack-C,prod,HIST-2026-002
+ALM-10302,2026-06-03T02:17:00,Prometheus,ao-034-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod,HIST-2026-002
+ALM-10398,2026-06-03T02:17:06,SyslogNG,ao-024-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 82",dc2,rack-A,prod,HIST-2026-002
+ALM-10494,2026-06-03T02:17:19,OBM,ao-028-order,order-service,4,latency_high,"Yanit suresi p99 esigi asti, 253 ms",dc2,rack-B,prod,HIST-2026-002
+ALM-10512,2026-06-03T02:17:21,Prometheus,ao-029-catalog,catalog-service,2,ntp_drift,Saat sapmasi 244 ms,dc1,rack-C,prod,HIST-2026-002
+ALM-10343,2026-06-03T02:17:33,SyslogNG,ao-018-billing,billing-service,4,http_5xx,HTTP 5xx hata orani yuzde 67 seviyesine cikti,dc2,rack-A,prod,HIST-2026-002
+ALM-10513,2026-06-03T02:17:37,Zabbix,ao-011-auth,auth-service,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 116 saniye",dc1,rack-C,prod,HIST-2026-002
+ALM-10466,2026-06-03T02:17:41,AppDynamics,ao-049-invoice,invoice-batch,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-B,prod,HIST-2026-002
+ALM-10462,2026-06-03T02:17:42,Zabbix,ao-034-billing,billing-db,3,http_5xx,HTTP 5xx hata orani yuzde 73 seviyesine cikti,dc2,rack-B,prod,HIST-2026-002
+ALM-10520,2026-06-03T02:17:46,Zabbix,ao-032-subscriber,subscriber-db,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 69 saniye",dc2,rack-C,prod,HIST-2026-002
+ALM-10301,2026-06-03T02:17:55,AppDynamics,ao-034-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod,HIST-2026-002
+ALM-10383,2026-06-03T02:17:59,SyslogNG,ao-035-billing,billing-db,5,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 81",dc1,rack-C,prod,HIST-2026-002
+ALM-10327,2026-06-03T02:18:00,Zabbix,ao-021-charging,charging-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 73",dc1,rack-A,prod,HIST-2026-002
+ALM-10296,2026-06-03T02:18:01,Prometheus,ao-034-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-B,prod,HIST-2026-002
+ALM-10519,2026-06-03T02:18:08,SyslogNG,ao-040-message,message-queue,2,ntp_drift,Saat sapmasi 428 ms,dc2,rack-B,prod,HIST-2026-002
+ALM-10368,2026-06-03T02:18:09,SyslogNG,ao-025-payment,payment-service,4,http_5xx,HTTP 5xx hata orani yuzde 49 seviyesine cikti,dc1,rack-B,prod,HIST-2026-002
+ALM-10397,2026-06-03T02:18:16,AppDynamics,ao-020-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 88",dc2,rack-C,prod,HIST-2026-002
+ALM-10309,2026-06-03T02:18:17,AppDynamics,ao-035-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-C,prod,HIST-2026-002
+ALM-10533,2026-06-03T02:18:17,OBM,ao-045-dns,dns-resolver,2,cert_expiry,Sertifika 25 gun icinde suresi dolacak,dc1,rack-A,prod,HIST-2026-002
+ALM-10299,2026-06-03T02:18:21,Prometheus,ao-034-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod,HIST-2026-002
+ALM-10305,2026-06-03T02:18:22,SyslogNG,ao-035-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-C,prod,HIST-2026-002
+ALM-10492,2026-06-03T02:18:24,SyslogNG,ao-019-billing,billing-service,5,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (158 ms),dc1,rack-B,prod,HIST-2026-002
+ALM-10481,2026-06-03T02:18:39,AppDynamics,ao-020-billing,billing-service,5,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 72",dc2,rack-C,prod,HIST-2026-002
+ALM-10454,2026-06-03T02:18:44,Zabbix,ao-028-order,order-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 88",dc2,rack-B,prod,HIST-2026-002
+ALM-10472,2026-06-03T02:18:45,OBM,ao-027-order,order-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-A,prod,HIST-2026-002
+ALM-10534,2026-06-03T02:18:50,AppDynamics,ao-010-auth,auth-service,2,ntp_drift,Saat sapmasi 391 ms,dc2,rack-B,prod,HIST-2026-002
+ALM-10349,2026-06-03T02:18:51,Prometheus,ao-026-payment,payment-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-C,prod,HIST-2026-002
+ALM-10408,2026-06-03T02:18:54,OBM,ao-028-order,order-service,3,http_5xx,HTTP 5xx hata orani yuzde 53 seviyesine cikti,dc2,rack-B,prod,HIST-2026-002
+ALM-10474,2026-06-03T02:19:03,SyslogNG,ao-021-charging,charging-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 93",dc1,rack-A,prod,HIST-2026-002
+ALM-10413,2026-06-03T02:19:07,Prometheus,ao-027-order,order-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-A,prod,HIST-2026-002
+ALM-10451,2026-06-03T02:19:11,OBM,ao-025-payment,payment-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-B,prod,HIST-2026-002
+ALM-10452,2026-06-03T02:19:11,SyslogNG,ao-026-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 81",dc2,rack-C,prod,HIST-2026-002
+ALM-10496,2026-06-03T02:19:24,SyslogNG,ao-020-billing,billing-service,4,http_5xx,HTTP 5xx hata orani yuzde 56 seviyesine cikti,dc2,rack-C,prod,HIST-2026-002
+ALM-10460,2026-06-03T02:19:29,Prometheus,ao-024-payment,payment-service,4,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (199 ms),dc2,rack-A,prod,HIST-2026-002
+ALM-10516,2026-06-03T02:19:32,Zabbix,ao-001-api,api-gateway,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 111 saniye",dc1,rack-B,prod,HIST-2026-002
+ALM-10503,2026-06-03T02:19:36,OBM,ao-022-charging,charging-service,3,http_5xx,HTTP 5xx hata orani yuzde 71 seviyesine cikti,dc2,rack-B,prod,HIST-2026-002
+ALM-10446,2026-06-03T02:19:38,Zabbix,ao-036-billing,billing-db,4,latency_high,"Yanit suresi p99 esigi asti, 455 ms",dc2,rack-A,prod,HIST-2026-002
+ALM-10304,2026-06-03T02:19:41,AppDynamics,ao-035-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod,HIST-2026-002
+ALM-10322,2026-06-03T02:19:51,OBM,ao-018-billing,billing-service,5,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (195 ms),dc2,rack-A,prod,HIST-2026-002
+ALM-10535,2026-06-03T02:20:05,OBM,ao-048-batch,batch-scheduler,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 111 saniye",dc2,rack-A,prod,HIST-2026-002
+ALM-10378,2026-06-03T02:20:13,AppDynamics,ao-020-billing,billing-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-C,prod,HIST-2026-002
+ALM-10371,2026-06-03T02:20:19,Prometheus,ao-025-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 345 ms",dc1,rack-B,prod,HIST-2026-002
+ALM-10487,2026-06-03T02:20:19,OBM,ao-026-payment,payment-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (190 ms),dc2,rack-C,prod,HIST-2026-002
+ALM-10506,2026-06-03T02:20:24,Prometheus,ao-023-charging,charging-service,3,http_5xx,HTTP 5xx hata orani yuzde 68 seviyesine cikti,dc1,rack-C,prod,HIST-2026-002
+ALM-10406,2026-06-03T02:20:27,Prometheus,ao-026-payment,payment-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-C,prod,HIST-2026-002
+ALM-10418,2026-06-03T02:20:30,OBM,ao-026-payment,payment-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 101",dc2,rack-C,prod,HIST-2026-002
+ALM-10484,2026-06-03T02:20:34,OBM,ao-026-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 959 ms",dc2,rack-C,prod,HIST-2026-002
+ALM-10400,2026-06-03T02:20:43,Prometheus,ao-021-charging,charging-service,4,http_5xx,HTTP 5xx hata orani yuzde 35 seviyesine cikti,dc1,rack-A,prod,HIST-2026-002
+ALM-10468,2026-06-03T02:20:51,AppDynamics,ao-026-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 82",dc2,rack-C,prod,HIST-2026-002
+ALM-10329,2026-06-03T02:20:57,OBM,ao-028-order,order-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 84",dc2,rack-B,prod,HIST-2026-002
+ALM-10415,2026-06-03T02:21:04,OBM,ao-049-invoice,invoice-batch,4,txn_fail,"Islem basarisiz, hata orani yuzde 95",dc1,rack-B,prod,HIST-2026-002
+ALM-10372,2026-06-03T02:21:06,SyslogNG,ao-019-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 73",dc1,rack-B,prod,HIST-2026-002
+ALM-10404,2026-06-03T02:21:06,Zabbix,ao-023-charging,charging-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 81",dc1,rack-C,prod,HIST-2026-002
+ALM-10319,2026-06-03T02:21:08,OBM,ao-021-charging,charging-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 81",dc1,rack-A,prod,HIST-2026-002
+ALM-10420,2026-06-03T02:21:16,Prometheus,ao-034-billing,billing-db,3,latency_high,"Yanit suresi p99 esigi asti, 565 ms",dc2,rack-B,prod,HIST-2026-002
+ALM-10428,2026-06-03T02:21:16,SyslogNG,ao-049-invoice,invoice-batch,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-B,prod,HIST-2026-002
+ALM-10388,2026-06-03T02:21:25,OBM,ao-026-payment,payment-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (244 ms),dc2,rack-C,prod,HIST-2026-002
+ALM-10348,2026-06-03T02:21:26,Prometheus,ao-026-payment,payment-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 90",dc2,rack-C,prod,HIST-2026-002
+ALM-10316,2026-06-03T02:21:28,OBM,ao-022-charging,charging-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 79",dc2,rack-B,prod,HIST-2026-002
+ALM-10426,2026-06-03T02:21:40,AppDynamics,ao-019-billing,billing-service,3,latency_high,"Yanit suresi p99 esigi asti, 696 ms",dc1,rack-B,prod,HIST-2026-002
+ALM-10369,2026-06-03T02:22:05,AppDynamics,ao-023-charging,charging-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 94",dc1,rack-C,prod,HIST-2026-002
+ALM-10347,2026-06-03T02:22:06,OBM,ao-035-billing,billing-db,4,latency_high,"Yanit suresi p99 esigi asti, 918 ms",dc1,rack-C,prod,HIST-2026-002
+ALM-10453,2026-06-03T02:22:08,Zabbix,ao-035-billing,billing-db,3,http_5xx,HTTP 5xx hata orani yuzde 63 seviyesine cikti,dc1,rack-C,prod,HIST-2026-002
+ALM-10373,2026-06-03T02:22:22,Prometheus,ao-021-charging,charging-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 77",dc1,rack-A,prod,HIST-2026-002
+ALM-10424,2026-06-03T02:22:27,SyslogNG,ao-025-payment,payment-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 89",dc1,rack-B,prod,HIST-2026-002
+ALM-10465,2026-06-03T02:22:33,OBM,ao-036-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-A,prod,HIST-2026-002
+ALM-10331,2026-06-03T02:22:46,AppDynamics,ao-025-payment,payment-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 96",dc1,rack-B,prod,HIST-2026-002
+ALM-10323,2026-06-03T02:22:58,OBM,ao-035-billing,billing-db,3,http_5xx,HTTP 5xx hata orani yuzde 24 seviyesine cikti,dc1,rack-C,prod,HIST-2026-002
+ALM-10324,2026-06-03T02:23:13,Prometheus,ao-020-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 73",dc2,rack-C,prod,HIST-2026-002
+ALM-10376,2026-06-03T02:23:14,OBM,ao-021-charging,charging-service,3,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (249 ms),dc1,rack-A,prod,HIST-2026-002
+ALM-10469,2026-06-03T02:23:27,Zabbix,ao-028-order,order-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-B,prod,HIST-2026-002
+ALM-10330,2026-06-03T02:23:45,AppDynamics,ao-022-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 347 ms",dc2,rack-B,prod,HIST-2026-002
+ALM-10515,2026-06-03T02:23:49,Prometheus,ao-055-sms,sms-gateway,1,backup_warn,Yedekleme 63 dakika gecikmeli,dc1,rack-B,prod,HIST-2026-002
+ALM-10471,2026-06-03T02:23:51,AppDynamics,ao-049-invoice,invoice-batch,4,latency_high,"Yanit suresi p99 esigi asti, 428 ms",dc1,rack-B,prod,HIST-2026-002
+ALM-10382,2026-06-03T02:23:56,SyslogNG,ao-019-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 84",dc1,rack-B,prod,HIST-2026-002
+ALM-10501,2026-06-03T02:24:00,Prometheus,ao-021-charging,charging-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (241 ms),dc1,rack-A,prod,HIST-2026-002
+ALM-10504,2026-06-03T02:24:10,AppDynamics,ao-020-billing,billing-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc2,rack-C,prod,HIST-2026-002
+ALM-10387,2026-06-03T02:24:36,SyslogNG,ao-023-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 386 ms",dc1,rack-C,prod,HIST-2026-002
+ALM-10438,2026-06-03T02:24:42,OBM,ao-028-order,order-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (105 ms),dc2,rack-B,prod,HIST-2026-002
+ALM-10352,2026-06-03T02:24:47,SyslogNG,ao-019-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 81",dc1,rack-B,prod,HIST-2026-002
+ALM-10421,2026-06-03T02:25:02,SyslogNG,ao-036-billing,billing-db,5,txn_fail,"Islem basarisiz, hata orani yuzde 92",dc2,rack-A,prod,HIST-2026-002
+ALM-10395,2026-06-03T02:25:29,AppDynamics,ao-023-charging,charging-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod,HIST-2026-002
+ALM-10448,2026-06-03T02:25:30,Prometheus,ao-028-order,order-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-B,prod,HIST-2026-002
+ALM-10439,2026-06-03T02:25:39,OBM,ao-021-charging,charging-service,4,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (111 ms),dc1,rack-A,prod,HIST-2026-002
+ALM-10333,2026-06-03T02:25:53,SyslogNG,ao-024-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 74",dc2,rack-A,prod,HIST-2026-002
+ALM-10491,2026-06-03T02:26:00,SyslogNG,ao-025-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 1085 ms",dc1,rack-B,prod,HIST-2026-002
+ALM-10335,2026-06-03T02:26:25,Prometheus,ao-022-charging,charging-service,4,http_5xx,HTTP 5xx hata orani yuzde 39 seviyesine cikti,dc2,rack-B,prod,HIST-2026-002
+ALM-10442,2026-06-03T02:26:30,AppDynamics,ao-024-payment,payment-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-A,prod,HIST-2026-002
+ALM-10507,2026-06-03T02:26:31,OBM,ao-020-billing,billing-service,4,http_5xx,HTTP 5xx hata orani yuzde 47 seviyesine cikti,dc2,rack-C,prod,HIST-2026-002
+ALM-10461,2026-06-03T02:26:33,OBM,ao-028-order,order-service,4,http_5xx,HTTP 5xx hata orani yuzde 25 seviyesine cikti,dc2,rack-B,prod,HIST-2026-002
+ALM-10346,2026-06-03T02:26:37,AppDynamics,ao-019-billing,billing-service,3,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (118 ms),dc1,rack-B,prod,HIST-2026-002
+ALM-10436,2026-06-03T02:26:40,SyslogNG,ao-019-billing,billing-service,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (114 ms),dc1,rack-B,prod,HIST-2026-002
+ALM-10419,2026-06-03T02:26:51,Prometheus,ao-020-billing,billing-service,4,http_5xx,HTTP 5xx hata orani yuzde 66 seviyesine cikti,dc2,rack-C,prod,HIST-2026-002
+ALM-10445,2026-06-03T02:27:00,SyslogNG,ao-018-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 81",dc2,rack-A,prod,HIST-2026-002
+ALM-10325,2026-06-03T02:27:03,Prometheus,ao-035-billing,billing-db,4,latency_high,"Yanit suresi p99 esigi asti, 921 ms",dc1,rack-C,prod,HIST-2026-002
+ALM-10470,2026-06-03T02:27:06,AppDynamics,ao-026-payment,payment-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 103",dc2,rack-C,prod,HIST-2026-002
+ALM-10508,2026-06-03T02:27:07,SyslogNG,ao-006-mobile,mobile-bff,1,ntp_drift,Saat sapmasi 792 ms,dc2,rack-A,prod,HIST-2026-002
+ALM-10351,2026-06-03T02:27:09,SyslogNG,ao-027-order,order-service,3,http_5xx,HTTP 5xx hata orani yuzde 43 seviyesine cikti,dc1,rack-A,prod,HIST-2026-002
+ALM-10440,2026-06-03T02:27:18,Zabbix,ao-018-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 74",dc2,rack-A,prod,HIST-2026-002
+ALM-10313,2026-06-03T02:27:19,AppDynamics,ao-018-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 81",dc2,rack-A,prod,HIST-2026-002
+ALM-10328,2026-06-03T02:27:21,OBM,ao-026-payment,payment-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (239 ms),dc2,rack-C,prod,HIST-2026-002
+ALM-10458,2026-06-03T02:27:21,Prometheus,ao-035-billing,billing-db,4,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc1,rack-C,prod,HIST-2026-002
+ALM-10385,2026-06-03T02:27:22,Prometheus,ao-023-charging,charging-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod,HIST-2026-002
+ALM-10529,2026-06-03T02:27:25,Zabbix,ao-055-sms,sms-gateway,2,cert_expiry,Sertifika 45 gun icinde suresi dolacak,dc1,rack-B,prod,HIST-2026-002
+ALM-10405,2026-06-03T02:27:33,Prometheus,ao-023-charging,charging-service,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (165 ms),dc1,rack-C,prod,HIST-2026-002
+ALM-10476,2026-06-03T02:27:56,Prometheus,ao-034-billing,billing-db,5,txn_fail,"Islem basarisiz, hata orani yuzde 92",dc2,rack-B,prod,HIST-2026-002
+ALM-10531,2026-06-03T02:28:00,AppDynamics,ao-048-batch,batch-scheduler,1,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 80 dolu",dc2,rack-A,prod,HIST-2026-002
+ALM-10350,2026-06-03T02:28:03,Zabbix,ao-021-charging,charging-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc1,rack-A,prod,HIST-2026-002
+ALM-10396,2026-06-03T02:28:19,OBM,ao-021-charging,charging-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 85",dc1,rack-A,prod,HIST-2026-002
+ALM-10521,2026-06-03T02:28:24,SyslogNG,ao-052-payment,payment-provider-gw,1,backup_warn,Yedekleme 28 dakika gecikmeli,dc2,rack-B,prod,HIST-2026-002
+ALM-10525,2026-06-03T02:28:36,SyslogNG,ao-005-mobile,mobile-bff,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 106 saniye",dc1,rack-C,prod,HIST-2026-002
+ALM-10370,2026-06-03T02:28:46,Zabbix,ao-035-billing,billing-db,4,txn_fail,"Islem basarisiz, hata orani yuzde 83",dc1,rack-C,prod,HIST-2026-002
+ALM-10374,2026-06-03T02:28:46,AppDynamics,ao-020-billing,billing-service,4,latency_high,"Yanit suresi p99 esigi asti, 730 ms",dc2,rack-C,prod,HIST-2026-002
+ALM-10386,2026-06-03T02:28:47,Zabbix,ao-049-invoice,invoice-batch,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-B,prod,HIST-2026-002
+ALM-10358,2026-06-03T02:28:54,OBM,ao-021-charging,charging-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 83",dc1,rack-A,prod,HIST-2026-002
+ALM-10332,2026-06-03T02:28:55,OBM,ao-023-charging,charging-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod,HIST-2026-002
+ALM-10392,2026-06-03T02:29:05,SyslogNG,ao-025-payment,payment-service,5,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 82",dc1,rack-B,prod,HIST-2026-002
+ALM-10417,2026-06-03T02:29:05,Prometheus,ao-028-order,order-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc2,rack-B,prod,HIST-2026-002
+ALM-10360,2026-06-03T02:29:24,SyslogNG,ao-022-charging,charging-service,3,latency_high,"Yanit suresi p99 esigi asti, 849 ms",dc2,rack-B,prod,HIST-2026-002
+ALM-10318,2026-06-03T02:29:29,SyslogNG,ao-036-billing,billing-db,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (252 ms),dc2,rack-A,prod,HIST-2026-002
+ALM-10377,2026-06-03T02:29:31,OBM,ao-025-payment,payment-service,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (173 ms),dc1,rack-B,prod,HIST-2026-002
+ALM-10431,2026-06-03T02:29:32,Prometheus,ao-026-payment,payment-service,3,latency_high,"Yanit suresi p99 esigi asti, 702 ms",dc2,rack-C,prod,HIST-2026-002
+ALM-10478,2026-06-03T02:29:42,SyslogNG,ao-020-billing,billing-service,3,latency_high,"Yanit suresi p99 esigi asti, 1130 ms",dc2,rack-C,prod,HIST-2026-002
+ALM-10403,2026-06-03T02:29:44,AppDynamics,ao-027-order,order-service,4,latency_high,"Yanit suresi p99 esigi asti, 912 ms",dc1,rack-A,prod,HIST-2026-002
+ALM-10315,2026-06-03T02:29:55,OBM,ao-036-billing,billing-db,5,txn_fail,"Islem basarisiz, hata orani yuzde 76",dc2,rack-A,prod,HIST-2026-002
+ALM-10475,2026-06-03T02:29:59,Zabbix,ao-025-payment,payment-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-B,prod,HIST-2026-002
+ALM-10359,2026-06-03T02:30:00,Prometheus,ao-021-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 870 ms",dc1,rack-A,prod,HIST-2026-002
+ALM-10483,2026-06-03T02:30:01,OBM,ao-018-billing,billing-service,4,latency_high,"Yanit suresi p99 esigi asti, 764 ms",dc2,rack-A,prod,HIST-2026-002
+ALM-10437,2026-06-03T02:30:26,SyslogNG,ao-025-payment,payment-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-B,prod,HIST-2026-002
+ALM-10488,2026-06-03T02:30:29,Prometheus,ao-024-payment,payment-service,3,latency_high,"Yanit suresi p99 esigi asti, 690 ms",dc2,rack-A,prod,HIST-2026-002
+ALM-10320,2026-06-03T02:30:40,Prometheus,ao-023-charging,charging-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 87",dc1,rack-C,prod,HIST-2026-002
+ALM-10524,2026-06-03T02:30:40,AppDynamics,ao-016-subscriber,subscriber-service,1,ntp_drift,Saat sapmasi 566 ms,dc2,rack-B,prod,HIST-2026-002
+ALM-10364,2026-06-03T02:30:43,SyslogNG,ao-028-order,order-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 85",dc2,rack-B,prod,HIST-2026-002
+ALM-10434,2026-06-03T02:30:44,Prometheus,ao-021-charging,charging-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu IO-ENOSPC",dc1,rack-A,prod,HIST-2026-002
+ALM-10341,2026-06-03T02:30:47,SyslogNG,ao-023-charging,charging-service,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (119 ms),dc1,rack-C,prod,HIST-2026-002
+ALM-10353,2026-06-03T02:30:49,Prometheus,ao-035-billing,billing-db,4,txn_fail,"Islem basarisiz, hata orani yuzde 85",dc1,rack-C,prod,HIST-2026-002
+ALM-10391,2026-06-03T02:30:56,OBM,ao-022-charging,charging-service,3,latency_high,"Yanit suresi p99 esigi asti, 891 ms",dc2,rack-B,prod,HIST-2026-002
+ALM-10473,2026-06-03T02:30:58,Zabbix,ao-026-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 818 ms",dc2,rack-C,prod,HIST-2026-002
+ALM-10361,2026-06-03T02:31:01,Prometheus,ao-020-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 90",dc2,rack-C,prod,HIST-2026-002
+ALM-10523,2026-06-03T02:31:10,Prometheus,ao-005-mobile,mobile-bff,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 93 saniye",dc1,rack-C,prod,HIST-2026-002
+ALM-10407,2026-06-03T02:31:13,Prometheus,ao-027-order,order-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-A,prod,HIST-2026-002
+ALM-10464,2026-06-03T02:31:15,AppDynamics,ao-035-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc1,rack-C,prod,HIST-2026-002
+ALM-10511,2026-06-03T02:31:35,Prometheus,ao-048-batch,batch-scheduler,2,backup_warn,Yedekleme 42 dakika gecikmeli,dc2,rack-A,prod,HIST-2026-002
+ALM-10463,2026-06-03T02:31:46,OBM,ao-028-order,order-service,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 110",dc2,rack-B,prod,HIST-2026-002
+ALM-10467,2026-06-03T02:31:49,AppDynamics,ao-034-billing,billing-db,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-B,prod,HIST-2026-002
+ALM-10362,2026-06-03T02:31:51,SyslogNG,ao-027-order,order-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 95",dc1,rack-A,prod,HIST-2026-002
+ALM-10430,2026-06-03T02:31:52,AppDynamics,ao-034-billing,billing-db,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod,HIST-2026-002
+ALM-10345,2026-06-03T02:32:05,AppDynamics,ao-025-payment,payment-service,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 85",dc1,rack-B,prod,HIST-2026-002
+ALM-10499,2026-06-03T02:32:09,AppDynamics,ao-019-billing,billing-service,5,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (254 ms),dc1,rack-B,prod,HIST-2026-002
+ALM-10482,2026-06-03T02:32:17,AppDynamics,ao-018-billing,billing-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-A,prod,HIST-2026-002
+ALM-10365,2026-06-03T02:32:36,Zabbix,ao-018-billing,billing-service,4,latency_high,"Yanit suresi p99 esigi asti, 729 ms",dc2,rack-A,prod,HIST-2026-002
+ALM-10480,2026-06-03T02:32:43,OBM,ao-020-billing,billing-service,3,latency_high,"Yanit suresi p99 esigi asti, 1082 ms",dc2,rack-C,prod,HIST-2026-002
+ALM-10500,2026-06-03T02:32:50,AppDynamics,ao-023-charging,charging-service,4,http_5xx,HTTP 5xx hata orani yuzde 21 seviyesine cikti,dc1,rack-C,prod,HIST-2026-002
+ALM-10317,2026-06-03T02:33:00,OBM,ao-024-payment,payment-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu ORA-19502",dc2,rack-A,prod,HIST-2026-002
+ALM-10456,2026-06-03T02:33:09,SyslogNG,ao-018-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 83",dc2,rack-A,prod,HIST-2026-002
+ALM-10412,2026-06-03T02:33:14,OBM,ao-022-charging,charging-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-B,prod,HIST-2026-002
+ALM-10342,2026-06-03T02:33:22,Prometheus,ao-024-payment,payment-service,4,http_5xx,HTTP 5xx hata orani yuzde 40 seviyesine cikti,dc2,rack-A,prod,HIST-2026-002
+ALM-10411,2026-06-03T02:33:24,Zabbix,ao-049-invoice,invoice-batch,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (222 ms),dc1,rack-B,prod,HIST-2026-002
+ALM-10502,2026-06-03T02:33:45,OBM,ao-027-order,order-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-A,prod,HIST-2026-002
+ALM-10422,2026-06-03T02:34:02,Prometheus,ao-019-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 84",dc1,rack-B,prod,HIST-2026-002
+ALM-10389,2026-06-03T02:34:11,AppDynamics,ao-023-charging,charging-service,4,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc1,rack-C,prod,HIST-2026-002
+ALM-10485,2026-06-03T02:34:12,Prometheus,ao-036-billing,billing-db,4,http_5xx,HTTP 5xx hata orani yuzde 64 seviyesine cikti,dc2,rack-A,prod,HIST-2026-002
+ALM-10399,2026-06-03T02:34:16,SyslogNG,ao-026-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 582 ms",dc2,rack-C,prod,HIST-2026-002
+ALM-10455,2026-06-03T02:34:22,SyslogNG,ao-018-billing,billing-service,4,timeout,billing-db servisine yapilan cagri zaman asimina ugradi (260 ms),dc2,rack-A,prod,HIST-2026-002
+ALM-10381,2026-06-03T02:34:25,OBM,ao-035-billing,billing-db,5,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (259 ms),dc1,rack-C,prod,HIST-2026-002
+ALM-10435,2026-06-03T02:34:25,SyslogNG,ao-036-billing,billing-db,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (129 ms),dc2,rack-A,prod,HIST-2026-002
+ALM-10393,2026-06-03T02:34:26,OBM,ao-020-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 98",dc2,rack-C,prod,HIST-2026-002
+ALM-10528,2026-06-03T02:34:26,Zabbix,ao-006-mobile,mobile-bff,1,cert_expiry,Sertifika 28 gun icinde suresi dolacak,dc2,rack-A,prod,HIST-2026-002
+ALM-10532,2026-06-03T02:34:33,Zabbix,ao-040-message,message-queue,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 58 saniye",dc2,rack-B,prod,HIST-2026-002
+ALM-10366,2026-06-03T02:34:34,Zabbix,ao-021-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 1044 ms",dc1,rack-A,prod,HIST-2026-002
+ALM-10425,2026-06-03T02:34:50,OBM,ao-018-billing,billing-service,3,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (192 ms),dc2,rack-A,prod,HIST-2026-002
+ALM-10427,2026-06-03T02:35:12,OBM,ao-026-payment,payment-service,5,db_write_fail,"Veritabani yazma islemi basarisiz, hata kodu DB-WRITE-07",dc2,rack-C,prod,HIST-2026-002
+ALM-10401,2026-06-03T02:35:15,AppDynamics,ao-035-billing,billing-db,4,txn_fail,"Islem basarisiz, hata orani yuzde 81",dc1,rack-C,prod,HIST-2026-002
+ALM-10312,2026-06-03T02:35:35,Prometheus,ao-023-charging,charging-service,4,latency_high,"Yanit suresi p99 esigi asti, 321 ms",dc1,rack-C,prod,HIST-2026-002
+ALM-10326,2026-06-03T02:35:38,OBM,ao-020-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 74",dc2,rack-C,prod,HIST-2026-002
+ALM-10409,2026-06-03T02:35:41,OBM,ao-024-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 558 ms",dc2,rack-A,prod,HIST-2026-002
+ALM-10402,2026-06-03T02:35:49,Zabbix,ao-025-payment,payment-service,4,timeout,billing-service servisine yapilan cagri zaman asimina ugradi (243 ms),dc1,rack-B,prod,HIST-2026-002
+ALM-10447,2026-06-03T02:35:56,OBM,ao-022-charging,charging-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 78",dc2,rack-B,prod,HIST-2026-002
+ALM-10390,2026-06-03T02:35:57,SyslogNG,ao-022-charging,charging-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc2,rack-B,prod,HIST-2026-002
+ALM-10444,2026-06-03T02:36:02,OBM,ao-026-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 76",dc2,rack-C,prod,HIST-2026-002
+ALM-10517,2026-06-03T02:36:02,Zabbix,ao-033-subscriber,subscriber-db,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 96 saniye",dc1,rack-A,prod,HIST-2026-002
+ALM-10537,2026-06-03T02:37:11,OBM,ao-008-web,web-bff,2,cert_expiry,Sertifika 28 gun icinde suresi dolacak,dc2,rack-C,prod,HIST-2026-002
+ALM-10526,2026-06-03T02:37:53,SyslogNG,ao-050-reconciliation,reconciliation-batch,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 75 dolu",dc2,rack-C,prod,HIST-2026-002
+ALM-10527,2026-06-03T02:38:45,SyslogNG,ao-038-cache,cache-cluster,3,network_flap,Arayuz eth0 link durumu 60 kez degisti,dc2,rack-C,prod,HIST-2026-002
+ALM-10510,2026-06-03T02:38:57,Prometheus,ao-006-mobile,mobile-bff,3,network_flap,Arayuz eth0 link durumu 56 kez degisti,dc2,rack-A,prod,HIST-2026-002
+ALM-10767,2026-07-18T00:42:38,Zabbix,ao-054-payment,payment-provider-gw,2,cert_expiry,Sertifika 31 gun icinde suresi dolacak,dc2,rack-A,prod,HIST-2026-003
+ALM-10770,2026-07-18T00:42:38,SyslogNG,ao-044-load,load-balancer,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 80 saniye",dc2,rack-C,prod,HIST-2026-003
+ALM-10756,2026-07-18T00:46:49,Zabbix,ao-039-message,message-queue,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 83 saniye",dc1,rack-A,prod,HIST-2026-003
+ALM-10540,2026-07-18T00:47:25,Prometheus,ao-013-session,session-service,1,mem_high,Bellek kullanimi yuzde 60,dc1,rack-B,prod,HIST-2026-003
+ALM-10539,2026-07-18T00:47:27,AppDynamics,ao-012-session,session-service,1,mem_high,Bellek kullanimi yuzde 60,dc2,rack-A,prod,HIST-2026-003
+ALM-10541,2026-07-18T00:47:27,AppDynamics,ao-014-session,session-service,1,mem_high,Bellek kullanimi yuzde 60,dc2,rack-C,prod,HIST-2026-003
+ALM-10542,2026-07-18T00:54:12,AppDynamics,ao-012-session,session-service,1,mem_high,Bellek kullanimi yuzde 63,dc2,rack-A,prod,HIST-2026-003
+ALM-10544,2026-07-18T00:54:13,Prometheus,ao-014-session,session-service,1,mem_high,Bellek kullanimi yuzde 63,dc2,rack-C,prod,HIST-2026-003
+ALM-10543,2026-07-18T00:54:27,AppDynamics,ao-013-session,session-service,1,mem_high,Bellek kullanimi yuzde 63,dc1,rack-B,prod,HIST-2026-003
+ALM-10751,2026-07-18T00:56:45,OBM,ao-031-subscriber,subscriber-db,2,network_flap,Arayuz eth0 link durumu 41 kez degisti,dc1,rack-B,prod,HIST-2026-003
+ALM-10778,2026-07-18T00:58:48,OBM,ao-046-dns,dns-resolver,2,backup_warn,Yedekleme 73 dakika gecikmeli,dc2,rack-B,prod,HIST-2026-003
+ALM-10777,2026-07-18T00:59:54,OBM,ao-026-payment,payment-service,1,network_flap,Arayuz eth0 link durumu 57 kez degisti,dc2,rack-C,prod,HIST-2026-003
+ALM-10545,2026-07-18T01:01:04,SyslogNG,ao-012-session,session-service,1,mem_high,Bellek kullanimi yuzde 66,dc2,rack-A,prod,HIST-2026-003
+ALM-10547,2026-07-18T01:01:20,Prometheus,ao-014-session,session-service,1,mem_high,Bellek kullanimi yuzde 66,dc2,rack-C,prod,HIST-2026-003
+ALM-10546,2026-07-18T01:01:34,Prometheus,ao-013-session,session-service,1,mem_high,Bellek kullanimi yuzde 66,dc1,rack-B,prod,HIST-2026-003
+ALM-10764,2026-07-18T01:02:35,Prometheus,ao-040-message,message-queue,1,cert_expiry,Sertifika 39 gun icinde suresi dolacak,dc2,rack-B,prod,HIST-2026-003
+ALM-10768,2026-07-18T01:03:37,OBM,ao-022-charging,charging-service,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 77 dolu",dc2,rack-B,prod,HIST-2026-003
+ALM-10776,2026-07-18T01:04:30,OBM,ao-034-billing,billing-db,2,backup_warn,Yedekleme 54 dakika gecikmeli,dc2,rack-B,prod,HIST-2026-003
+ALM-10746,2026-07-18T01:05:38,OBM,ao-020-billing,billing-service,3,network_flap,Arayuz eth0 link durumu 34 kez degisti,dc2,rack-C,prod,HIST-2026-003
+ALM-10753,2026-07-18T01:07:43,SyslogNG,ao-055-sms,sms-gateway,1,ntp_drift,Saat sapmasi 426 ms,dc1,rack-B,prod,HIST-2026-003
+ALM-10548,2026-07-18T01:08:07,Zabbix,ao-012-session,session-service,1,mem_high,Bellek kullanimi yuzde 69,dc2,rack-A,prod,HIST-2026-003
+ALM-10550,2026-07-18T01:08:25,SyslogNG,ao-014-session,session-service,1,mem_high,Bellek kullanimi yuzde 69,dc2,rack-C,prod,HIST-2026-003
+ALM-10549,2026-07-18T01:08:33,Zabbix,ao-013-session,session-service,1,mem_high,Bellek kullanimi yuzde 69,dc1,rack-B,prod,HIST-2026-003
+ALM-10630,2026-07-18T01:12:10,OBM,ao-037-cache,cache-cluster,3,http_5xx,HTTP 5xx hata orani yuzde 47 seviyesine cikti,dc1,rack-B,prod,HIST-2026-003
+ALM-10760,2026-07-18T01:12:29,AppDynamics,ao-026-payment,payment-service,2,ntp_drift,Saat sapmasi 519 ms,dc2,rack-C,prod,HIST-2026-003
+ALM-10680,2026-07-18T01:13:21,OBM,ao-013-session,session-service,4,http_5xx,HTTP 5xx hata orani yuzde 29 seviyesine cikti,dc1,rack-B,prod,HIST-2026-003
+ALM-10708,2026-07-18T01:13:45,Prometheus,ao-007-web,web-bff,2,latency_high,"Yanit suresi p99 esigi asti, 219 ms",dc1,rack-B,prod,HIST-2026-003
+ALM-10679,2026-07-18T01:14:35,OBM,ao-006-mobile,mobile-bff,3,gc_pressure,GC duraklama suresi 3008 ms,dc2,rack-A,prod,HIST-2026-003
+ALM-10553,2026-07-18T01:15:05,Prometheus,ao-014-session,session-service,2,mem_high,Bellek kullanimi yuzde 73,dc2,rack-C,prod,HIST-2026-003
+ALM-10635,2026-07-18T01:15:08,OBM,ao-038-cache,cache-cluster,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (232 ms),dc2,rack-C,prod,HIST-2026-003
+ALM-10552,2026-07-18T01:15:11,Zabbix,ao-013-session,session-service,2,mem_high,Bellek kullanimi yuzde 73,dc1,rack-B,prod,HIST-2026-003
+ALM-10655,2026-07-18T01:15:20,Zabbix,ao-010-auth,auth-service,4,gc_pressure,GC duraklama suresi 3103 ms,dc2,rack-B,prod,HIST-2026-003
+ALM-10551,2026-07-18T01:15:22,Zabbix,ao-012-session,session-service,2,mem_high,Bellek kullanimi yuzde 73,dc2,rack-A,prod,HIST-2026-003
+ALM-10705,2026-07-18T01:15:23,SyslogNG,ao-007-web,web-bff,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (124 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10743,2026-07-18T01:15:23,SyslogNG,ao-004-mobile,mobile-bff,2,latency_high,"Yanit suresi p99 esigi asti, 515 ms",dc2,rack-B,prod,HIST-2026-003
+ALM-10595,2026-07-18T01:15:32,Zabbix,ao-014-session,session-service,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (142 ms),dc2,rack-C,prod,HIST-2026-003
+ALM-10706,2026-07-18T01:15:43,OBM,ao-011-auth,auth-service,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (139 ms),dc1,rack-C,prod,HIST-2026-003
+ALM-10772,2026-07-18T01:15:58,Zabbix,ao-054-payment,payment-provider-gw,1,network_flap,Arayuz eth0 link durumu 39 kez degisti,dc2,rack-A,prod,HIST-2026-003
+ALM-10682,2026-07-18T01:16:03,Prometheus,ao-006-mobile,mobile-bff,2,latency_high,"Yanit suresi p99 esigi asti, 451 ms",dc2,rack-A,prod,HIST-2026-003
+ALM-10735,2026-07-18T01:16:28,SyslogNG,ao-038-cache,cache-cluster,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (140 ms),dc2,rack-C,prod,HIST-2026-003
+ALM-10627,2026-07-18T01:17:15,AppDynamics,ao-013-session,session-service,4,http_5xx,HTTP 5xx hata orani yuzde 55 seviyesine cikti,dc1,rack-B,prod,HIST-2026-003
+ALM-10759,2026-07-18T01:17:18,Zabbix,ao-044-load,load-balancer,1,backup_warn,Yedekleme 36 dakika gecikmeli,dc2,rack-C,prod,HIST-2026-003
+ALM-10720,2026-07-18T01:17:20,Prometheus,ao-004-mobile,mobile-bff,4,gc_pressure,GC duraklama suresi 2734 ms,dc2,rack-B,prod,HIST-2026-003
+ALM-10717,2026-07-18T01:17:23,OBM,ao-011-auth,auth-service,3,latency_high,"Yanit suresi p99 esigi asti, 426 ms",dc1,rack-C,prod,HIST-2026-003
+ALM-10617,2026-07-18T01:17:37,Zabbix,ao-037-cache,cache-cluster,3,thread_pool,Thread pool doluluk yuzde 90,dc1,rack-B,prod,HIST-2026-003
+ALM-10660,2026-07-18T01:17:44,OBM,ao-014-session,session-service,4,http_5xx,HTTP 5xx hata orani yuzde 56 seviyesine cikti,dc2,rack-C,prod,HIST-2026-003
+ALM-10644,2026-07-18T01:18:21,Prometheus,ao-037-cache,cache-cluster,3,gc_pressure,GC duraklama suresi 2146 ms,dc1,rack-B,prod,HIST-2026-003
+ALM-10657,2026-07-18T01:18:27,OBM,ao-012-session,session-service,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (163 ms),dc2,rack-A,prod,HIST-2026-003
+ALM-10714,2026-07-18T01:18:36,Zabbix,ao-037-cache,cache-cluster,3,http_5xx,HTTP 5xx hata orani yuzde 57 seviyesine cikti,dc1,rack-B,prod,HIST-2026-003
+ALM-10650,2026-07-18T01:19:26,OBM,ao-038-cache,cache-cluster,2,latency_high,"Yanit suresi p99 esigi asti, 718 ms",dc2,rack-C,prod,HIST-2026-003
+ALM-10621,2026-07-18T01:19:55,SyslogNG,ao-005-mobile,mobile-bff,4,gc_pressure,GC duraklama suresi 2779 ms,dc1,rack-C,prod,HIST-2026-003
+ALM-10658,2026-07-18T01:20:17,OBM,ao-038-cache,cache-cluster,3,gc_pressure,GC duraklama suresi 1572 ms,dc2,rack-C,prod,HIST-2026-003
+ALM-10662,2026-07-18T01:20:21,AppDynamics,ao-038-cache,cache-cluster,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (184 ms),dc2,rack-C,prod,HIST-2026-003
+ALM-10612,2026-07-18T01:21:00,SyslogNG,ao-009-auth,auth-service,4,http_5xx,HTTP 5xx hata orani yuzde 35 seviyesine cikti,dc1,rack-A,prod,HIST-2026-003
+ALM-10607,2026-07-18T01:21:32,Zabbix,ao-009-auth,auth-service,3,thread_pool,Thread pool doluluk yuzde 96,dc1,rack-A,prod,HIST-2026-003
+ALM-10683,2026-07-18T01:21:40,SyslogNG,ao-037-cache,cache-cluster,3,thread_pool,Thread pool doluluk yuzde 98,dc1,rack-B,prod,HIST-2026-003
+ALM-10774,2026-07-18T01:21:42,SyslogNG,ao-003-api,api-gateway,2,ntp_drift,Saat sapmasi 790 ms,dc1,rack-A,prod,HIST-2026-003
+ALM-10554,2026-07-18T01:22:07,Prometheus,ao-012-session,session-service,2,mem_high,Bellek kullanimi yuzde 77,dc2,rack-A,prod,HIST-2026-003
+ALM-10555,2026-07-18T01:22:07,Prometheus,ao-013-session,session-service,2,mem_high,Bellek kullanimi yuzde 77,dc1,rack-B,prod,HIST-2026-003
+ALM-10654,2026-07-18T01:22:07,Prometheus,ao-007-web,web-bff,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (183 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10556,2026-07-18T01:22:09,SyslogNG,ao-014-session,session-service,2,mem_high,Bellek kullanimi yuzde 77,dc2,rack-C,prod,HIST-2026-003
+ALM-10640,2026-07-18T01:22:16,AppDynamics,ao-038-cache,cache-cluster,2,latency_high,"Yanit suresi p99 esigi asti, 371 ms",dc2,rack-C,prod,HIST-2026-003
+ALM-10653,2026-07-18T01:22:45,SyslogNG,ao-005-mobile,mobile-bff,4,thread_pool,Thread pool doluluk yuzde 85,dc1,rack-C,prod,HIST-2026-003
+ALM-10719,2026-07-18T01:23:24,Prometheus,ao-011-auth,auth-service,2,latency_high,"Yanit suresi p99 esigi asti, 297 ms",dc1,rack-C,prod,HIST-2026-003
+ALM-10747,2026-07-18T01:23:42,AppDynamics,ao-028-order,order-service,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 89 dolu",dc2,rack-B,prod,HIST-2026-003
+ALM-10664,2026-07-18T01:23:47,Prometheus,ao-010-auth,auth-service,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (209 ms),dc2,rack-B,prod,HIST-2026-003
+ALM-10733,2026-07-18T01:24:49,Prometheus,ao-010-auth,auth-service,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (122 ms),dc2,rack-B,prod,HIST-2026-003
+ALM-10659,2026-07-18T01:25:31,Zabbix,ao-007-web,web-bff,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (133 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10637,2026-07-18T01:25:41,SyslogNG,ao-004-mobile,mobile-bff,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (194 ms),dc2,rack-B,prod,HIST-2026-003
+ALM-10771,2026-07-18T01:25:59,OBM,ao-035-billing,billing-db,1,cert_expiry,Sertifika 18 gun icinde suresi dolacak,dc1,rack-C,prod,HIST-2026-003
+ALM-10703,2026-07-18T01:26:01,AppDynamics,ao-005-mobile,mobile-bff,3,thread_pool,Thread pool doluluk yuzde 89,dc1,rack-C,prod,HIST-2026-003
+ALM-10693,2026-07-18T01:26:18,OBM,ao-004-mobile,mobile-bff,3,thread_pool,Thread pool doluluk yuzde 88,dc2,rack-B,prod,HIST-2026-003
+ALM-10752,2026-07-18T01:26:23,Zabbix,ao-029-catalog,catalog-service,2,network_flap,Arayuz eth0 link durumu 61 kez degisti,dc1,rack-C,prod,HIST-2026-003
+ALM-10597,2026-07-18T01:26:34,OBM,ao-005-mobile,mobile-bff,3,latency_high,"Yanit suresi p99 esigi asti, 121 ms",dc1,rack-C,prod,HIST-2026-003
+ALM-10632,2026-07-18T01:27:19,Prometheus,ao-004-mobile,mobile-bff,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (207 ms),dc2,rack-B,prod,HIST-2026-003
+ALM-10715,2026-07-18T01:27:31,AppDynamics,ao-010-auth,auth-service,3,gc_pressure,GC duraklama suresi 3415 ms,dc2,rack-B,prod,HIST-2026-003
+ALM-10600,2026-07-18T01:27:37,OBM,ao-011-auth,auth-service,4,thread_pool,Thread pool doluluk yuzde 85,dc1,rack-C,prod,HIST-2026-003
+ALM-10649,2026-07-18T01:27:56,Prometheus,ao-011-auth,auth-service,3,gc_pressure,GC duraklama suresi 2113 ms,dc1,rack-C,prod,HIST-2026-003
+ALM-10596,2026-07-18T01:27:59,OBM,ao-037-cache,cache-cluster,3,latency_high,"Yanit suresi p99 esigi asti, 893 ms",dc1,rack-B,prod,HIST-2026-003
+ALM-10673,2026-07-18T01:28:55,Prometheus,ao-006-mobile,mobile-bff,4,latency_high,"Yanit suresi p99 esigi asti, 222 ms",dc2,rack-A,prod,HIST-2026-003
+ALM-10558,2026-07-18T01:29:24,AppDynamics,ao-013-session,session-service,3,mem_high,Bellek kullanimi yuzde 82,dc1,rack-B,prod,HIST-2026-003
+ALM-10557,2026-07-18T01:29:26,SyslogNG,ao-012-session,session-service,3,mem_high,Bellek kullanimi yuzde 82,dc2,rack-A,prod,HIST-2026-003
+ALM-10559,2026-07-18T01:29:31,SyslogNG,ao-014-session,session-service,3,mem_high,Bellek kullanimi yuzde 82,dc2,rack-C,prod,HIST-2026-003
+ALM-10712,2026-07-18T01:29:58,AppDynamics,ao-011-auth,auth-service,4,gc_pressure,GC duraklama suresi 1182 ms,dc1,rack-C,prod,HIST-2026-003
+ALM-10633,2026-07-18T01:30:31,SyslogNG,ao-037-cache,cache-cluster,3,thread_pool,Thread pool doluluk yuzde 89,dc1,rack-B,prod,HIST-2026-003
+ALM-10626,2026-07-18T01:30:34,Zabbix,ao-038-cache,cache-cluster,3,gc_pressure,GC duraklama suresi 2758 ms,dc2,rack-C,prod,HIST-2026-003
+ALM-10727,2026-07-18T01:30:48,Prometheus,ao-004-mobile,mobile-bff,4,http_5xx,HTTP 5xx hata orani yuzde 26 seviyesine cikti,dc2,rack-B,prod,HIST-2026-003
+ALM-10667,2026-07-18T01:31:05,Prometheus,ao-004-mobile,mobile-bff,3,latency_high,"Yanit suresi p99 esigi asti, 209 ms",dc2,rack-B,prod,HIST-2026-003
+ALM-10698,2026-07-18T01:32:07,Zabbix,ao-005-mobile,mobile-bff,3,gc_pressure,GC duraklama suresi 1136 ms,dc1,rack-C,prod,HIST-2026-003
+ALM-10730,2026-07-18T01:33:13,AppDynamics,ao-009-auth,auth-service,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (177 ms),dc1,rack-A,prod,HIST-2026-003
+ALM-10651,2026-07-18T01:33:26,OBM,ao-011-auth,auth-service,4,gc_pressure,GC duraklama suresi 2908 ms,dc1,rack-C,prod,HIST-2026-003
+ALM-10690,2026-07-18T01:33:43,SyslogNG,ao-006-mobile,mobile-bff,3,http_5xx,HTTP 5xx hata orani yuzde 53 seviyesine cikti,dc2,rack-A,prod,HIST-2026-003
+ALM-10671,2026-07-18T01:33:46,OBM,ao-006-mobile,mobile-bff,3,http_5xx,HTTP 5xx hata orani yuzde 16 seviyesine cikti,dc2,rack-A,prod,HIST-2026-003
+ALM-10721,2026-07-18T01:33:49,OBM,ao-006-mobile,mobile-bff,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (166 ms),dc2,rack-A,prod,HIST-2026-003
+ALM-10685,2026-07-18T01:34:01,Prometheus,ao-009-auth,auth-service,2,latency_high,"Yanit suresi p99 esigi asti, 429 ms",dc1,rack-A,prod,HIST-2026-003
+ALM-10636,2026-07-18T01:34:20,SyslogNG,ao-008-web,web-bff,2,latency_high,"Yanit suresi p99 esigi asti, 438 ms",dc2,rack-C,prod,HIST-2026-003
+ALM-10773,2026-07-18T01:34:22,Prometheus,ao-020-billing,billing-service,2,cert_expiry,Sertifika 22 gun icinde suresi dolacak,dc2,rack-C,prod,HIST-2026-003
+ALM-10691,2026-07-18T01:34:36,Prometheus,ao-011-auth,auth-service,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (136 ms),dc1,rack-C,prod,HIST-2026-003
+ALM-10699,2026-07-18T01:35:20,AppDynamics,ao-005-mobile,mobile-bff,2,latency_high,"Yanit suresi p99 esigi asti, 195 ms",dc1,rack-C,prod,HIST-2026-003
+ALM-10670,2026-07-18T01:35:29,AppDynamics,ao-038-cache,cache-cluster,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (224 ms),dc2,rack-C,prod,HIST-2026-003
+ALM-10641,2026-07-18T01:35:38,Zabbix,ao-007-web,web-bff,3,http_5xx,HTTP 5xx hata orani yuzde 49 seviyesine cikti,dc1,rack-B,prod,HIST-2026-003
+ALM-10741,2026-07-18T01:35:52,Prometheus,ao-013-session,session-service,3,latency_high,"Yanit suresi p99 esigi asti, 684 ms",dc1,rack-B,prod,HIST-2026-003
+ALM-10677,2026-07-18T01:36:00,SyslogNG,ao-037-cache,cache-cluster,4,latency_high,"Yanit suresi p99 esigi asti, 837 ms",dc1,rack-B,prod,HIST-2026-003
+ALM-10561,2026-07-18T01:36:18,Prometheus,ao-013-session,session-service,3,mem_high,Bellek kullanimi yuzde 87,dc1,rack-B,prod,HIST-2026-003
+ALM-10562,2026-07-18T01:36:20,AppDynamics,ao-014-session,session-service,3,mem_high,Bellek kullanimi yuzde 87,dc2,rack-C,prod,HIST-2026-003
+ALM-10560,2026-07-18T01:36:35,Prometheus,ao-012-session,session-service,3,mem_high,Bellek kullanimi yuzde 87,dc2,rack-A,prod,HIST-2026-003
+ALM-10594,2026-07-18T01:36:36,OBM,ao-005-mobile,mobile-bff,4,http_5xx,HTTP 5xx hata orani yuzde 56 seviyesine cikti,dc1,rack-C,prod,HIST-2026-003
+ALM-10631,2026-07-18T01:36:50,Prometheus,ao-004-mobile,mobile-bff,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (220 ms),dc2,rack-B,prod,HIST-2026-003
+ALM-10601,2026-07-18T01:37:05,Prometheus,ao-005-mobile,mobile-bff,4,thread_pool,Thread pool doluluk yuzde 89,dc1,rack-C,prod,HIST-2026-003
+ALM-10754,2026-07-18T01:37:10,Prometheus,ao-015-subscriber,subscriber-service,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 86 dolu",dc1,rack-A,prod,HIST-2026-003
+ALM-10711,2026-07-18T01:37:19,Zabbix,ao-010-auth,auth-service,4,gc_pressure,GC duraklama suresi 1757 ms,dc2,rack-B,prod,HIST-2026-003
+ALM-10642,2026-07-18T01:37:41,OBM,ao-038-cache,cache-cluster,4,http_5xx,HTTP 5xx hata orani yuzde 57 seviyesine cikti,dc2,rack-C,prod,HIST-2026-003
+ALM-10569,2026-07-18T01:39:14,Zabbix,ao-012-session,session-service,4,gc_pressure,GC duraklama suresi 1533 ms,dc2,rack-A,prod,HIST-2026-003
+ALM-10579,2026-07-18T01:39:34,SyslogNG,ao-014-session,session-service,4,gc_pressure,GC duraklama suresi 3844 ms,dc2,rack-C,prod,HIST-2026-003
+ALM-10574,2026-07-18T01:39:41,OBM,ao-013-session,session-service,3,gc_pressure,GC duraklama suresi 2619 ms,dc1,rack-B,prod,HIST-2026-003
+ALM-10695,2026-07-18T01:40:38,AppDynamics,ao-011-auth,auth-service,2,latency_high,"Yanit suresi p99 esigi asti, 870 ms",dc1,rack-C,prod,HIST-2026-003
+ALM-10643,2026-07-18T01:40:39,OBM,ao-012-session,session-service,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (160 ms),dc2,rack-A,prod,HIST-2026-003
+ALM-10775,2026-07-18T01:41:12,Zabbix,ao-047-ntp,ntp-service,1,ntp_drift,Saat sapmasi 681 ms,dc1,rack-C,prod,HIST-2026-003
+ALM-10663,2026-07-18T01:41:34,AppDynamics,ao-006-mobile,mobile-bff,4,http_5xx,HTTP 5xx hata orani yuzde 51 seviyesine cikti,dc2,rack-A,prod,HIST-2026-003
+ALM-10647,2026-07-18T01:41:41,Prometheus,ao-013-session,session-service,3,thread_pool,Thread pool doluluk yuzde 84,dc1,rack-B,prod,HIST-2026-003
+ALM-10665,2026-07-18T01:42:26,OBM,ao-008-web,web-bff,3,thread_pool,Thread pool doluluk yuzde 88,dc2,rack-C,prod,HIST-2026-003
+ALM-10652,2026-07-18T01:42:51,AppDynamics,ao-009-auth,auth-service,3,latency_high,"Yanit suresi p99 esigi asti, 332 ms",dc1,rack-A,prod,HIST-2026-003
+ALM-10564,2026-07-18T01:43:08,Prometheus,ao-013-session,session-service,4,mem_high,Bellek kullanimi yuzde 91,dc1,rack-B,prod,HIST-2026-003
+ALM-10645,2026-07-18T01:43:17,SyslogNG,ao-010-auth,auth-service,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (195 ms),dc2,rack-B,prod,HIST-2026-003
+ALM-10563,2026-07-18T01:43:22,OBM,ao-012-session,session-service,4,mem_high,Bellek kullanimi yuzde 91,dc2,rack-A,prod,HIST-2026-003
+ALM-10565,2026-07-18T01:43:35,SyslogNG,ao-014-session,session-service,4,mem_high,Bellek kullanimi yuzde 91,dc2,rack-C,prod,HIST-2026-003
+ALM-10575,2026-07-18T01:44:16,AppDynamics,ao-013-session,session-service,4,gc_pressure,GC duraklama suresi 1756 ms,dc1,rack-B,prod,HIST-2026-003
+ALM-10709,2026-07-18T01:44:19,Zabbix,ao-008-web,web-bff,3,thread_pool,Thread pool doluluk yuzde 85,dc2,rack-C,prod,HIST-2026-003
+ALM-10580,2026-07-18T01:44:20,SyslogNG,ao-014-session,session-service,4,gc_pressure,GC duraklama suresi 2585 ms,dc2,rack-C,prod,HIST-2026-003
+ALM-10765,2026-07-18T01:44:28,Zabbix,ao-040-message,message-queue,1,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 88 dolu",dc2,rack-B,prod,HIST-2026-003
+ALM-10570,2026-07-18T01:44:34,AppDynamics,ao-012-session,session-service,4,gc_pressure,GC duraklama suresi 2088 ms,dc2,rack-A,prod,HIST-2026-003
+ALM-10748,2026-07-18T01:44:40,Prometheus,ao-036-billing,billing-db,2,ntp_drift,Saat sapmasi 657 ms,dc2,rack-A,prod,HIST-2026-003
+ALM-10734,2026-07-18T01:45:04,OBM,ao-010-auth,auth-service,4,thread_pool,Thread pool doluluk yuzde 95,dc2,rack-B,prod,HIST-2026-003
+ALM-10726,2026-07-18T01:45:08,SyslogNG,ao-010-auth,auth-service,4,latency_high,"Yanit suresi p99 esigi asti, 790 ms",dc2,rack-B,prod,HIST-2026-003
+ALM-10740,2026-07-18T01:45:22,Prometheus,ao-007-web,web-bff,4,http_5xx,HTTP 5xx hata orani yuzde 38 seviyesine cikti,dc1,rack-B,prod,HIST-2026-003
+ALM-10666,2026-07-18T01:46:03,SyslogNG,ao-014-session,session-service,3,latency_high,"Yanit suresi p99 esigi asti, 422 ms",dc2,rack-C,prod,HIST-2026-003
+ALM-10611,2026-07-18T01:46:06,SyslogNG,ao-005-mobile,mobile-bff,3,http_5xx,HTTP 5xx hata orani yuzde 30 seviyesine cikti,dc1,rack-C,prod,HIST-2026-003
+ALM-10628,2026-07-18T01:46:06,Zabbix,ao-009-auth,auth-service,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (114 ms),dc1,rack-A,prod,HIST-2026-003
+ALM-10739,2026-07-18T01:46:28,OBM,ao-009-auth,auth-service,4,http_5xx,HTTP 5xx hata orani yuzde 44 seviyesine cikti,dc1,rack-A,prod,HIST-2026-003
+ALM-10609,2026-07-18T01:46:47,AppDynamics,ao-012-session,session-service,2,latency_high,"Yanit suresi p99 esigi asti, 741 ms",dc2,rack-A,prod,HIST-2026-003
+ALM-10618,2026-07-18T01:46:54,Prometheus,ao-008-web,web-bff,3,http_5xx,HTTP 5xx hata orani yuzde 20 seviyesine cikti,dc2,rack-C,prod,HIST-2026-003
+ALM-10757,2026-07-18T01:46:57,Zabbix,ao-048-batch,batch-scheduler,3,network_flap,Arayuz eth0 link durumu 52 kez degisti,dc2,rack-A,prod,HIST-2026-003
+ALM-10624,2026-07-18T01:47:18,Prometheus,ao-009-auth,auth-service,4,thread_pool,Thread pool doluluk yuzde 92,dc1,rack-A,prod,HIST-2026-003
+ALM-10598,2026-07-18T01:47:27,OBM,ao-013-session,session-service,4,http_5xx,HTTP 5xx hata orani yuzde 29 seviyesine cikti,dc1,rack-B,prod,HIST-2026-003
+ALM-10672,2026-07-18T01:48:08,SyslogNG,ao-004-mobile,mobile-bff,3,latency_high,"Yanit suresi p99 esigi asti, 603 ms",dc2,rack-B,prod,HIST-2026-003
+ALM-10766,2026-07-18T01:48:34,Prometheus,ao-023-charging,charging-service,2,cert_expiry,Sertifika 38 gun icinde suresi dolacak,dc1,rack-C,prod,HIST-2026-003
+ALM-10576,2026-07-18T01:49:15,SyslogNG,ao-013-session,session-service,3,gc_pressure,GC duraklama suresi 4421 ms,dc1,rack-B,prod,HIST-2026-003
+ALM-10696,2026-07-18T01:49:16,OBM,ao-010-auth,auth-service,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (189 ms),dc2,rack-B,prod,HIST-2026-003
+ALM-10700,2026-07-18T01:49:20,Zabbix,ao-037-cache,cache-cluster,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (119 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10571,2026-07-18T01:49:31,OBM,ao-012-session,session-service,3,gc_pressure,GC duraklama suresi 3745 ms,dc2,rack-A,prod,HIST-2026-003
+ALM-10581,2026-07-18T01:49:32,AppDynamics,ao-014-session,session-service,3,gc_pressure,GC duraklama suresi 1955 ms,dc2,rack-C,prod,HIST-2026-003
+ALM-10722,2026-07-18T01:49:41,Zabbix,ao-012-session,session-service,3,latency_high,"Yanit suresi p99 esigi asti, 526 ms",dc2,rack-A,prod,HIST-2026-003
+ALM-10755,2026-07-18T01:49:54,Zabbix,ao-002-api,api-gateway,2,network_flap,Arayuz eth0 link durumu 46 kez degisti,dc2,rack-C,prod,HIST-2026-003
+ALM-10568,2026-07-18T01:50:05,SyslogNG,ao-014-session,session-service,4,mem_high,Bellek kullanimi yuzde 94,dc2,rack-C,prod,HIST-2026-003
+ALM-10566,2026-07-18T01:50:26,AppDynamics,ao-012-session,session-service,4,mem_high,Bellek kullanimi yuzde 94,dc2,rack-A,prod,HIST-2026-003
+ALM-10567,2026-07-18T01:50:28,AppDynamics,ao-013-session,session-service,4,mem_high,Bellek kullanimi yuzde 94,dc1,rack-B,prod,HIST-2026-003
+ALM-10713,2026-07-18T01:50:31,Prometheus,ao-007-web,web-bff,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (168 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10724,2026-07-18T01:50:40,OBM,ao-006-mobile,mobile-bff,3,http_5xx,HTTP 5xx hata orani yuzde 24 seviyesine cikti,dc2,rack-A,prod,HIST-2026-003
+ALM-10697,2026-07-18T01:51:27,Prometheus,ao-038-cache,cache-cluster,3,thread_pool,Thread pool doluluk yuzde 97,dc2,rack-C,prod,HIST-2026-003
+ALM-10750,2026-07-18T01:51:50,SyslogNG,ao-018-billing,billing-service,2,cert_expiry,Sertifika 36 gun icinde suresi dolacak,dc2,rack-A,prod,HIST-2026-003
+ALM-10619,2026-07-18T01:52:02,OBM,ao-009-auth,auth-service,4,latency_high,"Yanit suresi p99 esigi asti, 520 ms",dc1,rack-A,prod,HIST-2026-003
+ALM-10745,2026-07-18T01:52:04,OBM,ao-055-sms,sms-gateway,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 115 saniye",dc1,rack-B,prod,HIST-2026-003
+ALM-10614,2026-07-18T01:52:05,OBM,ao-005-mobile,mobile-bff,2,latency_high,"Yanit suresi p99 esigi asti, 137 ms",dc1,rack-C,prod,HIST-2026-003
+ALM-10606,2026-07-18T01:52:14,Zabbix,ao-006-mobile,mobile-bff,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (131 ms),dc2,rack-A,prod,HIST-2026-003
+ALM-10749,2026-07-18T01:53:05,AppDynamics,ao-031-subscriber,subscriber-db,3,network_flap,Arayuz eth0 link durumu 57 kez degisti,dc1,rack-B,prod,HIST-2026-003
+ALM-10603,2026-07-18T01:53:39,AppDynamics,ao-012-session,session-service,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (102 ms),dc2,rack-A,prod,HIST-2026-003
+ALM-10582,2026-07-18T01:54:17,Prometheus,ao-014-session,session-service,3,gc_pressure,GC duraklama suresi 4273 ms,dc2,rack-C,prod,HIST-2026-003
+ALM-10577,2026-07-18T01:54:22,SyslogNG,ao-013-session,session-service,4,gc_pressure,GC duraklama suresi 2079 ms,dc1,rack-B,prod,HIST-2026-003
+ALM-10638,2026-07-18T01:54:30,AppDynamics,ao-008-web,web-bff,2,latency_high,"Yanit suresi p99 esigi asti, 877 ms",dc2,rack-C,prod,HIST-2026-003
+ALM-10572,2026-07-18T01:54:34,OBM,ao-012-session,session-service,4,gc_pressure,GC duraklama suresi 3620 ms,dc2,rack-A,prod,HIST-2026-003
+ALM-10604,2026-07-18T01:54:52,Prometheus,ao-037-cache,cache-cluster,4,latency_high,"Yanit suresi p99 esigi asti, 338 ms",dc1,rack-B,prod,HIST-2026-003
+ALM-10779,2026-07-18T01:55:00,SyslogNG,ao-054-payment,payment-provider-gw,1,ntp_drift,Saat sapmasi 229 ms,dc2,rack-A,prod,HIST-2026-003
+ALM-10692,2026-07-18T01:55:25,Zabbix,ao-009-auth,auth-service,3,gc_pressure,GC duraklama suresi 1687 ms,dc1,rack-A,prod,HIST-2026-003
+ALM-10646,2026-07-18T01:55:30,OBM,ao-012-session,session-service,3,latency_high,"Yanit suresi p99 esigi asti, 256 ms",dc2,rack-A,prod,HIST-2026-003
+ALM-10686,2026-07-18T01:55:38,Zabbix,ao-010-auth,auth-service,4,thread_pool,Thread pool doluluk yuzde 96,dc2,rack-B,prod,HIST-2026-003
+ALM-10584,2026-07-18T01:57:09,AppDynamics,ao-012-session,session-service,5,oom_risk,"Heap kullanimi kritik, OOM riski yuzde 98",dc2,rack-A,prod,HIST-2026-003
+ALM-10622,2026-07-18T01:57:28,OBM,ao-004-mobile,mobile-bff,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (179 ms),dc2,rack-B,prod,HIST-2026-003
+ALM-10590,2026-07-18T01:57:35,Zabbix,ao-014-session,session-service,4,oom_risk,"Heap kullanimi kritik, OOM riski yuzde 99",dc2,rack-C,prod,HIST-2026-003
+ALM-10587,2026-07-18T01:57:37,AppDynamics,ao-013-session,session-service,4,oom_risk,"Heap kullanimi kritik, OOM riski yuzde 93",dc1,rack-B,prod,HIST-2026-003
+ALM-10634,2026-07-18T01:57:57,Prometheus,ao-005-mobile,mobile-bff,2,latency_high,"Yanit suresi p99 esigi asti, 634 ms",dc1,rack-C,prod,HIST-2026-003
+ALM-10613,2026-07-18T01:58:37,AppDynamics,ao-009-auth,auth-service,2,latency_high,"Yanit suresi p99 esigi asti, 679 ms",dc1,rack-A,prod,HIST-2026-003
+ALM-10716,2026-07-18T01:58:54,SyslogNG,ao-010-auth,auth-service,4,thread_pool,Thread pool doluluk yuzde 92,dc2,rack-B,prod,HIST-2026-003
+ALM-10583,2026-07-18T01:59:09,AppDynamics,ao-014-session,session-service,4,gc_pressure,GC duraklama suresi 2413 ms,dc2,rack-C,prod,HIST-2026-003
+ALM-10578,2026-07-18T01:59:13,SyslogNG,ao-013-session,session-service,3,gc_pressure,GC duraklama suresi 1643 ms,dc1,rack-B,prod,HIST-2026-003
+ALM-10687,2026-07-18T01:59:20,Prometheus,ao-037-cache,cache-cluster,4,thread_pool,Thread pool doluluk yuzde 92,dc1,rack-B,prod,HIST-2026-003
+ALM-10573,2026-07-18T01:59:28,OBM,ao-012-session,session-service,3,gc_pressure,GC duraklama suresi 3141 ms,dc2,rack-A,prod,HIST-2026-003
+ALM-10623,2026-07-18T01:59:53,Prometheus,ao-037-cache,cache-cluster,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (135 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10689,2026-07-18T01:59:55,SyslogNG,ao-037-cache,cache-cluster,4,http_5xx,HTTP 5xx hata orani yuzde 15 seviyesine cikti,dc1,rack-B,prod,HIST-2026-003
+ALM-10684,2026-07-18T02:00:05,SyslogNG,ao-005-mobile,mobile-bff,4,http_5xx,HTTP 5xx hata orani yuzde 38 seviyesine cikti,dc1,rack-C,prod,HIST-2026-003
+ALM-10701,2026-07-18T02:00:05,AppDynamics,ao-013-session,session-service,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (223 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10616,2026-07-18T02:00:38,AppDynamics,ao-008-web,web-bff,4,latency_high,"Yanit suresi p99 esigi asti, 763 ms",dc2,rack-C,prod,HIST-2026-003
+ALM-10591,2026-07-18T02:01:02,OBM,ao-014-session,session-service,4,oom_risk,"Heap kullanimi kritik, OOM riski yuzde 99",dc2,rack-C,prod,HIST-2026-003
+ALM-10585,2026-07-18T02:01:04,SyslogNG,ao-012-session,session-service,4,oom_risk,"Heap kullanimi kritik, OOM riski yuzde 98",dc2,rack-A,prod,HIST-2026-003
+ALM-10588,2026-07-18T02:01:04,AppDynamics,ao-013-session,session-service,5,oom_risk,"Heap kullanimi kritik, OOM riski yuzde 95",dc1,rack-B,prod,HIST-2026-003
+ALM-10694,2026-07-18T02:01:10,OBM,ao-008-web,web-bff,2,latency_high,"Yanit suresi p99 esigi asti, 230 ms",dc2,rack-C,prod,HIST-2026-003
+ALM-10620,2026-07-18T02:01:49,OBM,ao-037-cache,cache-cluster,2,latency_high,"Yanit suresi p99 esigi asti, 567 ms",dc1,rack-B,prod,HIST-2026-003
+ALM-10704,2026-07-18T02:01:49,Zabbix,ao-037-cache,cache-cluster,4,thread_pool,Thread pool doluluk yuzde 98,dc1,rack-B,prod,HIST-2026-003
+ALM-10761,2026-07-18T02:01:56,AppDynamics,ao-035-billing,billing-db,2,ntp_drift,Saat sapmasi 300 ms,dc1,rack-C,prod,HIST-2026-003
+ALM-10625,2026-07-18T02:02:02,OBM,ao-006-mobile,mobile-bff,3,gc_pressure,GC duraklama suresi 2100 ms,dc2,rack-A,prod,HIST-2026-003
+ALM-10688,2026-07-18T02:02:06,Prometheus,ao-010-auth,auth-service,4,gc_pressure,GC duraklama suresi 2256 ms,dc2,rack-B,prod,HIST-2026-003
+ALM-10674,2026-07-18T02:04:09,SyslogNG,ao-012-session,session-service,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (114 ms),dc2,rack-A,prod,HIST-2026-003
+ALM-10639,2026-07-18T02:04:44,SyslogNG,ao-013-session,session-service,2,latency_high,"Yanit suresi p99 esigi asti, 625 ms",dc1,rack-B,prod,HIST-2026-003
+ALM-10732,2026-07-18T02:04:50,Zabbix,ao-037-cache,cache-cluster,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (213 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10592,2026-07-18T02:05:10,OBM,ao-014-session,session-service,5,oom_risk,"Heap kullanimi kritik, OOM riski yuzde 99",dc2,rack-C,prod,HIST-2026-003
+ALM-10608,2026-07-18T02:05:10,Zabbix,ao-007-web,web-bff,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (172 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10669,2026-07-18T02:05:22,AppDynamics,ao-004-mobile,mobile-bff,4,thread_pool,Thread pool doluluk yuzde 90,dc2,rack-B,prod,HIST-2026-003
+ALM-10610,2026-07-18T02:05:30,AppDynamics,ao-014-session,session-service,2,latency_high,"Yanit suresi p99 esigi asti, 175 ms",dc2,rack-C,prod,HIST-2026-003
+ALM-10589,2026-07-18T02:05:31,Zabbix,ao-013-session,session-service,5,oom_risk,"Heap kullanimi kritik, OOM riski yuzde 97",dc1,rack-B,prod,HIST-2026-003
+ALM-10723,2026-07-18T02:05:41,OBM,ao-011-auth,auth-service,4,http_5xx,HTTP 5xx hata orani yuzde 15 seviyesine cikti,dc1,rack-C,prod,HIST-2026-003
+ALM-10586,2026-07-18T02:05:44,AppDynamics,ao-012-session,session-service,5,oom_risk,"Heap kullanimi kritik, OOM riski yuzde 99",dc2,rack-A,prod,HIST-2026-003
+ALM-10718,2026-07-18T02:06:38,OBM,ao-013-session,session-service,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (232 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10676,2026-07-18T02:07:02,SyslogNG,ao-013-session,session-service,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (181 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10681,2026-07-18T02:07:03,Zabbix,ao-013-session,session-service,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (151 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10599,2026-07-18T02:07:46,AppDynamics,ao-037-cache,cache-cluster,3,http_5xx,HTTP 5xx hata orani yuzde 36 seviyesine cikti,dc1,rack-B,prod,HIST-2026-003
+ALM-10707,2026-07-18T02:08:14,SyslogNG,ao-005-mobile,mobile-bff,4,latency_high,"Yanit suresi p99 esigi asti, 421 ms",dc1,rack-C,prod,HIST-2026-003
+ALM-10769,2026-07-18T02:08:29,AppDynamics,ao-053-payment,payment-provider-gw,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 109 saniye",dc1,rack-C,prod,HIST-2026-003
+ALM-10762,2026-07-18T02:08:36,AppDynamics,ao-044-load,load-balancer,1,cert_expiry,Sertifika 30 gun icinde suresi dolacak,dc2,rack-C,prod,HIST-2026-003
+ALM-10742,2026-07-18T02:08:43,OBM,ao-008-web,web-bff,4,latency_high,"Yanit suresi p99 esigi asti, 886 ms",dc2,rack-C,prod,HIST-2026-003
+ALM-10678,2026-07-18T02:09:07,SyslogNG,ao-013-session,session-service,4,gc_pressure,GC duraklama suresi 1771 ms,dc1,rack-B,prod,HIST-2026-003
+ALM-10737,2026-07-18T02:09:08,Prometheus,ao-007-web,web-bff,2,latency_high,"Yanit suresi p99 esigi asti, 325 ms",dc1,rack-B,prod,HIST-2026-003
+ALM-10675,2026-07-18T02:09:17,Prometheus,ao-010-auth,auth-service,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (190 ms),dc2,rack-B,prod,HIST-2026-003
+ALM-10656,2026-07-18T02:10:20,SyslogNG,ao-004-mobile,mobile-bff,3,latency_high,"Yanit suresi p99 esigi asti, 534 ms",dc2,rack-B,prod,HIST-2026-003
+ALM-10744,2026-07-18T02:10:23,Prometheus,ao-025-payment,payment-service,1,backup_warn,Yedekleme 59 dakika gecikmeli,dc1,rack-B,prod,HIST-2026-003
+ALM-10605,2026-07-18T02:10:42,OBM,ao-013-session,session-service,3,timeout,session-service servisine yapilan cagri zaman asimina ugradi (213 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10725,2026-07-18T02:11:13,AppDynamics,ao-038-cache,cache-cluster,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (173 ms),dc2,rack-C,prod,HIST-2026-003
+ALM-10731,2026-07-18T02:11:19,Prometheus,ao-014-session,session-service,3,thread_pool,Thread pool doluluk yuzde 85,dc2,rack-C,prod,HIST-2026-003
+ALM-10602,2026-07-18T02:11:41,Prometheus,ao-038-cache,cache-cluster,2,latency_high,"Yanit suresi p99 esigi asti, 891 ms",dc2,rack-C,prod,HIST-2026-003
+ALM-10758,2026-07-18T02:11:47,Zabbix,ao-031-subscriber,subscriber-db,1,backup_warn,Yedekleme 37 dakika gecikmeli,dc1,rack-B,prod,HIST-2026-003
+ALM-10736,2026-07-18T02:12:01,OBM,ao-006-mobile,mobile-bff,4,latency_high,"Yanit suresi p99 esigi asti, 656 ms",dc2,rack-A,prod,HIST-2026-003
+ALM-10593,2026-07-18T02:12:13,Prometheus,ao-007-web,web-bff,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (133 ms),dc1,rack-B,prod,HIST-2026-003
+ALM-10668,2026-07-18T02:12:23,SyslogNG,ao-007-web,web-bff,3,gc_pressure,GC duraklama suresi 3632 ms,dc1,rack-B,prod,HIST-2026-003
+ALM-10728,2026-07-18T02:12:43,Prometheus,ao-004-mobile,mobile-bff,4,timeout,session-service servisine yapilan cagri zaman asimina ugradi (201 ms),dc2,rack-B,prod,HIST-2026-003
+ALM-10702,2026-07-18T02:12:44,Prometheus,ao-006-mobile,mobile-bff,4,gc_pressure,GC duraklama suresi 3487 ms,dc2,rack-A,prod,HIST-2026-003
+ALM-10629,2026-07-18T02:13:02,OBM,ao-008-web,web-bff,4,latency_high,"Yanit suresi p99 esigi asti, 225 ms",dc2,rack-C,prod,HIST-2026-003
+ALM-10710,2026-07-18T02:13:05,OBM,ao-011-auth,auth-service,4,thread_pool,Thread pool doluluk yuzde 91,dc1,rack-C,prod,HIST-2026-003
+ALM-10661,2026-07-18T02:13:36,Prometheus,ao-005-mobile,mobile-bff,4,http_5xx,HTTP 5xx hata orani yuzde 27 seviyesine cikti,dc1,rack-C,prod,HIST-2026-003
+ALM-10738,2026-07-18T02:14:40,Prometheus,ao-011-auth,auth-service,4,http_5xx,HTTP 5xx hata orani yuzde 18 seviyesine cikti,dc1,rack-C,prod,HIST-2026-003
+ALM-10729,2026-07-18T02:14:51,Zabbix,ao-037-cache,cache-cluster,4,http_5xx,HTTP 5xx hata orani yuzde 45 seviyesine cikti,dc1,rack-B,prod,HIST-2026-003
+ALM-10763,2026-07-18T02:14:56,SyslogNG,ao-046-dns,dns-resolver,2,cert_expiry,Sertifika 37 gun icinde suresi dolacak,dc2,rack-B,prod,HIST-2026-003
+ALM-10615,2026-07-18T02:14:58,AppDynamics,ao-007-web,web-bff,3,http_5xx,HTTP 5xx hata orani yuzde 17 seviyesine cikti,dc1,rack-B,prod,HIST-2026-003
+ALM-10648,2026-07-18T02:15:13,Zabbix,ao-008-web,web-bff,3,latency_high,"Yanit suresi p99 esigi asti, 442 ms",dc2,rack-C,prod,HIST-2026-003
+ALM-10934,2026-08-04T14:19:31,SyslogNG,ao-040-message,message-queue,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 91 saniye",dc2,rack-B,prod,HIST-2026-004
+ALM-10816,2026-08-04T14:22:10,SyslogNG,ao-052-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc2,rack-B,prod,HIST-2026-004
+ALM-10901,2026-08-04T14:22:23,AppDynamics,ao-028-order,order-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 91",dc2,rack-B,prod,HIST-2026-004
+ALM-10809,2026-08-04T14:22:33,SyslogNG,ao-053-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 73",dc1,rack-C,prod,HIST-2026-004
+ALM-10836,2026-08-04T14:22:36,OBM,ao-027-order,order-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc1,rack-A,prod,HIST-2026-004
+ALM-10780,2026-08-04T14:22:38,OBM,ao-052-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 718 ms,dc2,rack-B,prod,HIST-2026-004
+ALM-10789,2026-08-04T14:22:41,Prometheus,ao-053-payment,payment-provider-gw,5,ext_slow,Dis servis payment-provider-gw yanit suresi 1297 ms,dc1,rack-C,prod,HIST-2026-004
+ALM-10798,2026-08-04T14:22:45,AppDynamics,ao-054-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 853 ms,dc2,rack-A,prod,HIST-2026-004
+ALM-10790,2026-08-04T14:23:10,SyslogNG,ao-053-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 846 ms,dc1,rack-C,prod,HIST-2026-004
+ALM-10781,2026-08-04T14:23:24,SyslogNG,ao-052-payment,payment-provider-gw,5,ext_slow,Dis servis payment-provider-gw yanit suresi 873 ms,dc2,rack-B,prod,HIST-2026-004
+ALM-10799,2026-08-04T14:23:24,AppDynamics,ao-054-payment,payment-provider-gw,5,ext_slow,Dis servis payment-provider-gw yanit suresi 1409 ms,dc2,rack-A,prod,HIST-2026-004
+ALM-10932,2026-08-04T14:23:27,AppDynamics,ao-019-billing,billing-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (172 ms),dc1,rack-B,prod,HIST-2026-004
+ALM-10915,2026-08-04T14:23:29,OBM,ao-053-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (171 ms),dc1,rack-C,prod,HIST-2026-004
+ALM-10895,2026-08-04T14:23:37,SyslogNG,ao-026-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 79",dc2,rack-C,prod,HIST-2026-004
+ALM-10917,2026-08-04T14:23:38,Prometheus,ao-027-order,order-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 83",dc1,rack-A,prod,HIST-2026-004
+ALM-10858,2026-08-04T14:23:39,Prometheus,ao-028-order,order-service,5,ext_unreach,"Dis servis order-service erisilemiyor, HTTP 503",dc2,rack-B,prod,HIST-2026-004
+ALM-10791,2026-08-04T14:23:49,OBM,ao-053-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1667 ms,dc1,rack-C,prod,HIST-2026-004
+ALM-10800,2026-08-04T14:23:50,OBM,ao-054-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 891 ms,dc2,rack-A,prod,HIST-2026-004
+ALM-10849,2026-08-04T14:23:54,AppDynamics,ao-026-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (171 ms),dc2,rack-C,prod,HIST-2026-004
+ALM-10782,2026-08-04T14:24:00,OBM,ao-052-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1040 ms,dc2,rack-B,prod,HIST-2026-004
+ALM-10837,2026-08-04T14:24:05,Zabbix,ao-020-billing,billing-service,4,ext_slow,Dis servis billing-service yanit suresi 808 ms,dc2,rack-C,prod,HIST-2026-004
+ALM-10931,2026-08-04T14:24:21,Prometheus,ao-027-order,order-service,4,latency_high,"Yanit suresi p99 esigi asti, 680 ms",dc1,rack-A,prod,HIST-2026-004
+ALM-10801,2026-08-04T14:24:23,SyslogNG,ao-054-payment,payment-provider-gw,5,ext_slow,Dis servis payment-provider-gw yanit suresi 1608 ms,dc2,rack-A,prod,HIST-2026-004
+ALM-10860,2026-08-04T14:24:24,Prometheus,ao-018-billing,billing-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (175 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10792,2026-08-04T14:24:28,Zabbix,ao-053-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1555 ms,dc1,rack-C,prod,HIST-2026-004
+ALM-10783,2026-08-04T14:24:33,Zabbix,ao-052-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1685 ms,dc2,rack-B,prod,HIST-2026-004
+ALM-10867,2026-08-04T14:24:38,SyslogNG,ao-053-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 73",dc1,rack-C,prod,HIST-2026-004
+ALM-10877,2026-08-04T14:24:39,OBM,ao-054-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (165 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10845,2026-08-04T14:24:42,Prometheus,ao-020-billing,billing-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (220 ms),dc2,rack-C,prod,HIST-2026-004
+ALM-10899,2026-08-04T14:24:49,AppDynamics,ao-053-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (178 ms),dc1,rack-C,prod,HIST-2026-004
+ALM-10886,2026-08-04T14:24:57,Prometheus,ao-020-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 92",dc2,rack-C,prod,HIST-2026-004
+ALM-10802,2026-08-04T14:25:00,SyslogNG,ao-054-payment,payment-provider-gw,5,ext_slow,Dis servis payment-provider-gw yanit suresi 1354 ms,dc2,rack-A,prod,HIST-2026-004
+ALM-10784,2026-08-04T14:25:08,SyslogNG,ao-052-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1667 ms,dc2,rack-B,prod,HIST-2026-004
+ALM-10941,2026-08-04T14:25:08,SyslogNG,ao-001-api,api-gateway,2,ntp_drift,Saat sapmasi 289 ms,dc1,rack-B,prod,HIST-2026-004
+ALM-10793,2026-08-04T14:25:09,Prometheus,ao-053-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 824 ms,dc1,rack-C,prod,HIST-2026-004
+ALM-10803,2026-08-04T14:25:14,AppDynamics,ao-054-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc2,rack-A,prod,HIST-2026-004
+ALM-10930,2026-08-04T14:25:16,AppDynamics,ao-054-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (95 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10785,2026-08-04T14:25:19,OBM,ao-052-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 502",dc2,rack-B,prod,HIST-2026-004
+ALM-10794,2026-08-04T14:25:19,Zabbix,ao-053-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc1,rack-C,prod,HIST-2026-004
+ALM-10859,2026-08-04T14:25:26,SyslogNG,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (105 ms),dc2,rack-B,prod,HIST-2026-004
+ALM-10815,2026-08-04T14:25:40,AppDynamics,ao-054-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 72",dc2,rack-A,prod,HIST-2026-004
+ALM-10897,2026-08-04T14:25:41,Zabbix,ao-054-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 82",dc2,rack-A,prod,HIST-2026-004
+ALM-10940,2026-08-04T14:25:48,AppDynamics,ao-015-subscriber,subscriber-service,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 84 dolu",dc1,rack-A,prod,HIST-2026-004
+ALM-10913,2026-08-04T14:25:52,Prometheus,ao-027-order,order-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (111 ms),dc1,rack-A,prod,HIST-2026-004
+ALM-10795,2026-08-04T14:25:58,OBM,ao-053-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 502",dc1,rack-C,prod,HIST-2026-004
+ALM-10786,2026-08-04T14:26:01,Zabbix,ao-052-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 502",dc2,rack-B,prod,HIST-2026-004
+ALM-10856,2026-08-04T14:26:02,Zabbix,ao-026-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (143 ms),dc2,rack-C,prod,HIST-2026-004
+ALM-10904,2026-08-04T14:26:02,AppDynamics,ao-026-payment,payment-service,5,ext_unreach,"Dis servis payment-service erisilemiyor, HTTP 504",dc2,rack-C,prod,HIST-2026-004
+ALM-10804,2026-08-04T14:26:08,OBM,ao-054-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc2,rack-A,prod,HIST-2026-004
+ALM-10825,2026-08-04T14:26:22,AppDynamics,ao-054-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 98",dc2,rack-A,prod,HIST-2026-004
+ALM-10872,2026-08-04T14:26:22,OBM,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (113 ms),dc2,rack-B,prod,HIST-2026-004
+ALM-10847,2026-08-04T14:26:36,SyslogNG,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (128 ms),dc2,rack-B,prod,HIST-2026-004
+ALM-10946,2026-08-04T14:26:41,Prometheus,ao-033-subscriber,subscriber-db,3,network_flap,Arayuz eth0 link durumu 40 kez degisti,dc1,rack-A,prod,HIST-2026-004
+ALM-10796,2026-08-04T14:26:44,Zabbix,ao-053-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 502",dc1,rack-C,prod,HIST-2026-004
+ALM-10826,2026-08-04T14:26:45,OBM,ao-053-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 88",dc1,rack-C,prod,HIST-2026-004
+ALM-10787,2026-08-04T14:26:46,AppDynamics,ao-052-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc2,rack-B,prod,HIST-2026-004
+ALM-10805,2026-08-04T14:26:48,OBM,ao-054-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc2,rack-A,prod,HIST-2026-004
+ALM-10870,2026-08-04T14:26:49,SyslogNG,ao-052-payment,payment-provider-gw,4,latency_high,"Yanit suresi p99 esigi asti, 950 ms",dc2,rack-B,prod,HIST-2026-004
+ALM-10822,2026-08-04T14:26:57,OBM,ao-020-billing,billing-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (158 ms),dc2,rack-C,prod,HIST-2026-004
+ALM-10914,2026-08-04T14:27:16,Prometheus,ao-052-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1559 ms,dc2,rack-B,prod,HIST-2026-004
+ALM-10951,2026-08-04T14:27:25,Prometheus,ao-016-subscriber,subscriber-service,2,network_flap,Arayuz eth0 link durumu 34 kez degisti,dc2,rack-B,prod,HIST-2026-004
+ALM-10944,2026-08-04T14:27:28,AppDynamics,ao-045-dns,dns-resolver,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 113 saniye",dc1,rack-A,prod,HIST-2026-004
+ALM-10788,2026-08-04T14:27:30,SyslogNG,ao-052-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 502",dc2,rack-B,prod,HIST-2026-004
+ALM-10806,2026-08-04T14:27:32,SyslogNG,ao-054-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc2,rack-A,prod,HIST-2026-004
+ALM-10797,2026-08-04T14:27:39,OBM,ao-053-payment,payment-provider-gw,5,ext_unreach,"Dis servis payment-provider-gw erisilemiyor, HTTP 504",dc1,rack-C,prod,HIST-2026-004
+ALM-10905,2026-08-04T14:27:40,OBM,ao-024-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 90",dc2,rack-A,prod,HIST-2026-004
+ALM-10928,2026-08-04T14:27:41,Prometheus,ao-024-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 86",dc2,rack-A,prod,HIST-2026-004
+ALM-10892,2026-08-04T14:27:49,AppDynamics,ao-054-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 79",dc2,rack-A,prod,HIST-2026-004
+ALM-10898,2026-08-04T14:28:06,AppDynamics,ao-052-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (167 ms),dc2,rack-B,prod,HIST-2026-004
+ALM-10908,2026-08-04T14:28:18,SyslogNG,ao-025-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (213 ms),dc1,rack-B,prod,HIST-2026-004
+ALM-10911,2026-08-04T14:28:22,Prometheus,ao-053-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (113 ms),dc1,rack-C,prod,HIST-2026-004
+ALM-10955,2026-08-04T14:28:32,Prometheus,ao-040-message,message-queue,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 87 dolu",dc2,rack-B,prod,HIST-2026-004
+ALM-10823,2026-08-04T14:28:34,AppDynamics,ao-053-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 78",dc1,rack-C,prod,HIST-2026-004
+ALM-10880,2026-08-04T14:28:46,AppDynamics,ao-019-billing,billing-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (210 ms),dc1,rack-B,prod,HIST-2026-004
+ALM-10844,2026-08-04T14:28:52,Zabbix,ao-053-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (164 ms),dc1,rack-C,prod,HIST-2026-004
+ALM-10861,2026-08-04T14:29:11,OBM,ao-027-order,order-service,5,ext_slow,Dis servis order-service yanit suresi 912 ms,dc1,rack-A,prod,HIST-2026-004
+ALM-10832,2026-08-04T14:29:35,Prometheus,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (175 ms),dc2,rack-B,prod,HIST-2026-004
+ALM-10883,2026-08-04T14:29:43,Zabbix,ao-026-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (126 ms),dc2,rack-C,prod,HIST-2026-004
+ALM-10820,2026-08-04T14:29:44,Zabbix,ao-019-billing,billing-service,5,ext_unreach,"Dis servis billing-service erisilemiyor, HTTP 504",dc1,rack-B,prod,HIST-2026-004
+ALM-10818,2026-08-04T14:29:46,Zabbix,ao-026-payment,payment-service,5,ext_unreach,"Dis servis payment-service erisilemiyor, HTTP 502",dc2,rack-C,prod,HIST-2026-004
+ALM-10949,2026-08-04T14:29:52,Prometheus,ao-012-session,session-service,2,log_rotate,"Log rotasyonu beklenenden uzun surdu, 89 saniye",dc2,rack-A,prod,HIST-2026-004
+ALM-10919,2026-08-04T14:30:06,Zabbix,ao-025-payment,payment-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (156 ms),dc1,rack-B,prod,HIST-2026-004
+ALM-10879,2026-08-04T14:30:10,Zabbix,ao-054-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 92",dc2,rack-A,prod,HIST-2026-004
+ALM-10855,2026-08-04T14:30:22,OBM,ao-026-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 86",dc2,rack-C,prod,HIST-2026-004
+ALM-10811,2026-08-04T14:30:23,Zabbix,ao-028-order,order-service,5,ext_slow,Dis servis order-service yanit suresi 1356 ms,dc2,rack-B,prod,HIST-2026-004
+ALM-10838,2026-08-04T14:30:43,OBM,ao-025-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 93",dc1,rack-B,prod,HIST-2026-004
+ALM-10863,2026-08-04T14:30:45,SyslogNG,ao-018-billing,billing-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (117 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10875,2026-08-04T14:30:47,OBM,ao-024-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 91",dc2,rack-A,prod,HIST-2026-004
+ALM-10923,2026-08-04T14:30:49,SyslogNG,ao-020-billing,billing-service,5,ext_slow,Dis servis billing-service yanit suresi 1572 ms,dc2,rack-C,prod,HIST-2026-004
+ALM-10920,2026-08-04T14:30:57,OBM,ao-052-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 85",dc2,rack-B,prod,HIST-2026-004
+ALM-10864,2026-08-04T14:30:59,AppDynamics,ao-024-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (211 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10889,2026-08-04T14:31:03,Prometheus,ao-018-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc2,rack-A,prod,HIST-2026-004
+ALM-10887,2026-08-04T14:31:09,OBM,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (120 ms),dc2,rack-B,prod,HIST-2026-004
+ALM-10936,2026-08-04T14:31:26,OBM,ao-055-sms,sms-gateway,1,cert_expiry,Sertifika 28 gun icinde suresi dolacak,dc1,rack-B,prod,HIST-2026-004
+ALM-10924,2026-08-04T14:31:34,Prometheus,ao-053-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (141 ms),dc1,rack-C,prod,HIST-2026-004
+ALM-10909,2026-08-04T14:31:50,Prometheus,ao-054-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (97 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10933,2026-08-04T14:31:56,Prometheus,ao-054-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (161 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10841,2026-08-04T14:31:59,AppDynamics,ao-024-payment,payment-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (160 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10890,2026-08-04T14:32:05,AppDynamics,ao-027-order,order-service,3,latency_high,"Yanit suresi p99 esigi asti, 957 ms",dc1,rack-A,prod,HIST-2026-004
+ALM-10821,2026-08-04T14:32:07,OBM,ao-054-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc2,rack-A,prod,HIST-2026-004
+ALM-10871,2026-08-04T14:32:20,OBM,ao-054-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (113 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10868,2026-08-04T14:32:27,Zabbix,ao-025-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc1,rack-B,prod,HIST-2026-004
+ALM-10885,2026-08-04T14:32:35,SyslogNG,ao-026-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (194 ms),dc2,rack-C,prod,HIST-2026-004
+ALM-10881,2026-08-04T14:32:36,SyslogNG,ao-026-payment,payment-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (173 ms),dc2,rack-C,prod,HIST-2026-004
+ALM-10956,2026-08-04T14:32:44,SyslogNG,ao-041-object,object-store,1,ntp_drift,Saat sapmasi 311 ms,dc1,rack-C,prod,HIST-2026-004
+ALM-10948,2026-08-04T14:32:47,OBM,ao-022-charging,charging-service,2,cert_expiry,Sertifika 53 gun icinde suresi dolacak,dc2,rack-B,prod,HIST-2026-004
+ALM-10937,2026-08-04T14:32:48,AppDynamics,ao-006-mobile,mobile-bff,2,ntp_drift,Saat sapmasi 595 ms,dc2,rack-A,prod,HIST-2026-004
+ALM-10842,2026-08-04T14:32:50,OBM,ao-027-order,order-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (217 ms),dc1,rack-A,prod,HIST-2026-004
+ALM-10922,2026-08-04T14:32:56,Zabbix,ao-027-order,order-service,5,ext_slow,Dis servis order-service yanit suresi 1120 ms,dc1,rack-A,prod,HIST-2026-004
+ALM-10882,2026-08-04T14:32:57,Prometheus,ao-026-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc2,rack-C,prod,HIST-2026-004
+ALM-10829,2026-08-04T14:33:09,AppDynamics,ao-027-order,order-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (179 ms),dc1,rack-A,prod,HIST-2026-004
+ALM-10834,2026-08-04T14:33:10,Zabbix,ao-052-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 94",dc2,rack-B,prod,HIST-2026-004
+ALM-10853,2026-08-04T14:33:29,Zabbix,ao-024-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (179 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10862,2026-08-04T14:33:29,OBM,ao-018-billing,billing-service,3,latency_high,"Yanit suresi p99 esigi asti, 1440 ms",dc2,rack-A,prod,HIST-2026-004
+ALM-10884,2026-08-04T14:33:29,AppDynamics,ao-020-billing,billing-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (181 ms),dc2,rack-C,prod,HIST-2026-004
+ALM-10957,2026-08-04T14:33:36,SyslogNG,ao-004-mobile,mobile-bff,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 75 dolu",dc2,rack-B,prod,HIST-2026-004
+ALM-10824,2026-08-04T14:33:42,AppDynamics,ao-028-order,order-service,5,ext_unreach,"Dis servis order-service erisilemiyor, HTTP 502",dc2,rack-B,prod,HIST-2026-004
+ALM-10929,2026-08-04T14:33:43,Prometheus,ao-027-order,order-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc1,rack-A,prod,HIST-2026-004
+ALM-10833,2026-08-04T14:33:57,Prometheus,ao-025-payment,payment-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (182 ms),dc1,rack-B,prod,HIST-2026-004
+ALM-10918,2026-08-04T14:34:07,AppDynamics,ao-028-order,order-service,5,ext_unreach,"Dis servis order-service erisilemiyor, HTTP 503",dc2,rack-B,prod,HIST-2026-004
+ALM-10900,2026-08-04T14:34:12,AppDynamics,ao-052-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 84",dc2,rack-B,prod,HIST-2026-004
+ALM-10850,2026-08-04T14:34:23,Zabbix,ao-053-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc1,rack-C,prod,HIST-2026-004
+ALM-10903,2026-08-04T14:34:31,Prometheus,ao-020-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 77",dc2,rack-C,prod,HIST-2026-004
+ALM-10846,2026-08-04T14:35:02,AppDynamics,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (110 ms),dc2,rack-B,prod,HIST-2026-004
+ALM-10808,2026-08-04T14:35:18,SyslogNG,ao-054-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 93",dc2,rack-A,prod,HIST-2026-004
+ALM-10945,2026-08-04T14:35:37,Zabbix,ao-046-dns,dns-resolver,1,cert_expiry,Sertifika 22 gun icinde suresi dolacak,dc2,rack-B,prod,HIST-2026-004
+ALM-10954,2026-08-04T14:35:37,SyslogNG,ao-043-load,load-balancer,2,cert_expiry,Sertifika 38 gun icinde suresi dolacak,dc1,rack-B,prod,HIST-2026-004
+ALM-10869,2026-08-04T14:35:39,AppDynamics,ao-028-order,order-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 84",dc2,rack-B,prod,HIST-2026-004
+ALM-10891,2026-08-04T14:35:42,SyslogNG,ao-052-payment,payment-provider-gw,4,latency_high,"Yanit suresi p99 esigi asti, 685 ms",dc2,rack-B,prod,HIST-2026-004
+ALM-10830,2026-08-04T14:35:44,Zabbix,ao-024-payment,payment-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (130 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10927,2026-08-04T14:35:45,OBM,ao-026-payment,payment-service,5,ext_unreach,"Dis servis payment-service erisilemiyor, HTTP 504",dc2,rack-C,prod,HIST-2026-004
+ALM-10852,2026-08-04T14:35:56,Zabbix,ao-027-order,order-service,3,latency_high,"Yanit suresi p99 esigi asti, 1599 ms",dc1,rack-A,prod,HIST-2026-004
+ALM-10831,2026-08-04T14:36:15,SyslogNG,ao-020-billing,billing-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (112 ms),dc2,rack-C,prod,HIST-2026-004
+ALM-10874,2026-08-04T14:36:15,Prometheus,ao-026-payment,payment-service,4,ext_slow,Dis servis payment-service yanit suresi 1133 ms,dc2,rack-C,prod,HIST-2026-004
+ALM-10942,2026-08-04T14:36:20,Zabbix,ao-044-load,load-balancer,2,cert_expiry,Sertifika 25 gun icinde suresi dolacak,dc2,rack-C,prod,HIST-2026-004
+ALM-10947,2026-08-04T14:36:47,Zabbix,ao-035-billing,billing-db,1,ntp_drift,Saat sapmasi 434 ms,dc1,rack-C,prod,HIST-2026-004
+ALM-10938,2026-08-04T14:36:50,OBM,ao-046-dns,dns-resolver,1,backup_warn,Yedekleme 36 dakika gecikmeli,dc2,rack-B,prod,HIST-2026-004
+ALM-10807,2026-08-04T14:36:56,AppDynamics,ao-053-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 75",dc1,rack-C,prod,HIST-2026-004
+ALM-10827,2026-08-04T14:36:56,SyslogNG,ao-018-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc2,rack-A,prod,HIST-2026-004
+ALM-10865,2026-08-04T14:36:56,OBM,ao-054-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 84",dc2,rack-A,prod,HIST-2026-004
+ALM-10843,2026-08-04T14:37:17,Zabbix,ao-025-payment,payment-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (120 ms),dc1,rack-B,prod,HIST-2026-004
+ALM-10814,2026-08-04T14:37:25,OBM,ao-019-billing,billing-service,4,latency_high,"Yanit suresi p99 esigi asti, 1520 ms",dc1,rack-B,prod,HIST-2026-004
+ALM-10943,2026-08-04T14:37:31,AppDynamics,ao-041-object,object-store,2,ntp_drift,Saat sapmasi 566 ms,dc1,rack-C,prod,HIST-2026-004
+ALM-10912,2026-08-04T14:37:38,Prometheus,ao-054-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (138 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10813,2026-08-04T14:37:50,SyslogNG,ao-024-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 74",dc2,rack-A,prod,HIST-2026-004
+ALM-10848,2026-08-04T14:38:05,OBM,ao-018-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 82",dc2,rack-A,prod,HIST-2026-004
+ALM-10896,2026-08-04T14:38:11,OBM,ao-026-payment,payment-service,4,latency_high,"Yanit suresi p99 esigi asti, 1294 ms",dc2,rack-C,prod,HIST-2026-004
+ALM-10819,2026-08-04T14:38:18,AppDynamics,ao-053-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (171 ms),dc1,rack-C,prod,HIST-2026-004
+ALM-10854,2026-08-04T14:38:22,OBM,ao-024-payment,payment-service,3,latency_high,"Yanit suresi p99 esigi asti, 1586 ms",dc2,rack-A,prod,HIST-2026-004
+ALM-10910,2026-08-04T14:38:36,Prometheus,ao-053-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (155 ms),dc1,rack-C,prod,HIST-2026-004
+ALM-10926,2026-08-04T14:38:40,Zabbix,ao-052-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 89",dc2,rack-B,prod,HIST-2026-004
+ALM-10878,2026-08-04T14:38:47,Zabbix,ao-019-billing,billing-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 78",dc1,rack-B,prod,HIST-2026-004
+ALM-10894,2026-08-04T14:38:48,OBM,ao-018-billing,billing-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 79",dc2,rack-A,prod,HIST-2026-004
+ALM-10810,2026-08-04T14:39:05,OBM,ao-028-order,order-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 99",dc2,rack-B,prod,HIST-2026-004
+ALM-10817,2026-08-04T14:39:31,AppDynamics,ao-054-payment,payment-provider-gw,4,ext_slow,Dis servis payment-provider-gw yanit suresi 1323 ms,dc2,rack-A,prod,HIST-2026-004
+ALM-10935,2026-08-04T14:39:37,SyslogNG,ao-013-session,session-service,1,cert_expiry,Sertifika 28 gun icinde suresi dolacak,dc1,rack-B,prod,HIST-2026-004
+ALM-10902,2026-08-04T14:39:43,Prometheus,ao-024-payment,payment-service,5,txn_fail,"Islem basarisiz, hata orani yuzde 74",dc2,rack-A,prod,HIST-2026-004
+ALM-10857,2026-08-04T14:39:48,SyslogNG,ao-025-payment,payment-service,5,ext_slow,Dis servis payment-service yanit suresi 750 ms,dc1,rack-B,prod,HIST-2026-004
+ALM-10851,2026-08-04T14:39:56,SyslogNG,ao-024-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 77",dc2,rack-A,prod,HIST-2026-004
+ALM-10921,2026-08-04T14:40:00,SyslogNG,ao-018-billing,billing-service,5,ext_unreach,"Dis servis billing-service erisilemiyor, HTTP 504",dc2,rack-A,prod,HIST-2026-004
+ALM-10952,2026-08-04T14:40:16,Prometheus,ao-013-session,session-service,2,backup_warn,Yedekleme 38 dakika gecikmeli,dc1,rack-B,prod,HIST-2026-004
+ALM-10866,2026-08-04T14:40:25,SyslogNG,ao-054-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 75",dc2,rack-A,prod,HIST-2026-004
+ALM-10873,2026-08-04T14:40:30,Zabbix,ao-053-payment,payment-provider-gw,3,latency_high,"Yanit suresi p99 esigi asti, 1307 ms",dc1,rack-C,prod,HIST-2026-004
+ALM-10916,2026-08-04T14:40:34,AppDynamics,ao-054-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 76",dc2,rack-A,prod,HIST-2026-004
+ALM-10839,2026-08-04T14:40:38,Zabbix,ao-025-payment,payment-service,4,txn_fail,"Islem basarisiz, hata orani yuzde 78",dc1,rack-B,prod,HIST-2026-004
+ALM-10812,2026-08-04T14:40:57,AppDynamics,ao-052-payment,payment-provider-gw,5,txn_fail,"Islem basarisiz, hata orani yuzde 79",dc2,rack-B,prod,HIST-2026-004
+ALM-10925,2026-08-04T14:41:11,Prometheus,ao-052-payment,payment-provider-gw,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (195 ms),dc2,rack-B,prod,HIST-2026-004
+ALM-10840,2026-08-04T14:41:20,SyslogNG,ao-028-order,order-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (108 ms),dc2,rack-B,prod,HIST-2026-004
+ALM-10893,2026-08-04T14:41:28,AppDynamics,ao-020-billing,billing-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (167 ms),dc2,rack-C,prod,HIST-2026-004
+ALM-10876,2026-08-04T14:41:31,SyslogNG,ao-054-payment,payment-provider-gw,4,txn_fail,"Islem basarisiz, hata orani yuzde 97",dc2,rack-A,prod,HIST-2026-004
+ALM-10835,2026-08-04T14:41:38,SyslogNG,ao-028-order,order-service,5,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (169 ms),dc2,rack-B,prod,HIST-2026-004
+ALM-10907,2026-08-04T14:41:42,OBM,ao-052-payment,payment-provider-gw,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (100 ms),dc2,rack-B,prod,HIST-2026-004
+ALM-10906,2026-08-04T14:41:44,Prometheus,ao-018-billing,billing-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (111 ms),dc2,rack-A,prod,HIST-2026-004
+ALM-10828,2026-08-04T14:41:54,Prometheus,ao-020-billing,billing-service,4,timeout,payment-provider-gw servisine yapilan cagri zaman asimina ugradi (183 ms),dc2,rack-C,prod,HIST-2026-004
+ALM-10888,2026-08-04T14:41:55,SyslogNG,ao-052-payment,payment-provider-gw,5,ext_slow,Dis servis payment-provider-gw yanit suresi 763 ms,dc2,rack-B,prod,HIST-2026-004
+ALM-10953,2026-08-04T14:42:14,SyslogNG,ao-008-web,web-bff,2,cert_expiry,Sertifika 18 gun icinde suresi dolacak,dc2,rack-C,prod,HIST-2026-004
+ALM-10950,2026-08-04T14:42:29,AppDynamics,ao-012-session,session-service,1,network_flap,Arayuz eth0 link durumu 32 kez degisti,dc2,rack-A,prod,HIST-2026-004
+ALM-10939,2026-08-04T14:43:57,Zabbix,ao-044-load,load-balancer,2,ntp_drift,Saat sapmasi 463 ms,dc2,rack-C,prod,HIST-2026-004
+ALM-11075,2026-08-27T03:00:09,Prometheus,ao-042-load,load-balancer,2,network_flap,Arayuz eth0 link durumu 42 kez degisti,dc2,rack-A,prod,HIST-2026-005
+ALM-11078,2026-08-27T03:01:11,SyslogNG,ao-008-web,web-bff,1,network_flap,Arayuz eth0 link durumu 29 kez degisti,dc2,rack-C,prod,HIST-2026-005
+ALM-10958,2026-08-27T03:02:28,Zabbix,ao-048-batch,batch-scheduler,4,batch_overlap,Toplu is penceresi cakismasi tespit edildi,dc2,rack-A,prod,HIST-2026-005
+ALM-11016,2026-08-27T03:02:45,Prometheus,ao-033-subscriber,subscriber-db,3,cpu_high,CPU kullanimi yuzde 94,dc1,rack-A,prod,HIST-2026-005
+ALM-11012,2026-08-27T03:02:50,Prometheus,ao-031-subscriber,subscriber-db,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 84",dc1,rack-B,prod,HIST-2026-005
+ALM-10959,2026-08-27T03:03:08,Prometheus,ao-048-batch,batch-scheduler,4,batch_overlap,Toplu is penceresi cakismasi tespit edildi,dc2,rack-A,prod,HIST-2026-005
+ALM-11040,2026-08-27T03:03:24,OBM,ao-032-subscriber,subscriber-db,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 86",dc2,rack-C,prod,HIST-2026-005
+ALM-11041,2026-08-27T03:03:25,AppDynamics,ao-032-subscriber,subscriber-db,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 81",dc2,rack-C,prod,HIST-2026-005
+ALM-10960,2026-08-27T03:03:51,OBM,ao-048-batch,batch-scheduler,4,batch_overlap,Toplu is penceresi cakismasi tespit edildi,dc2,rack-A,prod,HIST-2026-005
+ALM-11042,2026-08-27T03:04:00,Prometheus,ao-050-reconciliation,reconciliation-batch,4,batch_slow,Toplu is calisma suresi 88 dakikaya ulasti,dc2,rack-C,prod,HIST-2026-005
+ALM-11082,2026-08-27T03:04:09,OBM,ao-043-load,load-balancer,3,network_flap,Arayuz eth0 link durumu 44 kez degisti,dc1,rack-B,prod,HIST-2026-005
+ALM-11068,2026-08-27T03:04:23,Zabbix,ao-019-billing,billing-service,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 65 saniye",dc1,rack-B,prod,HIST-2026-005
+ALM-11066,2026-08-27T03:04:33,AppDynamics,ao-049-invoice,invoice-batch,1,backup_warn,Yedekleme 82 dakika gecikmeli,dc1,rack-B,prod,HIST-2026-005
+ALM-10961,2026-08-27T03:04:37,SyslogNG,ao-048-batch,batch-scheduler,4,batch_overlap,Toplu is penceresi cakismasi tespit edildi,dc2,rack-A,prod,HIST-2026-005
+ALM-11062,2026-08-27T03:05:00,Zabbix,ao-031-subscriber,subscriber-db,3,cpu_high,CPU kullanimi yuzde 94,dc1,rack-B,prod,HIST-2026-005
+ALM-10962,2026-08-27T03:05:15,Zabbix,ao-048-batch,batch-scheduler,4,batch_overlap,Toplu is penceresi cakismasi tespit edildi,dc2,rack-A,prod,HIST-2026-005
+ALM-11025,2026-08-27T03:05:23,Prometheus,ao-032-subscriber,subscriber-db,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 98",dc2,rack-C,prod,HIST-2026-005
+ALM-10970,2026-08-27T03:05:35,AppDynamics,ao-051-report,report-batch,4,batch_slow,Toplu is calisma suresi 101 dakikaya ulasti,dc1,rack-A,prod,HIST-2026-005
+ALM-10963,2026-08-27T03:06:04,Prometheus,ao-050-reconciliation,reconciliation-batch,3,batch_slow,Toplu is calisma suresi 74 dakikaya ulasti,dc2,rack-C,prod,HIST-2026-005
+ALM-11071,2026-08-27T03:06:05,AppDynamics,ao-034-billing,billing-db,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 85 dolu",dc2,rack-B,prod,HIST-2026-005
+ALM-11084,2026-08-27T03:06:11,OBM,ao-004-mobile,mobile-bff,2,ntp_drift,Saat sapmasi 656 ms,dc2,rack-B,prod,HIST-2026-005
+ALM-11063,2026-08-27T03:06:26,SyslogNG,ao-048-batch,batch-scheduler,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 101",dc2,rack-A,prod,HIST-2026-005
+ALM-10988,2026-08-27T03:06:33,OBM,ao-032-subscriber,subscriber-db,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 103",dc2,rack-C,prod,HIST-2026-005
+ALM-10999,2026-08-27T03:06:36,OBM,ao-033-subscriber,subscriber-db,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 97",dc1,rack-A,prod,HIST-2026-005
+ALM-11011,2026-08-27T03:06:36,OBM,ao-033-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 90,dc1,rack-A,prod,HIST-2026-005
+ALM-10977,2026-08-27T03:06:43,Zabbix,ao-031-subscriber,subscriber-db,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 94",dc1,rack-B,prod,HIST-2026-005
+ALM-10971,2026-08-27T03:07:29,OBM,ao-051-report,report-batch,3,batch_slow,Toplu is calisma suresi 89 dakikaya ulasti,dc1,rack-A,prod,HIST-2026-005
+ALM-11058,2026-08-27T03:07:39,Zabbix,ao-048-batch,batch-scheduler,3,cpu_high,CPU kullanimi yuzde 93,dc2,rack-A,prod,HIST-2026-005
+ALM-10994,2026-08-27T03:07:40,SyslogNG,ao-032-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 98,dc2,rack-C,prod,HIST-2026-005
+ALM-11005,2026-08-27T03:07:44,OBM,ao-033-subscriber,subscriber-db,3,cpu_high,CPU kullanimi yuzde 92,dc1,rack-A,prod,HIST-2026-005
+ALM-10983,2026-08-27T03:07:45,Prometheus,ao-031-subscriber,subscriber-db,3,cpu_high,CPU kullanimi yuzde 86,dc1,rack-B,prod,HIST-2026-005
+ALM-11032,2026-08-27T03:07:48,SyslogNG,ao-033-subscriber,subscriber-db,3,cpu_high,CPU kullanimi yuzde 99,dc1,rack-A,prod,HIST-2026-005
+ALM-10964,2026-08-27T03:07:57,Zabbix,ao-050-reconciliation,reconciliation-batch,3,batch_slow,Toplu is calisma suresi 84 dakikaya ulasti,dc2,rack-C,prod,HIST-2026-005
+ALM-10989,2026-08-27T03:08:24,OBM,ao-032-subscriber,subscriber-db,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 81",dc2,rack-C,prod,HIST-2026-005
+ALM-11048,2026-08-27T03:08:26,OBM,ao-050-reconciliation,reconciliation-batch,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 115",dc2,rack-C,prod,HIST-2026-005
+ALM-10978,2026-08-27T03:08:46,SyslogNG,ao-031-subscriber,subscriber-db,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 100",dc1,rack-B,prod,HIST-2026-005
+ALM-11047,2026-08-27T03:08:48,SyslogNG,ao-050-reconciliation,reconciliation-batch,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 99",dc2,rack-C,prod,HIST-2026-005
+ALM-11000,2026-08-27T03:08:53,Zabbix,ao-033-subscriber,subscriber-db,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 100",dc1,rack-A,prod,HIST-2026-005
+ALM-10965,2026-08-27T03:09:31,Zabbix,ao-050-reconciliation,reconciliation-batch,4,batch_slow,Toplu is calisma suresi 81 dakikaya ulasti,dc2,rack-C,prod,HIST-2026-005
+ALM-10984,2026-08-27T03:09:34,Zabbix,ao-031-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 94,dc1,rack-B,prod,HIST-2026-005
+ALM-10972,2026-08-27T03:09:46,SyslogNG,ao-051-report,report-batch,4,batch_slow,Toplu is calisma suresi 78 dakikaya ulasti,dc1,rack-A,prod,HIST-2026-005
+ALM-10995,2026-08-27T03:09:55,SyslogNG,ao-032-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 88,dc2,rack-C,prod,HIST-2026-005
+ALM-11006,2026-08-27T03:10:00,Zabbix,ao-033-subscriber,subscriber-db,3,cpu_high,CPU kullanimi yuzde 92,dc1,rack-A,prod,HIST-2026-005
+ALM-11059,2026-08-27T03:10:17,Zabbix,ao-050-reconciliation,reconciliation-batch,4,cpu_high,CPU kullanimi yuzde 89,dc2,rack-C,prod,HIST-2026-005
+ALM-11073,2026-08-27T03:10:22,OBM,ao-018-billing,billing-service,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 107 saniye",dc2,rack-A,prod,HIST-2026-005
+ALM-11080,2026-08-27T03:10:39,SyslogNG,ao-034-billing,billing-db,1,cert_expiry,Sertifika 31 gun icinde suresi dolacak,dc2,rack-B,prod,HIST-2026-005
+ALM-10990,2026-08-27T03:10:53,Zabbix,ao-032-subscriber,subscriber-db,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 84",dc2,rack-C,prod,HIST-2026-005
+ALM-11001,2026-08-27T03:10:54,AppDynamics,ao-033-subscriber,subscriber-db,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 109",dc1,rack-A,prod,HIST-2026-005
+ALM-10979,2026-08-27T03:10:56,Zabbix,ao-031-subscriber,subscriber-db,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 96",dc1,rack-B,prod,HIST-2026-005
+ALM-11020,2026-08-27T03:10:58,Zabbix,ao-050-reconciliation,reconciliation-batch,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 82",dc2,rack-C,prod,HIST-2026-005
+ALM-11079,2026-08-27T03:11:03,Zabbix,ao-019-billing,billing-service,1,cert_expiry,Sertifika 46 gun icinde suresi dolacak,dc1,rack-B,prod,HIST-2026-005
+ALM-11074,2026-08-27T03:11:13,Zabbix,ao-028-order,order-service,1,ntp_drift,Saat sapmasi 532 ms,dc2,rack-B,prod,HIST-2026-005
+ALM-11033,2026-08-27T03:11:19,AppDynamics,ao-048-batch,batch-scheduler,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 93",dc2,rack-A,prod,HIST-2026-005
+ALM-11007,2026-08-27T03:11:37,OBM,ao-033-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 90,dc1,rack-A,prod,HIST-2026-005
+ALM-10973,2026-08-27T03:11:40,Zabbix,ao-051-report,report-batch,4,batch_slow,Toplu is calisma suresi 83 dakikaya ulasti,dc1,rack-A,prod,HIST-2026-005
+ALM-10996,2026-08-27T03:11:57,SyslogNG,ao-032-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 97,dc2,rack-C,prod,HIST-2026-005
+ALM-10985,2026-08-27T03:11:58,AppDynamics,ao-031-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 92,dc1,rack-B,prod,HIST-2026-005
+ALM-10966,2026-08-27T03:11:59,Prometheus,ao-050-reconciliation,reconciliation-batch,4,batch_slow,Toplu is calisma suresi 85 dakikaya ulasti,dc2,rack-C,prod,HIST-2026-005
+ALM-11055,2026-08-27T03:12:02,SyslogNG,ao-031-subscriber,subscriber-db,3,cpu_high,CPU kullanimi yuzde 83,dc1,rack-B,prod,HIST-2026-005
+ALM-11002,2026-08-27T03:12:20,SyslogNG,ao-033-subscriber,subscriber-db,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 96",dc1,rack-A,prod,HIST-2026-005
+ALM-11064,2026-08-27T03:12:23,Zabbix,ao-044-load,load-balancer,1,network_flap,Arayuz eth0 link durumu 53 kez degisti,dc2,rack-C,prod,HIST-2026-005
+ALM-10991,2026-08-27T03:12:29,Zabbix,ao-032-subscriber,subscriber-db,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 102",dc2,rack-C,prod,HIST-2026-005
+ALM-11056,2026-08-27T03:12:35,Prometheus,ao-033-subscriber,subscriber-db,3,batch_slow,Toplu is calisma suresi 72 dakikaya ulasti,dc1,rack-A,prod,HIST-2026-005
+ALM-11070,2026-08-27T03:12:56,Prometheus,ao-017-subscriber,subscriber-service,2,cert_expiry,Sertifika 26 gun icinde suresi dolacak,dc1,rack-C,prod,HIST-2026-005
+ALM-10980,2026-08-27T03:13:03,OBM,ao-031-subscriber,subscriber-db,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 106",dc1,rack-B,prod,HIST-2026-005
+ALM-11019,2026-08-27T03:13:21,OBM,ao-051-report,report-batch,3,cpu_high,CPU kullanimi yuzde 91,dc1,rack-A,prod,HIST-2026-005
+ALM-11022,2026-08-27T03:13:24,Prometheus,ao-051-report,report-batch,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 102",dc1,rack-A,prod,HIST-2026-005
+ALM-11008,2026-08-27T03:13:28,AppDynamics,ao-033-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 87,dc1,rack-A,prod,HIST-2026-005
+ALM-10997,2026-08-27T03:13:39,SyslogNG,ao-032-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 99,dc2,rack-C,prod,HIST-2026-005
+ALM-10967,2026-08-27T03:13:47,Zabbix,ao-050-reconciliation,reconciliation-batch,3,batch_slow,Toplu is calisma suresi 87 dakikaya ulasti,dc2,rack-C,prod,HIST-2026-005
+ALM-10974,2026-08-27T03:13:56,OBM,ao-051-report,report-batch,3,batch_slow,Toplu is calisma suresi 86 dakikaya ulasti,dc1,rack-A,prod,HIST-2026-005
+ALM-10986,2026-08-27T03:13:57,Prometheus,ao-031-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 97,dc1,rack-B,prod,HIST-2026-005
+ALM-11003,2026-08-27T03:14:20,AppDynamics,ao-033-subscriber,subscriber-db,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 90",dc1,rack-A,prod,HIST-2026-005
+ALM-11029,2026-08-27T03:14:33,Zabbix,ao-031-subscriber,subscriber-db,3,batch_slow,Toplu is calisma suresi 96 dakikaya ulasti,dc1,rack-B,prod,HIST-2026-005
+ALM-10992,2026-08-27T03:14:35,Prometheus,ao-032-subscriber,subscriber-db,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 106",dc2,rack-C,prod,HIST-2026-005
+ALM-11054,2026-08-27T03:14:37,AppDynamics,ao-051-report,report-batch,4,batch_slow,Toplu is calisma suresi 88 dakikaya ulasti,dc1,rack-A,prod,HIST-2026-005
+ALM-11044,2026-08-27T03:14:39,Zabbix,ao-051-report,report-batch,4,batch_slow,Toplu is calisma suresi 75 dakikaya ulasti,dc1,rack-A,prod,HIST-2026-005
+ALM-10981,2026-08-27T03:14:59,Prometheus,ao-031-subscriber,subscriber-db,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 107",dc1,rack-B,prod,HIST-2026-005
+ALM-11052,2026-08-27T03:15:01,AppDynamics,ao-050-reconciliation,reconciliation-batch,4,cpu_high,CPU kullanimi yuzde 92,dc2,rack-C,prod,HIST-2026-005
+ALM-10987,2026-08-27T03:15:21,Zabbix,ao-031-subscriber,subscriber-db,3,cpu_high,CPU kullanimi yuzde 91,dc1,rack-B,prod,HIST-2026-005
+ALM-10975,2026-08-27T03:15:23,Zabbix,ao-051-report,report-batch,3,batch_slow,Toplu is calisma suresi 100 dakikaya ulasti,dc1,rack-A,prod,HIST-2026-005
+ALM-10998,2026-08-27T03:15:25,Zabbix,ao-032-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 93,dc2,rack-C,prod,HIST-2026-005
+ALM-11009,2026-08-27T03:15:37,Zabbix,ao-033-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 90,dc1,rack-A,prod,HIST-2026-005
+ALM-10968,2026-08-27T03:15:45,Prometheus,ao-050-reconciliation,reconciliation-batch,4,batch_slow,Toplu is calisma suresi 88 dakikaya ulasti,dc2,rack-C,prod,HIST-2026-005
+ALM-11023,2026-08-27T03:15:50,OBM,ao-050-reconciliation,reconciliation-batch,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 82",dc2,rack-C,prod,HIST-2026-005
+ALM-11004,2026-08-27T03:16:47,Prometheus,ao-033-subscriber,subscriber-db,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 93",dc1,rack-A,prod,HIST-2026-005
+ALM-10993,2026-08-27T03:16:53,OBM,ao-032-subscriber,subscriber-db,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 79",dc2,rack-C,prod,HIST-2026-005
+ALM-10982,2026-08-27T03:17:00,SyslogNG,ao-031-subscriber,subscriber-db,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 104",dc1,rack-B,prod,HIST-2026-005
+ALM-11081,2026-08-27T03:17:11,SyslogNG,ao-014-session,session-service,2,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 82 dolu",dc2,rack-C,prod,HIST-2026-005
+ALM-11083,2026-08-27T03:17:18,Zabbix,ao-041-object,object-store,1,network_flap,Arayuz eth0 link durumu 30 kez degisti,dc1,rack-C,prod,HIST-2026-005
+ALM-11065,2026-08-27T03:17:45,Zabbix,ao-003-api,api-gateway,1,ntp_drift,Saat sapmasi 694 ms,dc1,rack-A,prod,HIST-2026-005
+ALM-10969,2026-08-27T03:17:56,OBM,ao-050-reconciliation,reconciliation-batch,3,batch_slow,Toplu is calisma suresi 100 dakikaya ulasti,dc2,rack-C,prod,HIST-2026-005
+ALM-10976,2026-08-27T03:18:00,Zabbix,ao-051-report,report-batch,3,batch_slow,Toplu is calisma suresi 88 dakikaya ulasti,dc1,rack-A,prod,HIST-2026-005
+ALM-11072,2026-08-27T03:18:29,Prometheus,ao-040-message,message-queue,1,backup_warn,Yedekleme 34 dakika gecikmeli,dc2,rack-B,prod,HIST-2026-005
+ALM-11067,2026-08-27T03:18:58,Prometheus,ao-055-sms,sms-gateway,1,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 81 dolu",dc1,rack-B,prod,HIST-2026-005
+ALM-11061,2026-08-27T03:18:59,SyslogNG,ao-048-batch,batch-scheduler,3,batch_slow,Toplu is calisma suresi 83 dakikaya ulasti,dc2,rack-A,prod,HIST-2026-005
+ALM-11013,2026-08-27T03:19:20,AppDynamics,ao-048-batch,batch-scheduler,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 94",dc2,rack-A,prod,HIST-2026-005
+ALM-11034,2026-08-27T03:19:36,Prometheus,ao-051-report,report-batch,4,batch_overlap,Toplu is penceresi cakismasi tespit edildi,dc1,rack-A,prod,HIST-2026-005
+ALM-11046,2026-08-27T03:20:03,OBM,ao-031-subscriber,subscriber-db,3,batch_slow,Toplu is calisma suresi 85 dakikaya ulasti,dc1,rack-B,prod,HIST-2026-005
+ALM-11018,2026-08-27T03:20:07,AppDynamics,ao-051-report,report-batch,3,cpu_high,CPU kullanimi yuzde 85,dc1,rack-A,prod,HIST-2026-005
+ALM-11045,2026-08-27T03:20:23,OBM,ao-050-reconciliation,reconciliation-batch,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 92",dc2,rack-C,prod,HIST-2026-005
+ALM-11051,2026-08-27T03:20:33,Zabbix,ao-051-report,report-batch,4,batch_slow,Toplu is calisma suresi 82 dakikaya ulasti,dc1,rack-A,prod,HIST-2026-005
+ALM-11010,2026-08-27T03:20:35,Prometheus,ao-032-subscriber,subscriber-db,3,cpu_high,CPU kullanimi yuzde 83,dc2,rack-C,prod,HIST-2026-005
+ALM-11076,2026-08-27T03:20:36,AppDynamics,ao-043-load,load-balancer,1,log_rotate,"Log rotasyonu beklenenden uzun surdu, 60 saniye",dc1,rack-B,prod,HIST-2026-005
+ALM-11036,2026-08-27T03:20:43,Prometheus,ao-051-report,report-batch,4,batch_overlap,Toplu is penceresi cakismasi tespit edildi,dc1,rack-A,prod,HIST-2026-005
+ALM-11015,2026-08-27T03:20:52,Prometheus,ao-048-batch,batch-scheduler,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 79",dc2,rack-A,prod,HIST-2026-005
+ALM-11031,2026-08-27T03:20:53,Zabbix,ao-032-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 87,dc2,rack-C,prod,HIST-2026-005
+ALM-11050,2026-08-27T03:21:06,SyslogNG,ao-032-subscriber,subscriber-db,4,batch_slow,Toplu is calisma suresi 83 dakikaya ulasti,dc2,rack-C,prod,HIST-2026-005
+ALM-11037,2026-08-27T03:21:09,SyslogNG,ao-050-reconciliation,reconciliation-batch,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 106",dc2,rack-C,prod,HIST-2026-005
+ALM-11057,2026-08-27T03:21:13,OBM,ao-031-subscriber,subscriber-db,3,cpu_high,CPU kullanimi yuzde 90,dc1,rack-B,prod,HIST-2026-005
+ALM-11028,2026-08-27T03:21:23,AppDynamics,ao-032-subscriber,subscriber-db,4,batch_slow,Toplu is calisma suresi 92 dakikaya ulasti,dc2,rack-C,prod,HIST-2026-005
+ALM-11030,2026-08-27T03:21:24,SyslogNG,ao-048-batch,batch-scheduler,4,cpu_high,CPU kullanimi yuzde 96,dc2,rack-A,prod,HIST-2026-005
+ALM-11053,2026-08-27T03:21:33,AppDynamics,ao-050-reconciliation,reconciliation-batch,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 90",dc2,rack-C,prod,HIST-2026-005
+ALM-11060,2026-08-27T03:21:45,OBM,ao-050-reconciliation,reconciliation-batch,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 100",dc2,rack-C,prod,HIST-2026-005
+ALM-11077,2026-08-27T03:22:43,Prometheus,ao-015-subscriber,subscriber-service,2,backup_warn,Yedekleme 35 dakika gecikmeli,dc1,rack-A,prod,HIST-2026-005
+ALM-11035,2026-08-27T03:23:30,Zabbix,ao-031-subscriber,subscriber-db,3,batch_slow,Toplu is calisma suresi 95 dakikaya ulasti,dc1,rack-B,prod,HIST-2026-005
+ALM-11026,2026-08-27T03:23:40,OBM,ao-031-subscriber,subscriber-db,3,batch_slow,Toplu is calisma suresi 93 dakikaya ulasti,dc1,rack-B,prod,HIST-2026-005
+ALM-11038,2026-08-27T03:24:12,OBM,ao-033-subscriber,subscriber-db,4,batch_slow,Toplu is calisma suresi 98 dakikaya ulasti,dc1,rack-A,prod,HIST-2026-005
+ALM-11043,2026-08-27T03:24:42,OBM,ao-031-subscriber,subscriber-db,4,cpu_high,CPU kullanimi yuzde 88,dc1,rack-B,prod,HIST-2026-005
+ALM-11069,2026-08-27T03:24:46,SyslogNG,ao-034-billing,billing-db,1,disk_warn,"Disk kullanimi uyari seviyesinde, yuzde 81 dolu",dc2,rack-B,prod,HIST-2026-005
+ALM-11039,2026-08-27T03:24:49,OBM,ao-050-reconciliation,reconciliation-batch,4,batch_overlap,Toplu is penceresi cakismasi tespit edildi,dc2,rack-C,prod,HIST-2026-005
+ALM-11021,2026-08-27T03:25:05,OBM,ao-033-subscriber,subscriber-db,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 78",dc1,rack-A,prod,HIST-2026-005
+ALM-11049,2026-08-27T03:25:21,AppDynamics,ao-050-reconciliation,reconciliation-batch,4,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 97",dc2,rack-C,prod,HIST-2026-005
+ALM-11024,2026-08-27T03:25:54,SyslogNG,ao-050-reconciliation,reconciliation-batch,4,batch_overlap,Toplu is penceresi cakismasi tespit edildi,dc2,rack-C,prod,HIST-2026-005
+ALM-11027,2026-08-27T03:26:16,Prometheus,ao-051-report,report-batch,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 84",dc1,rack-A,prod,HIST-2026-005
+ALM-11017,2026-08-27T03:27:30,Prometheus,ao-048-batch,batch-scheduler,3,db_conn_pool,"Baglanti havuzu tukendi, bekleyen istek sayisi 90",dc2,rack-A,prod,HIST-2026-005
+ALM-11014,2026-08-27T03:27:57,OBM,ao-033-subscriber,subscriber-db,3,cpu_high,CPU kullanimi yuzde 84,dc1,rack-A,prod,HIST-2026-005

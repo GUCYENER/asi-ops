@@ -1,0 +1,40 @@
+{
+  "incident_id": "HIST-2026-001",
+  "title": "DC2 Rack-C ToR Uplink Flap",
+  "detected_at": "2026-05-14T01:18:05",
+  "resolved_at": "2026-05-14T01:34:40",
+  "duration_minutes": 17,
+  "root_cause": "DC2 rack-C ToR switch uplink LACP member flap caused intermittent packet loss and host reachability loss.",
+  "root_cause_tr": "DC2 rack-C ToR switch uplinkindeki LACP member flap, ayni kabindeki hostlarda paket kaybi ve erisim kesintisi olusturdu.",
+  "root_cause_category": "network",
+  "primary_service": "network/rack-C",
+  "affected_services": [
+    "api-gateway",
+    "web-bff",
+    "session-service",
+    "billing-service",
+    "payment-service",
+    "subscriber-db",
+    "cache-cluster",
+    "load-balancer"
+  ],
+  "affected_hosts": 24,
+  "alarm_count": 286,
+  "correlated_alarm_count": 244,
+  "noise_alarm_count": 42,
+  "similarity_to_current": 0.93,
+  "confidence": 0.96,
+  "resolution_action": "Network ekibi rack-C ToR uplink LACP memberini resetledi ve hatali optic modulu degistirdi.",
+  "action_owner": "Network Operations",
+  "mttr_minutes": 17,
+  "status": "resolved",
+  "signature_alarm_types": [
+    "network_down",
+    "pkt_loss",
+    "conn_refused",
+    "timeout",
+    "http_5xx",
+    "latency_high"
+  ],
+  "lessons_learned": "Ayni rack icinde eszamanli network_down + pkt_loss kombinasyonu host bazli arizadan once ortak altyapi arizasini dusundurmelidir."
+}

@@ -250,6 +250,25 @@ function cardHtml(card) {
         <button class="act" data-explain="${esc(card.id)}">AI ile anlat</button>
       </div>
     </div>
+    ${(card.similar_incidents && card.similar_incidents.length) ? `<div class="block">
+      <h4>Benzer geçmiş olaylar <span class="synth">örnek arşiv — sentetik</span></h4>
+      ${card.similar_incidents.map(s => `<div class="hist">
+        <div class="hist-head">
+          <b>${esc(s.incident_id)}</b> · ${esc(s.title)}
+          <span class="hist-sim">%${Math.round(s.similarity * 100)} benzer</span>
+          <span class="hist-date">${esc(s.date)}</span>
+        </div>
+        <div class="hist-break">
+          alarm tipi örtüşmesi ${s.breakdown.alarm_tipi_ortusmesi} ·
+          servis örtüşmesi ${s.breakdown.servis_ortusmesi} ·
+          kategori eşleşmesi ${s.breakdown.kategori_eslesmesi}
+          ${s.shared_alarm_types.length ? " · ortak tipler: " + esc(s.shared_alarm_types.join(", ")) : ""}
+        </div>
+        <div class="hist-res"><b>O zaman ne işe yaramıştı:</b> ${esc(s.resolution_action)}
+          <span class="hist-mttr">${s.mttr_minutes} dk · ${esc(s.action_owner)}</span></div>
+        ${s.lessons_learned ? `<div class="hist-lesson">${esc(s.lessons_learned)}</div>` : ""}
+      </div>`).join("")}
+    </div>` : ""}
     <div class="block" id="narrative-${esc(card.id)}">
       ${narrative ? `<h4>AI anlatısı (${esc(narrative.source)})</h4>
         <div class="narrative">${esc(narrative.text)}</div>` : ""}
@@ -347,7 +366,49 @@ function renderUnclear() {
     `<p class="reason">${DATA.unclear.length} kayıt.</p>` + rowsHtml(DATA.unclear.slice(0, 400));
 }
 
+function renderMethod() {
+  const profile = DATA.type_profile;
+  const maxRatio = Math.max(...profile.map(p => p.ratio));
+  document.getElementById("conc-chart").innerHTML = `
+    <div class="conc">${profile.map(p => `
+      <div class="conc-row">
+        <span class="conc-type">${esc(p.type)}</span>
+        <div class="conc-track">
+          <div class="conc-bar ${p.label === "sinyal" ? "sig" : (p.label === "gurultu" ? "noi" : "amb")}"
+               style="width:${Math.max(p.ratio / maxRatio * 100, 1.2)}%"></div>
+        </div>
+        <span class="conc-val">${p.ratio.toFixed(1)}x</span>
+        <span class="conc-lab ${p.label === "sinyal" ? "sig" : "noi"}">${esc(p.label)}</span>
+        <span class="conc-n">${p.total} alarm</span>
+      </div>`).join("")}
+      <div class="conc-threshold"><span>&lt;3.0 gürültü</span><span>3.0–4.0 belirsiz</span><span>≥4.0 sinyal</span></div>
+    </div>`;
+
+  const m = DATA.metrics;
+  document.getElementById("decision-flow").innerHTML = `
+    <div class="flow">
+      <div class="flow-step"><b>3.000</b><span>alarm</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><b>tip yoğunlaşması</b><span>sinyal / gürültü / belirsiz</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><b>kanıt skoru</b><span>mesaj hedefi · bağımlılık · kabin · servis</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-out">
+        <div class="flow-res d-olay"><b>${m.alarms_in_events}</b><span>olaya bağlandı</span></div>
+        <div class="flow-res d-belirsiz"><b>${m.unclear_count}</b><span>belirsiz</span></div>
+        <div class="flow-res d-gurultu"><b>${m.noise_count}</b><span>gürültü</span></div>
+      </div>
+    </div>
+    <p class="reason" style="margin-top:12px">
+      <b>Tip tek başına elemiyor:</b> gürültü tipindeki bir alarm olay penceresinde ve kök servisle
+      bağımlılık/lokalite bağı varsa (kanıt skoru ≥3.0) yine olaya bağlanır. Sinyal tipindeki bir alarm
+      bağlanamazsa gürültüye değil <b>belirsiz</b>e gider. Hiçbir alarm sessizce kaybolmaz:
+      ${m.alarms_in_events} + ${m.unclear_count} + ${m.noise_count} = <b>${m.accounted}</b>.
+    </p>`;
+}
+
 function renderMetrics() {
+  renderMethod();
   const m = DATA.metrics;
   const rows = [
     ["İşlenen alarm", `${m.processed_alarms} / ${m.total_alarms}`, "Tüm veri işlendi (örnekleme yok)"],
